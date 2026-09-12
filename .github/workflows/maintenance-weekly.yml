@@ -1,0 +1,39 @@
+name: Mantenimiento semanal
+
+on:
+  workflow_dispatch:
+  # Active esta agenda después de validar el flujo y revisar cuotas:
+  # schedule:
+  #   - cron: "31 4 * * 0"
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: maintenance-weekly
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: uv sync --locked
+      - run: uv run python tools/check_links.py --scope all --timeout 12 --delay 1 --workers 4 --output reports/all-links.json
+      - name: Publicar cambios materiales
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create maintenance --color 1D76DB --description "Revisión generada por mantenimiento" --force
+          uv run python tools/publish_maintenance_issue.py reports/all-links.json --title "Revisar enlaces y accesos del catálogo" --label maintenance
+      - uses: actions/upload-artifact@v4
+        with:
+          name: maintenance-weekly-${{ github.run_id }}
+          path: reports/all-links.json
+          retention-days: 7

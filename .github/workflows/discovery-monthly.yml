@@ -1,0 +1,39 @@
+name: Descubrimiento mensual
+
+on:
+  workflow_dispatch:
+  # Active esta agenda después de validar el flujo y asignar revisores:
+  # schedule:
+  #   - cron: "43 4 1 * *"
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: discovery-monthly
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: uv sync --locked
+      - run: uv run python tools/discover_candidates.py --output reports/discovery-candidates.json
+      - name: Proponer candidatos
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create candidate --color C2E0C6 --description "Fuente candidata pendiente de revisión" --force
+          uv run python tools/publish_maintenance_issue.py reports/discovery-candidates.json --title "Revisar fuentes candidatas" --label candidate
+      - uses: actions/upload-artifact@v4
+        with:
+          name: discovery-monthly-${{ github.run_id }}
+          path: reports/discovery-candidates.json
+          retention-days: 7

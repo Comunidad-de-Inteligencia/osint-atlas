@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "authority_tiers": {
+    "P0": "Publicación oficial o registro responsable",
+    "P1": "API o conjunto publicado por el organismo responsable",
+    "P2": "Derivado reproducible con procedencia conservada",
+    "P3": "Fuente secundaria reputada",
+    "P4": "Evidencia abierta todavía no verificada"
+  },
+  "resource_types": ["portal", "api", "dataset", "register", "map", "hotline", "reporting-channel", "tool", "archive", "guidance"],
+  "categories": [
+    "administracion", "empresas", "contratacion", "subvenciones", "legislacion",
+    "justicia", "estadistica", "economia", "geoint", "transporte", "medio-ambiente",
+    "dominios-internet", "ciberseguridad", "verificacion", "desapariciones",
+    "emergencias", "proteccion-menores", "violencia-digital", "reporte-plataformas",
+    "propiedad-intelectual", "datos-abiertos"
+  ],
+  "coverage_status": ["pendiente", "inicial", "desarrollado"],
+  "criticality": ["normal", "alta", "critica"],
+  "health_status": ["unknown", "ok", "redirected", "auth-required", "rate-limited", "temporary-error", "offline", "retired"]
+}

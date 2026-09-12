@@ -1,0 +1,1573 @@
+{
+  "coverage": [
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 3,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 6,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 18,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 17,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 17,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 6,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 7,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 6,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 6,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 4,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 3,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 4,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 4,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 4,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 0,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 1,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 4,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 4,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 4,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 1,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 1,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 1,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 1,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 0,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 1,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 0,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 0,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 0,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 2,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 3,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 6,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 6,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 6,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 3,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 3,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 3,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 3,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 2,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 2,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 2,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 2,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 2,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 4,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 6,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 9,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 9,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 9,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 6,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 6,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 6,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 6,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 4,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 4,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 4,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 4,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 4,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 5,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 6,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 14,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 14,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 14,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 6,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 6,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 6,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 6,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 5,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 5,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 5,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 5,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 5,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 0,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 1,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 3,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 3,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 3,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 1,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 1,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 1,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 1,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 0,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 0,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 0,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 0,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 0,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 3,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 4,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 10,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 10,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 10,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 4,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 4,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 4,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 4,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 3,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 3,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 3,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 3,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 3,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 3,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 3,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 5,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 5,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 5,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 3,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 3,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 3,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 3,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 3,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 3,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 3,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 3,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 3,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 1,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 6,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 15,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 15,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 15,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 7,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 7,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 8,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 7,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 2,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 3,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 1,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 2,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 2,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 4,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 4,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 6,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 6,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 6,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 4,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 4,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 4,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 4,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 4,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 4,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 4,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 4,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 4,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 0,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 1,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 3,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 3,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 3,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 2,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 1,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 2,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 2,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 0,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 0,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 1,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 0,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 1,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 4,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 5,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 8,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 8,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 8,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 5,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 5,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 5,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 5,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 4,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 4,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 4,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 4,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 4,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 2,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 5,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 11,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 11,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 11,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 5,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 6,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 5,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 5,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 3,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 2,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 3,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 3,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 3,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 0,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 2,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 4,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 4,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 4,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 3,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 2,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 2,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 3,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 0,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 0,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 1,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 0,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 1,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "inicial"
+    },
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 3,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 3,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 7,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 6,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 6,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 3,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 3,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 3,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 3,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 3,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 3,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 3,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 3,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 3,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GLOBAL",
+      "resources": 3,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "EU",
+      "resources": 3,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES",
+      "resources": 8,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-PV",
+      "resources": 8,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "ES-NC",
+      "resources": 8,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "PT",
+      "resources": 3,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "FR",
+      "resources": 3,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "DE",
+      "resources": 3,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "IT",
+      "resources": 3,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "GB",
+      "resources": 3,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "BR",
+      "resources": 3,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "MX",
+      "resources": 3,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "CO",
+      "resources": 3,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    },
+    {
+      "jurisdiction": "AR",
+      "resources": 3,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "desarrollado"
+    }
+  ],
+  "version": "148623c324af8657"
+}

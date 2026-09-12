@@ -1,0 +1,4676 @@
+{
+  "contacts": [
+    {
+      "id": "eu-112",
+      "kind": "emergency",
+      "last_reviewed": "2026-09-12",
+      "name": "Número europeo de emergencias 112",
+      "note": "Solo para emergencias reales; gratuito en toda la UE.",
+      "territories": [
+        "EU",
+        "ES",
+        "PT",
+        "FR",
+        "DE",
+        "IT"
+      ],
+      "url": "https://digital-strategy.ec.europa.eu/es/policies/112",
+      "value": "112"
+    },
+    {
+      "id": "eu-116000",
+      "kind": "hotline",
+      "last_reviewed": "2026-09-12",
+      "name": "Línea europea para menores desaparecidos",
+      "note": "La disponibilidad nacional debe confirmarse en la fuente oficial.",
+      "territories": [
+        "EU"
+      ],
+      "url": "https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/faq/index_es.htm",
+      "value": "116 000"
+    },
+    {
+      "id": "es-017",
+      "kind": "assistance",
+      "last_reviewed": "2026-09-12",
+      "name": "Línea de Ayuda en Ciberseguridad de INCIBE",
+      "note": "Ayuda gratuita y confidencial; no sustituye una denuncia.",
+      "territories": [
+        "ES"
+      ],
+      "url": "https://www.incibe.es/linea-de-ayuda-en-ciberseguridad",
+      "value": "017"
+    },
+    {
+      "id": "es-016",
+      "kind": "assistance",
+      "last_reviewed": "2026-09-12",
+      "name": "Servicio de atención a todas las formas de violencia contra las mujeres",
+      "note": "Información, asesoramiento jurídico y atención psicosocial; consultar accesibilidad y canales alternativos en la fuente.",
+      "territories": [
+        "ES"
+      ],
+      "url": "https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/",
+      "value": "016"
+    },
+    {
+      "id": "es-cndes",
+      "kind": "guidance",
+      "last_reviewed": "2026-09-12",
+      "name": "Centro Nacional de Desaparecidos",
+      "note": "No es necesario esperar 24 horas para denunciar una desaparición.",
+      "territories": [
+        "ES"
+      ],
+      "url": "https://cndes-web.ses.mir.es/publico/Desaparecidos/",
+      "value": "Portal CNDES"
+    },
+    {
+      "id": "es-incibe-csam",
+      "kind": "reporting",
+      "last_reviewed": "2026-09-12",
+      "name": "Línea de reporte CSAM de INCIBE",
+      "note": "El reporte no tiene carácter de denuncia y no requiere descargar el material.",
+      "territories": [
+        "ES"
+      ],
+      "url": "https://www.incibe.es/menores/reporte-abuso",
+      "value": "Formulario web anónimo"
+    },
+    {
+      "id": "es-aepd-prioritario",
+      "kind": "takedown",
+      "last_reviewed": "2026-09-12",
+      "name": "Canal prioritario de la AEPD",
+      "note": "Para difusión ilegítima de contenido sexual o violento en situaciones de alto riesgo.",
+      "territories": [
+        "ES"
+      ],
+      "url": "https://www.aepd.es/canalprioritario",
+      "value": "Sede electrónica"
+    },
+    {
+      "id": "global-inhope",
+      "kind": "reporting",
+      "last_reviewed": "2026-09-12",
+      "name": "Directorio internacional de líneas INHOPE",
+      "note": "No descargar, guardar ni compartir posible material de abuso sexual infantil.",
+      "territories": [
+        "GLOBAL"
+      ],
+      "url": "https://www.inhope.org/EN#hotlineReferral",
+      "value": "Selector de país"
+    },
+    {
+      "id": "telegram-report",
+      "kind": "platform-report",
+      "last_reviewed": "2026-09-12",
+      "name": "Reporte de contenido ilegal en Telegram",
+      "note": "Incluir enlaces públicos t.me o identificadores; no reenviar material sensible.",
+      "territories": [
+        "GLOBAL"
+      ],
+      "url": "https://telegram.org/faq#q-there-39s-illegal-content-on-telegram-how-do-i-take-it-down",
+      "value": "Botón Reportar o abuse@telegram.org"
+    }
+  ],
+  "generated_at": "deterministic-from-source",
+  "jurisdictions": [
+    {
+      "id": "GLOBAL",
+      "languages": [
+        "en",
+        "es"
+      ],
+      "name": "Global",
+      "notes": "Recursos sin una jurisdicción única; verificar siempre la disponibilidad local.",
+      "parent": null
+    },
+    {
+      "id": "EU",
+      "languages": [
+        "multilingual"
+      ],
+      "name": "Unión Europea",
+      "notes": "Distinguir normativa y servicios comunes de las implementaciones nacionales.",
+      "parent": "GLOBAL"
+    },
+    {
+      "id": "ES",
+      "languages": [
+        "es",
+        "ca",
+        "eu",
+        "gl"
+      ],
+      "name": "España",
+      "notes": "Distinguir Estado, comunidades autónomas, provincias y municipios. Catastro estatal excluye País Vasco y Navarra.",
+      "parent": "EU"
+    },
+    {
+      "id": "ES-PV",
+      "languages": [
+        "es",
+        "eu"
+      ],
+      "name": "País Vasco",
+      "notes": "Cuenta con administraciones forales y sistemas catastrales propios.",
+      "parent": "ES"
+    },
+    {
+      "id": "ES-NC",
+      "languages": [
+        "es",
+        "eu"
+      ],
+      "name": "Comunidad Foral de Navarra",
+      "notes": "Cuenta con Hacienda y Registro de la Riqueza Territorial propios.",
+      "parent": "ES"
+    },
+    {
+      "id": "PT",
+      "languages": [
+        "pt"
+      ],
+      "name": "Portugal",
+      "parent": "EU"
+    },
+    {
+      "id": "FR",
+      "languages": [
+        "fr"
+      ],
+      "name": "Francia",
+      "parent": "EU"
+    },
+    {
+      "id": "DE",
+      "languages": [
+        "de"
+      ],
+      "name": "Alemania",
+      "parent": "EU"
+    },
+    {
+      "id": "IT",
+      "languages": [
+        "it"
+      ],
+      "name": "Italia",
+      "parent": "EU"
+    },
+    {
+      "id": "GB",
+      "languages": [
+        "en"
+      ],
+      "name": "Reino Unido",
+      "parent": "GLOBAL"
+    },
+    {
+      "id": "BR",
+      "languages": [
+        "pt"
+      ],
+      "name": "Brasil",
+      "parent": "GLOBAL"
+    },
+    {
+      "id": "MX",
+      "languages": [
+        "es"
+      ],
+      "name": "México",
+      "parent": "GLOBAL"
+    },
+    {
+      "id": "CO",
+      "languages": [
+        "es"
+      ],
+      "name": "Colombia",
+      "parent": "GLOBAL"
+    },
+    {
+      "id": "AR",
+      "languages": [
+        "es"
+      ],
+      "name": "Argentina",
+      "parent": "GLOBAL"
+    }
+  ],
+  "maintainers": {
+    "default_owner": "P3M-ACTF",
+    "policy": {
+      "critical_escalation_hours": 48,
+      "independent_review_required": true,
+      "normal_escalation_days": 7
+    },
+    "specialties": [
+      {
+        "backup": null,
+        "id": "legal",
+        "label": "Legislación y justicia",
+        "primary": null,
+        "status": "por-asignar"
+      },
+      {
+        "backup": null,
+        "id": "public-data",
+        "label": "Administración, contratación y datos",
+        "primary": null,
+        "status": "por-asignar"
+      },
+      {
+        "backup": null,
+        "id": "geoint",
+        "label": "Geolocalización y emergencias",
+        "primary": null,
+        "status": "por-asignar"
+      },
+      {
+        "backup": null,
+        "id": "cyber",
+        "label": "Ciberseguridad y plataformas",
+        "primary": null,
+        "status": "por-asignar"
+      },
+      {
+        "backup": null,
+        "id": "safeguarding",
+        "label": "Desapariciones y protección de personas",
+        "primary": null,
+        "status": "por-asignar"
+      },
+      {
+        "backup": null,
+        "id": "editorial",
+        "label": "Documentación y accesibilidad",
+        "primary": null,
+        "status": "por-asignar"
+      }
+    ],
+    "version": 1
+  },
+  "playbooks": [
+    {
+      "id": "business",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/investigar-empresa.md",
+      "review_days": 180,
+      "scenario": "business",
+      "title": "Investigar una empresa"
+    },
+    {
+      "id": "procurement",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/contratos-subvenciones.md",
+      "review_days": 180,
+      "scenario": "procurement",
+      "title": "Rastrear contratos y subvenciones"
+    },
+    {
+      "id": "official-publications",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/publicaciones-oficiales.md",
+      "review_days": 180,
+      "scenario": "official-publications",
+      "title": "Localizar publicaciones oficiales"
+    },
+    {
+      "id": "domain-footprint",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/huella-dominio.md",
+      "review_days": 180,
+      "scenario": "domain-footprint",
+      "title": "Examinar la huella pública de un dominio"
+    },
+    {
+      "id": "image-geolocation",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/verificar-imagen.md",
+      "review_days": 180,
+      "scenario": "image-geolocation",
+      "title": "Verificar una imagen y su posible ubicación"
+    },
+    {
+      "id": "source-corroboration",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/contrastar-conclusiones.md",
+      "review_days": 180,
+      "scenario": "source-corroboration",
+      "title": "Contrastar y documentar conclusiones"
+    },
+    {
+      "id": "legal-claim",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/afirmacion-juridica.md",
+      "review_days": 90,
+      "scenario": "legal-claim",
+      "title": "Verificar una afirmación jurídica"
+    },
+    {
+      "id": "statistical-claim",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/afirmacion-estadistica.md",
+      "review_days": 180,
+      "scenario": "statistical-claim",
+      "title": "Verificar una afirmación estadística"
+    },
+    {
+      "id": "missing-adult",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/desaparicion-adulto.md",
+      "review_days": 30,
+      "scenario": "missing-adult",
+      "title": "Actuar ante la desaparición de un adulto"
+    },
+    {
+      "id": "missing-child",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/desaparicion-menor.md",
+      "review_days": 30,
+      "scenario": "missing-child",
+      "title": "Actuar ante la desaparición de un menor"
+    },
+    {
+      "id": "immediate-emergency",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/emergencia-inmediata.md",
+      "review_days": 30,
+      "scenario": "immediate-emergency",
+      "title": "Actuar ante una emergencia inmediata"
+    },
+    {
+      "id": "disaster-crisis",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/desastre-crisis.md",
+      "review_days": 30,
+      "scenario": "disaster-crisis",
+      "title": "Verificar información durante un desastre"
+    },
+    {
+      "id": "grooming-sextortion",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/grooming-sextorsion.md",
+      "review_days": 30,
+      "scenario": "grooming-sextortion",
+      "title": "Responder a indicios de grooming o sextorsión"
+    },
+    {
+      "id": "sexual-digital-violence",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/violencia-sexual-digital.md",
+      "review_days": 30,
+      "scenario": "sexual-digital-violence",
+      "title": "Responder a violencia sexual digital"
+    },
+    {
+      "id": "csam-report",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/reportar-csam.md",
+      "review_days": 30,
+      "scenario": "csam-report",
+      "title": "Reportar posible material de abuso sexual infantil"
+    },
+    {
+      "id": "platform-report",
+      "last_reviewed": "2026-09-12",
+      "path": "docs/procedimientos/reportar-plataformas.md",
+      "review_days": 30,
+      "scenario": "platform-report",
+      "title": "Reportar indicios en Telegram y otras plataformas"
+    }
+  ],
+  "resources": [
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "legislacion",
+        "administracion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-boe",
+      "inputs": [
+        "fecha",
+        "identificador BOE",
+        "texto o materia"
+      ],
+      "interpretation": "La publicación original es la referencia oficial; el texto consolidado facilita la lectura pero carece de valor jurídico.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "La consolidación puede estar en proceso y no sustituye el diario oficial.",
+      "maintainer": null,
+      "name": "Boletín Oficial del Estado",
+      "outputs": [
+        "publicación oficial",
+        "metadatos",
+        "texto consolidado informativo"
+      ],
+      "owner": "Agencia Estatal BOE",
+      "pending_changes": [],
+      "purpose": "Localizar publicaciones oficiales, normas y actos administrativos estatales.",
+      "references": [
+        {
+          "title": "Ayuda sobre legislación consolidada",
+          "url": "https://www.boe.es/datosabiertos/faq/consolidada.php"
+        }
+      ],
+      "review_days": 180,
+      "scenarios": [
+        "official-publications",
+        "legal-claim"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://www.boe.es/",
+      "usage": "Buscar por identificador o fecha y abrir el documento original cuando la conclusión requiera valor jurídico."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "empresas",
+        "administracion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-borme",
+      "inputs": [
+        "denominación social",
+        "fecha",
+        "provincia"
+      ],
+      "interpretation": "Acredita que el acto fue publicado, pero no equivale al expediente mercantil completo.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Los sumarios estructurados comienzan en 2009 y algunos documentos contienen datos personales.",
+      "maintainer": null,
+      "name": "Boletín Oficial del Registro Mercantil",
+      "outputs": [
+        "actos societarios",
+        "anuncios",
+        "documentos publicados"
+      ],
+      "owner": "Agencia Estatal BOE",
+      "pending_changes": [],
+      "purpose": "Seguir actos inscritos y anuncios legales de sociedades españolas.",
+      "review_days": 90,
+      "scenarios": [
+        "business",
+        "official-publications"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://www.boe.es/borme/",
+      "usage": "Buscar la sociedad y ordenar los actos por fecha; conservar el identificador y el enlace al anuncio."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "datos-abiertos",
+        "administracion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-datos-gob",
+      "inputs": [
+        "tema",
+        "organismo",
+        "territorio"
+      ],
+      "interpretation": "Es un metacatálogo; la autoridad y licencia pertenecen al dataset final.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Calidad, actualización y licencia varían entre conjuntos.",
+      "maintainer": null,
+      "name": "datos.gob.es",
+      "outputs": [
+        "fichas de datasets",
+        "distribuciones",
+        "licencias declaradas"
+      ],
+      "owner": "Gobierno de España",
+      "pending_changes": [],
+      "purpose": "Descubrir conjuntos de datos estatales, autonómicos y locales.",
+      "review_days": 180,
+      "scenarios": [
+        "statistical-claim",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "dataset",
+      "url": "https://datos.gob.es/",
+      "usage": "Usar el catálogo para localizar el conjunto y comprobar después la ficha del organismo publicador."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "estadistica",
+        "datos-abiertos"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-ine",
+      "inputs": [
+        "indicador",
+        "periodo",
+        "territorio"
+      ],
+      "interpretation": "Comparar valores solo si comparten definición, unidad y periodo.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Los microdatos restringidos no forman parte de los datos abiertos.",
+      "maintainer": null,
+      "name": "INE Datos Abiertos",
+      "outputs": [
+        "series estadísticas",
+        "tablas",
+        "metadatos"
+      ],
+      "owner": "Instituto Nacional de Estadística",
+      "pending_changes": [],
+      "purpose": "Consultar estadísticas oficiales españolas y series territoriales.",
+      "review_days": 90,
+      "scenarios": [
+        "statistical-claim",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "api",
+      "url": "https://www.ine.es/datosabiertos/",
+      "usage": "Identificar la operación estadística, seleccionar periodo y territorio y conservar unidad y revisión."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "contratacion",
+        "administracion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-placsp",
+      "inputs": [
+        "expediente",
+        "órgano",
+        "adjudicatario",
+        "CPV"
+      ],
+      "interpretation": "Distinguir presupuesto, importe adjudicado y modificaciones posteriores.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Puede haber revisiones duplicadas y cobertura histórica desigual.",
+      "maintainer": null,
+      "name": "Plataforma de Contratación del Sector Público",
+      "outputs": [
+        "anuncios",
+        "adjudicaciones",
+        "documentos",
+        "fechas"
+      ],
+      "owner": "Ministerio de Hacienda",
+      "pending_changes": [],
+      "purpose": "Localizar licitaciones, adjudicaciones y perfiles del contratante.",
+      "review_days": 90,
+      "scenarios": [
+        "procurement",
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://contrataciondelestado.es/",
+      "usage": "Buscar el expediente y revisar todas sus versiones y documentos asociados."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "subvenciones",
+        "administracion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-bdns",
+      "inputs": [
+        "beneficiario",
+        "convocatoria",
+        "órgano",
+        "fecha"
+      ],
+      "interpretation": "El portal muestra la parte legalmente publicable de la base.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "La información sobre personas físicas puede tener ventanas de publicación limitadas.",
+      "maintainer": null,
+      "name": "Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas",
+      "outputs": [
+        "convocatorias",
+        "concesiones publicables",
+        "importes"
+      ],
+      "owner": "IGAE",
+      "pending_changes": [],
+      "purpose": "Consultar convocatorias, concesiones y planes de ayudas públicas.",
+      "review_days": 90,
+      "scenarios": [
+        "procurement",
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://www.pap.hacienda.gob.es/bdnstrans/GE/es/",
+      "usage": "Relacionar convocatoria y concesión, comprobando organismo, fecha e instrumento regulador."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "administracion",
+        "empresas"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-invente",
+      "inputs": [
+        "nombre de entidad",
+        "NIF"
+      ],
+      "interpretation": "La presencia identifica pertenencia al inventario, no valida cualquier dato de terceros.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Los cambios organizativos pueden tardar en reflejarse.",
+      "maintainer": null,
+      "name": "INVENTE",
+      "outputs": [
+        "clasificación institucional",
+        "dependencia",
+        "identificadores"
+      ],
+      "owner": "IGAE",
+      "pending_changes": [],
+      "purpose": "Resolver identidades de entidades de los sectores públicos estatal, autonómico y local.",
+      "review_days": 180,
+      "scenarios": [
+        "business",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "register",
+      "url": "https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/BasesDatos/invente/Paginas/inicio.aspx",
+      "usage": "Confirmar la entidad exacta antes de cruzarla con contratos, subvenciones o presupuestos."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "administracion"
+      ],
+      "cost": "gratis o no indicado",
+      "coverage_exclusions": [
+        "ES-PV",
+        "ES-NC"
+      ],
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-catastro",
+      "inputs": [
+        "referencia catastral",
+        "dirección",
+        "coordenadas"
+      ],
+      "interpretation": "La referencia catastral describe un inmueble, pero no prueba por sí sola titularidad ni límites jurídicos.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "No cubre País Vasco ni Navarra; datos de titulares y valores individualizados están protegidos.",
+      "maintainer": null,
+      "name": "Sede Electrónica del Catastro",
+      "outputs": [
+        "parcela",
+        "geometría",
+        "datos descriptivos no protegidos"
+      ],
+      "owner": "Dirección General del Catastro",
+      "pending_changes": [],
+      "purpose": "Consultar cartografía parcelaria y datos catastrales no protegidos.",
+      "references": [
+        {
+          "title": "Cobertura del Catastro",
+          "url": "https://www.catastro.hacienda.gob.es/es-ES/usos_utilidades.html"
+        }
+      ],
+      "review_days": 180,
+      "scenarios": [
+        "image-geolocation",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "register",
+      "url": "https://www.sedecatastro.gob.es/",
+      "usage": "Localizar la parcela y contrastar su geometría con cartografía y ortofotos."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "datos-abiertos"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-cnig-pnoa",
+      "inputs": [
+        "área",
+        "producto",
+        "fecha"
+      ],
+      "interpretation": "Una coincidencia visual debe apoyarse en fecha, escala y más de un rasgo estable.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Los productos son voluminosos y diferentes vuelos pueden tener fechas distintas.",
+      "maintainer": null,
+      "name": "Centro de Descargas CNIG y PNOA",
+      "outputs": [
+        "ortofotos",
+        "cartografía",
+        "modelos de elevación"
+      ],
+      "owner": "Instituto Geográfico Nacional",
+      "pending_changes": [],
+      "purpose": "Obtener cartografía, ortofotos, modelos de terreno y LiDAR oficiales.",
+      "review_days": 180,
+      "scenarios": [
+        "image-geolocation",
+        "disaster-crisis"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "map",
+      "url": "https://centrodedescargas.cnig.es/",
+      "usage": "Elegir producto, fecha y resolución adecuados y conservar sus metadatos."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "medio-ambiente",
+        "datos-abiertos"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "alta",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-aemet",
+      "inputs": [
+        "lugar",
+        "fecha",
+        "producto"
+      ],
+      "interpretation": "Separar observación, predicción y aviso; no extrapolar una estación a todo un territorio.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Requiere clave y algunas URLs de descarga son temporales.",
+      "maintainer": null,
+      "name": "AEMET OpenData",
+      "outputs": [
+        "observaciones",
+        "avisos",
+        "series meteorológicas"
+      ],
+      "owner": "Agencia Estatal de Meteorología",
+      "pending_changes": [],
+      "purpose": "Consultar observaciones, avisos y climatología oficial.",
+      "review_days": 90,
+      "scenarios": [
+        "image-geolocation",
+        "disaster-crisis",
+        "statistical-claim"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "api",
+      "url": "https://opendata.aemet.es/",
+      "usage": "Guardar identificador de producto, estación, periodo y momento de consulta."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "economia",
+        "estadistica"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-bde",
+      "inputs": [
+        "serie",
+        "periodo"
+      ],
+      "interpretation": "Las revisiones estadísticas pueden cambiar valores históricos.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Microdatos y entornos de investigación tienen reglas distintas.",
+      "maintainer": null,
+      "name": "Banco de España - Estadísticas",
+      "outputs": [
+        "series",
+        "metadatos",
+        "publicaciones"
+      ],
+      "owner": "Banco de España",
+      "pending_changes": [],
+      "purpose": "Verificar series macroeconómicas, bancarias y financieras españolas.",
+      "review_days": 180,
+      "scenarios": [
+        "statistical-claim",
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "dataset",
+      "url": "https://www.bde.es/wbe/es/estadisticas/",
+      "usage": "Citar código de serie, unidad, frecuencia y fecha de actualización."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "empresas",
+        "economia"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-cnmv",
+      "inputs": [
+        "nombre",
+        "NIF",
+        "ISIN"
+      ],
+      "interpretation": "Una comunicación acredita lo declarado al regulador, no confirma todos sus contenidos materiales.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Documentos pueden contener datos personales o derechos de terceros.",
+      "maintainer": null,
+      "name": "CNMV",
+      "outputs": [
+        "comunicaciones",
+        "informes",
+        "registros"
+      ],
+      "owner": "Comisión Nacional del Mercado de Valores",
+      "pending_changes": [],
+      "purpose": "Consultar información regulada de emisores y entidades supervisadas.",
+      "review_days": 180,
+      "scenarios": [
+        "business",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "register",
+      "url": "https://www.cnmv.es/",
+      "usage": "Resolver primero la entidad y después ordenar sus comunicaciones por fecha y tipo."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "propiedad-intelectual",
+        "empresas"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-oepm",
+      "inputs": [
+        "titular",
+        "signo",
+        "número de expediente"
+      ],
+      "interpretation": "Solicitud, concesión y vigencia son estados diferentes.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Algunos servicios automatizados requieren registro y ciertos documentos tienen publicidad limitada.",
+      "maintainer": null,
+      "name": "OEPM y Consulta de Expedientes",
+      "outputs": [
+        "expedientes",
+        "situación",
+        "titulares publicados"
+      ],
+      "owner": "Oficina Española de Patentes y Marcas",
+      "pending_changes": [],
+      "purpose": "Consultar marcas, patentes, diseños y actos de tramitación.",
+      "review_days": 180,
+      "scenarios": [
+        "business",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "register",
+      "url": "https://www.oepm.es/",
+      "usage": "Buscar variantes del nombre y comprobar el estado y la fecha del expediente."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "justicia",
+        "legislacion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-cendoj",
+      "inputs": [
+        "jurisdicción",
+        "ponente",
+        "fecha",
+        "texto"
+      ],
+      "interpretation": "Una resolución concreta debe contextualizarse con recursos, jurisprudencia posterior y normativa aplicable.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "No debe utilizarse para crear perfiles permanentes de personas mencionadas.",
+      "maintainer": null,
+      "name": "Buscador de Jurisprudencia CENDOJ",
+      "outputs": [
+        "resoluciones",
+        "metadatos judiciales"
+      ],
+      "owner": "Consejo General del Poder Judicial",
+      "pending_changes": [],
+      "purpose": "Localizar resoluciones judiciales publicadas por el poder judicial.",
+      "review_days": 180,
+      "scenarios": [
+        "legal-claim",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://www.poderjudicial.es/search/",
+      "usage": "Buscar por varios criterios y citar órgano, fecha y número de resolución."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "administracion",
+        "datos-abiertos"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-transparencia",
+      "inputs": [
+        "organismo",
+        "materia"
+      ],
+      "interpretation": "La ausencia en el portal estatal no implica inexistencia en portales autonómicos o locales.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "No centraliza toda la transparencia pública española.",
+      "maintainer": null,
+      "name": "Portal de Transparencia de la AGE",
+      "outputs": [
+        "publicidad activa",
+        "organigramas",
+        "documentos"
+      ],
+      "owner": "Gobierno de España",
+      "pending_changes": [],
+      "purpose": "Consultar estructura, cargos, planes, presupuestos y otra publicidad activa estatal.",
+      "review_days": 180,
+      "scenarios": [
+        "source-corroboration",
+        "procurement"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://transparencia.gob.es/",
+      "usage": "Identificar el organismo competente y seguir la referencia hasta el documento original."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "empresas"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-rmc",
+      "inputs": [
+        "denominación",
+        "sociedad"
+      ],
+      "interpretation": "Una consulta orienta; la certificación es el documento con efectos propios.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Servicios pueden requerir identificación y pago.",
+      "maintainer": null,
+      "name": "Registro Mercantil Central",
+      "outputs": [
+        "denominaciones",
+        "información registral disponible"
+      ],
+      "owner": "Registro Mercantil Central",
+      "pending_changes": [],
+      "purpose": "Consultar denominaciones y servicios de publicidad mercantil central.",
+      "review_days": 180,
+      "scenarios": [
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "register",
+      "url": "https://www.rmc.es/",
+      "usage": "Usar la denominación exacta y distinguir consultas informativas de certificaciones."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "empresas",
+        "geoint"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-registradores",
+      "inputs": [
+        "sociedad",
+        "finca",
+        "persona con interés legítimo cuando proceda"
+      ],
+      "interpretation": "Nota informativa y certificación tienen distinto alcance probatorio.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Existen tarifas, autenticación y límites de acceso.",
+      "maintainer": null,
+      "name": "Registradores de España",
+      "outputs": [
+        "notas",
+        "certificaciones",
+        "cuentas"
+      ],
+      "owner": "Colegio de Registradores",
+      "pending_changes": [],
+      "purpose": "Solicitar publicidad mercantil y de la propiedad disponible legalmente.",
+      "review_days": 180,
+      "scenarios": [
+        "business",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "register",
+      "url": "https://www.registradores.org/",
+      "usage": "Elegir el producto adecuado y documentar la fecha y el registro emisor."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "transporte",
+        "datos-abiertos"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-dgt-datos",
+      "inputs": [
+        "indicador",
+        "periodo",
+        "territorio"
+      ],
+      "interpretation": "Datos agregados no identifican por sí solos la causa de un incidente.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Los datos en tiempo real y las estadísticas consolidadas tienen objetivos distintos.",
+      "maintainer": null,
+      "name": "DGT Datos Abiertos",
+      "outputs": [
+        "series",
+        "mapas",
+        "informes"
+      ],
+      "owner": "Dirección General de Tráfico",
+      "pending_changes": [],
+      "purpose": "Consultar estadísticas y datos publicados sobre tráfico y movilidad.",
+      "review_days": 180,
+      "scenarios": [
+        "statistical-claim",
+        "disaster-crisis"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "dataset",
+      "url": "https://www.dgt.es/menusecundario/dgt-en-cifras/",
+      "usage": "Comprobar definición, cobertura y fecha antes de comparar territorios."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "medio-ambiente",
+        "geoint"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-miteco-datos",
+      "inputs": [
+        "tema",
+        "territorio",
+        "fecha"
+      ],
+      "interpretation": "Las capas representan una escala y metodología determinadas.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Catálogos y formatos varían entre unidades productoras.",
+      "maintainer": null,
+      "name": "MITECO Datos y Cartografía",
+      "outputs": [
+        "capas geográficas",
+        "inventarios",
+        "series"
+      ],
+      "owner": "Ministerio para la Transición Ecológica",
+      "pending_changes": [],
+      "purpose": "Localizar información ambiental y geográfica oficial.",
+      "review_days": 180,
+      "scenarios": [
+        "disaster-crisis",
+        "statistical-claim"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "dataset",
+      "url": "https://www.miteco.gob.es/es/cartografia-y-sig/ide/descargas.html",
+      "usage": "Conservar versión, sistema de referencia y fecha del conjunto."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "geoint"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-ign-geodesia",
+      "inputs": [
+        "topónimo",
+        "coordenadas",
+        "evento"
+      ],
+      "interpretation": "La localización nominal puede tener homónimos; corroborar con geometría.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Cada producto tiene escala y condiciones propias.",
+      "maintainer": null,
+      "name": "IGN Información Geográfica",
+      "outputs": [
+        "cartografía",
+        "toponimia",
+        "datos geofísicos"
+      ],
+      "owner": "Instituto Geográfico Nacional",
+      "pending_changes": [],
+      "purpose": "Consultar mapas, topónimos, sismicidad y servicios geográficos oficiales.",
+      "review_days": 180,
+      "scenarios": [
+        "image-geolocation",
+        "disaster-crisis"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "map",
+      "url": "https://www.ign.es/",
+      "usage": "Combinar topónimo y coordenadas y conservar la capa consultada."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "transporte"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-aena",
+      "inputs": [
+        "aeropuerto",
+        "vuelo",
+        "fecha"
+      ],
+      "interpretation": "La información operativa cambia y debe citarse con hora de consulta.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "No sustituye confirmación de aerolínea ni registros históricos completos.",
+      "maintainer": null,
+      "name": "Aena Información de Aeropuertos",
+      "outputs": [
+        "estado publicado",
+        "horarios",
+        "avisos"
+      ],
+      "owner": "Aena",
+      "pending_changes": [],
+      "purpose": "Consultar aeropuertos, vuelos publicados y avisos operativos.",
+      "review_days": 90,
+      "scenarios": [
+        "source-corroboration",
+        "disaster-crisis"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://www.aena.es/",
+      "usage": "Comprobar aeropuerto, zona horaria y momento de actualización."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "transporte",
+        "medio-ambiente"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-puertos",
+      "inputs": [
+        "puerto",
+        "boya",
+        "fecha"
+      ],
+      "interpretation": "Una boya representa condiciones locales y no toda la costa.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Series operativas pueden tener huecos o revisiones.",
+      "maintainer": null,
+      "name": "Puertos del Estado",
+      "outputs": [
+        "observaciones",
+        "predicciones",
+        "estadísticas"
+      ],
+      "owner": "Puertos del Estado",
+      "pending_changes": [],
+      "purpose": "Consultar información portuaria, oceanográfica y meteorológica marítima.",
+      "review_days": 180,
+      "scenarios": [
+        "source-corroboration",
+        "disaster-crisis"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://www.puertos.es/",
+      "usage": "Seleccionar estación y periodo y diferenciar observación de predicción."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "ciberseguridad",
+        "verificacion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-incibe",
+      "inputs": [
+        "tipo de incidente",
+        "público afectado"
+      ],
+      "interpretation": "La orientación general no sustituye la respuesta de emergencias ni una denuncia.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Los contenidos educativos no determinan por sí solos la naturaleza jurídica de un hecho.",
+      "maintainer": null,
+      "name": "INCIBE",
+      "outputs": [
+        "recomendaciones",
+        "canales de ayuda"
+      ],
+      "owner": "Instituto Nacional de Ciberseguridad",
+      "pending_changes": [],
+      "purpose": "Consultar guías y servicios españoles de ciberseguridad.",
+      "review_days": 90,
+      "scenarios": [
+        "domain-footprint",
+        "grooming-sextortion",
+        "platform-report"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "guidance",
+      "url": "https://www.incibe.es/",
+      "usage": "Elegir la guía correspondiente y comprobar que el canal sigue vigente."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "ciberseguridad"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-ccn-cert",
+      "inputs": [
+        "producto",
+        "vulnerabilidad",
+        "técnica"
+      ],
+      "interpretation": "Una guía describe buenas prácticas; no atribuye automáticamente una actividad.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Parte de los servicios puede requerir acceso restringido.",
+      "maintainer": null,
+      "name": "CCN-CERT",
+      "outputs": [
+        "avisos",
+        "guías",
+        "recomendaciones"
+      ],
+      "owner": "Centro Criptológico Nacional",
+      "pending_changes": [],
+      "purpose": "Consultar alertas, guías y metodología institucional de ciberseguridad.",
+      "review_days": 180,
+      "scenarios": [
+        "domain-footprint",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "guidance",
+      "url": "https://www.ccn-cert.cni.es/",
+      "usage": "Citar el documento y su versión, y contrastar indicadores operativos con su fuente."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "datos-abiertos",
+        "administracion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "eu-data-portal",
+      "inputs": [
+        "tema",
+        "publicador",
+        "país"
+      ],
+      "interpretation": "La licencia y calidad dependen del conjunto subyacente.",
+      "jurisdictions": [
+        "EU"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Metadatos multilingües y heterogéneos.",
+      "maintainer": null,
+      "name": "data.europa.eu",
+      "outputs": [
+        "datasets",
+        "distribuciones",
+        "licencias declaradas"
+      ],
+      "owner": "Oficina de Publicaciones de la Unión Europea",
+      "pending_changes": [],
+      "purpose": "Descubrir datos abiertos de instituciones europeas y países participantes.",
+      "review_days": 180,
+      "scenarios": [
+        "statistical-claim",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "dataset",
+      "url": "https://data.europa.eu/",
+      "usage": "Usar el portal como descubridor y verificar la distribución en el publicador original."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "legislacion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "eu-eurlex",
+      "inputs": [
+        "CELEX",
+        "texto",
+        "fecha"
+      ],
+      "interpretation": "Distinguir acto adoptado, consolidación y medidas nacionales de transposición.",
+      "jurisdictions": [
+        "EU"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Los textos consolidados pueden no tener valor oficial.",
+      "maintainer": null,
+      "name": "EUR-Lex",
+      "outputs": [
+        "actos jurídicos",
+        "versiones",
+        "metadatos"
+      ],
+      "owner": "Oficina de Publicaciones de la Unión Europea",
+      "pending_changes": [],
+      "purpose": "Consultar legislación, jurisprudencia y Diario Oficial de la UE.",
+      "review_days": 180,
+      "scenarios": [
+        "official-publications",
+        "legal-claim"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://eur-lex.europa.eu/",
+      "usage": "Preferir el identificador CELEX y revisar estado, relaciones y versión lingüística."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "empresas"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "eu-bris",
+      "inputs": [
+        "nombre",
+        "número registral",
+        "país"
+      ],
+      "interpretation": "Los detalles y documentos proceden del registro nacional correspondiente.",
+      "jurisdictions": [
+        "EU"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Cobertura, precio y tiempo de entrega varían por país.",
+      "maintainer": null,
+      "name": "BRIS - Buscar una empresa",
+      "outputs": [
+        "datos básicos",
+        "documentos disponibles"
+      ],
+      "owner": "Portal Europeo de e-Justicia",
+      "pending_changes": [],
+      "purpose": "Buscar sociedades en registros mercantiles interconectados.",
+      "review_days": 180,
+      "scenarios": [
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "register",
+      "url": "https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu/general-information-find-company_en",
+      "usage": "Seleccionar jurisdicción y confirmar la entidad mediante su identificador nacional."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "contratacion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "eu-ted",
+      "inputs": [
+        "comprador",
+        "adjudicatario",
+        "CPV",
+        "país"
+      ],
+      "interpretation": "Un anuncio puede ser corregido o cancelado posteriormente.",
+      "jurisdictions": [
+        "EU"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "No reúne toda la contratación por debajo de umbrales europeos.",
+      "maintainer": null,
+      "name": "Tenders Electronic Daily",
+      "outputs": [
+        "anuncios",
+        "adjudicaciones",
+        "documentos"
+      ],
+      "owner": "Oficina de Publicaciones de la Unión Europea",
+      "pending_changes": [],
+      "purpose": "Consultar anuncios de contratación pública de alcance europeo.",
+      "review_days": 180,
+      "scenarios": [
+        "procurement",
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://ted.europa.eu/",
+      "usage": "Seguir el identificador del anuncio y revisar correcciones y adjudicaciones relacionadas."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "estadistica",
+        "economia"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "eu-eurostat",
+      "inputs": [
+        "código de dataset",
+        "geografía",
+        "periodo"
+      ],
+      "interpretation": "Las diferencias nacionales solo son comparables bajo la definición armonizada.",
+      "jurisdictions": [
+        "EU"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Series pueden revisarse y tener valores estimados o provisionales.",
+      "maintainer": null,
+      "name": "Eurostat",
+      "outputs": [
+        "series comparables",
+        "metadatos"
+      ],
+      "owner": "Comisión Europea",
+      "pending_changes": [],
+      "purpose": "Comparar estadísticas armonizadas europeas.",
+      "review_days": 180,
+      "scenarios": [
+        "statistical-claim"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "dataset",
+      "url": "https://ec.europa.eu/eurostat/",
+      "usage": "Conservar código, unidad, filtros, banderas de calidad y fecha de extracción."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "medio-ambiente"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "eu-copernicus",
+      "inputs": [
+        "área",
+        "intervalo",
+        "sensor"
+      ],
+      "interpretation": "Una imagen necesita contexto temporal, resolución y corroboración.",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Volumen alto y licencias distintas para productos de terceros.",
+      "maintainer": null,
+      "name": "Copernicus Data Space Ecosystem",
+      "outputs": [
+        "imágenes satelitales",
+        "productos derivados"
+      ],
+      "owner": "Unión Europea",
+      "pending_changes": [],
+      "purpose": "Acceder a observación terrestre Sentinel y productos Copernicus.",
+      "review_days": 180,
+      "scenarios": [
+        "image-geolocation",
+        "disaster-crisis"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "map",
+      "url": "https://dataspace.copernicus.eu/",
+      "usage": "Registrar misión, producto, fecha, cobertura nubosa y transformación aplicada."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "administracion",
+        "empresas"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "eu-sanctions-map",
+      "inputs": [
+        "país",
+        "régimen",
+        "entidad"
+      ],
+      "interpretation": "La inclusión y alcance deben determinarse con el acto vigente.",
+      "jurisdictions": [
+        "EU"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "No sustituye asesoramiento ni listas nacionales adicionales.",
+      "maintainer": null,
+      "name": "EU Sanctions Map",
+      "outputs": [
+        "medidas",
+        "referencias jurídicas"
+      ],
+      "owner": "Unión Europea",
+      "pending_changes": [],
+      "purpose": "Explorar regímenes de sanciones adoptados por la UE.",
+      "review_days": 90,
+      "scenarios": [
+        "business",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://www.sanctionsmap.eu/",
+      "usage": "Usar el mapa para localizar el acto jurídico y verificarlo en EUR-Lex."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "propiedad-intelectual",
+        "empresas"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "eu-euipo",
+      "inputs": [
+        "signo",
+        "titular",
+        "número"
+      ],
+      "interpretation": "Solicitud y registro vigente no son equivalentes.",
+      "jurisdictions": [
+        "EU"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Algunos enlaces de resultado pueden ser temporales.",
+      "maintainer": null,
+      "name": "EUIPO eSearch plus",
+      "outputs": [
+        "expedientes",
+        "estado",
+        "titulares publicados"
+      ],
+      "owner": "Oficina de Propiedad Intelectual de la UE",
+      "pending_changes": [],
+      "purpose": "Consultar marcas y diseños de la Unión Europea.",
+      "review_days": 180,
+      "scenarios": [
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "register",
+      "url": "https://euipo.europa.eu/eSearch/",
+      "usage": "Buscar variantes y comprobar estado y fechas procesales."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "medio-ambiente",
+        "datos-abiertos"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "eu-echa",
+      "inputs": [
+        "nombre",
+        "CAS",
+        "EC"
+      ],
+      "interpretation": "Distinguir clasificación armonizada, notificada y evaluación en curso.",
+      "jurisdictions": [
+        "EU"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Algunos datos proceden de expedientes presentados por empresas.",
+      "maintainer": null,
+      "name": "ECHA Information on Chemicals",
+      "outputs": [
+        "identidad",
+        "clasificación",
+        "expedientes públicos"
+      ],
+      "owner": "Agencia Europea de Sustancias y Mezclas Químicas",
+      "pending_changes": [],
+      "purpose": "Consultar expedientes públicos y clasificación de sustancias.",
+      "review_days": 180,
+      "scenarios": [
+        "source-corroboration",
+        "statistical-claim"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "register",
+      "url": "https://echa.europa.eu/information-on-chemicals",
+      "usage": "Resolver la sustancia por identificador y citar la sección consultada."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "justicia",
+        "legislacion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "eu-ecourts",
+      "inputs": [
+        "país",
+        "materia"
+      ],
+      "interpretation": "La información general no sustituye normas procesales nacionales vigentes.",
+      "jurisdictions": [
+        "EU"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Cobertura y traducciones varían.",
+      "maintainer": null,
+      "name": "Portal Europeo de e-Justicia",
+      "outputs": [
+        "guías",
+        "registros conectados",
+        "formularios"
+      ],
+      "owner": "Comisión Europea",
+      "pending_changes": [],
+      "purpose": "Localizar registros, procedimientos y herramientas judiciales transfronterizas.",
+      "review_days": 180,
+      "scenarios": [
+        "legal-claim",
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://e-justice.europa.eu/",
+      "usage": "Elegir país y materia, y seguir al organismo nacional competente."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "empresas",
+        "datos-abiertos"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-gleif",
+      "inputs": [
+        "nombre",
+        "LEI",
+        "BIC",
+        "país"
+      ],
+      "interpretation": "Las relaciones reflejan reportes LEI y excepciones declaradas.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Muchas entidades no están obligadas a tener LEI.",
+      "maintainer": null,
+      "name": "GLEIF LEI Search",
+      "outputs": [
+        "datos de referencia",
+        "relaciones societarias declaradas"
+      ],
+      "owner": "Global Legal Entity Identifier Foundation",
+      "pending_changes": [],
+      "purpose": "Resolver entidades jurídicas y relaciones mediante identificadores LEI.",
+      "review_days": 180,
+      "scenarios": [
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "api",
+      "url": "https://www.gleif.org/en/lei-data/gleif-api",
+      "usage": "Buscar por identificador cuando exista y revisar estado y fecha de actualización."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "justicia",
+        "verificacion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-interpol-notices",
+      "inputs": [
+        "nombre",
+        "nacionalidad"
+      ],
+      "interpretation": "Una notificación roja no es una orden de detención internacional ni prueba culpabilidad.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Solo una parte de las notificaciones es pública.",
+      "maintainer": null,
+      "name": "INTERPOL Red Notices",
+      "outputs": [
+        "notificaciones públicas",
+        "datos publicados"
+      ],
+      "owner": "INTERPOL",
+      "pending_changes": [],
+      "purpose": "Consultar notificaciones públicas seleccionadas de INTERPOL.",
+      "review_days": 90,
+      "scenarios": [
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "register",
+      "url": "https://www.interpol.int/How-we-work/Notices/Red-Notices/View-Red-Notices",
+      "usage": "Confirmar identidad mediante varios datos y conservar el enlace oficial vigente."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "estadistica",
+        "economia"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-world-bank",
+      "inputs": [
+        "indicador",
+        "país",
+        "periodo"
+      ],
+      "interpretation": "Comparar países solo con una metodología común.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Cobertura y actualidad varían por indicador.",
+      "maintainer": null,
+      "name": "World Bank Open Data",
+      "outputs": [
+        "series",
+        "metadatos"
+      ],
+      "owner": "Banco Mundial",
+      "pending_changes": [],
+      "purpose": "Consultar indicadores internacionales de desarrollo.",
+      "review_days": 180,
+      "scenarios": [
+        "statistical-claim"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "api",
+      "url": "https://data.worldbank.org/",
+      "usage": "Citar indicador, unidad, fuente original y fecha."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "estadistica",
+        "datos-abiertos"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-un-data",
+      "inputs": [
+        "indicador",
+        "país",
+        "periodo"
+      ],
+      "interpretation": "UNdata agrega fuentes con calendarios y definiciones diferentes.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Algunas series se actualizan con retraso.",
+      "maintainer": null,
+      "name": "UNdata",
+      "outputs": [
+        "tablas",
+        "series",
+        "fuente productora"
+      ],
+      "owner": "Naciones Unidas",
+      "pending_changes": [],
+      "purpose": "Descubrir estadísticas compiladas por organismos de Naciones Unidas.",
+      "review_days": 180,
+      "scenarios": [
+        "statistical-claim"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "dataset",
+      "url": "https://data.un.org/",
+      "usage": "Seguir la serie hasta el organismo que la produce y conservar notas metodológicas."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "geoint"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-osm",
+      "inputs": [
+        "topónimo",
+        "coordenadas",
+        "etiqueta"
+      ],
+      "interpretation": "Los datos son colaborativos y pueden contener errores o ediciones recientes.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Cobertura y precisión no son uniformes.",
+      "maintainer": null,
+      "name": "OpenStreetMap",
+      "outputs": [
+        "geometrías",
+        "etiquetas",
+        "historial"
+      ],
+      "owner": "OpenStreetMap Foundation y comunidad",
+      "pending_changes": [],
+      "purpose": "Consultar cartografía colaborativa y objetos geográficos.",
+      "review_days": 180,
+      "scenarios": [
+        "image-geolocation",
+        "disaster-crisis"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P3",
+      "type": "map",
+      "url": "https://www.openstreetmap.org/",
+      "usage": "Corroborar elementos con fuentes primarias o imágenes recientes."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "verificacion",
+        "dominios-internet"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-wayback",
+      "inputs": [
+        "URL",
+        "fecha"
+      ],
+      "interpretation": "La captura prueba lo archivado, no necesariamente el estado completo del sitio.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Exclusiones, recursos faltantes y fechas aproximadas.",
+      "maintainer": null,
+      "name": "Internet Archive Wayback Machine",
+      "outputs": [
+        "capturas archivadas"
+      ],
+      "owner": "Internet Archive",
+      "pending_changes": [],
+      "purpose": "Consultar capturas históricas de páginas públicas.",
+      "review_days": 180,
+      "scenarios": [
+        "domain-footprint",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P2",
+      "type": "archive",
+      "url": "https://web.archive.org/",
+      "usage": "Abrir la captura y documentar URL original, fecha de captura y elementos ausentes."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "ciberseguridad",
+        "dominios-internet"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-virustotal",
+      "inputs": [
+        "dominio",
+        "IP",
+        "URL",
+        "hash"
+      ],
+      "interpretation": "Una detección o ausencia de detección no prueba por sí sola malicia o benignidad.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Cuotas, condiciones de uso y posibles falsos positivos.",
+      "maintainer": null,
+      "name": "VirusTotal",
+      "outputs": [
+        "detecciones",
+        "relaciones",
+        "metadatos"
+      ],
+      "owner": "Google Chronicle",
+      "pending_changes": [],
+      "purpose": "Consultar señales agregadas sobre dominios, IP, URLs y archivos.",
+      "review_days": 180,
+      "scenarios": [
+        "domain-footprint",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P3",
+      "type": "tool",
+      "url": "https://www.virustotal.com/",
+      "usage": "Consultar identificadores no sensibles y contrastar cada señal con su proveedor."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "ciberseguridad",
+        "dominios-internet"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-shodan",
+      "inputs": [
+        "IP",
+        "dominio",
+        "consulta"
+      ],
+      "interpretation": "Un banner histórico no demuestra que el servicio siga activo ni quién lo opera.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Funciones y cuotas dependen de la cuenta; no autoriza acceso al sistema observado.",
+      "maintainer": null,
+      "name": "Shodan",
+      "outputs": [
+        "banners",
+        "puertos observados",
+        "historial limitado"
+      ],
+      "owner": "Shodan",
+      "pending_changes": [],
+      "purpose": "Consultar servicios de Internet observados públicamente.",
+      "review_days": 180,
+      "scenarios": [
+        "domain-footprint"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P3",
+      "type": "tool",
+      "url": "https://www.shodan.io/",
+      "usage": "Usar para descubrimiento pasivo y verificar fecha y dirección observada."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "empresas"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "pt-justica-empresa",
+      "inputs": [
+        "NIPC",
+        "código de acceso"
+      ],
+      "interpretation": "El acceso a una certidão depende del código y su vigencia.",
+      "jurisdictions": [
+        "PT"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Algunos servicios son de pago o requieren un código.",
+      "maintainer": null,
+      "name": "Justiça.gov.pt - Empresa",
+      "outputs": [
+        "certidão permanente",
+        "datos registrales"
+      ],
+      "owner": "República Portuguesa",
+      "pending_changes": [],
+      "purpose": "Acceder a servicios oficiales de publicidad empresarial portuguesa.",
+      "review_days": 180,
+      "scenarios": [
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://justica.gov.pt/Servicos/Pedir-Certidao-Permanente",
+      "usage": "Elegir el servicio oficial y conservar el identificador y fecha."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "legislacion",
+        "administracion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "pt-dre",
+      "inputs": [
+        "número",
+        "fecha",
+        "texto"
+      ],
+      "interpretation": "Verificar vigencia y alteraciones de la norma.",
+      "jurisdictions": [
+        "PT"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Las traducciones no sustituyen el texto oficial portugués.",
+      "maintainer": null,
+      "name": "Diário da República Electrónico",
+      "outputs": [
+        "diario oficial",
+        "legislación"
+      ],
+      "owner": "República Portuguesa",
+      "pending_changes": [],
+      "purpose": "Consultar publicaciones y legislación oficial portuguesa.",
+      "review_days": 180,
+      "scenarios": [
+        "official-publications",
+        "legal-claim"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://diariodarepublica.pt/",
+      "usage": "Citar número, serie, fecha y enlace permanente."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "empresas"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "fr-inpi-rne",
+      "inputs": [
+        "denominación",
+        "SIREN",
+        "SIRET"
+      ],
+      "interpretation": "Distinguir establecimiento SIRET de entidad SIREN.",
+      "jurisdictions": [
+        "FR"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Algunos documentos y usos están sujetos a condiciones específicas.",
+      "maintainer": null,
+      "name": "Registre national des entreprises",
+      "outputs": [
+        "identidad empresarial",
+        "actos y documentos disponibles"
+      ],
+      "owner": "INPI France",
+      "pending_changes": [],
+      "purpose": "Consultar información pública del registro nacional francés de empresas.",
+      "review_days": 180,
+      "scenarios": [
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "register",
+      "url": "https://data.inpi.fr/",
+      "usage": "Resolver la entidad por SIREN y revisar la fecha de los datos."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "datos-abiertos"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "fr-data-gouv",
+      "inputs": [
+        "tema",
+        "organización"
+      ],
+      "interpretation": "El portal incluye datos oficiales y comunitarios con autoridad distinta.",
+      "jurisdictions": [
+        "FR"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "La calidad depende del publicador.",
+      "maintainer": null,
+      "name": "data.gouv.fr",
+      "outputs": [
+        "datasets",
+        "recursos",
+        "metadatos"
+      ],
+      "owner": "République française",
+      "pending_changes": [],
+      "purpose": "Descubrir datos abiertos franceses.",
+      "review_days": 180,
+      "scenarios": [
+        "statistical-claim",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "dataset",
+      "url": "https://www.data.gouv.fr/",
+      "usage": "Comprobar productor, licencia, cobertura y fecha de cada recurso."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "empresas"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "de-handelsregister",
+      "inputs": [
+        "nombre",
+        "número registral",
+        "sede"
+      ],
+      "interpretation": "Los documentos y extractos tienen alcances distintos.",
+      "jurisdictions": [
+        "DE"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Interfaz y documentos principalmente en alemán; puede haber tasas.",
+      "maintainer": null,
+      "name": "Handelsregister",
+      "outputs": [
+        "datos registrales",
+        "documentos disponibles"
+      ],
+      "owner": "Justizverwaltungen der Länder",
+      "pending_changes": [],
+      "purpose": "Consultar registros mercantiles alemanes.",
+      "review_days": 180,
+      "scenarios": [
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "register",
+      "url": "https://www.handelsregister.de/",
+      "usage": "Seleccionar registro, tipo y número de hoja cuando se conozcan."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "empresas",
+        "administracion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "de-bundesanzeiger",
+      "inputs": [
+        "empresa",
+        "fecha",
+        "tipo de publicación"
+      ],
+      "interpretation": "La fecha de publicación no siempre coincide con el periodo contable.",
+      "jurisdictions": [
+        "DE"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Cobertura y acceso a documentos varían.",
+      "maintainer": null,
+      "name": "Bundesanzeiger",
+      "outputs": [
+        "anuncios",
+        "cuentas publicadas"
+      ],
+      "owner": "Bundesanzeiger Verlag",
+      "pending_changes": [],
+      "purpose": "Consultar anuncios y publicaciones empresariales oficiales alemanas.",
+      "review_days": 180,
+      "scenarios": [
+        "business",
+        "official-publications"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://www.bundesanzeiger.de/",
+      "usage": "Buscar la denominación exacta y limitar por periodo y área."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "empresas"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "it-registro-imprese",
+      "inputs": [
+        "denominación",
+        "codice fiscale",
+        "REA"
+      ],
+      "interpretation": "Una ficha básica no sustituye una visura o certificación.",
+      "jurisdictions": [
+        "IT"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Servicios documentales pueden ser de pago.",
+      "maintainer": null,
+      "name": "Registro Imprese",
+      "outputs": [
+        "datos registrales",
+        "visure disponibles"
+      ],
+      "owner": "Camere di Commercio italiane",
+      "pending_changes": [],
+      "purpose": "Consultar información registral de empresas italianas.",
+      "review_days": 180,
+      "scenarios": [
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "register",
+      "url": "https://www.registroimprese.it/",
+      "usage": "Resolver la empresa por identificador y seleccionar el documento adecuado."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "legislacion",
+        "administracion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "it-gazzetta",
+      "inputs": [
+        "fecha",
+        "número",
+        "texto"
+      ],
+      "interpretation": "Los textos coordinados deben relacionarse con sus publicaciones oficiales.",
+      "jurisdictions": [
+        "IT"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Contenido principalmente en italiano.",
+      "maintainer": null,
+      "name": "Gazzetta Ufficiale",
+      "outputs": [
+        "publicaciones oficiales",
+        "normas"
+      ],
+      "owner": "Repubblica Italiana",
+      "pending_changes": [],
+      "purpose": "Consultar publicaciones y normativa oficial italiana.",
+      "review_days": 180,
+      "scenarios": [
+        "official-publications",
+        "legal-claim"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://www.gazzettaufficiale.it/",
+      "usage": "Citar serie, número y fecha y revisar cambios posteriores."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "empresas",
+        "datos-abiertos"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "gb-companies-house",
+      "inputs": [
+        "company number",
+        "nombre",
+        "officer"
+      ],
+      "interpretation": "Companies House registra información presentada y no verifica necesariamente su exactitud material.",
+      "jurisdictions": [
+        "GB"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Datos pueden incluir direcciones y personas; tratar con proporcionalidad.",
+      "maintainer": null,
+      "name": "Companies House",
+      "outputs": [
+        "perfil societario",
+        "filings",
+        "officers"
+      ],
+      "owner": "UK Government",
+      "pending_changes": [],
+      "purpose": "Consultar empresas, cargos y documentos societarios del Reino Unido.",
+      "review_days": 180,
+      "scenarios": [
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "api",
+      "url": "https://find-and-update.company-information.service.gov.uk/",
+      "usage": "Resolver por company number y revisar filing history y estado."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "datos-abiertos"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "gb-data-gov",
+      "inputs": [
+        "tema",
+        "organización"
+      ],
+      "interpretation": "La ficha del catálogo no garantiza actualidad del archivo.",
+      "jurisdictions": [
+        "GB"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Formatos y mantenimiento varían.",
+      "maintainer": null,
+      "name": "data.gov.uk",
+      "outputs": [
+        "datasets",
+        "distribuciones",
+        "licencias"
+      ],
+      "owner": "UK Government",
+      "pending_changes": [],
+      "purpose": "Descubrir datos públicos del Reino Unido.",
+      "review_days": 180,
+      "scenarios": [
+        "statistical-claim",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "dataset",
+      "url": "https://www.data.gov.uk/",
+      "usage": "Seguir al departamento publicador y conservar versión y licencia."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "empresas",
+        "datos-abiertos"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "br-cnpj-abertos",
+      "inputs": [
+        "CNPJ",
+        "razão social"
+      ],
+      "interpretation": "Un lote refleja el estado publicado en su fecha de referencia.",
+      "jurisdictions": [
+        "BR"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Gran volumen y posibles cambios de distribución.",
+      "maintainer": null,
+      "name": "Dados Abertos CNPJ",
+      "outputs": [
+        "datos cadastrais",
+        "situação",
+        "atividades"
+      ],
+      "owner": "Receita Federal do Brasil",
+      "pending_changes": [],
+      "purpose": "Acceder a datos abiertos del cadastro de personas jurídicas brasileñas.",
+      "review_days": 180,
+      "scenarios": [
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "dataset",
+      "url": "https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj",
+      "usage": "Conservar fecha del lote y validar el CNPJ antes de cruzar información."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "administracion",
+        "contratacion",
+        "subvenciones"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "br-transparencia",
+      "inputs": [
+        "CPF/CNPJ cuando sea legalmente publicable",
+        "órgano",
+        "periodo"
+      ],
+      "interpretation": "La publicación está delimitada por competencias y reglas brasileñas.",
+      "jurisdictions": [
+        "BR"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "No centraliza todos los niveles de gobierno.",
+      "maintainer": null,
+      "name": "Portal da Transparência",
+      "outputs": [
+        "gastos",
+        "contratos",
+        "sanciones"
+      ],
+      "owner": "Controladoria-Geral da União",
+      "pending_changes": [],
+      "purpose": "Consultar gasto, contratos, transferencias y sanciones federales brasileñas.",
+      "review_days": 180,
+      "scenarios": [
+        "procurement",
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://portaldatransparencia.gov.br/",
+      "usage": "Documentar filtro, periodo y conjunto consultado."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "datos-abiertos"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "mx-datos-gob",
+      "inputs": [
+        "tema",
+        "institución"
+      ],
+      "interpretation": "El catálogo agrega fuentes con frecuencias distintas.",
+      "jurisdictions": [
+        "MX"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Algunos recursos enlazados pueden cambiar o retirarse.",
+      "maintainer": null,
+      "name": "datos.gob.mx",
+      "outputs": [
+        "datasets",
+        "recursos",
+        "metadatos"
+      ],
+      "owner": "Gobierno de México",
+      "pending_changes": [],
+      "purpose": "Descubrir conjuntos de datos del Gobierno de México.",
+      "review_days": 180,
+      "scenarios": [
+        "statistical-claim",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "dataset",
+      "url": "https://www.datos.gob.mx/",
+      "usage": "Verificar la dependencia publicadora, actualización y formato."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "legislacion",
+        "administracion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "mx-dof",
+      "inputs": [
+        "fecha",
+        "texto",
+        "organismo"
+      ],
+      "interpretation": "Comprobar reformas y vigencia en fuentes jurídicas correspondientes.",
+      "jurisdictions": [
+        "MX"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "No sustituye diarios oficiales estatales.",
+      "maintainer": null,
+      "name": "Diario Oficial de la Federación",
+      "outputs": [
+        "ediciones",
+        "actos",
+        "normas"
+      ],
+      "owner": "Secretaría de Gobernación",
+      "pending_changes": [],
+      "purpose": "Consultar publicaciones oficiales federales mexicanas.",
+      "review_days": 180,
+      "scenarios": [
+        "official-publications",
+        "legal-claim"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://www.dof.gob.mx/",
+      "usage": "Citar fecha, edición y documento oficial."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "empresas"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "co-rues",
+      "inputs": [
+        "NIT",
+        "nombre",
+        "matrícula"
+      ],
+      "interpretation": "La consulta básica no sustituye un certificado.",
+      "jurisdictions": [
+        "CO"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Algunos documentos requieren pago o autenticación.",
+      "maintainer": null,
+      "name": "RUES",
+      "outputs": [
+        "estado registral",
+        "identificación",
+        "cámara"
+      ],
+      "owner": "Cámaras de Comercio de Colombia",
+      "pending_changes": [],
+      "purpose": "Consultar registros empresariales y sociales colombianos.",
+      "review_days": 180,
+      "scenarios": [
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "register",
+      "url": "https://www.rues.org.co/",
+      "usage": "Resolver por NIT o matrícula y seguir a la cámara competente."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "datos-abiertos"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "co-datos-gov",
+      "inputs": [
+        "tema",
+        "entidad",
+        "territorio"
+      ],
+      "interpretation": "La autoridad depende de la entidad que publica el conjunto.",
+      "jurisdictions": [
+        "CO"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Calidad y actualización variables.",
+      "maintainer": null,
+      "name": "Datos Abiertos Colombia",
+      "outputs": [
+        "datasets",
+        "API",
+        "metadatos"
+      ],
+      "owner": "Gobierno de Colombia",
+      "pending_changes": [],
+      "purpose": "Descubrir y consultar conjuntos públicos colombianos.",
+      "review_days": 180,
+      "scenarios": [
+        "statistical-claim",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "dataset",
+      "url": "https://www.datos.gov.co/",
+      "usage": "Revisar publicador, fecha, diccionario y cobertura."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "datos-abiertos"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "ar-datos-gob",
+      "inputs": [
+        "tema",
+        "organización"
+      ],
+      "interpretation": "El catálogo no convierte todos los conjuntos en equivalentes.",
+      "jurisdictions": [
+        "AR"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Cobertura federal, provincial y municipal desigual.",
+      "maintainer": null,
+      "name": "Datos Argentina",
+      "outputs": [
+        "datasets",
+        "distribuciones",
+        "metadatos"
+      ],
+      "owner": "Gobierno de Argentina",
+      "pending_changes": [],
+      "purpose": "Descubrir datos abiertos nacionales argentinos.",
+      "review_days": 180,
+      "scenarios": [
+        "statistical-claim",
+        "source-corroboration"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "dataset",
+      "url": "https://datos.gob.ar/",
+      "usage": "Seguir al organismo productor y registrar versión y licencia."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "legislacion",
+        "administracion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "normal",
+      "editorial_reviewed": "2026-09-12",
+      "id": "ar-boletin",
+      "inputs": [
+        "fecha",
+        "sección",
+        "texto"
+      ],
+      "interpretation": "Distinguir publicación nacional de boletines provinciales.",
+      "jurisdictions": [
+        "AR"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "La vigencia requiere revisar modificaciones posteriores.",
+      "maintainer": null,
+      "name": "Boletín Oficial de la República Argentina",
+      "outputs": [
+        "ediciones",
+        "normas",
+        "avisos"
+      ],
+      "owner": "Presidencia de la Nación",
+      "pending_changes": [],
+      "purpose": "Consultar actos y publicaciones oficiales nacionales argentinas.",
+      "review_days": 180,
+      "scenarios": [
+        "official-publications",
+        "legal-claim",
+        "business"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://www.boletinoficial.gob.ar/",
+      "usage": "Citar edición, sección, fecha e identificador."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "desapariciones",
+        "proteccion-menores"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "critica",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-cndes-desaparecidos",
+      "inputs": [
+        "circunstancias",
+        "último lugar y hora",
+        "descripción"
+      ],
+      "interpretation": "Solo difundir alertas vigentes y autorizadas por la fuente oficial.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "El catálogo no es un servicio de emergencias ni mantiene copias de fichas personales.",
+      "maintainer": null,
+      "name": "Centro Nacional de Desaparecidos",
+      "outputs": [
+        "primeros pasos",
+        "alertas autorizadas",
+        "informes"
+      ],
+      "owner": "Ministerio del Interior",
+      "pending_changes": [],
+      "purpose": "Consultar orientación oficial y alertas públicas vigentes sobre desapariciones.",
+      "reporting_routes": [
+        "es-cndes",
+        "eu-112"
+      ],
+      "review_days": 30,
+      "scenarios": [
+        "missing-adult",
+        "missing-child"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "portal",
+      "url": "https://cndes-web.ses.mir.es/publico/Desaparecidos/",
+      "usage": "Ante una desaparición, realizar la comprobación inicial recomendada y denunciar de inmediato; no esperar 24 horas."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "emergencias",
+        "administracion"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "critica",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-alertcops",
+      "inputs": [
+        "tipo de incidente",
+        "ubicación"
+      ],
+      "interpretation": "Una comunicación por la aplicación no debe asumirse como denuncia formal salvo confirmación.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Requiere dispositivo, registro y conectividad.",
+      "maintainer": null,
+      "name": "AlertCops",
+      "outputs": [
+        "comunicación con fuerzas de seguridad",
+        "alertas"
+      ],
+      "owner": "Ministerio del Interior",
+      "pending_changes": [],
+      "purpose": "Facilitar comunicación y alertas de seguridad ciudadana mediante la aplicación oficial.",
+      "reporting_routes": [
+        "eu-112"
+      ],
+      "review_days": 30,
+      "scenarios": [
+        "immediate-emergency",
+        "missing-adult",
+        "missing-child"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "tool",
+      "url": "https://alertcops.ses.mir.es/publico/alertcops/",
+      "usage": "Usar la aplicación conforme a sus indicaciones; ante peligro inmediato priorizar el número de emergencias."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "emergencias"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "critica",
+      "editorial_reviewed": "2026-09-12",
+      "id": "eu-emergency-112",
+      "inputs": [
+        "ubicación",
+        "naturaleza del peligro"
+      ],
+      "interpretation": "El 112 coordina respuesta inmediata; otros trámites pueden requerir denuncia posterior.",
+      "jurisdictions": [
+        "EU"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "No es un servicio de información general.",
+      "maintainer": null,
+      "name": "Número europeo de emergencias 112",
+      "outputs": [
+        "derivación al servicio de emergencia"
+      ],
+      "owner": "Servicios nacionales de emergencias",
+      "pending_changes": [],
+      "purpose": "Contactar gratuitamente con policía, ambulancia o bomberos en toda la UE.",
+      "reporting_routes": [
+        "eu-112"
+      ],
+      "review_days": 30,
+      "scenarios": [
+        "immediate-emergency",
+        "disaster-crisis",
+        "missing-adult",
+        "missing-child"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "hotline",
+      "url": "https://digital-strategy.ec.europa.eu/es/policies/112",
+      "usage": "Llamar solo ante una emergencia real y seguir las instrucciones del operador."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "desapariciones",
+        "proteccion-menores"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "critica",
+      "editorial_reviewed": "2026-09-12",
+      "id": "eu-missing-116000",
+      "inputs": [
+        "país",
+        "circunstancias"
+      ],
+      "interpretation": "La línea apoya; no sustituye la denuncia ni el 112 ante peligro actual.",
+      "jurisdictions": [
+        "EU"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "La cobertura no es idéntica en todos los países.",
+      "maintainer": null,
+      "name": "116 000 - Línea para menores desaparecidos",
+      "outputs": [
+        "asistencia y derivación"
+      ],
+      "owner": "Red de servicios nacionales 116 000",
+      "pending_changes": [],
+      "purpose": "Orientar y apoyar en casos de menores desaparecidos en países participantes.",
+      "reporting_routes": [
+        "eu-116000",
+        "eu-112"
+      ],
+      "review_days": 30,
+      "scenarios": [
+        "missing-child"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "hotline",
+      "url": "https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/faq/index_es.htm",
+      "usage": "Confirmar disponibilidad nacional y combinar con la denuncia inmediata ante la policía."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "emergencias"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "critica",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-proteccion-civil",
+      "inputs": [
+        "tipo de riesgo",
+        "ubicación"
+      ],
+      "interpretation": "Una recomendación general puede ser desplazada por una orden oficial específica.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "No muestra por sí sola todos los avisos activos.",
+      "maintainer": null,
+      "name": "Protección Civil - Recomendaciones",
+      "outputs": [
+        "medidas de autoprotección"
+      ],
+      "owner": "Dirección General de Protección Civil y Emergencias",
+      "pending_changes": [],
+      "purpose": "Consultar recomendaciones oficiales de autoprotección por tipo de riesgo.",
+      "reporting_routes": [
+        "eu-112"
+      ],
+      "review_days": 30,
+      "scenarios": [
+        "disaster-crisis",
+        "immediate-emergency"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "guidance",
+      "url": "https://www.proteccioncivil.es/gestion-riesgos/recomendaciones",
+      "usage": "Seguir primero instrucciones de autoridades locales y usar estas guías como preparación y apoyo."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "ciberseguridad",
+        "proteccion-menores",
+        "violencia-digital"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "critica",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-incibe-017",
+      "inputs": [
+        "descripción del incidente"
+      ],
+      "interpretation": "Es asistencia especializada; no sustituye denuncia ni emergencia.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Horarios y canales deben comprobarse en la página oficial.",
+      "maintainer": null,
+      "name": "017 - Ayuda en Ciberseguridad",
+      "outputs": [
+        "orientación",
+        "derivación"
+      ],
+      "owner": "INCIBE",
+      "pending_changes": [],
+      "purpose": "Obtener orientación gratuita y confidencial ante riesgos e incidentes digitales.",
+      "reporting_routes": [
+        "es-017",
+        "eu-112"
+      ],
+      "review_days": 30,
+      "scenarios": [
+        "grooming-sextortion",
+        "sexual-digital-violence",
+        "platform-report"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "hotline",
+      "url": "https://www.incibe.es/linea-de-ayuda-en-ciberseguridad",
+      "usage": "Contactar sin reenviar material sensible y explicar hechos, plataforma y urgencia."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "proteccion-menores",
+        "violencia-digital"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "critica",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-incibe-report-csam",
+      "inputs": [
+        "URL completa",
+        "descripción mínima"
+      ],
+      "interpretation": "El reporte ayuda a tramitar retirada, pero no constituye denuncia policial.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "El formulario puede usar CAPTCHA y no sirve para peligro inmediato.",
+      "maintainer": null,
+      "name": "Reporte de material de abuso sexual infantil de INCIBE",
+      "outputs": [
+        "derivación a autoridades y red INHOPE"
+      ],
+      "owner": "INCIBE-CERT e INHOPE",
+      "pending_changes": [],
+      "purpose": "Comunicar de forma anónima una URL con posible material de abuso sexual infantil.",
+      "reporting_routes": [
+        "es-incibe-csam",
+        "eu-112"
+      ],
+      "review_days": 30,
+      "scenarios": [
+        "csam-report"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "reporting-channel",
+      "url": "https://www.incibe.es/menores/reporte-abuso",
+      "usage": "Copiar únicamente la URL y contexto mínimo; no descargar, guardar, capturar ni compartir el material."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "violencia-digital"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "critica",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-aepd-canal-prioritario",
+      "inputs": [
+        "URL",
+        "circunstancias",
+        "riesgo"
+      ],
+      "interpretation": "La solicitud de retirada es independiente de una denuncia penal.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Está reservado a situaciones excepcionalmente delicadas y con criterios territoriales.",
+      "maintainer": null,
+      "name": "Canal prioritario de la AEPD",
+      "outputs": [
+        "solicitud prioritaria de retirada"
+      ],
+      "owner": "Agencia Española de Protección de Datos",
+      "pending_changes": [],
+      "purpose": "Solicitar retirada urgente de contenido sexual o violento difundido ilícitamente en situaciones de alto riesgo.",
+      "reporting_routes": [
+        "es-aepd-prioritario",
+        "eu-112"
+      ],
+      "review_days": 30,
+      "scenarios": [
+        "sexual-digital-violence",
+        "grooming-sextortion"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "reporting-channel",
+      "url": "https://www.aepd.es/canalprioritario",
+      "usage": "Aportar enlaces y contexto sin redistribuir el contenido; denunciar también ante autoridades cuando corresponda."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "violencia-digital",
+        "emergencias"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "critica",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-violencia-016",
+      "inputs": [
+        "necesidad de información o ayuda"
+      ],
+      "interpretation": "Es un servicio de atención, no una denuncia formal.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Comprobar accesibilidad, idiomas y condiciones en la fuente.",
+      "maintainer": null,
+      "name": "Servicio 016",
+      "outputs": [
+        "información",
+        "asesoramiento",
+        "atención psicosocial"
+      ],
+      "owner": "Ministerio de Igualdad",
+      "pending_changes": [],
+      "purpose": "Proporcionar información y atención especializada sobre violencia contra las mujeres.",
+      "reporting_routes": [
+        "es-016",
+        "eu-112"
+      ],
+      "review_days": 30,
+      "scenarios": [
+        "sexual-digital-violence",
+        "grooming-sextortion"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "hotline",
+      "url": "https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/",
+      "usage": "Consultar los canales disponibles; ante peligro inmediato llamar al 112."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "justicia",
+        "emergencias"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "critica",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-policia-denuncias",
+      "inputs": [
+        "hechos",
+        "ubicación",
+        "referencias disponibles"
+      ],
+      "interpretation": "La autoridad determina la calificación y diligencias.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "No usar canales no urgentes ante peligro inmediato.",
+      "maintainer": null,
+      "name": "Policía Nacional - Denuncias",
+      "outputs": [
+        "instrucciones de denuncia"
+      ],
+      "owner": "Policía Nacional",
+      "pending_changes": [],
+      "purpose": "Orientar sobre presentación de denuncias ante Policía Nacional.",
+      "reporting_routes": [
+        "eu-112"
+      ],
+      "review_days": 30,
+      "scenarios": [
+        "missing-adult",
+        "missing-child",
+        "grooming-sextortion",
+        "sexual-digital-violence",
+        "csam-report"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "guidance",
+      "url": "https://www.policia.es/_es/denuncias.php",
+      "usage": "Preservar referencias lícitas y explicar hechos sin investigar ni confrontar por cuenta propia."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "ciberseguridad",
+        "justicia"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "critica",
+      "editorial_reviewed": "2026-09-12",
+      "id": "es-guardia-civil-delitos-telematicos",
+      "inputs": [
+        "hechos",
+        "referencias"
+      ],
+      "interpretation": "Una comunicación de indicios no equivale necesariamente a denuncia.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Las vías y competencias dependen del caso.",
+      "maintainer": null,
+      "name": "Guardia Civil - Delitos telemáticos",
+      "outputs": [
+        "orientación",
+        "acceso a denuncia o comunicación"
+      ],
+      "owner": "Guardia Civil",
+      "pending_changes": [],
+      "purpose": "Consultar orientación y vías oficiales ante delitos cometidos mediante Internet.",
+      "reporting_routes": [
+        "eu-112"
+      ],
+      "review_days": 30,
+      "scenarios": [
+        "grooming-sextortion",
+        "sexual-digital-violence",
+        "platform-report"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "guidance",
+      "url": "https://www.guardiacivil.es/es/servicios/delitos_telematicos/",
+      "usage": "Distinguir información general, colaboración y denuncia; ante urgencia usar 112."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "proteccion-menores"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "critica",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-inhope-report",
+      "inputs": [
+        "país",
+        "URL"
+      ],
+      "interpretation": "Puede reportarse incluso si existe incertidumbre sobre la edad.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "No sustituye servicios de emergencia ni denuncia cuando haya peligro inmediato.",
+      "maintainer": null,
+      "name": "INHOPE - Encontrar una línea de reporte",
+      "outputs": [
+        "derivación a hotline nacional"
+      ],
+      "owner": "INHOPE Association",
+      "pending_changes": [],
+      "purpose": "Localizar la línea nacional adecuada para reportar posible material de abuso sexual infantil.",
+      "reporting_routes": [
+        "global-inhope"
+      ],
+      "review_days": 30,
+      "scenarios": [
+        "csam-report"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P2",
+      "type": "reporting-channel",
+      "url": "https://www.inhope.org/EN#hotlineReferral",
+      "usage": "No descargar, guardar ni compartir el contenido; comunicar la URL a la línea competente."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "desapariciones"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "alta",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-interpol-yellow",
+      "inputs": [
+        "nombre",
+        "nacionalidad",
+        "edad"
+      ],
+      "interpretation": "La ausencia en la lista pública no significa que no exista investigación.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Solo una parte de las notificaciones es pública; no conservar copias cuando se retiren.",
+      "maintainer": null,
+      "name": "INTERPOL Yellow Notices",
+      "outputs": [
+        "notificaciones públicas vigentes"
+      ],
+      "owner": "INTERPOL",
+      "pending_changes": [],
+      "purpose": "Consultar notificaciones amarillas públicas de personas desaparecidas.",
+      "review_days": 30,
+      "scenarios": [
+        "missing-adult",
+        "missing-child"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "register",
+      "url": "https://www.interpol.int/How-we-work/Notices/Yellow-Notices/View-Yellow-Notices",
+      "usage": "Usar varios identificadores y remitir cualquier información al canal indicado por las autoridades."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "desapariciones",
+        "emergencias"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "alta",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-red-cross-family-links",
+      "inputs": [
+        "país",
+        "circunstancias familiares"
+      ],
+      "interpretation": "Es un servicio humanitario especializado, no un buscador público de personas.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Elegibilidad y servicios dependen del contexto.",
+      "maintainer": null,
+      "name": "Restoring Family Links",
+      "outputs": [
+        "servicio o sociedad nacional competente"
+      ],
+      "owner": "Comité Internacional de la Cruz Roja",
+      "pending_changes": [],
+      "purpose": "Ayudar a restablecer contacto familiar afectado por conflicto, migración o desastre.",
+      "review_days": 90,
+      "scenarios": [
+        "missing-adult",
+        "missing-child",
+        "disaster-crisis"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "hotline",
+      "url": "https://familylinks.icrc.org/",
+      "usage": "Seleccionar el contexto y país y seguir el canal humanitario indicado."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "reporte-plataformas",
+        "violencia-digital"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "alta",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-telegram-report",
+      "inputs": [
+        "enlace público t.me",
+        "mensaje o canal"
+      ],
+      "interpretation": "El reporte a la plataforma busca moderación o retirada y no constituye denuncia.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "No investigar grupos privados ni eludir controles de acceso.",
+      "maintainer": null,
+      "name": "Telegram - Reportar contenido ilegal",
+      "outputs": [
+        "revisión de moderación"
+      ],
+      "owner": "Telegram",
+      "pending_changes": [],
+      "purpose": "Reportar mensajes o contenido público ilegal a la plataforma.",
+      "reporting_routes": [
+        "telegram-report",
+        "global-inhope"
+      ],
+      "reporting_routes_by_scenario": {
+        "csam-report": [
+          "telegram-report",
+          "global-inhope"
+        ],
+        "platform-report": [
+          "telegram-report"
+        ],
+        "sexual-digital-violence": [
+          "telegram-report"
+        ]
+      },
+      "review_days": 30,
+      "scenarios": [
+        "platform-report",
+        "csam-report",
+        "sexual-digital-violence"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P2",
+      "type": "reporting-channel",
+      "url": "https://telegram.org/faq#q-there-39s-illegal-content-on-telegram-how-do-i-take-it-down",
+      "usage": "Usar Reportar sobre el mensaje o incluir enlaces públicos en el canal oficial; no reenviar material sensible."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "reporte-plataformas",
+        "violencia-digital"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "alta",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-meta-safety",
+      "inputs": [
+        "tipo de contenido",
+        "cuenta o publicación"
+      ],
+      "interpretation": "Una decisión de moderación no determina responsabilidad penal.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Rutas y disponibilidad cambian según producto y sesión.",
+      "maintainer": null,
+      "name": "Meta Safety Center - Reporting",
+      "outputs": [
+        "ruta de reporte"
+      ],
+      "owner": "Meta",
+      "pending_changes": [],
+      "purpose": "Localizar mecanismos oficiales de reporte de Facebook e Instagram.",
+      "review_days": 30,
+      "scenarios": [
+        "platform-report",
+        "sexual-digital-violence",
+        "grooming-sextortion"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P2",
+      "type": "reporting-channel",
+      "url": "https://www.facebook.com/help/reportlinks",
+      "usage": "Reportar desde el elemento cuando sea posible y conservar solo referencias necesarias."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "reporte-plataformas",
+        "proteccion-menores"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "alta",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-tiktok-report",
+      "inputs": [
+        "vídeo o cuenta",
+        "motivo"
+      ],
+      "interpretation": "El reporte de plataforma es independiente de una denuncia.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "El centro de ayuda y las categorías pueden cambiar.",
+      "maintainer": null,
+      "name": "TikTok - Reportar contenido",
+      "outputs": [
+        "reporte de moderación"
+      ],
+      "owner": "TikTok",
+      "pending_changes": [],
+      "purpose": "Consultar la vía oficial para reportar vídeos y cuentas.",
+      "review_days": 30,
+      "scenarios": [
+        "platform-report",
+        "grooming-sextortion"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P2",
+      "type": "reporting-channel",
+      "url": "https://support.tiktok.com/es/safety-hc/report-a-problem/report-a-video",
+      "usage": "Usar el control de reporte de la publicación y recurrir a autoridades ante posible delito o peligro."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "reporte-plataformas",
+        "violencia-digital"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "alta",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-x-report",
+      "inputs": [
+        "publicación o cuenta",
+        "motivo"
+      ],
+      "interpretation": "Moderación y actuación de autoridades son procesos distintos.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Formularios y requisitos dependen del motivo y la sesión.",
+      "maintainer": null,
+      "name": "X Help Center - Reportar",
+      "outputs": [
+        "reporte de moderación"
+      ],
+      "owner": "X Corp.",
+      "pending_changes": [],
+      "purpose": "Localizar procedimientos de reporte de publicaciones y cuentas en X.",
+      "review_days": 30,
+      "scenarios": [
+        "platform-report",
+        "sexual-digital-violence"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P2",
+      "type": "reporting-channel",
+      "url": "https://help.x.com/es/safety-and-security/report-a-tweet",
+      "usage": "Reportar desde la publicación y documentar su URL sin amplificarla."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "ciberseguridad",
+        "justicia"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "alta",
+      "editorial_reviewed": "2026-09-12",
+      "id": "eu-europol-cybercrime",
+      "inputs": [
+        "país",
+        "tipo de incidente"
+      ],
+      "interpretation": "Europol no recibe normalmente denuncias directas de particulares.",
+      "jurisdictions": [
+        "EU"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Las rutas nacionales cambian y deben revisarse.",
+      "maintainer": null,
+      "name": "Europol - Report Cybercrime",
+      "outputs": [
+        "autoridad nacional competente"
+      ],
+      "owner": "Europol",
+      "pending_changes": [],
+      "purpose": "Dirigir a las vías nacionales europeas para reportar ciberdelitos.",
+      "review_days": 30,
+      "scenarios": [
+        "grooming-sextortion",
+        "platform-report"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P0",
+      "type": "guidance",
+      "url": "https://www.europol.europa.eu/report-a-crime/report-cybercrime-online",
+      "usage": "Seleccionar el país y seguir el enlace policial nacional."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "proteccion-menores"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "critica",
+      "editorial_reviewed": "2026-09-12",
+      "id": "gb-iwf-report",
+      "inputs": [
+        "URL",
+        "contexto mínimo"
+      ],
+      "interpretation": "El servicio evalúa el contenido conforme a su competencia.",
+      "jurisdictions": [
+        "GB",
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "La competencia y los tipos de reporte admitidos están delimitados.",
+      "maintainer": null,
+      "name": "Internet Watch Foundation Report",
+      "outputs": [
+        "evaluación y posible derivación"
+      ],
+      "owner": "Internet Watch Foundation",
+      "pending_changes": [],
+      "purpose": "Reportar de forma confidencial posible material de abuso sexual infantil alojado en Internet.",
+      "reporting_routes": [
+        "global-inhope"
+      ],
+      "review_days": 30,
+      "scenarios": [
+        "csam-report"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P2",
+      "type": "reporting-channel",
+      "url": "https://report.iwf.org.uk/",
+      "usage": "No descargar ni compartir; seguir el selector territorial del servicio."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "proteccion-menores",
+        "desapariciones"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "critica",
+      "editorial_reviewed": "2026-09-12",
+      "id": "us-ncmec-cybertipline",
+      "inputs": [
+        "tipo de incidente",
+        "referencias mínimas"
+      ],
+      "interpretation": "La derivación depende de competencia y datos aportados.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Servicio estadounidense con alcance internacional limitado por el caso.",
+      "maintainer": null,
+      "name": "NCMEC CyberTipline",
+      "outputs": [
+        "reporte para revisión y derivación"
+      ],
+      "owner": "National Center for Missing & Exploited Children",
+      "pending_changes": [],
+      "purpose": "Comunicar sospechas de explotación sexual infantil a NCMEC cuando corresponda.",
+      "review_days": 30,
+      "scenarios": [
+        "csam-report",
+        "grooming-sextortion",
+        "missing-child"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P2",
+      "type": "reporting-channel",
+      "url": "https://report.cybertip.org/",
+      "usage": "Comprobar jurisdicción; no descargar ni redistribuir contenido."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "desapariciones",
+        "proteccion-menores"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "alta",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-missing-children-network",
+      "inputs": [
+        "país",
+        "nombre"
+      ],
+      "interpretation": "La ausencia no descarta una investigación en curso.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "Cobertura limitada a miembros y publicaciones autorizadas.",
+      "maintainer": null,
+      "name": "Global Missing Children's Network",
+      "outputs": [
+        "organización nacional",
+        "carteles públicos"
+      ],
+      "owner": "ICMEC",
+      "pending_changes": [],
+      "purpose": "Localizar organizaciones y carteles autorizados de menores desaparecidos en países participantes.",
+      "review_days": 30,
+      "scenarios": [
+        "missing-child"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P2",
+      "type": "portal",
+      "url": "https://globalmissingkids.org/",
+      "usage": "Verificar que el cartel siga activo en la fuente nacional antes de difundirlo."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "emergencias",
+        "geoint"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "alta",
+      "editorial_reviewed": "2026-09-12",
+      "id": "eu-erascc-emergency-mapping",
+      "inputs": [
+        "evento",
+        "lugar",
+        "fecha"
+      ],
+      "interpretation": "Los mapas se producen para un objetivo y ventana temporal concretos.",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "No todas las emergencias generan activación pública.",
+      "maintainer": null,
+      "name": "Copernicus Emergency Management Service",
+      "outputs": [
+        "mapas de emergencia",
+        "productos de activación"
+      ],
+      "owner": "Comisión Europea",
+      "pending_changes": [],
+      "purpose": "Consultar cartografía y activaciones de respuesta a desastres.",
+      "review_days": 30,
+      "scenarios": [
+        "disaster-crisis",
+        "image-geolocation"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "map",
+      "url": "https://emergency.copernicus.eu/",
+      "usage": "Citar código de activación, producto, fecha y versión."
+    },
+    {
+      "access": "open",
+      "backup_maintainer": null,
+      "categories": [
+        "emergencias",
+        "geoint"
+      ],
+      "cost": "gratis o no indicado",
+      "criticality": "alta",
+      "editorial_reviewed": "2026-09-12",
+      "id": "global-gdacs",
+      "inputs": [
+        "evento",
+        "país",
+        "fecha"
+      ],
+      "interpretation": "Las estimaciones tempranas tienen incertidumbre y pueden cambiar.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "No sustituye alertas locales ni instrucciones de evacuación.",
+      "maintainer": null,
+      "name": "Global Disaster Alert and Coordination System",
+      "outputs": [
+        "alertas",
+        "mapas",
+        "estimaciones"
+      ],
+      "owner": "Naciones Unidas y Comisión Europea",
+      "pending_changes": [],
+      "purpose": "Consultar alertas y coordinación inicial sobre grandes desastres.",
+      "review_days": 30,
+      "scenarios": [
+        "disaster-crisis"
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.",
+      "tier": "P1",
+      "type": "portal",
+      "url": "https://www.gdacs.org/",
+      "usage": "Usar como panorama inicial y seguir a autoridades nacionales y fuentes del evento."
+    }
+  ],
+  "scenarios": [
+    {
+      "description": "Resolver identidad, actividad, actos societarios y relaciones públicas de una organización.",
+      "id": "business",
+      "name": "Investigar una empresa",
+      "specialty": "public-data"
+    },
+    {
+      "description": "Rastrear licitaciones, adjudicaciones, ayudas y sus documentos oficiales.",
+      "id": "procurement",
+      "name": "Contratos y subvenciones",
+      "specialty": "public-data"
+    },
+    {
+      "description": "Localizar actos en diarios oficiales y conservar una referencia verificable.",
+      "id": "official-publications",
+      "name": "Publicaciones oficiales",
+      "specialty": "legal"
+    },
+    {
+      "description": "Examinar información pública de dominios e infraestructura sin interactuar con sistemas ajenos.",
+      "id": "domain-footprint",
+      "name": "Huella pública de un dominio",
+      "specialty": "cyber"
+    },
+    {
+      "description": "Contrastar una imagen con mapas, ortofotos, tiempo y otras señales abiertas.",
+      "id": "image-geolocation",
+      "name": "Verificar una imagen y su ubicación",
+      "specialty": "geoint"
+    },
+    {
+      "description": "Separar hechos, observaciones e inferencias y mantener su procedencia.",
+      "id": "source-corroboration",
+      "name": "Contrastar y documentar conclusiones",
+      "specialty": "editorial"
+    },
+    {
+      "description": "Comprobar texto, vigencia, ámbito y publicación oficial de una norma o resolución.",
+      "id": "legal-claim",
+      "name": "Verificar una afirmación jurídica",
+      "specialty": "legal"
+    },
+    {
+      "description": "Comprobar indicador, unidad, población, periodo y revisiones.",
+      "id": "statistical-claim",
+      "name": "Verificar una afirmación estadística",
+      "specialty": "public-data"
+    },
+    {
+      "description": "Orientar las primeras actuaciones y el uso responsable de avisos oficiales.",
+      "id": "missing-adult",
+      "name": "Desaparición de adulto o persona vulnerable",
+      "specialty": "safeguarding"
+    },
+    {
+      "description": "Priorizar denuncia inmediata y canales especializados por territorio.",
+      "id": "missing-child",
+      "name": "Desaparición de menor",
+      "specialty": "safeguarding"
+    },
+    {
+      "description": "Identificar rápidamente el servicio competente y transmitir información útil.",
+      "id": "immediate-emergency",
+      "name": "Emergencia inmediata",
+      "specialty": "geoint"
+    },
+    {
+      "description": "Consultar avisos oficiales, mapas y recomendaciones sin amplificar rumores.",
+      "id": "disaster-crisis",
+      "name": "Desastres y crisis",
+      "specialty": "geoint"
+    },
+    {
+      "description": "Reconocer señales, proteger a la persona y acudir a ayuda o autoridades.",
+      "id": "grooming-sextortion",
+      "name": "Grooming y sextorsión",
+      "specialty": "safeguarding"
+    },
+    {
+      "description": "Orientar retirada, apoyo y denuncia ante difusión íntima no consentida.",
+      "id": "sexual-digital-violence",
+      "name": "Violencia sexual digital",
+      "specialty": "safeguarding"
+    },
+    {
+      "description": "Reportar referencias mínimas sin descargar, guardar ni compartir el contenido.",
+      "id": "csam-report",
+      "name": "Posible material de abuso sexual infantil",
+      "specialty": "safeguarding"
+    },
+    {
+      "description": "Elegir entre reporte de plataforma, retirada, asistencia, emergencia y denuncia.",
+      "id": "platform-report",
+      "name": "Telegram y otras plataformas",
+      "specialty": "cyber"
+    }
+  ],
+  "taxonomy": {
+    "authority_tiers": {
+      "P0": "Publicación oficial o registro responsable",
+      "P1": "API o conjunto publicado por el organismo responsable",
+      "P2": "Derivado reproducible con procedencia conservada",
+      "P3": "Fuente secundaria reputada",
+      "P4": "Evidencia abierta todavía no verificada"
+    },
+    "categories": [
+      "administracion",
+      "empresas",
+      "contratacion",
+      "subvenciones",
+      "legislacion",
+      "justicia",
+      "estadistica",
+      "economia",
+      "geoint",
+      "transporte",
+      "medio-ambiente",
+      "dominios-internet",
+      "ciberseguridad",
+      "verificacion",
+      "desapariciones",
+      "emergencias",
+      "proteccion-menores",
+      "violencia-digital",
+      "reporte-plataformas",
+      "propiedad-intelectual",
+      "datos-abiertos"
+    ],
+    "coverage_status": [
+      "pendiente",
+      "inicial",
+      "desarrollado"
+    ],
+    "criticality": [
+      "normal",
+      "alta",
+      "critica"
+    ],
+    "health_status": [
+      "unknown",
+      "ok",
+      "redirected",
+      "auth-required",
+      "rate-limited",
+      "temporary-error",
+      "offline",
+      "retired"
+    ],
+    "resource_types": [
+      "portal",
+      "api",
+      "dataset",
+      "register",
+      "map",
+      "hotline",
+      "reporting-channel",
+      "tool",
+      "archive",
+      "guidance"
+    ],
+    "version": 1
+  },
+  "version": "148623c324af8657"
+}

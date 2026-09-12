@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/osint-atlas/resource.schema.json",
+  "title": "OSINT Atlas resource",
+  "type": "object",
+  "required": ["id", "name", "owner", "jurisdictions", "type", "tier", "categories", "scenarios", "url", "purpose", "inputs", "outputs", "usage", "interpretation", "limitations", "access", "cost", "languages", "terms", "review_days", "criticality", "editorial_reviewed", "maintainer", "backup_maintainer", "technical_check", "pending_changes"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]+$"},
+    "name": {"type": "string", "minLength": 3},
+    "owner": {"type": "string", "minLength": 2},
+    "jurisdictions": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "coverage_exclusions": {"type": "array", "items": {"type": "string"}},
+    "type": {"type": "string"},
+    "tier": {"type": "string", "pattern": "^P[0-4]$"},
+    "categories": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "scenarios": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "url": {"type": "string", "pattern": "^https://"},
+    "purpose": {"type": "string", "minLength": 20},
+    "inputs": {"type": "array", "items": {"type": "string"}},
+    "outputs": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "usage": {"type": "string", "minLength": 20},
+    "interpretation": {"type": "string", "minLength": 20},
+    "limitations": {"type": "string", "minLength": 15},
+    "access": {"type": "string", "minLength": 2},
+    "cost": {"type": "string", "minLength": 2},
+    "languages": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+    "terms": {"type": "string", "minLength": 15},
+    "reporting_routes": {"type": "array", "items": {"type": "string"}},
+    "reporting_routes_by_scenario": {
+      "type": "object",
+      "additionalProperties": {"type": "array", "items": {"type": "string"}}
+    },
+    "review_days": {"type": "integer", "minimum": 1},
+    "criticality": {"enum": ["normal", "alta", "critica"]},
+    "editorial_reviewed": {"type": "string", "format": "date"},
+    "maintainer": {"type": ["string", "null"]},
+    "backup_maintainer": {"type": ["string", "null"]},
+    "technical_check": {
+      "type": "object",
+      "required": ["status", "checked_at"],
+      "properties": {
+        "status": {"enum": ["unknown", "ok", "redirected", "auth-required", "rate-limited", "temporary-error", "offline", "retired"]},
+        "checked_at": {"type": ["string", "null"], "format": "date-time"}
+      },
+      "additionalProperties": false
+    },
+    "pending_changes": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "default_owner": "P3M-ACTF",
+  "policy": {
+    "critical_escalation_hours": 48,
+    "normal_escalation_days": 7,
+    "independent_review_required": true
+  },
+  "specialties": [
+    {"id":"legal","label":"Legislación y justicia","primary":null,"backup":null,"status":"por-asignar"},
+    {"id":"public-data","label":"Administración, contratación y datos","primary":null,"backup":null,"status":"por-asignar"},
+    {"id":"geoint","label":"Geolocalización y emergencias","primary":null,"backup":null,"status":"por-asignar"},
+    {"id":"cyber","label":"Ciberseguridad y plataformas","primary":null,"backup":null,"status":"por-asignar"},
+    {"id":"safeguarding","label":"Desapariciones y protección de personas","primary":null,"backup":null,"status":"por-asignar"},
+    {"id":"editorial","label":"Documentación y accesibilidad","primary":null,"backup":null,"status":"por-asignar"}
+  ]
+}

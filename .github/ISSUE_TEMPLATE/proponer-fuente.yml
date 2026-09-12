@@ -1,0 +1,28 @@
+name: Proponer una fuente
+description: Sugiere una fuente pública sin incluir casos ni datos personales.
+title: "Fuente: "
+labels: [candidate]
+body:
+  - type: markdown
+    attributes:
+      value: "No incluyas datos personales, investigaciones reales ni enlaces a contenido sensible o ilegal."
+  - type: input
+    id: official_url
+    attributes:
+      label: Página oficial
+      description: Enlace HTTPS del organismo o servicio responsable.
+    validations:
+      required: true
+  - type: input
+    id: jurisdiction
+    attributes:
+      label: Territorio
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Para qué sirve
+      description: Explica entradas, resultado esperado y límites conocidos.
+    validations:
+      required: true

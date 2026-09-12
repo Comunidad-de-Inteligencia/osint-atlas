@@ -1,0 +1,26 @@
+name: Corregir contenido
+description: Comunica un cambio verificable sin publicar información sensible.
+title: "Corrección: "
+labels: [maintenance]
+body:
+  - type: markdown
+    attributes:
+      value: "Para contactos o procedimientos sensibles, indica solo la página oficial que debe revisarse. No copies datos de víctimas ni contenido ilegal."
+  - type: input
+    id: entry
+    attributes:
+      label: Identificador o documento
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Cambio observado
+    validations:
+      required: true
+  - type: input
+    id: reference
+    attributes:
+      label: Referencia oficial
+    validations:
+      required: true
