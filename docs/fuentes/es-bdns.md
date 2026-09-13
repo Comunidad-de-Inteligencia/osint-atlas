@@ -61,4 +61,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 dí
 
 - [Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas — página responsable](https://www.pap.hacienda.gob.es/bdnstrans/GE/es/)
 
-Versión: a1c438413d9b26bd. [Volver al catálogo](../CATALOGO.md).
+Versión: 9f0a7add2b712088. [Volver al catálogo](../CATALOGO.md).

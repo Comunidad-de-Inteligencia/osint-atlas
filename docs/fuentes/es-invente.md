@@ -61,4 +61,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 
 - [INVENTE — página responsable](https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/BasesDatos/invente/Paginas/inicio.aspx)
 
-Versión: a1c438413d9b26bd. [Volver al catálogo](../CATALOGO.md).
+Versión: 9f0a7add2b712088. [Volver al catálogo](../CATALOGO.md).

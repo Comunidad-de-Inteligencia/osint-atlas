@@ -61,4 +61,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 
 - [Meta Safety Center - Reporting — página responsable](https://www.facebook.com/help/reportlinks)
 
-Versión: a1c438413d9b26bd. [Volver al catálogo](../CATALOGO.md).
+Versión: 9f0a7add2b712088. [Volver al catálogo](../CATALOGO.md).

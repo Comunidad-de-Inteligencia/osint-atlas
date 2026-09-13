@@ -172,7 +172,6 @@ def targets(catalog,scope):
     for group in ("resources","contacts","playbooks"):
         for item in catalog[group]:
             critical=group=="contacts" or (group=="playbooks" and scenarios[item["scenario"]]["sensitive"]) or item.get("criticality") in ("alta","critica")
-            if scope=="critical" and not critical: continue
             scenario_ids=item.get("scenarios",[item.get("scenario")])
             specialties=sorted({scenarios[s]["specialty"] for s in scenario_ids if s in scenarios}) or ["editorial"]
             urls=item.get("maintenance_urls",[r["url"] for r in item.get("references",[])])
@@ -185,7 +184,8 @@ def targets(catalog,scope):
                 target["items"]=sorted(set(target["items"]+[group+":"+item["id"]]))
                 target["specialties"]=sorted(set(target["specialties"]+specialties))
                 target["critical"]=target["critical"] or critical
-    return sorted(selected.values(),key=lambda t:t["id"])
+    # Aggregate metadata before selecting a schedule so shared URLs keep one owner.
+    return sorted((t for t in selected.values() if scope!="critical" or t["critical"]),key=lambda t:t["id"])
 
 
 def collect(target_list,previous,timeout=10,delay=1,workers=4):
@@ -224,12 +224,12 @@ def advance(state,results,process,version,now=None,success=True,resolutions=None
         material_key=r["id"]+":content"
         if failed and (r["status"] in ("offline","blocked","auth-required","partial") or failures>=3):
             incidents[tech_key]={**incidents.get(tech_key,{}),"key":tech_key,"kind":"technical","target":r["id"],"url":r["url"],
-                "specialty":r["specialties"][0],"critical":r["critical"],"reason":r["status"],"opened_at":incidents.get(tech_key,{}).get("opened_at",now),"last_seen":now,"resolved":False}
+                "specialty":incidents.get(tech_key,{}).get("specialty",r["specialties"][0]),"critical":r["critical"],"reason":r["status"],"opened_at":incidents.get(tech_key,{}).get("opened_at",now),"last_seen":now,"resolved":False}
         elif not failed and tech_key in incidents:
             incidents[tech_key].update(resolved=True,resolved_at=now)
         if not failed and previous.get("sha256") and r.get("sha256")!=previous["sha256"]:
             incidents[material_key]={"key":material_key,"kind":"editorial","target":r["id"],"url":r["url"],
-                "specialty":r["specialties"][0],"critical":r["critical"],"reason":"content-changed",
+                "specialty":incidents.get(material_key,{}).get("specialty",r["specialties"][0]),"critical":r["critical"],"reason":"content-changed",
                 "opened_at":incidents.get(material_key,{}).get("opened_at",now),"last_seen":now,"resolved":False,
                 "before_sha256":incidents.get(material_key,{}).get("before_sha256",previous["sha256"]),
                 "after_sha256":r["sha256"]}

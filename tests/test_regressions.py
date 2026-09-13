@@ -11,6 +11,31 @@ from tools.publish_state import publish_state
 
 
 class AdditionalRegressionTests(unittest.TestCase):
+    def test_discovery_timeout_has_one_bounded_retry(self):
+        from tools.discover_candidates import fetch_catalog
+        with patch("tools.discover_candidates.safe_url"),patch("time.sleep") as sleep:
+            with patch("urllib.request.urlopen",side_effect=[TimeoutError(),io.BytesIO(b"OK")]) as opener:
+                self.assertEqual(fetch_catalog({"url":"https://example.org"},opener,set(),sleep=sleep),"OK")
+                self.assertEqual(opener.call_count,2)
+                sleep.assert_called_once_with(2)
+
+    def test_discovery_temporary_failure_requires_three_runs_and_recovers(self):
+        from tools.discover_candidates import record_discovery
+        from osint_atlas.maintenance import empty_state
+        state=empty_state();sources=[{"id":"source"}]
+        error={"key":"discovery:source","status":"temporary-error","opened_at":"2026-09-13T00:00:00+00:00","resolved":False}
+        for count in range(1,4):
+            state=record_discovery(state,sources,[],[error])
+            self.assertEqual(error["key"] in state["incidents"],count==3)
+        state=record_discovery(state,sources,[],[])
+        self.assertTrue(state["incidents"][error["key"]]["resolved"])
+        self.assertEqual(state["discovery"][error["key"]]["consecutive_failures"],0)
+
+    def test_daily_weekly_share_target_identity_and_metadata(self):
+        from osint_atlas.maintenance import targets
+        c=cat.load_catalog()
+        self.assertEqual(targets(c,"critical"),[t for t in targets(c,"all") if t["critical"]])
+
     def test_repository_discovery_preserves_provenance_and_ignores_images(self):
         from tools.discover_candidates import select_candidates
         source={"id":"repo","url":"https://example.org/README.md","provenance_url":"https://github.com/example/catalog",
