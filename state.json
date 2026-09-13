@@ -1,0 +1,894 @@
+{
+  "checks": {
+    "0594d99af8ec1b249a08": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:41:56+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://globalmissingkids.org/about-us/",
+      "http_status": 200,
+      "id": "0594d99af8ec1b249a08",
+      "items": [
+        "resources:global-missing-children-network"
+      ],
+      "last_modified": null,
+      "partial": false,
+      "sha256": "44632478a6e1bd3f4527552d5381aec5a39219dbcfc5861a66647f752e22f68b",
+      "specialties": [
+        "safeguarding"
+      ],
+      "status": "ok",
+      "text_length": 4856,
+      "url": "https://globalmissingkids.org/about-us/"
+    },
+    "08edcb6f04be1771d535": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:41:56+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://www.gdacs.org/",
+      "http_status": 200,
+      "id": "08edcb6f04be1771d535",
+      "items": [
+        "resources:global-gdacs"
+      ],
+      "last_modified": null,
+      "partial": false,
+      "sha256": "5d4641f050824b5aeda891bf96b2e9b363def3f5f739bb5b9a47d942a3bdf7ba",
+      "specialties": [
+        "geoint"
+      ],
+      "status": "ok",
+      "text_length": 6141,
+      "url": "https://www.gdacs.org/"
+    },
+    "0a4b495780ba694395ce": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:41:56+00:00",
+      "consecutive_failures": 1,
+      "critical": true,
+      "error": null,
+      "etag": null,
+      "http_status": 403,
+      "id": "0a4b495780ba694395ce",
+      "items": [
+        "resources:global-interpol-yellow"
+      ],
+      "last_modified": null,
+      "sha256": null,
+      "specialties": [
+        "safeguarding"
+      ],
+      "status": "blocked",
+      "text_length": null,
+      "url": "https://www.interpol.int/How-we-work/Notices/About-Notices"
+    },
+    "0d91da7b99a9fdbe1262": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:41:57+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://cndes-web.ses.mir.es/publico/Desaparecidos/Primeros-Pasos.html",
+      "http_status": 200,
+      "id": "0d91da7b99a9fdbe1262",
+      "items": [
+        "contacts:es-cndes",
+        "playbooks:missing-adult",
+        "playbooks:missing-child",
+        "resources:es-cndes-desaparecidos"
+      ],
+      "last_modified": null,
+      "partial": false,
+      "sha256": "fc198d46d463ba81006a0f0031e0997943f082cd5255436c8bb9aa6772144588",
+      "specialties": [
+        "safeguarding"
+      ],
+      "status": "ok",
+      "text_length": 4482,
+      "url": "https://cndes-web.ses.mir.es/publico/Desaparecidos/Primeros-Pasos.html"
+    },
+    "0f567eab6baeaf2fed92": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:41:58+00:00",
+      "consecutive_failures": 1,
+      "critical": true,
+      "error": "Redirección fuera de los dominios aprobados",
+      "etag": null,
+      "http_status": null,
+      "id": "0f567eab6baeaf2fed92",
+      "items": [
+        "resources:global-tiktok-report"
+      ],
+      "last_modified": null,
+      "sha256": null,
+      "specialties": [
+        "cyber",
+        "safeguarding"
+      ],
+      "status": "blocked",
+      "text_length": null,
+      "url": "https://support.tiktok.com/es/safety-hc/report-a-problem/report-a-video"
+    },
+    "1205b8c7dd890747a9ed": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:41:58+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": "\"2808dc-1b0-543d9da2e87c0:dtagent103432607151238116K39\"",
+      "final_url": "https://opendata.aemet.es/",
+      "http_status": 200,
+      "id": "1205b8c7dd890747a9ed",
+      "items": [
+        "playbooks:disaster-crisis",
+        "resources:es-aemet"
+      ],
+      "last_modified": "Sat, 17 Dec 2016 12:30:30 GMT",
+      "partial": false,
+      "sha256": "05addc1ea5d864e5e6b31f6e87d299857df858fb3f8e929f32353cbc593f8c78",
+      "specialties": [
+        "geoint",
+        "public-data"
+      ],
+      "status": "ok",
+      "text_length": 23,
+      "url": "https://opendata.aemet.es/"
+    },
+    "2d8affeb746793b4cabb": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:41:59+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://www.inhope.org/",
+      "http_status": 200,
+      "id": "2d8affeb746793b4cabb",
+      "items": [
+        "contacts:global-inhope",
+        "resources:global-inhope-report"
+      ],
+      "last_modified": null,
+      "partial": false,
+      "sha256": "731e71e205f07c5a99b04abaf284f055c32ef0bcb0e4ed615d39052e0cf75865",
+      "specialties": [
+        "safeguarding"
+      ],
+      "status": "redirected",
+      "text_length": 14945,
+      "url": "https://www.inhope.org/EN"
+    },
+    "3c29e7a336c4826109f5": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:41:59+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": "\"1789142719\"",
+      "final_url": "https://www.aepd.es/canalprioritario",
+      "http_status": 200,
+      "id": "3c29e7a336c4826109f5",
+      "items": [
+        "contacts:es-aepd-prioritario",
+        "playbooks:grooming-sextortion",
+        "playbooks:sexual-digital-violence",
+        "resources:es-aepd-canal-prioritario"
+      ],
+      "last_modified": "Fri, 11 Sep 2026 16:05:19 GMT",
+      "partial": false,
+      "sha256": "1a73faf9801fdfe189df5d651c584123503833944631255d72cede71fb223caf",
+      "specialties": [
+        "safeguarding"
+      ],
+      "status": "ok",
+      "text_length": 2127,
+      "url": "https://www.aepd.es/canalprioritario"
+    },
+    "3d102013c4f87d0b1e30": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:41:59+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": "W/\"455-1490177218000\"",
+      "final_url": "https://www.ign.es/",
+      "http_status": 200,
+      "id": "3d102013c4f87d0b1e30",
+      "items": [
+        "playbooks:disaster-crisis"
+      ],
+      "last_modified": "Wed, 22 Mar 2017 10:06:58 GMT",
+      "partial": false,
+      "sha256": "d5a235a8b1934f1f85deb4c5d18390aa7b5bad9e04aa7691bd3d7736a68e93c9",
+      "specialties": [
+        "geoint"
+      ],
+      "status": "ok",
+      "text_length": 53,
+      "url": "https://www.ign.es/"
+    },
+    "50441455d2e4d5d4c0d1": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:41:59+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://www.proteccioncivil.es/gestion-riesgos/recomendaciones",
+      "http_status": 200,
+      "id": "50441455d2e4d5d4c0d1",
+      "items": [
+        "playbooks:immediate-emergency",
+        "resources:es-proteccion-civil"
+      ],
+      "last_modified": null,
+      "partial": false,
+      "sha256": "018bb03558d43d4c14eafe848287a664c22d43d5e47ceb3f355d6e57762ff8ba",
+      "specialties": [
+        "geoint"
+      ],
+      "status": "ok",
+      "text_length": 3284,
+      "url": "https://www.proteccioncivil.es/gestion-riesgos/recomendaciones"
+    },
+    "51108c17e183be603abc": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:02+00:00",
+      "consecutive_failures": 1,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://www.facebook.com/help/reportlinks",
+      "http_status": 200,
+      "id": "51108c17e183be603abc",
+      "items": [
+        "resources:global-meta-safety"
+      ],
+      "last_modified": null,
+      "partial": true,
+      "sha256": null,
+      "specialties": [
+        "cyber",
+        "safeguarding"
+      ],
+      "status": "partial",
+      "text_length": null,
+      "url": "https://www.facebook.com/help/reportlinks"
+    },
+    "67f8004cbb979cf2c1de": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:02+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": "\"1789270803\"",
+      "final_url": "https://www.incibe.es/",
+      "http_status": 200,
+      "id": "67f8004cbb979cf2c1de",
+      "items": [
+        "playbooks:grooming-sextortion",
+        "playbooks:platform-report"
+      ],
+      "last_modified": "Sun, 13 Sep 2026 03:40:03 GMT",
+      "partial": false,
+      "sha256": "1ec6a1e37ed666a7d60cf75b5063466cc829f33f530d44bf246abed674d686f1",
+      "specialties": [
+        "cyber",
+        "safeguarding"
+      ],
+      "status": "ok",
+      "text_length": 13919,
+      "url": "https://www.incibe.es/"
+    },
+    "6b4fe7aacbe1256361a3": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:03+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://www.miteco.gob.es/es/cartografia-y-sig/ide/descargas.html",
+      "http_status": 200,
+      "id": "6b4fe7aacbe1256361a3",
+      "items": [
+        "playbooks:disaster-crisis"
+      ],
+      "last_modified": null,
+      "partial": false,
+      "sha256": "f0390a746bcf3c798da8e7f3de3431a7b724375a973664576b811fe0ee32a333",
+      "specialties": [
+        "geoint"
+      ],
+      "status": "ok",
+      "text_length": 7408,
+      "url": "https://www.miteco.gob.es/es/cartografia-y-sig/ide/descargas.html"
+    },
+    "6b78b261df46caea5398": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:04+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": "\"81a2fbd47ec24a6d96c2e7c781cbdabe\"",
+      "final_url": "https://violenciagenero.igualdad.gob.es/informacion-3/recursos/telefono016/",
+      "http_status": 200,
+      "id": "6b78b261df46caea5398",
+      "items": [
+        "contacts:es-016",
+        "playbooks:grooming-sextortion",
+        "playbooks:sexual-digital-violence",
+        "resources:es-violencia-016"
+      ],
+      "last_modified": "Sun, 13 Sep 2026 03:42:07 GMT",
+      "partial": false,
+      "sha256": "2ecbb908f2eb04b1f7c7c9360803e0b9b9f9bbcc8cae4a91689a4084ff818349",
+      "specialties": [
+        "safeguarding"
+      ],
+      "status": "redirected",
+      "text_length": 8929,
+      "url": "https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/"
+    },
+    "6e30368d3654723eb946": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:04+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://www.policia.es/_es/cookies.php",
+      "http_status": 200,
+      "id": "6e30368d3654723eb946",
+      "items": [
+        "playbooks:csam-report",
+        "playbooks:grooming-sextortion",
+        "playbooks:missing-adult",
+        "playbooks:missing-child",
+        "playbooks:sexual-digital-violence",
+        "resources:es-policia-denuncias"
+      ],
+      "last_modified": null,
+      "partial": false,
+      "sha256": "e7d1a4aec3c20c74435d2389a6af08ea162f6aa732dbf8d96df0ac7058c86724",
+      "specialties": [
+        "safeguarding"
+      ],
+      "status": "redirected",
+      "text_length": 508,
+      "url": "https://www.policia.es/_es/denuncias.php"
+    },
+    "7195e0f509ea2c0d998d": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:08+00:00",
+      "consecutive_failures": 1,
+      "critical": true,
+      "error": "Redirección fuera de los dominios aprobados",
+      "etag": null,
+      "http_status": null,
+      "id": "7195e0f509ea2c0d998d",
+      "items": [
+        "resources:gb-iwf-report"
+      ],
+      "last_modified": null,
+      "sha256": null,
+      "specialties": [
+        "safeguarding"
+      ],
+      "status": "blocked",
+      "text_length": null,
+      "url": "https://report.iwf.org.uk/"
+    },
+    "8ef8be4abafff210f7f4": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:08+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://report.cybertip.org/",
+      "http_status": 200,
+      "id": "8ef8be4abafff210f7f4",
+      "items": [
+        "resources:us-ncmec-cybertipline"
+      ],
+      "last_modified": null,
+      "partial": false,
+      "sha256": "c94a5e62c4eb62bd4eae2a066702bfd7fdbfb2693dbc9c393bde0f1b963fd1c8",
+      "specialties": [
+        "safeguarding"
+      ],
+      "status": "ok",
+      "text_length": 3246,
+      "url": "https://report.cybertip.org/"
+    },
+    "8f1fb9ff0295d9c339d9": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:06+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": "\"1789270926\"",
+      "final_url": "https://www.incibe.es/linea-de-ayuda-en-ciberseguridad",
+      "http_status": 200,
+      "id": "8f1fb9ff0295d9c339d9",
+      "items": [
+        "contacts:es-017",
+        "playbooks:grooming-sextortion",
+        "playbooks:platform-report",
+        "playbooks:sexual-digital-violence",
+        "resources:es-incibe-017"
+      ],
+      "last_modified": "Sun, 13 Sep 2026 03:42:06 GMT",
+      "partial": false,
+      "sha256": "58bf7f0c097238ecab4b1e7302e17c1c8cfae0a7a265d6ab2ed2143df6eab00e",
+      "specialties": [
+        "cyber",
+        "safeguarding"
+      ],
+      "status": "ok",
+      "text_length": 12293,
+      "url": "https://www.incibe.es/linea-de-ayuda-en-ciberseguridad"
+    },
+    "97057606c5ecc035d359": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:09+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://www.dgt.es/menusecundario/dgt-en-cifras/",
+      "http_status": 200,
+      "id": "97057606c5ecc035d359",
+      "items": [
+        "playbooks:disaster-crisis"
+      ],
+      "last_modified": "Sat, 12 Sep 2026 23:42:12 EDT",
+      "partial": false,
+      "sha256": "14cd9beec7c80a4573a9bd8e2b11dd77c828b0597b53e9bd68b4c95fb44d2642",
+      "specialties": [
+        "geoint"
+      ],
+      "status": "ok",
+      "text_length": 20412,
+      "url": "https://www.dgt.es/menusecundario/dgt-en-cifras/"
+    },
+    "97285f1296e7428df792": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:09+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://www.europol.europa.eu/report-a-crime/report-cybercrime-online",
+      "http_status": 200,
+      "id": "97285f1296e7428df792",
+      "items": [
+        "resources:eu-europol-cybercrime"
+      ],
+      "last_modified": null,
+      "partial": false,
+      "sha256": "e9e418681c840672d746957120aa9313c28e08caf54e754b3680acd9406bce04",
+      "specialties": [
+        "cyber",
+        "safeguarding"
+      ],
+      "status": "ok",
+      "text_length": 68,
+      "url": "https://www.europol.europa.eu/report-a-crime/report-cybercrime-online"
+    },
+    "987172066a7892d8c56d": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:12+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://www.poderjudicial.es/search/",
+      "http_status": 200,
+      "id": "987172066a7892d8c56d",
+      "items": [
+        "playbooks:legal-claim"
+      ],
+      "last_modified": null,
+      "partial": false,
+      "sha256": "4eee2853e396de59781ac109f4662a24501af1ef54686cfb6d454bdf443cbaf0",
+      "specialties": [
+        "legal"
+      ],
+      "status": "ok",
+      "text_length": 3113,
+      "url": "https://www.poderjudicial.es/search/"
+    },
+    "9bf5dbe98a8d83ff223e": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:13+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://alertcops.ses.mir.es/publico/alertcops/",
+      "http_status": 200,
+      "id": "9bf5dbe98a8d83ff223e",
+      "items": [
+        "playbooks:immediate-emergency",
+        "playbooks:missing-adult",
+        "playbooks:missing-child",
+        "resources:es-alertcops"
+      ],
+      "last_modified": null,
+      "partial": false,
+      "sha256": "dcc92241121db27ffb732a0c3244ce5131259133385a803ba1ebc70b66ae1472",
+      "specialties": [
+        "geoint",
+        "safeguarding"
+      ],
+      "status": "ok",
+      "text_length": 1951,
+      "url": "https://alertcops.ses.mir.es/publico/alertcops/"
+    },
+    "a4223aac642858b0b48f": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:13+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://telegram.org/faq",
+      "http_status": 200,
+      "id": "a4223aac642858b0b48f",
+      "items": [
+        "contacts:telegram-report",
+        "resources:global-telegram-report"
+      ],
+      "last_modified": null,
+      "partial": false,
+      "sha256": "aae75aca6f3b6d3e59ffadeffc14a112a7911854f2b2872d4679b2c26b8780e4",
+      "specialties": [
+        "cyber",
+        "safeguarding"
+      ],
+      "status": "ok",
+      "text_length": 70258,
+      "url": "https://telegram.org/faq"
+    },
+    "c476e3f6ee056917c3b4": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:14+00:00",
+      "consecutive_failures": 1,
+      "critical": true,
+      "error": "Redirección fuera de los dominios aprobados",
+      "etag": null,
+      "http_status": null,
+      "id": "c476e3f6ee056917c3b4",
+      "items": [
+        "playbooks:platform-report",
+        "playbooks:sexual-digital-violence",
+        "resources:es-guardia-civil-delitos-telematicos"
+      ],
+      "last_modified": null,
+      "sha256": null,
+      "specialties": [
+        "cyber",
+        "safeguarding"
+      ],
+      "status": "blocked",
+      "text_length": null,
+      "url": "https://www.guardiacivil.es/es/servicios/delitos_telematicos/"
+    },
+    "ca81af20111c7e51522b": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:14+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://emergency.copernicus.eu/",
+      "http_status": 200,
+      "id": "ca81af20111c7e51522b",
+      "items": [
+        "resources:eu-erascc-emergency-mapping"
+      ],
+      "last_modified": null,
+      "partial": false,
+      "sha256": "cdae01d455862f12172562d36272f22da4692478c178793139ed0d090fe6821d",
+      "specialties": [
+        "geoint"
+      ],
+      "status": "ok",
+      "text_length": 1331,
+      "url": "https://emergency.copernicus.eu/"
+    },
+    "cf14a1871f41bbc0f199": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:14+00:00",
+      "consecutive_failures": 1,
+      "critical": true,
+      "error": "Solo páginas HTTPS públicas",
+      "etag": null,
+      "http_status": null,
+      "id": "cf14a1871f41bbc0f199",
+      "items": [
+        "playbooks:disaster-crisis"
+      ],
+      "last_modified": null,
+      "sha256": null,
+      "specialties": [
+        "geoint"
+      ],
+      "status": "blocked",
+      "text_length": null,
+      "url": "https://centrodedescargas.cnig.es/"
+    },
+    "cf19ca4a897add7cb7fc": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:09+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": "\"1789270930\"",
+      "final_url": "https://www.incibe.es/menores/reporte-abuso",
+      "http_status": 200,
+      "id": "cf19ca4a897add7cb7fc",
+      "items": [
+        "contacts:es-incibe-csam",
+        "playbooks:csam-report",
+        "resources:es-incibe-report-csam"
+      ],
+      "last_modified": "Sun, 13 Sep 2026 03:42:10 GMT",
+      "partial": false,
+      "sha256": "e6a72c60145e194169586d55884a06f89ebeb67016991b70db2b43b297875802",
+      "specialties": [
+        "safeguarding"
+      ],
+      "status": "ok",
+      "text_length": 11054,
+      "url": "https://www.incibe.es/menores/reporte-abuso"
+    },
+    "d6f1d400e5d428a2a788": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:14+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": "W/\"1789269797-gzip\"",
+      "final_url": "https://digital-strategy.ec.europa.eu/es/policies/112",
+      "http_status": 200,
+      "id": "d6f1d400e5d428a2a788",
+      "items": [
+        "contacts:eu-112",
+        "resources:eu-emergency-112"
+      ],
+      "last_modified": "Sun, 13 Sep 2026 03:23:17 GMT",
+      "partial": false,
+      "sha256": "4217e4b46e0ea48cfe9131a0f8dd77a7e27b96ec49c045a9a2f4a7e2fa70e10b",
+      "specialties": [
+        "cyber",
+        "geoint",
+        "safeguarding"
+      ],
+      "status": "ok",
+      "text_length": 9206,
+      "url": "https://digital-strategy.ec.europa.eu/es/policies/112"
+    },
+    "dd0d652c32932db2c910": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:15+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": null,
+      "final_url": "https://www.boe.es/",
+      "http_status": 200,
+      "id": "dd0d652c32932db2c910",
+      "items": [
+        "playbooks:legal-claim"
+      ],
+      "last_modified": null,
+      "partial": false,
+      "sha256": "d8ab9022f6b3bc1b4367202f04623966fd071ec1315515b823edda4be7374677",
+      "specialties": [
+        "legal"
+      ],
+      "status": "ok",
+      "text_length": 2028,
+      "url": "https://www.boe.es/"
+    },
+    "e071f34a8aeb169f96e6": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:15+00:00",
+      "consecutive_failures": 1,
+      "critical": true,
+      "error": null,
+      "etag": null,
+      "http_status": 403,
+      "id": "e071f34a8aeb169f96e6",
+      "items": [
+        "resources:global-x-report"
+      ],
+      "last_modified": null,
+      "sha256": null,
+      "specialties": [
+        "cyber",
+        "safeguarding"
+      ],
+      "status": "blocked",
+      "text_length": null,
+      "url": "https://help.x.com/es/safety-and-security/report-a-tweet"
+    },
+    "e85310fc63338884e85f": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:15+00:00",
+      "consecutive_failures": 1,
+      "critical": true,
+      "error": null,
+      "etag": null,
+      "http_status": 403,
+      "id": "e85310fc63338884e85f",
+      "items": [
+        "resources:global-red-cross-family-links"
+      ],
+      "last_modified": null,
+      "sha256": null,
+      "specialties": [
+        "geoint",
+        "safeguarding"
+      ],
+      "status": "blocked",
+      "text_length": null,
+      "url": "https://familylinks.icrc.org/"
+    },
+    "fea4c7c603eaff198f04": {
+      "attempts": 1,
+      "catalog_version": "e3a3c892121f70e5",
+      "checked_at": "2026-09-13T03:42:15+00:00",
+      "consecutive_failures": 0,
+      "critical": true,
+      "etag": "\"2532e-65b105261a800\"",
+      "final_url": "https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/faq/index_es.htm",
+      "http_status": 200,
+      "id": "fea4c7c603eaff198f04",
+      "items": [
+        "contacts:eu-116000",
+        "resources:eu-missing-116000"
+      ],
+      "last_modified": "Wed, 09 Sep 2026 17:38:40 GMT",
+      "partial": false,
+      "sha256": "cf99b85c3ae718da04bfed664713eb5cf1354246ddef92425e809b9066c2987a",
+      "specialties": [
+        "safeguarding"
+      ],
+      "status": "ok",
+      "text_length": 18857,
+      "url": "https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/faq/index_es.htm"
+    }
+  },
+  "history": [
+    {
+      "at": "2026-09-13T03:42:16+00:00",
+      "checked": 32,
+      "pending": 8,
+      "process": "daily",
+      "success": true
+    }
+  ],
+  "incidents": {
+    "0a4b495780ba694395ce:availability": {
+      "critical": true,
+      "key": "0a4b495780ba694395ce:availability",
+      "kind": "technical",
+      "last_seen": "2026-09-13T03:42:16+00:00",
+      "opened_at": "2026-09-13T03:42:16+00:00",
+      "reason": "blocked",
+      "resolved": false,
+      "specialty": "safeguarding",
+      "target": "0a4b495780ba694395ce",
+      "url": "https://www.interpol.int/How-we-work/Notices/About-Notices"
+    },
+    "0f567eab6baeaf2fed92:availability": {
+      "critical": true,
+      "key": "0f567eab6baeaf2fed92:availability",
+      "kind": "technical",
+      "last_seen": "2026-09-13T03:42:16+00:00",
+      "opened_at": "2026-09-13T03:42:16+00:00",
+      "reason": "blocked",
+      "resolved": false,
+      "specialty": "cyber",
+      "target": "0f567eab6baeaf2fed92",
+      "url": "https://support.tiktok.com/es/safety-hc/report-a-problem/report-a-video"
+    },
+    "51108c17e183be603abc:availability": {
+      "critical": true,
+      "key": "51108c17e183be603abc:availability",
+      "kind": "technical",
+      "last_seen": "2026-09-13T03:42:16+00:00",
+      "opened_at": "2026-09-13T03:42:16+00:00",
+      "reason": "partial",
+      "resolved": false,
+      "specialty": "cyber",
+      "target": "51108c17e183be603abc",
+      "url": "https://www.facebook.com/help/reportlinks"
+    },
+    "7195e0f509ea2c0d998d:availability": {
+      "critical": true,
+      "key": "7195e0f509ea2c0d998d:availability",
+      "kind": "technical",
+      "last_seen": "2026-09-13T03:42:16+00:00",
+      "opened_at": "2026-09-13T03:42:16+00:00",
+      "reason": "blocked",
+      "resolved": false,
+      "specialty": "safeguarding",
+      "target": "7195e0f509ea2c0d998d",
+      "url": "https://report.iwf.org.uk/"
+    },
+    "c476e3f6ee056917c3b4:availability": {
+      "critical": true,
+      "key": "c476e3f6ee056917c3b4:availability",
+      "kind": "technical",
+      "last_seen": "2026-09-13T03:42:16+00:00",
+      "opened_at": "2026-09-13T03:42:16+00:00",
+      "reason": "blocked",
+      "resolved": false,
+      "specialty": "cyber",
+      "target": "c476e3f6ee056917c3b4",
+      "url": "https://www.guardiacivil.es/es/servicios/delitos_telematicos/"
+    },
+    "cf14a1871f41bbc0f199:availability": {
+      "critical": true,
+      "key": "cf14a1871f41bbc0f199:availability",
+      "kind": "technical",
+      "last_seen": "2026-09-13T03:42:16+00:00",
+      "opened_at": "2026-09-13T03:42:16+00:00",
+      "reason": "blocked",
+      "resolved": false,
+      "specialty": "geoint",
+      "target": "cf14a1871f41bbc0f199",
+      "url": "https://centrodedescargas.cnig.es/"
+    },
+    "e071f34a8aeb169f96e6:availability": {
+      "critical": true,
+      "key": "e071f34a8aeb169f96e6:availability",
+      "kind": "technical",
+      "last_seen": "2026-09-13T03:42:16+00:00",
+      "opened_at": "2026-09-13T03:42:16+00:00",
+      "reason": "blocked",
+      "resolved": false,
+      "specialty": "cyber",
+      "target": "e071f34a8aeb169f96e6",
+      "url": "https://help.x.com/es/safety-and-security/report-a-tweet"
+    },
+    "e85310fc63338884e85f:availability": {
+      "critical": true,
+      "key": "e85310fc63338884e85f:availability",
+      "kind": "technical",
+      "last_seen": "2026-09-13T03:42:16+00:00",
+      "opened_at": "2026-09-13T03:42:16+00:00",
+      "reason": "blocked",
+      "resolved": false,
+      "specialty": "geoint",
+      "target": "e85310fc63338884e85f",
+      "url": "https://familylinks.icrc.org/"
+    }
+  },
+  "processes": {
+    "daily": {
+      "catalog_version": "e3a3c892121f70e5",
+      "last_attempt": "2026-09-13T03:42:16+00:00",
+      "last_success": "2026-09-13T03:42:16+00:00",
+      "status": "ok"
+    }
+  },
+  "version": 2
+}
