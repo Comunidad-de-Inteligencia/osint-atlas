@@ -66,4 +66,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 - [Servicio europeo de emergencias — página responsable](https://digital-strategy.ec.europa.eu/es/policies/112)
 - Observación de languages, 2026-09-13: [página comprobada](https://digital-strategy.ec.europa.eu/es/policies/112). Idiomas observados en la página consultada; no certifica todos sus servicios. No equivale a aprobación humana.
 
-Versión: 9f0a7add2b712088. [Volver al catálogo](../CATALOGO.md).
+Versión: ca3f80a057e132aa. [Volver al catálogo](../CATALOGO.md).

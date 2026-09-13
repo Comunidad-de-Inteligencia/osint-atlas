@@ -65,4 +65,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 
 - [INHOPE - Encontrar una línea de reporte — página responsable](https://www.inhope.org/EN#hotlineReferral)
 
-Versión: 9f0a7add2b712088. [Volver al catálogo](../CATALOGO.md).
+Versión: ca3f80a057e132aa. [Volver al catálogo](../CATALOGO.md).

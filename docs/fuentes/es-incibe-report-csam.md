@@ -67,4 +67,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 - [Reporte de material de abuso sexual infantil de INCIBE — página responsable](https://www.incibe.es/menores/reporte-abuso)
 - Observación de languages, 2026-09-13: [página comprobada](https://www.incibe.es/menores/reporte-abuso). Idiomas observados en la página consultada; no certifica todos sus servicios. No equivale a aprobación humana.
 
-Versión: 9f0a7add2b712088. [Volver al catálogo](../CATALOGO.md).
+Versión: ca3f80a057e132aa. [Volver al catálogo](../CATALOGO.md).

@@ -66,4 +66,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 
 - [Línea europea para menores desaparecidos — página responsable](https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/faq/index_es.htm)
 
-Versión: 9f0a7add2b712088. [Volver al catálogo](../CATALOGO.md).
+Versión: ca3f80a057e132aa. [Volver al catálogo](../CATALOGO.md).

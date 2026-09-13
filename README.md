@@ -42,6 +42,7 @@ Las agendas siguen desactivadas hasta confirmar cuotas y control del gasto. Las 
 - [Entender el mantenimiento y la revisión humana](docs/MANTENIMIENTO.md).
 - [Añadir o corregir fichas](CONTRIBUTING.md).
 - [Glosario](docs/GLOSARIO.md), [accesibilidad y comprobaciones](docs/ACCESIBILIDAD.md).
+- [Resultados y límites de la verificación de v0.2](docs/VERIFICACION-v0.2.md).
 - [Condiciones de uso](LEGAL.md), [seguridad](SECURITY.md) y [atribución](ATTRIBUTION.md).
 
 Los archivos originales de datos y procedimientos producen documentación, JSON y un índice SQLite local. El MCP consulta esos resultados. Las comprobaciones externas producen informes y propuestas; solo los cambios editoriales revisados deben incorporarse al contenido aprobado.
