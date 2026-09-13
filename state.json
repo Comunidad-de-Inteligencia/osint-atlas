@@ -2033,6 +2033,48 @@
       "url": "https://ted.europa.eu/"
     }
   },
+  "discovery": {
+    "discovery:ar-datos-gob": {
+      "consecutive_failures": 0,
+      "last_attempt": "2026-09-13T10:50:29+00:00",
+      "status": "ok"
+    },
+    "discovery:brazuca-repository": {
+      "consecutive_failures": 0,
+      "last_attempt": "2026-09-13T10:50:29+00:00",
+      "status": "ok"
+    },
+    "discovery:co-datos-gov": {
+      "consecutive_failures": 0,
+      "last_attempt": "2026-09-13T10:50:29+00:00",
+      "status": "ok"
+    },
+    "discovery:es-datos-gob": {
+      "consecutive_failures": 0,
+      "last_attempt": "2026-09-13T10:50:29+00:00",
+      "status": "ok"
+    },
+    "discovery:eu-data-portal": {
+      "consecutive_failures": 0,
+      "last_attempt": "2026-09-13T10:50:29+00:00",
+      "status": "ok"
+    },
+    "discovery:fr-data-gouv": {
+      "consecutive_failures": 0,
+      "last_attempt": "2026-09-13T10:50:29+00:00",
+      "status": "ok"
+    },
+    "discovery:gb-data-gov": {
+      "consecutive_failures": 0,
+      "last_attempt": "2026-09-13T10:50:29+00:00",
+      "status": "ok"
+    },
+    "discovery:incibe-institutional": {
+      "consecutive_failures": 0,
+      "last_attempt": "2026-09-13T10:50:29+00:00",
+      "status": "ok"
+    }
+  },
   "history": [
     {
       "at": "2026-09-13T03:42:16+00:00",
@@ -2054,6 +2096,13 @@
       "pending": 88,
       "process": "monthly",
       "success": false
+    },
+    {
+      "at": "2026-09-13T10:50:29+00:00",
+      "checked": 0,
+      "pending": 113,
+      "process": "monthly",
+      "success": true
     }
   ],
   "incidents": {
@@ -2252,6 +2301,20 @@
       "territory": "BR",
       "url": "https://github.com/Berchez/OSINT-steam"
     },
+    "candidate:03e0c6cda4144291ce4d": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:03e0c6cda4144291ce4d",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/formacion/mooc/ios"
+    },
     "candidate:05e231a41748b90421b5": {
       "catalog": "eu-data-portal",
       "critical": false,
@@ -2293,6 +2356,34 @@
       "specialty": "public-data",
       "territory": "EU",
       "url": "https://data.europa.eu/data/catalogues?locale=en"
+    },
+    "candidate:0a94e9632b62683da861": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:0a94e9632b62683da861",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/formacion/mooc/android"
+    },
+    "candidate:0ae612ac936712a66912": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:0ae612ac936712a66912",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/tematicas"
     },
     "candidate:0f8d98e9709e748ed135": {
       "catalog": "es-datos-gob",
@@ -2476,6 +2567,20 @@
       "territory": "ES",
       "url": "https://datos.gob.es/dataset/a15002917-anuncios-licitaciones-2025"
     },
+    "candidate:32b63452e89372d22571": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:32b63452e89372d22571",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/juegos/juegos-mesa"
+    },
     "candidate:3341a3e0ee6738c6499e": {
       "catalog": "es-datos-gob",
       "critical": false,
@@ -2490,6 +2595,48 @@
       "territory": "ES",
       "url": "https://datos.gob.es/dataset/e0dat0002-distribucion-de-habitat-articulo-17-periodo-2013-20181"
     },
+    "candidate:36dd9a48532a2bdb3e8c": {
+      "catalog": "ar-datos-gob",
+      "critical": false,
+      "key": "candidate:36dd9a48532a2bdb3e8c",
+      "kind": "editorial",
+      "license_note": "Metadatos candidatos: comprobar licencia de la ficha y del conjunto antes de incorporar.",
+      "opened_at": "2026-09-13T10:50:27+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://datos.gob.ar/",
+      "specialty": "public-data",
+      "territory": "AR",
+      "url": "https://datos.gob.ar/dataset/balance-cambiario-del-siacam"
+    },
+    "candidate:4427230abb573313303e": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:4427230abb573313303e",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/ayuda/denuncia"
+    },
+    "candidate:4be1c7bdc97a87fd83ca": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:4be1c7bdc97a87fd83ca",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/tematicas/bulos-fake-news"
+    },
     "candidate:500a20c8cfe52a17107f": {
       "catalog": "ar-datos-gob",
       "critical": false,
@@ -2503,6 +2650,20 @@
       "specialty": "public-data",
       "territory": "AR",
       "url": "https://datos.gob.ar/dataset/datos-de-fractura-de-pozos-adjunto-iv"
+    },
+    "candidate:50fbba4cade40f4b20f2": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:50fbba4cade40f4b20f2",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/ayuda/desinfeccion"
     },
     "candidate:5379de779dcc66b0bd40": {
       "catalog": "eu-data-portal",
@@ -2532,6 +2693,20 @@
       "territory": "EU",
       "url": "https://data.europa.eu/catalogue-statistics/CurrentState?locale=en"
     },
+    "candidate:557f4573ed2ebb8071ca": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:557f4573ed2ebb8071ca",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/blog"
+    },
     "candidate:56a895d631392b2642b0": {
       "catalog": "es-datos-gob",
       "critical": false,
@@ -2559,6 +2734,20 @@
       "specialty": "public-data",
       "territory": "AR",
       "url": "https://datos.gob.ar/dataset?groups=economia"
+    },
+    "candidate:5af46efc163c8174fc36": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:5af46efc163c8174fc36",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/formacion/autoevaluacion"
     },
     "candidate:5d47633e797e00388e0d": {
       "catalog": "eu-data-portal",
@@ -2643,6 +2832,20 @@
       "specialty": "public-data",
       "territory": "EU",
       "url": "https://data.europa.eu/data/datasets?superCatalog=erpd&locale=en"
+    },
+    "candidate:71048cc7d72a89b9615e": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:71048cc7d72a89b9615e",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/avisos"
     },
     "candidate:712309ceee2be3d7ea52": {
       "catalog": "ar-datos-gob",
@@ -2784,6 +2987,20 @@
       "territory": "ES",
       "url": "https://datos.gob.es/dataset/a15002917-mapa-de-pendientes-en-porcentaje-generado-a-partir-del-modelo-digital-del-terreno-resolucion-2-metros-ano-2024"
     },
+    "candidate:986e304e632487069160": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:986e304e632487069160",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/herramientas"
+    },
     "candidate:9aa49ade5b3ec099a989": {
       "catalog": "eu-data-portal",
       "critical": false,
@@ -2797,6 +3014,20 @@
       "specialty": "public-data",
       "territory": "EU",
       "url": "https://data.europa.eu/data/datasets?locale=en&categories=ECON&page=1"
+    },
+    "candidate:9b5d4cc7c5ec58d59907": {
+      "catalog": "ar-datos-gob",
+      "critical": false,
+      "key": "candidate:9b5d4cc7c5ec58d59907",
+      "kind": "editorial",
+      "license_note": "Metadatos candidatos: comprobar licencia de la ficha y del conjunto antes de incorporar.",
+      "opened_at": "2026-09-13T10:50:27+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://datos.gob.ar/",
+      "specialty": "public-data",
+      "territory": "AR",
+      "url": "https://datos.gob.ar/dataset/exportaciones-argentinas-de-litio-siacam"
     },
     "candidate:9d21eb98930a6ff0ef83": {
       "catalog": "ar-datos-gob",
@@ -2839,6 +3070,20 @@
       "specialty": "public-data",
       "territory": "AR",
       "url": "https://datos.gob.ar/dataset?groups=territorio"
+    },
+    "candidate:a7df8be192c7e210f7bb": {
+      "catalog": "ar-datos-gob",
+      "critical": false,
+      "key": "candidate:a7df8be192c7e210f7bb",
+      "kind": "editorial",
+      "license_note": "Metadatos candidatos: comprobar licencia de la ficha y del conjunto antes de incorporar.",
+      "opened_at": "2026-09-13T10:50:27+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://datos.gob.ar/",
+      "specialty": "public-data",
+      "territory": "AR",
+      "url": "https://datos.gob.ar/dataset/empleo-del-sector-minero-siacam"
     },
     "candidate:a891350584fddccc4a49": {
       "catalog": "fr-data-gouv",
@@ -2952,6 +3197,34 @@
       "territory": "ES",
       "url": "https://datos.gob.es/dataset/a15002917-areas-sometidas-a-evolucion-natural"
     },
+    "candidate:c30ffbc4674731c08591": {
+      "catalog": "ar-datos-gob",
+      "critical": false,
+      "key": "candidate:c30ffbc4674731c08591",
+      "kind": "editorial",
+      "license_note": "Metadatos candidatos: comprobar licencia de la ficha y del conjunto antes de incorporar.",
+      "opened_at": "2026-09-13T10:50:27+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://datos.gob.ar/",
+      "specialty": "public-data",
+      "territory": "AR",
+      "url": "https://datos.gob.ar/dataset/precios-internacionales-de-minerales-del-siacam"
+    },
+    "candidate:c487cff5355db60db867": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:c487cff5355db60db867",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/ayuda/ransomware"
+    },
     "candidate:c4ef377787245ca5180e": {
       "catalog": "es-datos-gob",
       "critical": false,
@@ -2993,6 +3266,20 @@
       "specialty": "public-data",
       "territory": "ES",
       "url": "https://datos.gob.es/dataset/a09002970-categorias-de-datos-de-alto-valor"
+    },
+    "candidate:d0cc40195a1847ede759": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:d0cc40195a1847ede759",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/tematicas/compras-seguras-online"
     },
     "candidate:d1dccf86b8904c472d8c": {
       "catalog": "ar-datos-gob",
@@ -3106,6 +3393,34 @@
       "territory": "AR",
       "url": "https://datos.gob.ar/dataset?groups=energia"
     },
+    "candidate:e3ac43508f8edd93c7a3": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:e3ac43508f8edd93c7a3",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/ayuda/reporte-de-fraude"
+    },
+    "candidate:e6b98e51edf916025a91": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:e6b98e51edf916025a91",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/experiencia-senior"
+    },
     "candidate:e6daa968cf5f2442b2bc": {
       "catalog": "ar-datos-gob",
       "critical": false,
@@ -3148,6 +3463,62 @@
       "territory": "ES",
       "url": "https://datos.gob.es/dataset/a09002970-idiomas"
     },
+    "candidate:ea61a63f598f2e88b7bd": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:ea61a63f598f2e88b7bd",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/formacion/guias"
+    },
+    "candidate:eb41a31efb7b294aa7ec": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:eb41a31efb7b294aa7ec",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/tematicas/cifrado"
+    },
+    "candidate:f05aa9d5ced10d83bf0e": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:f05aa9d5ced10d83bf0e",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/formacion/actividades"
+    },
+    "candidate:f427d5c45dd0c88395b7": {
+      "catalog": "ar-datos-gob",
+      "critical": false,
+      "key": "candidate:f427d5c45dd0c88395b7",
+      "kind": "editorial",
+      "license_note": "Metadatos candidatos: comprobar licencia de la ficha y del conjunto antes de incorporar.",
+      "opened_at": "2026-09-13T10:50:27+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://datos.gob.ar/",
+      "specialty": "public-data",
+      "territory": "AR",
+      "url": "https://datos.gob.ar/dataset/comercio-de-minerales-de-argentina-siacam"
+    },
     "candidate:fa987f9e0b027de0bad6": {
       "catalog": "eu-data-portal",
       "critical": false,
@@ -3175,6 +3546,48 @@
       "specialty": "public-data",
       "territory": "AR",
       "url": "https://datos.gob.ar/dataset?groups=justicia-y-seguridad"
+    },
+    "candidate:fba56b9b0395eff1f1ff": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:fba56b9b0395eff1f1ff",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/formacion/recursosdescargables"
+    },
+    "candidate:fc6f23e3d9fb7090a3c5": {
+      "catalog": "incibe-institutional",
+      "critical": false,
+      "key": "candidate:fc6f23e3d9fb7090a3c5",
+      "kind": "editorial",
+      "license_note": "Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes de incorporar una ficha.",
+      "opened_at": "2026-09-13T10:50:29+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://www.incibe.es/",
+      "specialty": "cyber",
+      "territory": "ES",
+      "url": "https://www.incibe.es/ciudadania/formacion/talleres"
+    },
+    "candidate:fd1aa881dea382c39110": {
+      "catalog": "ar-datos-gob",
+      "critical": false,
+      "key": "candidate:fd1aa881dea382c39110",
+      "kind": "editorial",
+      "license_note": "Metadatos candidatos: comprobar licencia de la ficha y del conjunto antes de incorporar.",
+      "opened_at": "2026-09-13T10:50:27+00:00",
+      "reason": "candidate",
+      "resolved": false,
+      "source_url": "https://datos.gob.ar/",
+      "specialty": "public-data",
+      "territory": "AR",
+      "url": "https://datos.gob.ar/dataset/cantidad-de-empresas-mineras-siacam"
     },
     "candidate:fe410792cb85e3ddb7e0": {
       "catalog": "eu-data-portal",
@@ -3221,7 +3634,8 @@
       "kind": "technical",
       "opened_at": "2026-09-13T03:48:30+00:00",
       "reason": "discovery-failed",
-      "resolved": false,
+      "resolved": true,
+      "resolved_at": "2026-09-13T10:50:29+00:00",
       "specialty": "public-data",
       "url": "https://www.incibe.es/"
     },
@@ -3270,10 +3684,10 @@
       "status": "ok"
     },
     "monthly": {
-      "catalog_version": "a1c438413d9b26bd",
-      "last_attempt": "2026-09-13T03:48:30+00:00",
-      "last_success": null,
-      "status": "failed"
+      "catalog_version": "9f0a7add2b712088",
+      "last_attempt": "2026-09-13T10:50:29+00:00",
+      "last_success": "2026-09-13T10:50:29+00:00",
+      "status": "ok"
     },
     "weekly": {
       "catalog_version": "e3a3c892121f70e5",
