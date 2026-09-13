@@ -1,0 +1,71 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-datos-gob
+name: datos.gob.es
+owner: Gobierno de España
+jurisdictions:
+- ES
+type: dataset
+tier: P1
+categories:
+- datos-abiertos
+- administracion
+scenarios:
+- statistical-claim
+- source-corroboration
+url: https://datos.gob.es/
+purpose: Descubrir conjuntos de datos estatales, autonómicos y locales.
+inputs:
+- tema
+- organismo
+- territorio
+outputs:
+- fichas de datasets
+- distribuciones
+- licencias declaradas
+usage: Usar el catálogo para localizar el conjunto y comprobar después la ficha del organismo publicador.
+interpretation: Es un metacatálogo; la autoridad y licencia pertenecen al dataset final.
+limitations: Calidad, actualización y licencia varían entre conjuntos.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: datos.gob.es — página responsable
+  url: https://datos.gob.es/
+platforms: []
+maintenance_urls:
+- https://datos.gob.es/
+input_types:
+- indicador
+- pregunta
+output_types:
+- referencia
+- serie
+example:
+  input: Se compara un indicador agregado de dos periodos ficticios, 2023 y 2024.
+  steps:
+  - Usar el catálogo para localizar el conjunto y comprobar después la ficha del organismo publicador.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: La tabla de trabajo conserva unidad, población, periodo y revisión. Una unidad distinta impide
+    calcular una variación comparable.
+  interpretation: Es un metacatálogo; la autoridad y licencia pertenecen al dataset final.
+steps:
+- Usar el catálogo para localizar el conjunto y comprobar después la ficha del organismo publicador.
+- Comprueba en datos.gob.es la fecha, cobertura y definición de fichas de datasets.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

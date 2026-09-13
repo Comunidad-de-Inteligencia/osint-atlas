@@ -1,0 +1,69 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: mx-dof
+name: Diario Oficial de la Federación
+owner: Secretaría de Gobernación
+jurisdictions:
+- MX
+type: portal
+tier: P0
+categories:
+- legislacion
+- administracion
+scenarios:
+- official-publications
+- legal-claim
+url: https://www.dof.gob.mx/
+purpose: Consultar publicaciones oficiales federales mexicanas.
+inputs:
+- fecha
+- texto
+- organismo
+outputs:
+- ediciones
+- actos
+- normas
+usage: Citar fecha, edición y documento oficial.
+interpretation: Comprobar reformas y vigencia en fuentes jurídicas correspondientes.
+limitations: No sustituye diarios oficiales estatales.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Diario Oficial de la Federación — página responsable
+  url: https://www.dof.gob.mx/
+platforms: []
+maintenance_urls:
+- https://www.dof.gob.mx/
+input_types:
+- documento
+output_types:
+- documento
+example:
+  input: Se ensaya la búsqueda de una publicación ficticia ATLAS-DEMO del año 2026.
+  steps:
+  - Citar fecha, edición y documento oficial.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Anota diario, fecha y referencia; si no existe, informa de ausencia de resultados sin deducir
+    inexistencia del acto.
+  interpretation: Comprobar reformas y vigencia en fuentes jurídicas correspondientes.
+steps:
+- Citar fecha, edición y documento oficial.
+- Comprueba en Diario Oficial de la Federación la fecha, cobertura y definición de ediciones.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

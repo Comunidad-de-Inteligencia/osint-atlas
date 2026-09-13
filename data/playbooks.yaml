@@ -1,21 +1,374 @@
-{
-  "version": 1,
-  "playbooks": [
-    {"id":"business","title":"Investigar una empresa","path":"docs/procedimientos/investigar-empresa.md","scenario":"business","review_days":180,"last_reviewed":"2026-09-12"},
-    {"id":"procurement","title":"Rastrear contratos y subvenciones","path":"docs/procedimientos/contratos-subvenciones.md","scenario":"procurement","review_days":180,"last_reviewed":"2026-09-12"},
-    {"id":"official-publications","title":"Localizar publicaciones oficiales","path":"docs/procedimientos/publicaciones-oficiales.md","scenario":"official-publications","review_days":180,"last_reviewed":"2026-09-12"},
-    {"id":"domain-footprint","title":"Examinar la huella pública de un dominio","path":"docs/procedimientos/huella-dominio.md","scenario":"domain-footprint","review_days":180,"last_reviewed":"2026-09-12"},
-    {"id":"image-geolocation","title":"Verificar una imagen y su posible ubicación","path":"docs/procedimientos/verificar-imagen.md","scenario":"image-geolocation","review_days":180,"last_reviewed":"2026-09-12"},
-    {"id":"source-corroboration","title":"Contrastar y documentar conclusiones","path":"docs/procedimientos/contrastar-conclusiones.md","scenario":"source-corroboration","review_days":180,"last_reviewed":"2026-09-12"},
-    {"id":"legal-claim","title":"Verificar una afirmación jurídica","path":"docs/procedimientos/afirmacion-juridica.md","scenario":"legal-claim","review_days":90,"last_reviewed":"2026-09-12"},
-    {"id":"statistical-claim","title":"Verificar una afirmación estadística","path":"docs/procedimientos/afirmacion-estadistica.md","scenario":"statistical-claim","review_days":180,"last_reviewed":"2026-09-12"},
-    {"id":"missing-adult","title":"Actuar ante la desaparición de un adulto","path":"docs/procedimientos/desaparicion-adulto.md","scenario":"missing-adult","review_days":30,"last_reviewed":"2026-09-12"},
-    {"id":"missing-child","title":"Actuar ante la desaparición de un menor","path":"docs/procedimientos/desaparicion-menor.md","scenario":"missing-child","review_days":30,"last_reviewed":"2026-09-12"},
-    {"id":"immediate-emergency","title":"Actuar ante una emergencia inmediata","path":"docs/procedimientos/emergencia-inmediata.md","scenario":"immediate-emergency","review_days":30,"last_reviewed":"2026-09-12"},
-    {"id":"disaster-crisis","title":"Verificar información durante un desastre","path":"docs/procedimientos/desastre-crisis.md","scenario":"disaster-crisis","review_days":30,"last_reviewed":"2026-09-12"},
-    {"id":"grooming-sextortion","title":"Responder a indicios de grooming o sextorsión","path":"docs/procedimientos/grooming-sextorsion.md","scenario":"grooming-sextortion","review_days":30,"last_reviewed":"2026-09-12"},
-    {"id":"sexual-digital-violence","title":"Responder a violencia sexual digital","path":"docs/procedimientos/violencia-sexual-digital.md","scenario":"sexual-digital-violence","review_days":30,"last_reviewed":"2026-09-12"},
-    {"id":"csam-report","title":"Reportar posible material de abuso sexual infantil","path":"docs/procedimientos/reportar-csam.md","scenario":"csam-report","review_days":30,"last_reviewed":"2026-09-12"},
-    {"id":"platform-report","title":"Reportar indicios en Telegram y otras plataformas","path":"docs/procedimientos/reportar-plataformas.md","scenario":"platform-report","review_days":30,"last_reviewed":"2026-09-12"}
-  ]
-}
+version: 1
+playbooks:
+- id: business
+  title: Investigar una empresa
+  path: docs/procedimientos/investigar-empresa.md
+  scenario: business
+  review_days: 180
+  last_reviewed: null
+  source_path: content/procedimientos/investigar-empresa.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions: []
+  contacts: []
+  references:
+  - title: Boletín Oficial del Registro Mercantil
+    url: https://www.boe.es/borme/
+  - title: Plataforma de Contratación del Sector Público
+    url: https://contrataciondelestado.es/
+  - title: Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas
+    url: https://www.pap.hacienda.gob.es/bdnstrans/GE/es/
+  - title: INVENTE
+    url: https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/BasesDatos/invente/Paginas/inicio.aspx
+  - title: Banco de España - Estadísticas
+    url: https://www.bde.es/wbe/es/estadisticas/
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.
+- id: procurement
+  title: Rastrear contratos y subvenciones
+  path: docs/procedimientos/contratos-subvenciones.md
+  scenario: procurement
+  review_days: 180
+  last_reviewed: null
+  source_path: content/procedimientos/contratos-subvenciones.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions: []
+  contacts: []
+  references:
+  - title: Plataforma de Contratación del Sector Público
+    url: https://contrataciondelestado.es/
+  - title: Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas
+    url: https://www.pap.hacienda.gob.es/bdnstrans/GE/es/
+  - title: Portal de Transparencia de la AGE
+    url: https://transparencia.gob.es/
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.
+- id: official-publications
+  title: Localizar publicaciones oficiales
+  path: docs/procedimientos/publicaciones-oficiales.md
+  scenario: official-publications
+  review_days: 180
+  last_reviewed: null
+  source_path: content/procedimientos/publicaciones-oficiales.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions: []
+  contacts: []
+  references:
+  - title: Boletín Oficial del Estado
+    url: https://www.boe.es/
+  - title: Boletín Oficial del Registro Mercantil
+    url: https://www.boe.es/borme/
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.
+- id: domain-footprint
+  title: Examinar la huella pública de un dominio
+  path: docs/procedimientos/huella-dominio.md
+  scenario: domain-footprint
+  review_days: 180
+  last_reviewed: null
+  source_path: content/procedimientos/huella-dominio.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions: []
+  contacts: []
+  references:
+  - title: INCIBE
+    url: https://www.incibe.es/
+  - title: CCN-CERT
+    url: https://www.ccn-cert.cni.es/
+  - title: Internet Archive Wayback Machine
+    url: https://web.archive.org/
+  - title: VirusTotal
+    url: https://www.virustotal.com/
+  - title: Shodan
+    url: https://www.shodan.io/
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.
+- id: image-geolocation
+  title: Verificar una imagen y su posible ubicación
+  path: docs/procedimientos/verificar-imagen.md
+  scenario: image-geolocation
+  review_days: 180
+  last_reviewed: null
+  source_path: content/procedimientos/verificar-imagen.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions: []
+  contacts: []
+  references:
+  - title: Sede Electrónica del Catastro
+    url: https://www.sedecatastro.gob.es/
+  - title: Centro de Descargas CNIG y PNOA
+    url: https://centrodedescargas.cnig.es/
+  - title: AEMET OpenData
+    url: https://opendata.aemet.es/
+  - title: IGN Información Geográfica
+    url: https://www.ign.es/
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.
+- id: source-corroboration
+  title: Contrastar y documentar conclusiones
+  path: docs/procedimientos/contrastar-conclusiones.md
+  scenario: source-corroboration
+  review_days: 180
+  last_reviewed: null
+  source_path: content/procedimientos/contrastar-conclusiones.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions: []
+  contacts: []
+  references:
+  - title: datos.gob.es
+    url: https://datos.gob.es/
+  - title: INE Datos Abiertos
+    url: https://www.ine.es/datosabiertos/
+  - title: INVENTE
+    url: https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/BasesDatos/invente/Paginas/inicio.aspx
+  - title: Sede Electrónica del Catastro
+    url: https://www.sedecatastro.gob.es/
+  - title: CNMV
+    url: https://www.cnmv.es/
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.
+- id: legal-claim
+  title: Verificar una afirmación jurídica
+  path: docs/procedimientos/afirmacion-juridica.md
+  scenario: legal-claim
+  review_days: 90
+  last_reviewed: null
+  source_path: content/procedimientos/afirmacion-juridica.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions:
+  - ES
+  contacts: []
+  references:
+  - title: Boletín Oficial del Estado
+    url: https://www.boe.es/
+  - title: Buscador de Jurisprudencia CENDOJ
+    url: https://www.poderjudicial.es/search/
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.
+- id: statistical-claim
+  title: Verificar una afirmación estadística
+  path: docs/procedimientos/afirmacion-estadistica.md
+  scenario: statistical-claim
+  review_days: 180
+  last_reviewed: null
+  source_path: content/procedimientos/afirmacion-estadistica.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions: []
+  contacts: []
+  references:
+  - title: datos.gob.es
+    url: https://datos.gob.es/
+  - title: INE Datos Abiertos
+    url: https://www.ine.es/datosabiertos/
+  - title: AEMET OpenData
+    url: https://opendata.aemet.es/
+  - title: Banco de España - Estadísticas
+    url: https://www.bde.es/wbe/es/estadisticas/
+  - title: DGT Datos Abiertos
+    url: https://www.dgt.es/menusecundario/dgt-en-cifras/
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.
+- id: missing-adult
+  title: Actuar ante la desaparición de un adulto
+  path: docs/procedimientos/desaparicion-adulto.md
+  scenario: missing-adult
+  review_days: 30
+  last_reviewed: null
+  source_path: content/procedimientos/desaparicion-adulto.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions:
+  - ES
+  contacts:
+  - eu-112
+  references:
+  - title: Centro Nacional de Desaparecidos
+    url: https://cndes-web.ses.mir.es/publico/Desaparecidos/Primeros-Pasos.html
+  - title: AlertCops
+    url: https://alertcops.ses.mir.es/publico/alertcops/
+  - title: Policía Nacional - Denuncias
+    url: https://www.policia.es/_es/denuncias.php
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.
+- id: missing-child
+  title: Actuar ante la desaparición de un menor
+  path: docs/procedimientos/desaparicion-menor.md
+  scenario: missing-child
+  review_days: 30
+  last_reviewed: null
+  source_path: content/procedimientos/desaparicion-menor.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions:
+  - ES
+  contacts:
+  - eu-112
+  - eu-116000
+  references:
+  - title: Centro Nacional de Desaparecidos
+    url: https://cndes-web.ses.mir.es/publico/Desaparecidos/Primeros-Pasos.html
+  - title: AlertCops
+    url: https://alertcops.ses.mir.es/publico/alertcops/
+  - title: Policía Nacional - Denuncias
+    url: https://www.policia.es/_es/denuncias.php
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.
+- id: immediate-emergency
+  title: Actuar ante una emergencia inmediata
+  path: docs/procedimientos/emergencia-inmediata.md
+  scenario: immediate-emergency
+  review_days: 30
+  last_reviewed: null
+  source_path: content/procedimientos/emergencia-inmediata.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions:
+  - ES
+  contacts:
+  - eu-112
+  references:
+  - title: AlertCops
+    url: https://alertcops.ses.mir.es/publico/alertcops/
+  - title: Protección Civil - Recomendaciones
+    url: https://www.proteccioncivil.es/gestion-riesgos/recomendaciones
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.
+- id: disaster-crisis
+  title: Verificar información durante un desastre
+  path: docs/procedimientos/desastre-crisis.md
+  scenario: disaster-crisis
+  review_days: 30
+  last_reviewed: null
+  source_path: content/procedimientos/desastre-crisis.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions:
+  - ES
+  contacts: []
+  references:
+  - title: Centro de Descargas CNIG y PNOA
+    url: https://centrodedescargas.cnig.es/
+  - title: AEMET OpenData
+    url: https://opendata.aemet.es/
+  - title: DGT Datos Abiertos
+    url: https://www.dgt.es/menusecundario/dgt-en-cifras/
+  - title: MITECO Datos y Cartografía
+    url: https://www.miteco.gob.es/es/cartografia-y-sig/ide/descargas.html
+  - title: IGN Información Geográfica
+    url: https://www.ign.es/
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.
+- id: grooming-sextortion
+  title: Responder a indicios de grooming o sextorsión
+  path: docs/procedimientos/grooming-sextorsion.md
+  scenario: grooming-sextortion
+  review_days: 30
+  last_reviewed: null
+  source_path: content/procedimientos/grooming-sextorsion.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions:
+  - ES
+  contacts:
+  - es-017
+  references:
+  - title: INCIBE
+    url: https://www.incibe.es/
+  - title: 017 - Ayuda en Ciberseguridad
+    url: https://www.incibe.es/linea-de-ayuda-en-ciberseguridad
+  - title: Canal prioritario de la AEPD
+    url: https://www.aepd.es/canalprioritario
+  - title: Servicio 016
+    url: https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/
+  - title: Policía Nacional - Denuncias
+    url: https://www.policia.es/_es/denuncias.php
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.
+- id: sexual-digital-violence
+  title: Responder a violencia sexual digital
+  path: docs/procedimientos/violencia-sexual-digital.md
+  scenario: sexual-digital-violence
+  review_days: 30
+  last_reviewed: null
+  source_path: content/procedimientos/violencia-sexual-digital.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions:
+  - ES
+  contacts: []
+  references:
+  - title: 017 - Ayuda en Ciberseguridad
+    url: https://www.incibe.es/linea-de-ayuda-en-ciberseguridad
+  - title: Canal prioritario de la AEPD
+    url: https://www.aepd.es/canalprioritario
+  - title: Servicio 016
+    url: https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/
+  - title: Policía Nacional - Denuncias
+    url: https://www.policia.es/_es/denuncias.php
+  - title: Guardia Civil - Delitos telemáticos
+    url: https://www.guardiacivil.es/es/servicios/delitos_telematicos/
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.
+- id: csam-report
+  title: Reportar posible material de abuso sexual infantil
+  path: docs/procedimientos/reportar-csam.md
+  scenario: csam-report
+  review_days: 30
+  last_reviewed: null
+  source_path: content/procedimientos/reportar-csam.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions:
+  - ES
+  contacts: []
+  references:
+  - title: Reporte de material de abuso sexual infantil de INCIBE
+    url: https://www.incibe.es/menores/reporte-abuso
+  - title: Policía Nacional - Denuncias
+    url: https://www.policia.es/_es/denuncias.php
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.
+- id: platform-report
+  title: Reportar indicios en Telegram y otras plataformas
+  path: docs/procedimientos/reportar-plataformas.md
+  scenario: platform-report
+  review_days: 30
+  last_reviewed: null
+  source_path: content/procedimientos/reportar-plataformas.md
+  created_at: '2026-09-12'
+  reviewer: null
+  review_status: pending
+  jurisdictions:
+  - ES
+  contacts: []
+  references:
+  - title: INCIBE
+    url: https://www.incibe.es/
+  - title: 017 - Ayuda en Ciberseguridad
+    url: https://www.incibe.es/linea-de-ayuda-en-ciberseguridad
+  - title: Guardia Civil - Delitos telemáticos
+    url: https://www.guardiacivil.es/es/servicios/delitos_telematicos/
+  territorial_limitations: Guía general con ejemplos de España. La adaptación de otros territorios está
+    pendiente.

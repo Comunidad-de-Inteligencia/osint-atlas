@@ -1,16 +1,20 @@
 [project]
 name = "osint-atlas"
-version = "0.1.0"
+version = "0.2.0"
 description = "Catálogo verificable de fuentes y procedimientos OSINT con servidor MCP local"
 readme = "README.md"
 requires-python = ">=3.12"
 license = { text = "MIT" }
 authors = [{ name = "P3M-ACTF" }]
-dependencies = ["jsonschema>=4.26,<5", "mcp>=2,<3"]
+dependencies = [
+    "jsonschema>=4.26,<5",
+    "mcp>=2,<3",
+    "pyyaml==6.0.3",
+]
 
 [project.scripts]
 osint-atlas = "osint_atlas.cli:main"
-osint-atlas-mcp = "osint_atlas.mcp_server:main"
+osint-atlas-mcp = "osint_atlas.launcher:main"
 
 [build-system]
 requires = ["hatchling"]

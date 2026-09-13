@@ -1,50 +1,408 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://example.invalid/osint-atlas/resource.schema.json",
-  "title": "OSINT Atlas resource",
   "type": "object",
-  "required": ["id", "name", "owner", "jurisdictions", "type", "tier", "categories", "scenarios", "url", "purpose", "inputs", "outputs", "usage", "interpretation", "limitations", "access", "cost", "languages", "terms", "review_days", "criticality", "editorial_reviewed", "maintainer", "backup_maintainer", "technical_check", "pending_changes"],
   "properties": {
-    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]+$"},
-    "name": {"type": "string", "minLength": 3},
-    "owner": {"type": "string", "minLength": 2},
-    "jurisdictions": {"type": "array", "minItems": 1, "items": {"type": "string"}},
-    "coverage_exclusions": {"type": "array", "items": {"type": "string"}},
-    "type": {"type": "string"},
-    "tier": {"type": "string", "pattern": "^P[0-4]$"},
-    "categories": {"type": "array", "minItems": 1, "items": {"type": "string"}},
-    "scenarios": {"type": "array", "minItems": 1, "items": {"type": "string"}},
-    "url": {"type": "string", "pattern": "^https://"},
-    "purpose": {"type": "string", "minLength": 20},
-    "inputs": {"type": "array", "items": {"type": "string"}},
-    "outputs": {"type": "array", "minItems": 1, "items": {"type": "string"}},
-    "usage": {"type": "string", "minLength": 20},
-    "interpretation": {"type": "string", "minLength": 20},
-    "limitations": {"type": "string", "minLength": 15},
-    "access": {"type": "string", "minLength": 2},
-    "cost": {"type": "string", "minLength": 2},
-    "languages": {"type": "array", "minItems": 1, "items": {"type": "string"}},
-    "terms": {"type": "string", "minLength": 15},
-    "reporting_routes": {"type": "array", "items": {"type": "string"}},
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3
+    },
+    "owner": {
+      "type": "string",
+      "minLength": 2
+    },
+    "jurisdictions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "coverage_exclusions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "type": {
+      "type": "string"
+    },
+    "tier": {
+      "type": "string",
+      "pattern": "^P[0-4]$"
+    },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "scenarios": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://"
+    },
+    "purpose": {
+      "type": "string",
+      "minLength": 20
+    },
+    "inputs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "outputs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "usage": {
+      "type": "string",
+      "minLength": 20
+    },
+    "interpretation": {
+      "type": "string",
+      "minLength": 20
+    },
+    "limitations": {
+      "type": "string",
+      "minLength": 15
+    },
+    "access": {
+      "enum": [
+        "unknown",
+        "open",
+        "registration",
+        "api-key",
+        "restricted"
+      ]
+    },
+    "cost": {
+      "type": "string",
+      "minLength": 2
+    },
+    "languages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "terms": {
+      "type": "string",
+      "minLength": 15
+    },
+    "reporting_routes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "reporting_routes_by_scenario": {
       "type": "object",
-      "additionalProperties": {"type": "array", "items": {"type": "string"}}
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      }
     },
-    "review_days": {"type": "integer", "minimum": 1},
-    "criticality": {"enum": ["normal", "alta", "critica"]},
-    "editorial_reviewed": {"type": "string", "format": "date"},
-    "maintainer": {"type": ["string", "null"]},
-    "backup_maintainer": {"type": ["string", "null"]},
+    "review_days": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "criticality": {
+      "enum": [
+        "normal",
+        "alta",
+        "critica"
+      ]
+    },
+    "editorial_reviewed": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "maintainer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "backup_maintainer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
     "technical_check": {
       "type": "object",
-      "required": ["status", "checked_at"],
+      "required": [
+        "status",
+        "checked_at"
+      ],
       "properties": {
-        "status": {"enum": ["unknown", "ok", "redirected", "auth-required", "rate-limited", "temporary-error", "offline", "retired"]},
-        "checked_at": {"type": ["string", "null"], "format": "date-time"}
+        "status": {
+          "enum": [
+            "unknown",
+            "ok",
+            "redirected",
+            "auth-required",
+            "rate-limited",
+            "temporary-error",
+            "offline",
+            "retired",
+            "blocked",
+            "not-modified",
+            "partial"
+          ]
+        },
+        "checked_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
       },
       "additionalProperties": false
     },
-    "pending_changes": {"type": "array", "items": {"type": "string"}}
+    "pending_changes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date"
+    },
+    "review_status": {
+      "enum": [
+        "pending",
+        "verified"
+      ]
+    },
+    "reviewer": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          }
+        },
+        "required": [
+          "title",
+          "url"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "input_types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "output_types": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "platforms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "maintenance_urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https://"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "alternatives": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "metadata_evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "fields": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "observed_at": {
+            "type": "string",
+            "format": "date"
+          },
+          "method": {
+            "enum": [
+              "assistant-source-check",
+              "human-source-check"
+            ]
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "fields",
+          "url",
+          "observed_at",
+          "method",
+          "note"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "uniqueItems": true
+    },
+    "example": {
+      "type": "object",
+      "properties": {
+        "input": {
+          "type": "string",
+          "minLength": 1
+        },
+        "steps": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "expected": {
+          "type": "string",
+          "minLength": 1
+        },
+        "interpretation": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "input",
+        "steps",
+        "expected",
+        "interpretation"
+      ],
+      "additionalProperties": false
+    }
   },
-  "additionalProperties": true
+  "required": [
+    "id",
+    "name",
+    "owner",
+    "jurisdictions",
+    "type",
+    "tier",
+    "categories",
+    "scenarios",
+    "url",
+    "purpose",
+    "inputs",
+    "outputs",
+    "usage",
+    "interpretation",
+    "limitations",
+    "access",
+    "cost",
+    "languages",
+    "terms",
+    "review_days",
+    "criticality",
+    "editorial_reviewed",
+    "maintainer",
+    "backup_maintainer",
+    "technical_check",
+    "pending_changes",
+    "created_at",
+    "review_status",
+    "reviewer",
+    "references",
+    "input_types",
+    "output_types",
+    "platforms",
+    "maintenance_urls",
+    "alternatives",
+    "steps",
+    "metadata_evidence",
+    "example"
+  ],
+  "additionalProperties": false
 }

@@ -1,0 +1,66 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: eu-bris
+name: BRIS - Buscar una empresa
+owner: Portal Europeo de e-Justicia
+jurisdictions:
+- EU
+type: register
+tier: P1
+categories:
+- empresas
+scenarios:
+- business
+url: https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu/general-information-find-company_en
+purpose: Buscar sociedades en registros mercantiles interconectados.
+inputs:
+- nombre
+- número registral
+- país
+outputs:
+- datos básicos
+- documentos disponibles
+usage: Seleccionar jurisdicción y confirmar la entidad mediante su identificador nacional.
+interpretation: Los detalles y documentos proceden del registro nacional correspondiente.
+limitations: Cobertura, precio y tiempo de entrega varían por país.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: BRIS - Buscar una empresa — página responsable
+  url: https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu/general-information-find-company_en
+platforms: []
+maintenance_urls:
+- https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu/general-information-find-company_en
+input_types:
+- organizacion
+output_types:
+- registro
+example:
+  input: La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+  steps:
+  - Seleccionar jurisdicción y confirmar la entidad mediante su identificador nacional.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de
+    vincular publicaciones.
+  interpretation: Los detalles y documentos proceden del registro nacional correspondiente.
+steps:
+- Seleccionar jurisdicción y confirmar la entidad mediante su identificador nacional.
+- Comprueba en BRIS - Buscar una empresa la fecha, cobertura y definición de datos básicos.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

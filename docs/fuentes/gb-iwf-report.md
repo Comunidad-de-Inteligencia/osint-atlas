@@ -1,54 +1,68 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Internet Watch Foundation Report
 
-> **Para qué sirve:** Reportar de forma confidencial posible material de abuso sexual infantil alojado en Internet.
+## Para qué sirve
 
-## Antes de empezar
+Reportar de forma confidencial posible material de abuso sexual infantil alojado en Internet.
 
-Necesitas: URL, contexto mínimo.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+URL, contexto mínimo
 
-Cobertura: **GB, GLOBAL**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: Reino Unido, Global. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de Internet Watch Foundation Report](https://report.iwf.org.uk/).
+
 1. No descargar ni compartir; seguir el selector territorial del servicio.
-2. Abre la [fuente principal](https://report.iwf.org.uk/) y registra la fecha de consulta.
-3. Conserva como resultado: evaluación y posible derivación.
+2. Comprueba en Internet Watch Foundation Report la fecha, cobertura y definición de evaluación y posible derivación.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de URL, realiza la consulta y conserva evaluación y posible derivación con su fecha y enlace.
+Una ficha de ejercicio indica únicamente «referencia ficticia», sin enlazar a contenido real.
+
+1. No descargar ni compartir; seguir el selector territorial del servicio.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Se localiza el canal competente. No se abre, descarga, guarda ni comparte material; no se envía un reporte de práctica.
 
 ## Cómo interpretar el resultado
 
 El servicio evalúa el contenido conforme a su competencia.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 La competencia y los tipos de reporte admitidos están delimitados.
 
+Resultados que puede ofrecer: evaluación y posible derivación.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Asistencia o reporte
 
-- [Directorio internacional de líneas INHOPE](https://www.inhope.org/EN#hotlineReferral): Selector de país. No descargar, guardar ni compartir posible material de abuso sexual infantil.
+- **Comunicación de indicios:** [Directorio internacional de líneas INHOPE](https://www.inhope.org/EN#hotlineReferral) — **Selector de país**. No descargar, guardar ni compartir posible material de abuso sexual infantil.
 
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Internet Watch Foundation
-- Nivel de procedencia: **P2 — Derivado reproducible con procedencia conservada**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 30 días
-- Criticidad: critica
-- Versión del catálogo: `148623c324af8657`
+Publicador: Internet Watch Foundation. Procedencia declarada: P2 (Derivado reproducible con procedencia conservada). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Internet Watch Foundation Report — página responsable](https://report.iwf.org.uk/)
+
+Versión: d7623406100e17a9. [Volver al catálogo](../CATALOGO.md).

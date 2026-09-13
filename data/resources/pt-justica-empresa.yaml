@@ -1,0 +1,65 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: pt-justica-empresa
+name: Justiça.gov.pt - Empresa
+owner: República Portuguesa
+jurisdictions:
+- PT
+type: portal
+tier: P0
+categories:
+- empresas
+scenarios:
+- business
+url: https://justica.gov.pt/Servicos/Pedir-Certidao-Permanente
+purpose: Acceder a servicios oficiales de publicidad empresarial portuguesa.
+inputs:
+- NIPC
+- código de acceso
+outputs:
+- certidão permanente
+- datos registrales
+usage: Elegir el servicio oficial y conservar el identificador y fecha.
+interpretation: El acceso a una certidão depende del código y su vigencia.
+limitations: Algunos servicios son de pago o requieren un código.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Justiça.gov.pt - Empresa — página responsable
+  url: https://justica.gov.pt/Servicos/Pedir-Certidao-Permanente
+platforms: []
+maintenance_urls:
+- https://justica.gov.pt/Servicos/Pedir-Certidao-Permanente
+input_types:
+- organizacion
+output_types:
+- registro
+example:
+  input: La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+  steps:
+  - Elegir el servicio oficial y conservar el identificador y fecha.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de
+    vincular publicaciones.
+  interpretation: El acceso a una certidão depende del código y su vigencia.
+steps:
+- Elegir el servicio oficial y conservar el identificador y fecha.
+- Comprueba en Justiça.gov.pt - Empresa la fecha, cobertura y definición de certidão permanente.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

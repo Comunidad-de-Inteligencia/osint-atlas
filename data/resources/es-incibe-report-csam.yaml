@@ -1,0 +1,75 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: critica
+languages:
+- es
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-incibe-report-csam
+name: Reporte de material de abuso sexual infantil de INCIBE
+owner: INCIBE-CERT e INHOPE
+jurisdictions:
+- ES
+type: reporting-channel
+tier: P0
+categories:
+- proteccion-menores
+- violencia-digital
+scenarios:
+- csam-report
+url: https://www.incibe.es/menores/reporte-abuso
+purpose: Comunicar de forma anónima una URL con posible material de abuso sexual infantil.
+inputs:
+- URL completa
+- descripción mínima
+outputs:
+- derivación a autoridades y red INHOPE
+usage: Copiar únicamente la URL y contexto mínimo; no descargar, guardar, capturar ni compartir el material.
+interpretation: El reporte ayuda a tramitar retirada, pero no constituye denuncia policial.
+limitations: El formulario puede usar CAPTCHA y no sirve para peligro inmediato.
+reporting_routes:
+- es-incibe-csam
+- eu-112
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence:
+- fields:
+  - languages
+  url: https://www.incibe.es/menores/reporte-abuso
+  observed_at: '2026-09-13'
+  method: assistant-source-check
+  note: Idiomas observados en la página consultada; no certifica todos sus servicios.
+alternatives: []
+references:
+- title: Reporte de material de abuso sexual infantil de INCIBE — página responsable
+  url: https://www.incibe.es/menores/reporte-abuso
+platforms: []
+maintenance_urls:
+- https://www.incibe.es/menores/reporte-abuso
+input_types:
+- situacion
+output_types:
+- ruta-reporte
+example:
+  input: Una ficha de ejercicio indica únicamente «referencia ficticia», sin enlazar a contenido real.
+  steps:
+  - Copiar únicamente la URL y contexto mínimo; no descargar, guardar, capturar ni compartir el material.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se localiza el canal competente. No se abre, descarga, guarda ni comparte material; no se
+    envía un reporte de práctica.
+  interpretation: El reporte ayuda a tramitar retirada, pero no constituye denuncia policial.
+steps:
+- Copiar únicamente la URL y contexto mínimo; no descargar, guardar, capturar ni compartir el material.
+- Comprueba en Reporte de material de abuso sexual infantil de INCIBE la fecha, cobertura y definición
+  de derivación a autoridades y red INHOPE.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

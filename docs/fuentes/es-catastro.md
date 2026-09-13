@@ -1,53 +1,67 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Sede Electrónica del Catastro
 
-> **Para qué sirve:** Consultar cartografía parcelaria y datos catastrales no protegidos.
+## Para qué sirve
 
-## Antes de empezar
+Consultar cartografía parcelaria y datos catastrales no protegidos.
 
-Necesitas: referencia catastral, dirección, coordenadas.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+referencia catastral, dirección, coordenadas
 
-Cobertura: **ES**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: España. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de Sede Electrónica del Catastro](https://www.sedecatastro.gob.es/).
+
 1. Localizar la parcela y contrastar su geometría con cartografía y ortofotos.
-2. Abre la [fuente principal](https://www.sedecatastro.gob.es/) y registra la fecha de consulta.
-3. Conserva como resultado: parcela, geometría, datos descriptivos no protegidos.
+2. Comprueba en Sede Electrónica del Catastro la fecha, cobertura y definición de parcela.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de referencia catastral, realiza la consulta y conserva parcela con su fecha y enlace.
+Una imagen ficticia de un cruce sin personas se compara con una cartografía fechada.
+
+1. Localizar la parcela y contrastar su geometría con cartografía y ortofotos.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Se anotan dos rasgos concordantes y las diferencias. La coincidencia se expresa como hipótesis, sin localizar personas.
 
 ## Cómo interpretar el resultado
 
 La referencia catastral describe un inmueble, pero no prueba por sí sola titularidad ni límites jurídicos.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 No cubre País Vasco ni Navarra; datos de titulares y valores individualizados están protegidos.
 
-Exclusiones territoriales conocidas: **ES-PV, ES-NC**.
+Exclusiones: País Vasco, Comunidad Foral de Navarra.
+
+Resultados que puede ofrecer: parcela, geometría, datos descriptivos no protegidos.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
 
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Dirección General del Catastro
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 180 días
-- Criticidad: normal
-- Versión del catálogo: `148623c324af8657`
+Publicador: Dirección General del Catastro. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Sede Electrónica del Catastro — página responsable](https://www.sedecatastro.gob.es/)
 - [Cobertura del Catastro](https://www.catastro.hacienda.gob.es/es-ES/usos_utilidades.html)
 
-[Volver al catálogo](../CATALOGO.md)
+Versión: d7623406100e17a9. [Volver al catálogo](../CATALOGO.md).

@@ -1,55 +1,69 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
-# Servicio 016
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
+# Atención a todas las formas de violencia contra las mujeres
 
-> **Para qué sirve:** Proporcionar información y atención especializada sobre violencia contra las mujeres.
+## Para qué sirve
 
-## Antes de empezar
+Proporcionar información y atención especializada sobre violencia contra las mujeres.
 
-Necesitas: necesidad de información o ayuda.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+necesidad de información o ayuda
 
-Cobertura: **ES**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: España. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
-1. Consultar los canales disponibles; ante peligro inmediato llamar al 112.
-2. Abre la [fuente principal](https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/) y registra la fecha de consulta.
-3. Conserva como resultado: información, asesoramiento, atención psicosocial.
+Abre la [página responsable de Atención a todas las formas de violencia contra las mujeres](https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/).
 
-## Ejemplo
+1. Consultar los canales disponibles; ante peligro inmediato llamar al [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112) — **112**.
+2. Comprueba en Atención a todas las formas de violencia contra las mujeres la fecha, cobertura y definición de información.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-Ejemplo ilustrativo: parte de necesidad de información o ayuda, realiza la consulta y conserva información con su fecha y enlace.
+## Ejemplo ficticio
+
+Un ejercicio sin imágenes plantea una difusión íntima sin consentimiento.
+
+1. Consultar los canales disponibles; ante peligro inmediato llamar al [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112) — **112**.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Se distinguen asistencia, retirada y denuncia; no se adjunta ni reproduce contenido íntimo.
 
 ## Cómo interpretar el resultado
 
 Es un servicio de atención, no una denuncia formal.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 Comprobar accesibilidad, idiomas y condiciones en la fuente.
 
+Resultados que puede ofrecer: información, asesoramiento, atención psicosocial.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Asistencia o reporte
 
-- [Servicio de atención a todas las formas de violencia contra las mujeres](https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/): 016. Información, asesoramiento jurídico y atención psicosocial; consultar accesibilidad y canales alternativos en la fuente.
-- [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112): 112. Solo para emergencias reales; gratuito en toda la UE.
+- **Asistencia:** [Servicio de atención a todas las formas de violencia contra las mujeres](https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/) — **016**. Información, asesoramiento jurídico y atención psicosocial; consultar accesibilidad y canales alternativos en la fuente.
+- **Emergencia:** [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112) — **112**. Solo para emergencias reales; gratuito en toda la UE.
 
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Ministerio de Igualdad
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 30 días
-- Criticidad: critica
-- Versión del catálogo: `148623c324af8657`
+Publicador: Ministerio de Igualdad. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Atención a todas las formas de violencia contra las mujeres — página responsable](https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/)
+
+Versión: d7623406100e17a9. [Volver al catálogo](../CATALOGO.md).

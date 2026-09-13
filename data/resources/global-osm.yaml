@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: global-osm
+name: OpenStreetMap
+owner: OpenStreetMap Foundation y comunidad
+jurisdictions:
+- GLOBAL
+type: map
+tier: P3
+categories:
+- geoint
+scenarios:
+- image-geolocation
+- disaster-crisis
+url: https://www.openstreetmap.org/
+purpose: Consultar cartografía colaborativa y objetos geográficos.
+inputs:
+- topónimo
+- coordenadas
+- etiqueta
+outputs:
+- geometrías
+- etiquetas
+- historial
+usage: Corroborar elementos con fuentes primarias o imágenes recientes.
+interpretation: Los datos son colaborativos y pueden contener errores o ediciones recientes.
+limitations: Cobertura y precisión no son uniformes.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- es-cnig-pnoa
+references:
+- title: OpenStreetMap — página responsable
+  url: https://www.openstreetmap.org/
+platforms: []
+maintenance_urls:
+- https://www.openstreetmap.org/
+input_types:
+- lugar
+output_types:
+- aviso
+- mapa
+example:
+  input: Una imagen ficticia de un cruce sin personas se compara con una cartografía fechada.
+  steps:
+  - Corroborar elementos con fuentes primarias o imágenes recientes.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se anotan dos rasgos concordantes y las diferencias. La coincidencia se expresa como hipótesis,
+    sin localizar personas.
+  interpretation: Los datos son colaborativos y pueden contener errores o ediciones recientes.
+steps:
+- Corroborar elementos con fuentes primarias o imágenes recientes.
+- Comprueba en OpenStreetMap la fecha, cobertura y definición de geometrías.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

@@ -1,44 +1,230 @@
-<!-- GENERADO -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Alemania
 
-Consulta las particularidades locales antes de utilizar una fuente.
+La adaptación territorial sigue pendiente.
 
-Recursos aplicables: **35**.
+## Cobertura por escenario
 
-## Fuentes
+### Investigar una empresa
 
-- [116 000 - Línea para menores desaparecidos](../fuentes/eu-missing-116000.md) — Orientar y apoyar en casos de menores desaparecidos en países participantes.
-- [BRIS - Buscar una empresa](../fuentes/eu-bris.md) — Buscar sociedades en registros mercantiles interconectados.
-- [Bundesanzeiger](../fuentes/de-bundesanzeiger.md) — Consultar anuncios y publicaciones empresariales oficiales alemanas.
-- [Copernicus Data Space Ecosystem](../fuentes/eu-copernicus.md) — Acceder a observación terrestre Sentinel y productos Copernicus.
-- [Copernicus Emergency Management Service](../fuentes/eu-erascc-emergency-mapping.md) — Consultar cartografía y activaciones de respuesta a desastres.
-- [data.europa.eu](../fuentes/eu-data-portal.md) — Descubrir datos abiertos de instituciones europeas y países participantes.
-- [ECHA Information on Chemicals](../fuentes/eu-echa.md) — Consultar expedientes públicos y clasificación de sustancias.
-- [EU Sanctions Map](../fuentes/eu-sanctions-map.md) — Explorar regímenes de sanciones adoptados por la UE.
-- [EUIPO eSearch plus](../fuentes/eu-euipo.md) — Consultar marcas y diseños de la Unión Europea.
-- [EUR-Lex](../fuentes/eu-eurlex.md) — Consultar legislación, jurisprudencia y Diario Oficial de la UE.
-- [Europol - Report Cybercrime](../fuentes/eu-europol-cybercrime.md) — Dirigir a las vías nacionales europeas para reportar ciberdelitos.
-- [Eurostat](../fuentes/eu-eurostat.md) — Comparar estadísticas armonizadas europeas.
-- [GLEIF LEI Search](../fuentes/global-gleif.md) — Resolver entidades jurídicas y relaciones mediante identificadores LEI.
-- [Global Disaster Alert and Coordination System](../fuentes/global-gdacs.md) — Consultar alertas y coordinación inicial sobre grandes desastres.
-- [Global Missing Children's Network](../fuentes/global-missing-children-network.md) — Localizar organizaciones y carteles autorizados de menores desaparecidos en países participantes.
-- [Handelsregister](../fuentes/de-handelsregister.md) — Consultar registros mercantiles alemanes.
-- [INHOPE - Encontrar una línea de reporte](../fuentes/global-inhope-report.md) — Localizar la línea nacional adecuada para reportar posible material de abuso sexual infantil.
-- [Internet Archive Wayback Machine](../fuentes/global-wayback.md) — Consultar capturas históricas de páginas públicas.
-- [Internet Watch Foundation Report](../fuentes/gb-iwf-report.md) — Reportar de forma confidencial posible material de abuso sexual infantil alojado en Internet.
-- [INTERPOL Red Notices](../fuentes/global-interpol-notices.md) — Consultar notificaciones públicas seleccionadas de INTERPOL.
-- [INTERPOL Yellow Notices](../fuentes/global-interpol-yellow.md) — Consultar notificaciones amarillas públicas de personas desaparecidas.
-- [Meta Safety Center - Reporting](../fuentes/global-meta-safety.md) — Localizar mecanismos oficiales de reporte de Facebook e Instagram.
-- [NCMEC CyberTipline](../fuentes/us-ncmec-cybertipline.md) — Comunicar sospechas de explotación sexual infantil a NCMEC cuando corresponda.
-- [Número europeo de emergencias 112](../fuentes/eu-emergency-112.md) — Contactar gratuitamente con policía, ambulancia o bomberos en toda la UE.
-- [OpenStreetMap](../fuentes/global-osm.md) — Consultar cartografía colaborativa y objetos geográficos.
-- [Portal Europeo de e-Justicia](../fuentes/eu-ecourts.md) — Localizar registros, procedimientos y herramientas judiciales transfronterizas.
-- [Restoring Family Links](../fuentes/global-red-cross-family-links.md) — Ayudar a restablecer contacto familiar afectado por conflicto, migración o desastre.
-- [Shodan](../fuentes/global-shodan.md) — Consultar servicios de Internet observados públicamente.
-- [Telegram - Reportar contenido ilegal](../fuentes/global-telegram-report.md) — Reportar mensajes o contenido público ilegal a la plataforma.
-- [Tenders Electronic Daily](../fuentes/eu-ted.md) — Consultar anuncios de contratación pública de alcance europeo.
-- [TikTok - Reportar contenido](../fuentes/global-tiktok-report.md) — Consultar la vía oficial para reportar vídeos y cuentas.
-- [UNdata](../fuentes/global-un-data.md) — Descubrir estadísticas compiladas por organismos de Naciones Unidas.
-- [VirusTotal](../fuentes/global-virustotal.md) — Consultar señales agregadas sobre dominios, IP, URLs y archivos.
-- [World Bank Open Data](../fuentes/global-world-bank.md) — Consultar indicadores internacionales de desarrollo.
-- [X Help Center - Reportar](../fuentes/global-x-report.md) — Localizar procedimientos de reporte de publicaciones y cuentas en X.
+Estado: **pendiente**. Fuentes locales: 2; apoyo general: 6.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-business.md)
+
+### Contratos y subvenciones
+
+Estado: **pendiente**. Fuentes locales: 0; apoyo general: 1.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-procurement.md)
+
+### Publicaciones oficiales
+
+Estado: **pendiente**. Fuentes locales: 1; apoyo general: 1.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-official-publications.md)
+
+### Huella pública de un dominio
+
+Estado: **pendiente**. Fuentes locales: 0; apoyo general: 3.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-domain-footprint.md)
+
+### Verificar una imagen y su ubicación
+
+Estado: **pendiente**. Fuentes locales: 0; apoyo general: 3.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-image-geolocation.md)
+
+### Contrastar y documentar conclusiones
+
+Estado: **pendiente**. Fuentes locales: 0; apoyo general: 6.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-source-corroboration.md)
+
+### Verificar una afirmación jurídica
+
+Estado: **pendiente**. Fuentes locales: 0; apoyo general: 2.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-legal-claim.md)
+
+### Verificar una afirmación estadística
+
+Estado: **pendiente**. Fuentes locales: 0; apoyo general: 5.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-statistical-claim.md)
+
+### Desaparición de adulto o persona vulnerable
+
+Estado: **pendiente**. Fuentes locales: 0; apoyo general: 3.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+- Faltan vías competentes verificadas para este territorio.
+
+[Ver fuentes de este escenario](escenario-missing-adult.md)
+
+### Desaparición de menor
+
+Estado: **pendiente**. Fuentes locales: 0; apoyo general: 6.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+- Faltan vías competentes verificadas para este territorio.
+
+[Ver fuentes de este escenario](escenario-missing-child.md)
+
+### Emergencia inmediata
+
+Estado: **pendiente**. Fuentes locales: 0; apoyo general: 1.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+- Faltan vías competentes verificadas para este territorio.
+
+[Ver fuentes de este escenario](escenario-immediate-emergency.md)
+
+### Desastres y crisis
+
+Estado: **pendiente**. Fuentes locales: 0; apoyo general: 6.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-disaster-crisis.md)
+
+### Grooming y sextorsión
+
+Estado: **pendiente**. Fuentes locales: 0; apoyo general: 4.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+- Faltan vías competentes verificadas para este territorio.
+
+[Ver fuentes de este escenario](escenario-grooming-sextortion.md)
+
+### Violencia sexual digital
+
+Estado: **pendiente**. Fuentes locales: 0; apoyo general: 3.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+- Faltan vías competentes verificadas para este territorio.
+
+[Ver fuentes de este escenario](escenario-sexual-digital-violence.md)
+
+### Posible material de abuso sexual infantil
+
+Estado: **pendiente**. Fuentes locales: 0; apoyo general: 4.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+- Faltan vías competentes verificadas para este territorio.
+
+[Ver fuentes de este escenario](escenario-csam-report.md)
+
+### Telegram y otras plataformas
+
+Estado: **pendiente**. Fuentes locales: 0; apoyo general: 5.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+- Faltan vías competentes verificadas para este territorio.
+
+[Ver fuentes de este escenario](escenario-platform-report.md)
+
+## Fuentes del territorio
+
+- [Bundesanzeiger](../fuentes/de-bundesanzeiger.md)
+- [Handelsregister](../fuentes/de-handelsregister.md)
+
+## Apoyo de otras coberturas
+
+- [BRIS - Buscar una empresa](../fuentes/eu-bris.md)
+- [Copernicus Data Space Ecosystem](../fuentes/eu-copernicus.md)
+- [Copernicus Emergency Management Service](../fuentes/eu-erascc-emergency-mapping.md)
+- [data.europa.eu](../fuentes/eu-data-portal.md)
+- [ECHA Information on Chemicals](../fuentes/eu-echa.md)
+- [EU Sanctions Map](../fuentes/eu-sanctions-map.md)
+- [EUIPO eSearch plus](../fuentes/eu-euipo.md)
+- [EUR-Lex](../fuentes/eu-eurlex.md)
+- [Europol - Report Cybercrime](../fuentes/eu-europol-cybercrime.md)
+- [Eurostat](../fuentes/eu-eurostat.md)
+- [GLEIF LEI Search](../fuentes/global-gleif.md)
+- [Global Disaster Alert and Coordination System](../fuentes/global-gdacs.md)
+- [Global Missing Children's Network](../fuentes/global-missing-children-network.md)
+- [INHOPE - Encontrar una línea de reporte](../fuentes/global-inhope-report.md)
+- [Internet Archive Wayback Machine](../fuentes/global-wayback.md)
+- [Internet Watch Foundation Report](../fuentes/gb-iwf-report.md)
+- [INTERPOL Red Notices](../fuentes/global-interpol-notices.md)
+- [INTERPOL Yellow Notices](../fuentes/global-interpol-yellow.md)
+- [Línea europea para menores desaparecidos](../fuentes/eu-missing-116000.md)
+- [Meta Safety Center - Reporting](../fuentes/global-meta-safety.md)
+- [NCMEC CyberTipline](../fuentes/us-ncmec-cybertipline.md)
+- [OpenStreetMap](../fuentes/global-osm.md)
+- [Portal Europeo de e-Justicia](../fuentes/eu-ecourts.md)
+- [Restoring Family Links](../fuentes/global-red-cross-family-links.md)
+- [Servicio europeo de emergencias](../fuentes/eu-emergency-112.md)
+- [Shodan](../fuentes/global-shodan.md)
+- [Telegram - Reportar contenido ilegal](../fuentes/global-telegram-report.md)
+- [Tenders Electronic Daily](../fuentes/eu-ted.md)
+- [TikTok - Reportar contenido](../fuentes/global-tiktok-report.md)
+- [UNdata](../fuentes/global-un-data.md)
+- [VirusTotal](../fuentes/global-virustotal.md)
+- [World Bank Open Data](../fuentes/global-world-bank.md)
+- [X Help Center - Reportar](../fuentes/global-x-report.md)

@@ -1,509 +1,509 @@
 {
   "resources": [
     {
-      "id": "es-incibe-017",
-      "name": "017 - Ayuda en Ciberseguridad",
-      "text": "017 - Ayuda en Ciberseguridad Obtener orientación gratuita y confidencial ante riesgos e incidentes digitales. Contactar sin reenviar material sensible y explicar hechos, plataforma y urgencia. Es asistencia especializada; no sustituye denuncia ni emergencia. ciberseguridad proteccion-menores violencia-digital grooming-sextortion sexual-digital-violence platform-report ES",
-      "url": "https://www.incibe.es/linea-de-ayuda-en-ciberseguridad"
-    },
-    {
-      "id": "eu-missing-116000",
-      "name": "116 000 - Línea para menores desaparecidos",
-      "text": "116 000 - Línea para menores desaparecidos Orientar y apoyar en casos de menores desaparecidos en países participantes. Confirmar disponibilidad nacional y combinar con la denuncia inmediata ante la policía. La línea apoya; no sustituye la denuncia ni el 112 ante peligro actual. desapariciones proteccion-menores missing-child EU",
-      "url": "https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/faq/index_es.htm"
-    },
-    {
       "id": "es-aemet",
       "name": "AEMET OpenData",
-      "text": "AEMET OpenData Consultar observaciones, avisos y climatología oficial. Guardar identificador de producto, estación, periodo y momento de consulta. Separar observación, predicción y aviso; no extrapolar una estación a todo un territorio. medio-ambiente datos-abiertos image-geolocation disaster-crisis statistical-claim ES",
+      "text": "Consultar observaciones, avisos y climatología oficial. Guardar identificador de producto, estación, periodo y momento de consulta. lugar fecha producto observaciones avisos series meteorológicas",
       "url": "https://opendata.aemet.es/"
     },
     {
       "id": "es-aena",
       "name": "Aena Información de Aeropuertos",
-      "text": "Aena Información de Aeropuertos Consultar aeropuertos, vuelos publicados y avisos operativos. Comprobar aeropuerto, zona horaria y momento de actualización. La información operativa cambia y debe citarse con hora de consulta. transporte source-corroboration disaster-crisis ES",
+      "text": "Consultar aeropuertos, vuelos publicados y avisos operativos. Comprobar aeropuerto, zona horaria y momento de actualización. aeropuerto vuelo fecha estado publicado horarios avisos",
       "url": "https://www.aena.es/"
     },
     {
       "id": "es-alertcops",
       "name": "AlertCops",
-      "text": "AlertCops Facilitar comunicación y alertas de seguridad ciudadana mediante la aplicación oficial. Usar la aplicación conforme a sus indicaciones; ante peligro inmediato priorizar el número de emergencias. Una comunicación por la aplicación no debe asumirse como denuncia formal salvo confirmación. emergencias administracion immediate-emergency missing-adult missing-child ES",
+      "text": "Facilitar comunicación y alertas de seguridad ciudadana mediante la aplicación oficial. Usar la aplicación conforme a sus indicaciones; ante peligro inmediato priorizar el número de emergencias. tipo de incidente ubicación comunicación con fuerzas de seguridad alertas",
       "url": "https://alertcops.ses.mir.es/publico/alertcops/"
+    },
+    {
+      "id": "es-violencia-016",
+      "name": "Atención a todas las formas de violencia contra las mujeres",
+      "text": "Proporcionar información y atención especializada sobre violencia contra las mujeres. Consultar los canales disponibles; ante peligro inmediato llamar al {{contact:eu-112}}. necesidad de información o ayuda información asesoramiento atención psicosocial",
+      "url": "https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/"
+    },
+    {
+      "id": "es-incibe-017",
+      "name": "Ayuda en Ciberseguridad de INCIBE",
+      "text": "Obtener orientación gratuita y confidencial ante riesgos e incidentes digitales. Contactar sin reenviar material sensible y explicar hechos, plataforma y urgencia. descripción del incidente orientación derivación",
+      "url": "https://www.incibe.es/linea-de-ayuda-en-ciberseguridad"
     },
     {
       "id": "es-bde",
       "name": "Banco de España - Estadísticas",
-      "text": "Banco de España - Estadísticas Verificar series macroeconómicas, bancarias y financieras españolas. Citar código de serie, unidad, frecuencia y fecha de actualización. Las revisiones estadísticas pueden cambiar valores históricos. economia estadistica statistical-claim business ES",
+      "text": "Verificar series macroeconómicas, bancarias y financieras españolas. Citar código de serie, unidad, frecuencia y fecha de actualización. serie periodo series metadatos publicaciones",
       "url": "https://www.bde.es/wbe/es/estadisticas/"
     },
     {
       "id": "ar-boletin",
       "name": "Boletín Oficial de la República Argentina",
-      "text": "Boletín Oficial de la República Argentina Consultar actos y publicaciones oficiales nacionales argentinas. Citar edición, sección, fecha e identificador. Distinguir publicación nacional de boletines provinciales. legislacion administracion official-publications legal-claim business AR",
+      "text": "Consultar actos y publicaciones oficiales nacionales argentinas. Citar edición, sección, fecha e identificador. fecha sección texto ediciones normas avisos",
       "url": "https://www.boletinoficial.gob.ar/"
     },
     {
       "id": "es-boe",
       "name": "Boletín Oficial del Estado",
-      "text": "Boletín Oficial del Estado Localizar publicaciones oficiales, normas y actos administrativos estatales. Buscar por identificador o fecha y abrir el documento original cuando la conclusión requiera valor jurídico. La publicación original es la referencia oficial; el texto consolidado facilita la lectura pero carece de valor jurídico. legislacion administracion official-publications legal-claim ES",
+      "text": "Localizar publicaciones oficiales, normas y actos administrativos estatales. Buscar por identificador o fecha y abrir el documento original cuando la conclusión requiera valor jurídico. fecha identificador BOE texto o materia publicación oficial metadatos texto consolidado informativo",
       "url": "https://www.boe.es/"
     },
     {
       "id": "es-borme",
       "name": "Boletín Oficial del Registro Mercantil",
-      "text": "Boletín Oficial del Registro Mercantil Seguir actos inscritos y anuncios legales de sociedades españolas. Buscar la sociedad y ordenar los actos por fecha; conservar el identificador y el enlace al anuncio. Acredita que el acto fue publicado, pero no equivale al expediente mercantil completo. empresas administracion business official-publications ES",
+      "text": "Seguir actos inscritos y anuncios legales de sociedades españolas. Buscar la sociedad y ordenar los actos por fecha; conservar el identificador y el enlace al anuncio. denominación social fecha provincia actos societarios anuncios documentos publicados",
       "url": "https://www.boe.es/borme/"
     },
     {
       "id": "eu-bris",
       "name": "BRIS - Buscar una empresa",
-      "text": "BRIS - Buscar una empresa Buscar sociedades en registros mercantiles interconectados. Seleccionar jurisdicción y confirmar la entidad mediante su identificador nacional. Los detalles y documentos proceden del registro nacional correspondiente. empresas business EU",
+      "text": "Buscar sociedades en registros mercantiles interconectados. Seleccionar jurisdicción y confirmar la entidad mediante su identificador nacional. nombre número registral país datos básicos documentos disponibles",
       "url": "https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu/general-information-find-company_en"
     },
     {
       "id": "de-bundesanzeiger",
       "name": "Bundesanzeiger",
-      "text": "Bundesanzeiger Consultar anuncios y publicaciones empresariales oficiales alemanas. Buscar la denominación exacta y limitar por periodo y área. La fecha de publicación no siempre coincide con el periodo contable. empresas administracion business official-publications DE",
+      "text": "Consultar anuncios y publicaciones empresariales oficiales alemanas. Buscar la denominación exacta y limitar por periodo y área. empresa fecha tipo de publicación anuncios cuentas publicadas",
       "url": "https://www.bundesanzeiger.de/"
     },
     {
       "id": "es-cendoj",
       "name": "Buscador de Jurisprudencia CENDOJ",
-      "text": "Buscador de Jurisprudencia CENDOJ Localizar resoluciones judiciales publicadas por el poder judicial. Buscar por varios criterios y citar órgano, fecha y número de resolución. Una resolución concreta debe contextualizarse con recursos, jurisprudencia posterior y normativa aplicable. justicia legislacion legal-claim source-corroboration ES",
+      "text": "Localizar resoluciones judiciales publicadas por el poder judicial. Buscar por varios criterios y citar órgano, fecha y número de resolución. jurisdicción ponente fecha texto resoluciones metadatos judiciales",
       "url": "https://www.poderjudicial.es/search/"
     },
     {
       "id": "es-aepd-canal-prioritario",
       "name": "Canal prioritario de la AEPD",
-      "text": "Canal prioritario de la AEPD Solicitar retirada urgente de contenido sexual o violento difundido ilícitamente en situaciones de alto riesgo. Aportar enlaces y contexto sin redistribuir el contenido; denunciar también ante autoridades cuando corresponda. La solicitud de retirada es independiente de una denuncia penal. violencia-digital sexual-digital-violence grooming-sextortion ES",
+      "text": "Solicitar retirada urgente de contenido sexual o violento difundido ilícitamente en situaciones de alto riesgo. Aportar enlaces y contexto sin redistribuir el contenido; denunciar también ante autoridades cuando corresponda. URL circunstancias riesgo solicitud prioritaria de retirada",
       "url": "https://www.aepd.es/canalprioritario"
     },
     {
       "id": "es-ccn-cert",
       "name": "CCN-CERT",
-      "text": "CCN-CERT Consultar alertas, guías y metodología institucional de ciberseguridad. Citar el documento y su versión, y contrastar indicadores operativos con su fuente. Una guía describe buenas prácticas; no atribuye automáticamente una actividad. ciberseguridad domain-footprint source-corroboration ES",
+      "text": "Consultar alertas, guías y metodología institucional de ciberseguridad. Citar el documento y su versión, y contrastar indicadores operativos con su fuente. producto vulnerabilidad técnica avisos guías recomendaciones",
       "url": "https://www.ccn-cert.cni.es/"
     },
     {
       "id": "es-cnig-pnoa",
       "name": "Centro de Descargas CNIG y PNOA",
-      "text": "Centro de Descargas CNIG y PNOA Obtener cartografía, ortofotos, modelos de terreno y LiDAR oficiales. Elegir producto, fecha y resolución adecuados y conservar sus metadatos. Una coincidencia visual debe apoyarse en fecha, escala y más de un rasgo estable. geoint datos-abiertos image-geolocation disaster-crisis ES",
+      "text": "Obtener cartografía, ortofotos, modelos de terreno y LiDAR oficiales. Elegir producto, fecha y resolución adecuados y conservar sus metadatos. área producto fecha ortofotos cartografía modelos de elevación",
       "url": "https://centrodedescargas.cnig.es/"
     },
     {
       "id": "es-cndes-desaparecidos",
       "name": "Centro Nacional de Desaparecidos",
-      "text": "Centro Nacional de Desaparecidos Consultar orientación oficial y alertas públicas vigentes sobre desapariciones. Ante una desaparición, realizar la comprobación inicial recomendada y denunciar de inmediato; no esperar 24 horas. Solo difundir alertas vigentes y autorizadas por la fuente oficial. desapariciones proteccion-menores missing-adult missing-child ES",
+      "text": "Consultar orientación oficial y alertas públicas vigentes sobre desapariciones. Ante una desaparición, realizar la comprobación inicial recomendada y denunciar de inmediato; no esperar 24 horas. circunstancias último lugar y hora descripción primeros pasos alertas autorizadas informes",
       "url": "https://cndes-web.ses.mir.es/publico/Desaparecidos/"
     },
     {
       "id": "es-cnmv",
       "name": "CNMV",
-      "text": "CNMV Consultar información regulada de emisores y entidades supervisadas. Resolver primero la entidad y después ordenar sus comunicaciones por fecha y tipo. Una comunicación acredita lo declarado al regulador, no confirma todos sus contenidos materiales. empresas economia business source-corroboration ES",
+      "text": "Consultar información regulada de emisores y entidades supervisadas. Resolver primero la entidad y después ordenar sus comunicaciones por fecha y tipo. nombre NIF ISIN comunicaciones informes registros",
       "url": "https://www.cnmv.es/"
     },
     {
       "id": "gb-companies-house",
       "name": "Companies House",
-      "text": "Companies House Consultar empresas, cargos y documentos societarios del Reino Unido. Resolver por company number y revisar filing history y estado. Companies House registra información presentada y no verifica necesariamente su exactitud material. empresas datos-abiertos business GB",
+      "text": "Consultar empresas, cargos y documentos societarios del Reino Unido. Resolver por company number y revisar filing history y estado. company number nombre officer perfil societario filings officers",
       "url": "https://find-and-update.company-information.service.gov.uk/"
     },
     {
       "id": "eu-copernicus",
       "name": "Copernicus Data Space Ecosystem",
-      "text": "Copernicus Data Space Ecosystem Acceder a observación terrestre Sentinel y productos Copernicus. Registrar misión, producto, fecha, cobertura nubosa y transformación aplicada. Una imagen necesita contexto temporal, resolución y corroboración. geoint medio-ambiente image-geolocation disaster-crisis EU GLOBAL",
+      "text": "Acceder a observación terrestre Sentinel y productos Copernicus. Registrar misión, producto, fecha, cobertura nubosa y transformación aplicada. área intervalo sensor imágenes satelitales productos derivados",
       "url": "https://dataspace.copernicus.eu/"
     },
     {
       "id": "eu-erascc-emergency-mapping",
       "name": "Copernicus Emergency Management Service",
-      "text": "Copernicus Emergency Management Service Consultar cartografía y activaciones de respuesta a desastres. Citar código de activación, producto, fecha y versión. Los mapas se producen para un objetivo y ventana temporal concretos. emergencias geoint disaster-crisis image-geolocation EU GLOBAL",
+      "text": "Consultar cartografía y activaciones de respuesta a desastres. Citar código de activación, producto, fecha y versión. evento lugar fecha mapas de emergencia productos de activación",
       "url": "https://emergency.copernicus.eu/"
     },
     {
       "id": "br-cnpj-abertos",
       "name": "Dados Abertos CNPJ",
-      "text": "Dados Abertos CNPJ Acceder a datos abiertos del cadastro de personas jurídicas brasileñas. Conservar fecha del lote y validar el CNPJ antes de cruzar información. Un lote refleja el estado publicado en su fecha de referencia. empresas datos-abiertos business BR",
+      "text": "Acceder a datos abiertos del cadastro de personas jurídicas brasileñas. Conservar fecha del lote y validar el CNPJ antes de cruzar información. CNPJ razão social datos cadastrais situação atividades",
       "url": "https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj"
     },
     {
       "id": "eu-data-portal",
       "name": "data.europa.eu",
-      "text": "data.europa.eu Descubrir datos abiertos de instituciones europeas y países participantes. Usar el portal como descubridor y verificar la distribución en el publicador original. La licencia y calidad dependen del conjunto subyacente. datos-abiertos administracion statistical-claim source-corroboration EU",
+      "text": "Descubrir datos abiertos de instituciones europeas y países participantes. Usar el portal como descubridor y verificar la distribución en el publicador original. tema publicador país datasets distribuciones licencias declaradas",
       "url": "https://data.europa.eu/"
     },
     {
       "id": "fr-data-gouv",
       "name": "data.gouv.fr",
-      "text": "data.gouv.fr Descubrir datos abiertos franceses. Comprobar productor, licencia, cobertura y fecha de cada recurso. El portal incluye datos oficiales y comunitarios con autoridad distinta. datos-abiertos statistical-claim source-corroboration FR",
+      "text": "Descubrir datos abiertos franceses. Comprobar productor, licencia, cobertura y fecha de cada recurso. tema organización datasets recursos metadatos",
       "url": "https://www.data.gouv.fr/"
     },
     {
       "id": "gb-data-gov",
       "name": "data.gov.uk",
-      "text": "data.gov.uk Descubrir datos públicos del Reino Unido. Seguir al departamento publicador y conservar versión y licencia. La ficha del catálogo no garantiza actualidad del archivo. datos-abiertos statistical-claim source-corroboration GB",
+      "text": "Descubrir datos públicos del Reino Unido. Seguir al departamento publicador y conservar versión y licencia. tema organización datasets distribuciones licencias",
       "url": "https://www.data.gov.uk/"
     },
     {
       "id": "co-datos-gov",
       "name": "Datos Abiertos Colombia",
-      "text": "Datos Abiertos Colombia Descubrir y consultar conjuntos públicos colombianos. Revisar publicador, fecha, diccionario y cobertura. La autoridad depende de la entidad que publica el conjunto. datos-abiertos statistical-claim source-corroboration CO",
+      "text": "Descubrir y consultar conjuntos públicos colombianos. Revisar publicador, fecha, diccionario y cobertura. tema entidad territorio datasets API metadatos",
       "url": "https://www.datos.gov.co/"
     },
     {
       "id": "ar-datos-gob",
       "name": "Datos Argentina",
-      "text": "Datos Argentina Descubrir datos abiertos nacionales argentinos. Seguir al organismo productor y registrar versión y licencia. El catálogo no convierte todos los conjuntos en equivalentes. datos-abiertos statistical-claim source-corroboration AR",
+      "text": "Descubrir datos abiertos nacionales argentinos. Seguir al organismo productor y registrar versión y licencia. tema organización datasets distribuciones metadatos",
       "url": "https://datos.gob.ar/"
     },
     {
       "id": "es-datos-gob",
       "name": "datos.gob.es",
-      "text": "datos.gob.es Descubrir conjuntos de datos estatales, autonómicos y locales. Usar el catálogo para localizar el conjunto y comprobar después la ficha del organismo publicador. Es un metacatálogo; la autoridad y licencia pertenecen al dataset final. datos-abiertos administracion statistical-claim source-corroboration ES",
+      "text": "Descubrir conjuntos de datos estatales, autonómicos y locales. Usar el catálogo para localizar el conjunto y comprobar después la ficha del organismo publicador. tema organismo territorio fichas de datasets distribuciones licencias declaradas",
       "url": "https://datos.gob.es/"
     },
     {
       "id": "mx-datos-gob",
       "name": "datos.gob.mx",
-      "text": "datos.gob.mx Descubrir conjuntos de datos del Gobierno de México. Verificar la dependencia publicadora, actualización y formato. El catálogo agrega fuentes con frecuencias distintas. datos-abiertos statistical-claim source-corroboration MX",
+      "text": "Descubrir conjuntos de datos del Gobierno de México. Verificar la dependencia publicadora, actualización y formato. tema institución datasets recursos metadatos",
       "url": "https://www.datos.gob.mx/"
     },
     {
       "id": "es-dgt-datos",
       "name": "DGT Datos Abiertos",
-      "text": "DGT Datos Abiertos Consultar estadísticas y datos publicados sobre tráfico y movilidad. Comprobar definición, cobertura y fecha antes de comparar territorios. Datos agregados no identifican por sí solos la causa de un incidente. transporte datos-abiertos statistical-claim disaster-crisis ES",
+      "text": "Consultar estadísticas y datos publicados sobre tráfico y movilidad. Comprobar definición, cobertura y fecha antes de comparar territorios. indicador periodo territorio series mapas informes",
       "url": "https://www.dgt.es/menusecundario/dgt-en-cifras/"
     },
     {
       "id": "mx-dof",
       "name": "Diario Oficial de la Federación",
-      "text": "Diario Oficial de la Federación Consultar publicaciones oficiales federales mexicanas. Citar fecha, edición y documento oficial. Comprobar reformas y vigencia en fuentes jurídicas correspondientes. legislacion administracion official-publications legal-claim MX",
+      "text": "Consultar publicaciones oficiales federales mexicanas. Citar fecha, edición y documento oficial. fecha texto organismo ediciones actos normas",
       "url": "https://www.dof.gob.mx/"
     },
     {
       "id": "pt-dre",
       "name": "Diário da República Electrónico",
-      "text": "Diário da República Electrónico Consultar publicaciones y legislación oficial portuguesa. Citar número, serie, fecha y enlace permanente. Verificar vigencia y alteraciones de la norma. legislacion administracion official-publications legal-claim PT",
+      "text": "Consultar publicaciones y legislación oficial portuguesa. Citar número, serie, fecha y enlace permanente. número fecha texto diario oficial legislación",
       "url": "https://diariodarepublica.pt/"
     },
     {
       "id": "eu-echa",
       "name": "ECHA Information on Chemicals",
-      "text": "ECHA Information on Chemicals Consultar expedientes públicos y clasificación de sustancias. Resolver la sustancia por identificador y citar la sección consultada. Distinguir clasificación armonizada, notificada y evaluación en curso. medio-ambiente datos-abiertos source-corroboration statistical-claim EU",
+      "text": "Consultar expedientes públicos y clasificación de sustancias. Resolver la sustancia por identificador y citar la sección consultada. nombre CAS EC identidad clasificación expedientes públicos",
       "url": "https://echa.europa.eu/information-on-chemicals"
     },
     {
       "id": "eu-sanctions-map",
       "name": "EU Sanctions Map",
-      "text": "EU Sanctions Map Explorar regímenes de sanciones adoptados por la UE. Usar el mapa para localizar el acto jurídico y verificarlo en EUR-Lex. La inclusión y alcance deben determinarse con el acto vigente. administracion empresas business source-corroboration EU",
+      "text": "Explorar regímenes de sanciones adoptados por la UE. Usar el mapa para localizar el acto jurídico y verificarlo en EUR-Lex. país régimen entidad medidas referencias jurídicas",
       "url": "https://www.sanctionsmap.eu/"
     },
     {
       "id": "eu-euipo",
       "name": "EUIPO eSearch plus",
-      "text": "EUIPO eSearch plus Consultar marcas y diseños de la Unión Europea. Buscar variantes y comprobar estado y fechas procesales. Solicitud y registro vigente no son equivalentes. propiedad-intelectual empresas business EU",
+      "text": "Consultar marcas y diseños de la Unión Europea. Buscar variantes y comprobar estado y fechas procesales. signo titular número expedientes estado titulares publicados",
       "url": "https://euipo.europa.eu/eSearch/"
     },
     {
       "id": "eu-eurlex",
       "name": "EUR-Lex",
-      "text": "EUR-Lex Consultar legislación, jurisprudencia y Diario Oficial de la UE. Preferir el identificador CELEX y revisar estado, relaciones y versión lingüística. Distinguir acto adoptado, consolidación y medidas nacionales de transposición. legislacion official-publications legal-claim EU",
+      "text": "Consultar legislación, jurisprudencia y Diario Oficial de la UE. Preferir el identificador CELEX y revisar estado, relaciones y versión lingüística. CELEX texto fecha actos jurídicos versiones metadatos",
       "url": "https://eur-lex.europa.eu/"
     },
     {
       "id": "eu-europol-cybercrime",
       "name": "Europol - Report Cybercrime",
-      "text": "Europol - Report Cybercrime Dirigir a las vías nacionales europeas para reportar ciberdelitos. Seleccionar el país y seguir el enlace policial nacional. Europol no recibe normalmente denuncias directas de particulares. ciberseguridad justicia grooming-sextortion platform-report EU",
+      "text": "Dirigir a las vías nacionales europeas para reportar ciberdelitos. Seleccionar el país y seguir el enlace policial nacional. país tipo de incidente autoridad nacional competente",
       "url": "https://www.europol.europa.eu/report-a-crime/report-cybercrime-online"
     },
     {
       "id": "eu-eurostat",
       "name": "Eurostat",
-      "text": "Eurostat Comparar estadísticas armonizadas europeas. Conservar código, unidad, filtros, banderas de calidad y fecha de extracción. Las diferencias nacionales solo son comparables bajo la definición armonizada. estadistica economia statistical-claim EU",
+      "text": "Comparar estadísticas armonizadas europeas. Conservar código, unidad, filtros, banderas de calidad y fecha de extracción. código de dataset geografía periodo series comparables metadatos",
       "url": "https://ec.europa.eu/eurostat/"
     },
     {
       "id": "it-gazzetta",
       "name": "Gazzetta Ufficiale",
-      "text": "Gazzetta Ufficiale Consultar publicaciones y normativa oficial italiana. Citar serie, número y fecha y revisar cambios posteriores. Los textos coordinados deben relacionarse con sus publicaciones oficiales. legislacion administracion official-publications legal-claim IT",
+      "text": "Consultar publicaciones y normativa oficial italiana. Citar serie, número y fecha y revisar cambios posteriores. fecha número texto publicaciones oficiales normas",
       "url": "https://www.gazzettaufficiale.it/"
     },
     {
       "id": "global-gleif",
       "name": "GLEIF LEI Search",
-      "text": "GLEIF LEI Search Resolver entidades jurídicas y relaciones mediante identificadores LEI. Buscar por identificador cuando exista y revisar estado y fecha de actualización. Las relaciones reflejan reportes LEI y excepciones declaradas. empresas datos-abiertos business GLOBAL",
+      "text": "Resolver entidades jurídicas y relaciones mediante identificadores LEI. Buscar por identificador cuando exista y revisar estado y fecha de actualización. nombre LEI BIC país datos de referencia relaciones societarias declaradas",
       "url": "https://www.gleif.org/en/lei-data/gleif-api"
     },
     {
       "id": "global-gdacs",
       "name": "Global Disaster Alert and Coordination System",
-      "text": "Global Disaster Alert and Coordination System Consultar alertas y coordinación inicial sobre grandes desastres. Usar como panorama inicial y seguir a autoridades nacionales y fuentes del evento. Las estimaciones tempranas tienen incertidumbre y pueden cambiar. emergencias geoint disaster-crisis GLOBAL",
+      "text": "Consultar alertas y coordinación inicial sobre grandes desastres. Usar como panorama inicial y seguir a autoridades nacionales y fuentes del evento. evento país fecha alertas mapas estimaciones",
       "url": "https://www.gdacs.org/"
     },
     {
       "id": "global-missing-children-network",
       "name": "Global Missing Children's Network",
-      "text": "Global Missing Children's Network Localizar organizaciones y carteles autorizados de menores desaparecidos en países participantes. Verificar que el cartel siga activo en la fuente nacional antes de difundirlo. La ausencia no descarta una investigación en curso. desapariciones proteccion-menores missing-child GLOBAL",
+      "text": "Localizar organizaciones y carteles autorizados de menores desaparecidos en países participantes. Verificar que el cartel siga activo en la fuente nacional antes de difundirlo. país nombre organización nacional carteles públicos",
       "url": "https://globalmissingkids.org/"
     },
     {
       "id": "es-guardia-civil-delitos-telematicos",
       "name": "Guardia Civil - Delitos telemáticos",
-      "text": "Guardia Civil - Delitos telemáticos Consultar orientación y vías oficiales ante delitos cometidos mediante Internet. Distinguir información general, colaboración y denuncia; ante urgencia usar 112. Una comunicación de indicios no equivale necesariamente a denuncia. ciberseguridad justicia grooming-sextortion sexual-digital-violence platform-report ES",
+      "text": "Consultar orientación y vías oficiales ante delitos cometidos mediante Internet. Distinguir información general, colaboración y denuncia; ante urgencia usar {{contact:eu-112}}. hechos referencias orientación acceso a denuncia o comunicación",
       "url": "https://www.guardiacivil.es/es/servicios/delitos_telematicos/"
     },
     {
       "id": "de-handelsregister",
       "name": "Handelsregister",
-      "text": "Handelsregister Consultar registros mercantiles alemanes. Seleccionar registro, tipo y número de hoja cuando se conozcan. Los documentos y extractos tienen alcances distintos. empresas business DE",
+      "text": "Consultar registros mercantiles alemanes. Seleccionar registro, tipo y número de hoja cuando se conozcan. nombre número registral sede datos registrales documentos disponibles",
       "url": "https://www.handelsregister.de/"
     },
     {
       "id": "es-ign-geodesia",
       "name": "IGN Información Geográfica",
-      "text": "IGN Información Geográfica Consultar mapas, topónimos, sismicidad y servicios geográficos oficiales. Combinar topónimo y coordenadas y conservar la capa consultada. La localización nominal puede tener homónimos; corroborar con geometría. geoint image-geolocation disaster-crisis ES",
+      "text": "Consultar mapas, topónimos, sismicidad y servicios geográficos oficiales. Combinar topónimo y coordenadas y conservar la capa consultada. topónimo coordenadas evento cartografía toponimia datos geofísicos",
       "url": "https://www.ign.es/"
     },
     {
       "id": "es-incibe",
       "name": "INCIBE",
-      "text": "INCIBE Consultar guías y servicios españoles de ciberseguridad. Elegir la guía correspondiente y comprobar que el canal sigue vigente. La orientación general no sustituye la respuesta de emergencias ni una denuncia. ciberseguridad verificacion domain-footprint grooming-sextortion platform-report ES",
+      "text": "Consultar guías y servicios españoles de ciberseguridad. Elegir la guía correspondiente y comprobar que el canal sigue vigente. tipo de incidente público afectado recomendaciones canales de ayuda",
       "url": "https://www.incibe.es/"
     },
     {
       "id": "es-ine",
       "name": "INE Datos Abiertos",
-      "text": "INE Datos Abiertos Consultar estadísticas oficiales españolas y series territoriales. Identificar la operación estadística, seleccionar periodo y territorio y conservar unidad y revisión. Comparar valores solo si comparten definición, unidad y periodo. estadistica datos-abiertos statistical-claim source-corroboration ES",
+      "text": "Consultar estadísticas oficiales españolas y series territoriales. Identificar la operación estadística, seleccionar periodo y territorio y conservar unidad y revisión. indicador periodo territorio series estadísticas tablas metadatos",
       "url": "https://www.ine.es/datosabiertos/"
     },
     {
       "id": "global-inhope-report",
       "name": "INHOPE - Encontrar una línea de reporte",
-      "text": "INHOPE - Encontrar una línea de reporte Localizar la línea nacional adecuada para reportar posible material de abuso sexual infantil. No descargar, guardar ni compartir el contenido; comunicar la URL a la línea competente. Puede reportarse incluso si existe incertidumbre sobre la edad. proteccion-menores csam-report GLOBAL",
+      "text": "Localizar la línea nacional adecuada para reportar posible material de abuso sexual infantil. No descargar, guardar ni compartir el contenido; comunicar la URL a la línea competente. país URL derivación a hotline nacional",
       "url": "https://www.inhope.org/EN#hotlineReferral"
     },
     {
       "id": "global-wayback",
       "name": "Internet Archive Wayback Machine",
-      "text": "Internet Archive Wayback Machine Consultar capturas históricas de páginas públicas. Abrir la captura y documentar URL original, fecha de captura y elementos ausentes. La captura prueba lo archivado, no necesariamente el estado completo del sitio. verificacion dominios-internet domain-footprint source-corroboration GLOBAL",
+      "text": "Consultar capturas históricas de páginas públicas. Abrir la captura y documentar URL original, fecha de captura y elementos ausentes. URL fecha capturas archivadas",
       "url": "https://web.archive.org/"
     },
     {
       "id": "gb-iwf-report",
       "name": "Internet Watch Foundation Report",
-      "text": "Internet Watch Foundation Report Reportar de forma confidencial posible material de abuso sexual infantil alojado en Internet. No descargar ni compartir; seguir el selector territorial del servicio. El servicio evalúa el contenido conforme a su competencia. proteccion-menores csam-report GB GLOBAL",
+      "text": "Reportar de forma confidencial posible material de abuso sexual infantil alojado en Internet. No descargar ni compartir; seguir el selector territorial del servicio. URL contexto mínimo evaluación y posible derivación",
       "url": "https://report.iwf.org.uk/"
     },
     {
       "id": "global-interpol-notices",
       "name": "INTERPOL Red Notices",
-      "text": "INTERPOL Red Notices Consultar notificaciones públicas seleccionadas de INTERPOL. Confirmar identidad mediante varios datos y conservar el enlace oficial vigente. Una notificación roja no es una orden de detención internacional ni prueba culpabilidad. justicia verificacion source-corroboration GLOBAL",
+      "text": "Consultar notificaciones públicas seleccionadas de INTERPOL. Confirmar identidad mediante varios datos y conservar el enlace oficial vigente. nombre nacionalidad notificaciones públicas datos publicados",
       "url": "https://www.interpol.int/How-we-work/Notices/Red-Notices/View-Red-Notices"
     },
     {
       "id": "global-interpol-yellow",
       "name": "INTERPOL Yellow Notices",
-      "text": "INTERPOL Yellow Notices Consultar notificaciones amarillas públicas de personas desaparecidas. Usar varios identificadores y remitir cualquier información al canal indicado por las autoridades. La ausencia en la lista pública no significa que no exista investigación. desapariciones missing-adult missing-child GLOBAL",
+      "text": "Consultar notificaciones amarillas públicas de personas desaparecidas. Usar varios identificadores y remitir cualquier información al canal indicado por las autoridades. nombre nacionalidad edad notificaciones públicas vigentes",
       "url": "https://www.interpol.int/How-we-work/Notices/Yellow-Notices/View-Yellow-Notices"
     },
     {
       "id": "es-invente",
       "name": "INVENTE",
-      "text": "INVENTE Resolver identidades de entidades de los sectores públicos estatal, autonómico y local. Confirmar la entidad exacta antes de cruzarla con contratos, subvenciones o presupuestos. La presencia identifica pertenencia al inventario, no valida cualquier dato de terceros. administracion empresas business source-corroboration ES",
+      "text": "Resolver identidades de entidades de los sectores públicos estatal, autonómico y local. Confirmar la entidad exacta antes de cruzarla con contratos, subvenciones o presupuestos. nombre de entidad NIF clasificación institucional dependencia identificadores",
       "url": "https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/BasesDatos/invente/Paginas/inicio.aspx"
     },
     {
       "id": "pt-justica-empresa",
       "name": "Justiça.gov.pt - Empresa",
-      "text": "Justiça.gov.pt - Empresa Acceder a servicios oficiales de publicidad empresarial portuguesa. Elegir el servicio oficial y conservar el identificador y fecha. El acceso a una certidão depende del código y su vigencia. empresas business PT",
+      "text": "Acceder a servicios oficiales de publicidad empresarial portuguesa. Elegir el servicio oficial y conservar el identificador y fecha. NIPC código de acceso certidão permanente datos registrales",
       "url": "https://justica.gov.pt/Servicos/Pedir-Certidao-Permanente"
+    },
+    {
+      "id": "eu-missing-116000",
+      "name": "Línea europea para menores desaparecidos",
+      "text": "Orientar y apoyar en casos de menores desaparecidos en países participantes. Confirmar disponibilidad nacional y combinar con la denuncia inmediata ante la policía. país circunstancias asistencia y derivación",
+      "url": "https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/faq/index_es.htm"
     },
     {
       "id": "global-meta-safety",
       "name": "Meta Safety Center - Reporting",
-      "text": "Meta Safety Center - Reporting Localizar mecanismos oficiales de reporte de Facebook e Instagram. Reportar desde el elemento cuando sea posible y conservar solo referencias necesarias. Una decisión de moderación no determina responsabilidad penal. reporte-plataformas violencia-digital platform-report sexual-digital-violence grooming-sextortion GLOBAL",
+      "text": "Localizar mecanismos oficiales de reporte de Facebook e Instagram. Reportar desde el elemento cuando sea posible y conservar solo referencias necesarias. tipo de contenido cuenta o publicación ruta de reporte",
       "url": "https://www.facebook.com/help/reportlinks"
     },
     {
       "id": "es-miteco-datos",
       "name": "MITECO Datos y Cartografía",
-      "text": "MITECO Datos y Cartografía Localizar información ambiental y geográfica oficial. Conservar versión, sistema de referencia y fecha del conjunto. Las capas representan una escala y metodología determinadas. medio-ambiente geoint disaster-crisis statistical-claim ES",
+      "text": "Localizar información ambiental y geográfica oficial. Conservar versión, sistema de referencia y fecha del conjunto. tema territorio fecha capas geográficas inventarios series",
       "url": "https://www.miteco.gob.es/es/cartografia-y-sig/ide/descargas.html"
     },
     {
       "id": "us-ncmec-cybertipline",
       "name": "NCMEC CyberTipline",
-      "text": "NCMEC CyberTipline Comunicar sospechas de explotación sexual infantil a NCMEC cuando corresponda. Comprobar jurisdicción; no descargar ni redistribuir contenido. La derivación depende de competencia y datos aportados. proteccion-menores desapariciones csam-report grooming-sextortion missing-child GLOBAL",
+      "text": "Comunicar sospechas de explotación sexual infantil a NCMEC cuando corresponda. Comprobar jurisdicción; no descargar ni redistribuir contenido. tipo de incidente referencias mínimas reporte para revisión y derivación",
       "url": "https://report.cybertip.org/"
-    },
-    {
-      "id": "eu-emergency-112",
-      "name": "Número europeo de emergencias 112",
-      "text": "Número europeo de emergencias 112 Contactar gratuitamente con policía, ambulancia o bomberos en toda la UE. Llamar solo ante una emergencia real y seguir las instrucciones del operador. El 112 coordina respuesta inmediata; otros trámites pueden requerir denuncia posterior. emergencias immediate-emergency disaster-crisis missing-adult missing-child EU",
-      "url": "https://digital-strategy.ec.europa.eu/es/policies/112"
     },
     {
       "id": "es-oepm",
       "name": "OEPM y Consulta de Expedientes",
-      "text": "OEPM y Consulta de Expedientes Consultar marcas, patentes, diseños y actos de tramitación. Buscar variantes del nombre y comprobar el estado y la fecha del expediente. Solicitud, concesión y vigencia son estados diferentes. propiedad-intelectual empresas business source-corroboration ES",
+      "text": "Consultar marcas, patentes, diseños y actos de tramitación. Buscar variantes del nombre y comprobar el estado y la fecha del expediente. titular signo número de expediente expedientes situación titulares publicados",
       "url": "https://www.oepm.es/"
     },
     {
       "id": "global-osm",
       "name": "OpenStreetMap",
-      "text": "OpenStreetMap Consultar cartografía colaborativa y objetos geográficos. Corroborar elementos con fuentes primarias o imágenes recientes. Los datos son colaborativos y pueden contener errores o ediciones recientes. geoint image-geolocation disaster-crisis GLOBAL",
+      "text": "Consultar cartografía colaborativa y objetos geográficos. Corroborar elementos con fuentes primarias o imágenes recientes. topónimo coordenadas etiqueta geometrías etiquetas historial",
       "url": "https://www.openstreetmap.org/"
     },
     {
       "id": "es-placsp",
       "name": "Plataforma de Contratación del Sector Público",
-      "text": "Plataforma de Contratación del Sector Público Localizar licitaciones, adjudicaciones y perfiles del contratante. Buscar el expediente y revisar todas sus versiones y documentos asociados. Distinguir presupuesto, importe adjudicado y modificaciones posteriores. contratacion administracion procurement business ES",
+      "text": "Localizar licitaciones, adjudicaciones y perfiles del contratante. Buscar el expediente y revisar todas sus versiones y documentos asociados. expediente órgano adjudicatario CPV anuncios adjudicaciones documentos fechas",
       "url": "https://contrataciondelestado.es/"
     },
     {
       "id": "es-policia-denuncias",
       "name": "Policía Nacional - Denuncias",
-      "text": "Policía Nacional - Denuncias Orientar sobre presentación de denuncias ante Policía Nacional. Preservar referencias lícitas y explicar hechos sin investigar ni confrontar por cuenta propia. La autoridad determina la calificación y diligencias. justicia emergencias missing-adult missing-child grooming-sextortion sexual-digital-violence csam-report ES",
+      "text": "Orientar sobre presentación de denuncias ante Policía Nacional. Preservar referencias lícitas y explicar hechos sin investigar ni confrontar por cuenta propia. hechos ubicación referencias disponibles instrucciones de denuncia",
       "url": "https://www.policia.es/_es/denuncias.php"
     },
     {
       "id": "br-transparencia",
       "name": "Portal da Transparência",
-      "text": "Portal da Transparência Consultar gasto, contratos, transferencias y sanciones federales brasileñas. Documentar filtro, periodo y conjunto consultado. La publicación está delimitada por competencias y reglas brasileñas. administracion contratacion subvenciones procurement business BR",
+      "text": "Consultar gasto, contratos, transferencias y sanciones federales brasileñas. Documentar filtro, periodo y conjunto consultado. CPF/CNPJ cuando sea legalmente publicable órgano periodo gastos contratos sanciones",
       "url": "https://portaldatransparencia.gov.br/"
     },
     {
       "id": "es-transparencia",
       "name": "Portal de Transparencia de la AGE",
-      "text": "Portal de Transparencia de la AGE Consultar estructura, cargos, planes, presupuestos y otra publicidad activa estatal. Identificar el organismo competente y seguir la referencia hasta el documento original. La ausencia en el portal estatal no implica inexistencia en portales autonómicos o locales. administracion datos-abiertos source-corroboration procurement ES",
+      "text": "Consultar estructura, cargos, planes, presupuestos y otra publicidad activa estatal. Identificar el organismo competente y seguir la referencia hasta el documento original. organismo materia publicidad activa organigramas documentos",
       "url": "https://transparencia.gob.es/"
     },
     {
       "id": "eu-ecourts",
       "name": "Portal Europeo de e-Justicia",
-      "text": "Portal Europeo de e-Justicia Localizar registros, procedimientos y herramientas judiciales transfronterizas. Elegir país y materia, y seguir al organismo nacional competente. La información general no sustituye normas procesales nacionales vigentes. justicia legislacion legal-claim business EU",
+      "text": "Localizar registros, procedimientos y herramientas judiciales transfronterizas. Elegir país y materia, y seguir al organismo nacional competente. país materia guías registros conectados formularios",
       "url": "https://e-justice.europa.eu/"
     },
     {
       "id": "es-proteccion-civil",
       "name": "Protección Civil - Recomendaciones",
-      "text": "Protección Civil - Recomendaciones Consultar recomendaciones oficiales de autoprotección por tipo de riesgo. Seguir primero instrucciones de autoridades locales y usar estas guías como preparación y apoyo. Una recomendación general puede ser desplazada por una orden oficial específica. emergencias disaster-crisis immediate-emergency ES",
+      "text": "Consultar recomendaciones oficiales de autoprotección por tipo de riesgo. Seguir primero instrucciones de autoridades locales y usar estas guías como preparación y apoyo. tipo de riesgo ubicación medidas de autoprotección",
       "url": "https://www.proteccioncivil.es/gestion-riesgos/recomendaciones"
     },
     {
       "id": "es-puertos",
       "name": "Puertos del Estado",
-      "text": "Puertos del Estado Consultar información portuaria, oceanográfica y meteorológica marítima. Seleccionar estación y periodo y diferenciar observación de predicción. Una boya representa condiciones locales y no toda la costa. transporte medio-ambiente source-corroboration disaster-crisis ES",
+      "text": "Consultar información portuaria, oceanográfica y meteorológica marítima. Seleccionar estación y periodo y diferenciar observación de predicción. puerto boya fecha observaciones predicciones estadísticas",
       "url": "https://www.puertos.es/"
     },
     {
       "id": "es-registradores",
       "name": "Registradores de España",
-      "text": "Registradores de España Solicitar publicidad mercantil y de la propiedad disponible legalmente. Elegir el producto adecuado y documentar la fecha y el registro emisor. Nota informativa y certificación tienen distinto alcance probatorio. empresas geoint business source-corroboration ES",
+      "text": "Solicitar publicidad mercantil y de la propiedad disponible legalmente. Elegir el producto adecuado y documentar la fecha y el registro emisor. sociedad finca persona con interés legítimo cuando proceda notas certificaciones cuentas",
       "url": "https://www.registradores.org/"
     },
     {
       "id": "fr-inpi-rne",
       "name": "Registre national des entreprises",
-      "text": "Registre national des entreprises Consultar información pública del registro nacional francés de empresas. Resolver la entidad por SIREN y revisar la fecha de los datos. Distinguir establecimiento SIRET de entidad SIREN. empresas business FR",
+      "text": "Consultar información pública del registro nacional francés de empresas. Resolver la entidad por SIREN y revisar la fecha de los datos. denominación SIREN SIRET identidad empresarial actos y documentos disponibles",
       "url": "https://data.inpi.fr/"
     },
     {
       "id": "it-registro-imprese",
       "name": "Registro Imprese",
-      "text": "Registro Imprese Consultar información registral de empresas italianas. Resolver la empresa por identificador y seleccionar el documento adecuado. Una ficha básica no sustituye una visura o certificación. empresas business IT",
+      "text": "Consultar información registral de empresas italianas. Resolver la empresa por identificador y seleccionar el documento adecuado. denominación codice fiscale REA datos registrales visure disponibles",
       "url": "https://www.registroimprese.it/"
     },
     {
       "id": "es-rmc",
       "name": "Registro Mercantil Central",
-      "text": "Registro Mercantil Central Consultar denominaciones y servicios de publicidad mercantil central. Usar la denominación exacta y distinguir consultas informativas de certificaciones. Una consulta orienta; la certificación es el documento con efectos propios. empresas business ES",
+      "text": "Consultar denominaciones y servicios de publicidad mercantil central. Usar la denominación exacta y distinguir consultas informativas de certificaciones. denominación sociedad denominaciones información registral disponible",
       "url": "https://www.rmc.es/"
     },
     {
       "id": "es-incibe-report-csam",
       "name": "Reporte de material de abuso sexual infantil de INCIBE",
-      "text": "Reporte de material de abuso sexual infantil de INCIBE Comunicar de forma anónima una URL con posible material de abuso sexual infantil. Copiar únicamente la URL y contexto mínimo; no descargar, guardar, capturar ni compartir el material. El reporte ayuda a tramitar retirada, pero no constituye denuncia policial. proteccion-menores violencia-digital csam-report ES",
+      "text": "Comunicar de forma anónima una URL con posible material de abuso sexual infantil. Copiar únicamente la URL y contexto mínimo; no descargar, guardar, capturar ni compartir el material. URL completa descripción mínima derivación a autoridades y red INHOPE",
       "url": "https://www.incibe.es/menores/reporte-abuso"
     },
     {
       "id": "global-red-cross-family-links",
       "name": "Restoring Family Links",
-      "text": "Restoring Family Links Ayudar a restablecer contacto familiar afectado por conflicto, migración o desastre. Seleccionar el contexto y país y seguir el canal humanitario indicado. Es un servicio humanitario especializado, no un buscador público de personas. desapariciones emergencias missing-adult missing-child disaster-crisis GLOBAL",
+      "text": "Ayudar a restablecer contacto familiar afectado por conflicto, migración o desastre. Seleccionar el contexto y país y seguir el canal humanitario indicado. país circunstancias familiares servicio o sociedad nacional competente",
       "url": "https://familylinks.icrc.org/"
     },
     {
       "id": "co-rues",
       "name": "RUES",
-      "text": "RUES Consultar registros empresariales y sociales colombianos. Resolver por NIT o matrícula y seguir a la cámara competente. La consulta básica no sustituye un certificado. empresas business CO",
+      "text": "Consultar registros empresariales y sociales colombianos. Resolver por NIT o matrícula y seguir a la cámara competente. NIT nombre matrícula estado registral identificación cámara",
       "url": "https://www.rues.org.co/"
     },
     {
       "id": "es-catastro",
       "name": "Sede Electrónica del Catastro",
-      "text": "Sede Electrónica del Catastro Consultar cartografía parcelaria y datos catastrales no protegidos. Localizar la parcela y contrastar su geometría con cartografía y ortofotos. La referencia catastral describe un inmueble, pero no prueba por sí sola titularidad ni límites jurídicos. geoint administracion image-geolocation source-corroboration ES",
+      "text": "Consultar cartografía parcelaria y datos catastrales no protegidos. Localizar la parcela y contrastar su geometría con cartografía y ortofotos. referencia catastral dirección coordenadas parcela geometría datos descriptivos no protegidos",
       "url": "https://www.sedecatastro.gob.es/"
     },
     {
-      "id": "es-violencia-016",
-      "name": "Servicio 016",
-      "text": "Servicio 016 Proporcionar información y atención especializada sobre violencia contra las mujeres. Consultar los canales disponibles; ante peligro inmediato llamar al 112. Es un servicio de atención, no una denuncia formal. violencia-digital emergencias sexual-digital-violence grooming-sextortion ES",
-      "url": "https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/"
+      "id": "eu-emergency-112",
+      "name": "Servicio europeo de emergencias",
+      "text": "Contactar gratuitamente con policía, ambulancia o bomberos en toda la UE. Llamar solo ante una emergencia real y seguir las instrucciones del operador. ubicación naturaleza del peligro derivación al servicio de emergencia",
+      "url": "https://digital-strategy.ec.europa.eu/es/policies/112"
     },
     {
       "id": "global-shodan",
       "name": "Shodan",
-      "text": "Shodan Consultar servicios de Internet observados públicamente. Usar para descubrimiento pasivo y verificar fecha y dirección observada. Un banner histórico no demuestra que el servicio siga activo ni quién lo opera. ciberseguridad dominios-internet domain-footprint GLOBAL",
+      "text": "Consultar servicios de Internet observados públicamente. Usar para descubrimiento pasivo y verificar fecha y dirección observada. IP dominio consulta banners puertos observados historial limitado",
       "url": "https://www.shodan.io/"
     },
     {
       "id": "es-bdns",
       "name": "Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas",
-      "text": "Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas Consultar convocatorias, concesiones y planes de ayudas públicas. Relacionar convocatoria y concesión, comprobando organismo, fecha e instrumento regulador. El portal muestra la parte legalmente publicable de la base. subvenciones administracion procurement business ES",
+      "text": "Consultar convocatorias, concesiones y planes de ayudas públicas. Relacionar convocatoria y concesión, comprobando organismo, fecha e instrumento regulador. beneficiario convocatoria órgano fecha convocatorias concesiones publicables importes",
       "url": "https://www.pap.hacienda.gob.es/bdnstrans/GE/es/"
     },
     {
       "id": "global-telegram-report",
       "name": "Telegram - Reportar contenido ilegal",
-      "text": "Telegram - Reportar contenido ilegal Reportar mensajes o contenido público ilegal a la plataforma. Usar Reportar sobre el mensaje o incluir enlaces públicos en el canal oficial; no reenviar material sensible. El reporte a la plataforma busca moderación o retirada y no constituye denuncia. reporte-plataformas violencia-digital platform-report csam-report sexual-digital-violence GLOBAL",
+      "text": "Reportar mensajes o contenido público ilegal a la plataforma. Usar Reportar sobre el mensaje o incluir enlaces públicos en el canal oficial; no reenviar material sensible. enlace público t.me mensaje o canal revisión de moderación",
       "url": "https://telegram.org/faq#q-there-39s-illegal-content-on-telegram-how-do-i-take-it-down"
     },
     {
       "id": "eu-ted",
       "name": "Tenders Electronic Daily",
-      "text": "Tenders Electronic Daily Consultar anuncios de contratación pública de alcance europeo. Seguir el identificador del anuncio y revisar correcciones y adjudicaciones relacionadas. Un anuncio puede ser corregido o cancelado posteriormente. contratacion procurement business EU",
+      "text": "Consultar anuncios de contratación pública de alcance europeo. Seguir el identificador del anuncio y revisar correcciones y adjudicaciones relacionadas. comprador adjudicatario CPV país anuncios adjudicaciones documentos",
       "url": "https://ted.europa.eu/"
     },
     {
       "id": "global-tiktok-report",
       "name": "TikTok - Reportar contenido",
-      "text": "TikTok - Reportar contenido Consultar la vía oficial para reportar vídeos y cuentas. Usar el control de reporte de la publicación y recurrir a autoridades ante posible delito o peligro. El reporte de plataforma es independiente de una denuncia. reporte-plataformas proteccion-menores platform-report grooming-sextortion GLOBAL",
+      "text": "Consultar la vía oficial para reportar vídeos y cuentas. Usar el control de reporte de la publicación y recurrir a autoridades ante posible delito o peligro. vídeo o cuenta motivo reporte de moderación",
       "url": "https://support.tiktok.com/es/safety-hc/report-a-problem/report-a-video"
     },
     {
       "id": "global-un-data",
       "name": "UNdata",
-      "text": "UNdata Descubrir estadísticas compiladas por organismos de Naciones Unidas. Seguir la serie hasta el organismo que la produce y conservar notas metodológicas. UNdata agrega fuentes con calendarios y definiciones diferentes. estadistica datos-abiertos statistical-claim GLOBAL",
+      "text": "Descubrir estadísticas compiladas por organismos de Naciones Unidas. Seguir la serie hasta el organismo que la produce y conservar notas metodológicas. indicador país periodo tablas series fuente productora",
       "url": "https://data.un.org/"
     },
     {
       "id": "global-virustotal",
       "name": "VirusTotal",
-      "text": "VirusTotal Consultar señales agregadas sobre dominios, IP, URLs y archivos. Consultar identificadores no sensibles y contrastar cada señal con su proveedor. Una detección o ausencia de detección no prueba por sí sola malicia o benignidad. ciberseguridad dominios-internet domain-footprint source-corroboration GLOBAL",
+      "text": "Consultar señales agregadas sobre dominios, IP, URLs y archivos. Consultar identificadores no sensibles y contrastar cada señal con su proveedor. dominio IP URL hash detecciones relaciones metadatos",
       "url": "https://www.virustotal.com/"
     },
     {
       "id": "global-world-bank",
       "name": "World Bank Open Data",
-      "text": "World Bank Open Data Consultar indicadores internacionales de desarrollo. Citar indicador, unidad, fuente original y fecha. Comparar países solo con una metodología común. estadistica economia statistical-claim GLOBAL",
+      "text": "Consultar indicadores internacionales de desarrollo. Citar indicador, unidad, fuente original y fecha. indicador país periodo series metadatos",
       "url": "https://data.worldbank.org/"
     },
     {
       "id": "global-x-report",
       "name": "X Help Center - Reportar",
-      "text": "X Help Center - Reportar Localizar procedimientos de reporte de publicaciones y cuentas en X. Reportar desde la publicación y documentar su URL sin amplificarla. Moderación y actuación de autoridades son procesos distintos. reporte-plataformas violencia-digital platform-report sexual-digital-violence GLOBAL",
+      "text": "Localizar procedimientos de reporte de publicaciones y cuentas en X. Reportar desde la publicación y documentar su URL sin amplificarla. publicación o cuenta motivo reporte de moderación",
       "url": "https://help.x.com/es/safety-and-security/report-a-tweet"
     }
   ],
-  "version": "148623c324af8657"
+  "version": "d7623406100e17a9"
 }

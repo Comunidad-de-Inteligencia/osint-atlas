@@ -1,50 +1,64 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Europol - Report Cybercrime
 
-> **Para qué sirve:** Dirigir a las vías nacionales europeas para reportar ciberdelitos.
+## Para qué sirve
 
-## Antes de empezar
+Dirigir a las vías nacionales europeas para reportar ciberdelitos.
 
-Necesitas: país, tipo de incidente.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+país, tipo de incidente
 
-Cobertura: **EU**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: Unión Europea. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de Europol - Report Cybercrime](https://www.europol.europa.eu/report-a-crime/report-cybercrime-online).
+
 1. Seleccionar el país y seguir el enlace policial nacional.
-2. Abre la [fuente principal](https://www.europol.europa.eu/report-a-crime/report-cybercrime-online) y registra la fecha de consulta.
-3. Conserva como resultado: autoridad nacional competente.
+2. Comprueba en Europol - Report Cybercrime la fecha, cobertura y definición de autoridad nacional competente.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de país, realiza la consulta y conserva autoridad nacional competente con su fecha y enlace.
+Un mensaje ficticio y no sexual amenaza con divulgar información si se paga.
+
+1. Seleccionar el país y seguir el enlace policial nacional.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** La plantilla separa la amenaza observada de la interpretación y remite a ayuda especializada sin negociar ni investigar.
 
 ## Cómo interpretar el resultado
 
 Europol no recibe normalmente denuncias directas de particulares.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 Las rutas nacionales cambian y deben revisarse.
 
+Resultados que puede ofrecer: autoridad nacional competente.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Europol
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 30 días
-- Criticidad: alta
-- Versión del catálogo: `148623c324af8657`
+Publicador: Europol. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Europol - Report Cybercrime — página responsable](https://www.europol.europa.eu/report-a-crime/report-cybercrime-online)
+
+Versión: d7623406100e17a9. [Volver al catálogo](../CATALOGO.md).

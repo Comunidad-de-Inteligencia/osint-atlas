@@ -1,0 +1,69 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: alta
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: global-tiktok-report
+name: TikTok - Reportar contenido
+owner: TikTok
+jurisdictions:
+- GLOBAL
+type: reporting-channel
+tier: P2
+categories:
+- reporte-plataformas
+- proteccion-menores
+scenarios:
+- platform-report
+- grooming-sextortion
+url: https://support.tiktok.com/es/safety-hc/report-a-problem/report-a-video
+purpose: Consultar la vía oficial para reportar vídeos y cuentas.
+inputs:
+- vídeo o cuenta
+- motivo
+outputs:
+- reporte de moderación
+usage: Usar el control de reporte de la publicación y recurrir a autoridades ante posible delito o peligro.
+interpretation: El reporte de plataforma es independiente de una denuncia.
+limitations: El centro de ayuda y las categorías pueden cambiar.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: TikTok - Reportar contenido — página responsable
+  url: https://support.tiktok.com/es/safety-hc/report-a-problem/report-a-video
+platforms:
+- tiktok
+maintenance_urls:
+- https://support.tiktok.com/es/safety-hc/report-a-problem/report-a-video
+input_types:
+- plataforma
+- situacion
+output_types:
+- orientacion
+- ruta-reporte
+example:
+  input: Un ejercicio textual menciona una plataforma y una conducta observada, sin cuenta ni canal reales.
+  steps:
+  - Usar el control de reporte de la publicación y recurrir a autoridades ante posible delito o peligro.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se escoge una vía por plataforma, territorio y finalidad; una sospecha se describe como posible
+    y no como delito acreditado.
+  interpretation: El reporte de plataforma es independiente de una denuncia.
+steps:
+- Usar el control de reporte de la publicación y recurrir a autoridades ante posible delito o peligro.
+- Comprueba en TikTok - Reportar contenido la fecha, cobertura y definición de reporte de moderación.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

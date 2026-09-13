@@ -1,0 +1,77 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- de
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: de-bundesanzeiger
+name: Bundesanzeiger
+owner: Bundesanzeiger Verlag
+jurisdictions:
+- DE
+type: portal
+tier: P0
+categories:
+- empresas
+- administracion
+scenarios:
+- business
+- official-publications
+url: https://www.bundesanzeiger.de/
+purpose: Consultar anuncios y publicaciones empresariales oficiales alemanas.
+inputs:
+- empresa
+- fecha
+- tipo de publicación
+outputs:
+- anuncios
+- cuentas publicadas
+usage: Buscar la denominación exacta y limitar por periodo y área.
+interpretation: La fecha de publicación no siempre coincide con el periodo contable.
+limitations: Cobertura y acceso a documentos varían.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence:
+- fields:
+  - languages
+  url: https://www.bundesanzeiger.de/
+  observed_at: '2026-09-13'
+  method: assistant-source-check
+  note: Idiomas observados en la página consultada; no certifica todos sus servicios.
+alternatives:
+- de-handelsregister
+references:
+- title: Bundesanzeiger — página responsable
+  url: https://www.bundesanzeiger.de/
+platforms: []
+maintenance_urls:
+- https://www.bundesanzeiger.de/
+input_types:
+- documento
+- organizacion
+output_types:
+- documento
+- registro
+example:
+  input: La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+  steps:
+  - Buscar la denominación exacta y limitar por periodo y área.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de
+    vincular publicaciones.
+  interpretation: La fecha de publicación no siempre coincide con el periodo contable.
+steps:
+- Buscar la denominación exacta y limitar por periodo y área.
+- Comprueba en Bundesanzeiger la fecha, cobertura y definición de anuncios.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

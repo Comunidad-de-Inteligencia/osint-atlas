@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-bde
+name: Banco de España - Estadísticas
+owner: Banco de España
+jurisdictions:
+- ES
+type: dataset
+tier: P1
+categories:
+- economia
+- estadistica
+scenarios:
+- statistical-claim
+- business
+url: https://www.bde.es/wbe/es/estadisticas/
+purpose: Verificar series macroeconómicas, bancarias y financieras españolas.
+inputs:
+- serie
+- periodo
+outputs:
+- series
+- metadatos
+- publicaciones
+usage: Citar código de serie, unidad, frecuencia y fecha de actualización.
+interpretation: Las revisiones estadísticas pueden cambiar valores históricos.
+limitations: Microdatos y entornos de investigación tienen reglas distintas.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Banco de España - Estadísticas — página responsable
+  url: https://www.bde.es/wbe/es/estadisticas/
+platforms: []
+maintenance_urls:
+- https://www.bde.es/wbe/es/estadisticas/
+input_types:
+- indicador
+- organizacion
+output_types:
+- registro
+- serie
+example:
+  input: Se compara un indicador agregado de dos periodos ficticios, 2023 y 2024.
+  steps:
+  - Citar código de serie, unidad, frecuencia y fecha de actualización.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: La tabla de trabajo conserva unidad, población, periodo y revisión. Una unidad distinta impide
+    calcular una variación comparable.
+  interpretation: Las revisiones estadísticas pueden cambiar valores históricos.
+steps:
+- Citar código de serie, unidad, frecuencia y fecha de actualización.
+- Comprueba en Banco de España - Estadísticas la fecha, cobertura y definición de series.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

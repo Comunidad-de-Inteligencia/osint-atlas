@@ -1,12 +1,130 @@
-{
-  "version": 1,
-  "approved_catalogs": [
-    {"id":"es-datos-gob","url":"https://datos.gob.es/","territory":"ES"},
-    {"id":"eu-data-portal","url":"https://data.europa.eu/","territory":"EU"},
-    {"id":"fr-data-gouv","url":"https://www.data.gouv.fr/","territory":"FR"},
-    {"id":"gb-data-gov","url":"https://www.data.gov.uk/","territory":"GB"},
-    {"id":"co-datos-gov","url":"https://www.datos.gov.co/","territory":"CO"},
-    {"id":"ar-datos-gob","url":"https://datos.gob.ar/","territory":"AR"}
-  ],
-  "policy":"El descubrimiento solo produce candidatos. Nunca modifica recursos, contactos ni procedimientos aprobados."
-}
+version: 1
+approved_catalogs:
+- id: es-datos-gob
+  url: https://datos.gob.es/
+  territory: ES
+  include_patterns:
+  - /dataset
+  - /conjunto
+  - /catalog
+  - /datos
+  - /data/
+  exclude_patterns:
+  - /login
+  - /signin
+  - /contact
+  - /privacy
+  - /legal
+  - /cookies
+  - /terms
+  - /user
+  - /group
+  - /organization
+  license_note: 'Metadatos candidatos: comprobar licencia de la ficha y del conjunto antes de incorporar.'
+- id: eu-data-portal
+  url: https://data.europa.eu/
+  territory: EU
+  include_patterns:
+  - /dataset
+  - /conjunto
+  - /catalog
+  - /datos
+  - /data/
+  exclude_patterns:
+  - /login
+  - /signin
+  - /contact
+  - /privacy
+  - /legal
+  - /cookies
+  - /terms
+  - /user
+  - /group
+  - /organization
+  license_note: 'Metadatos candidatos: comprobar licencia de la ficha y del conjunto antes de incorporar.'
+- id: fr-data-gouv
+  url: https://www.data.gouv.fr/
+  territory: FR
+  include_patterns:
+  - /dataset
+  - /conjunto
+  - /catalog
+  - /datos
+  - /data/
+  exclude_patterns:
+  - /login
+  - /signin
+  - /contact
+  - /privacy
+  - /legal
+  - /cookies
+  - /terms
+  - /user
+  - /group
+  - /organization
+  license_note: 'Metadatos candidatos: comprobar licencia de la ficha y del conjunto antes de incorporar.'
+- id: gb-data-gov
+  url: https://www.data.gov.uk/
+  territory: GB
+  include_patterns:
+  - /dataset
+  - /conjunto
+  - /catalog
+  - /datos
+  - /data/
+  exclude_patterns:
+  - /login
+  - /signin
+  - /contact
+  - /privacy
+  - /legal
+  - /cookies
+  - /terms
+  - /user
+  - /group
+  - /organization
+  license_note: 'Metadatos candidatos: comprobar licencia de la ficha y del conjunto antes de incorporar.'
+- id: co-datos-gov
+  url: https://www.datos.gov.co/
+  territory: CO
+  include_patterns:
+  - /dataset
+  - /conjunto
+  - /catalog
+  - /datos
+  - /data/
+  exclude_patterns:
+  - /login
+  - /signin
+  - /contact
+  - /privacy
+  - /legal
+  - /cookies
+  - /terms
+  - /user
+  - /group
+  - /organization
+  license_note: 'Metadatos candidatos: comprobar licencia de la ficha y del conjunto antes de incorporar.'
+- id: ar-datos-gob
+  url: https://datos.gob.ar/
+  territory: AR
+  include_patterns:
+  - /dataset
+  - /conjunto
+  - /catalog
+  - /datos
+  - /data/
+  exclude_patterns:
+  - /login
+  - /signin
+  - /contact
+  - /privacy
+  - /legal
+  - /cookies
+  - /terms
+  - /user
+  - /group
+  - /organization
+  license_note: 'Metadatos candidatos: comprobar licencia de la ficha y del conjunto antes de incorporar.'
+policy: El descubrimiento solo produce candidatos. Nunca modifica recursos, contactos ni procedimientos
+  aprobados.

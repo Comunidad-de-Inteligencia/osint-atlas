@@ -1,0 +1,69 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: critica
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: eu-missing-116000
+name: Línea europea para menores desaparecidos
+owner: Red de servicios nacionales para menores desaparecidos
+jurisdictions:
+- EU
+type: hotline
+tier: P0
+categories:
+- desapariciones
+- proteccion-menores
+scenarios:
+- missing-child
+url: https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/faq/index_es.htm
+purpose: Orientar y apoyar en casos de menores desaparecidos en países participantes.
+inputs:
+- país
+- circunstancias
+outputs:
+- asistencia y derivación
+usage: Confirmar disponibilidad nacional y combinar con la denuncia inmediata ante la policía.
+interpretation: La línea apoya; no sustituye la denuncia ni el {{contact:eu-112}} ante peligro actual.
+limitations: La cobertura no es idéntica en todos los países.
+reporting_routes:
+- eu-116000
+- eu-112
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Línea europea para menores desaparecidos — página responsable
+  url: https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/faq/index_es.htm
+platforms: []
+maintenance_urls:
+- https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/faq/index_es.htm
+input_types:
+- situacion
+output_types:
+- orientacion
+example:
+  input: Una familia ficticia necesita orientación territorial ante la desaparición de un menor.
+  steps:
+  - Confirmar disponibilidad nacional y combinar con la denuncia inmediata ante la policía.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se distingue atención urgente, denuncia y ayuda especializada. No se publica un aviso inventado
+    ni se llama en un ejercicio.
+  interpretation: La línea apoya; no sustituye la denuncia ni el {{contact:eu-112}} ante peligro actual.
+steps:
+- Confirmar disponibilidad nacional y combinar con la denuncia inmediata ante la policía.
+- Comprueba en Línea europea para menores desaparecidos la fecha, cobertura y definición de asistencia
+  y derivación.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

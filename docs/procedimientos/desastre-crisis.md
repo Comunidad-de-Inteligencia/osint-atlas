@@ -1,4 +1,7 @@
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Verificar información durante un desastre o una crisis
+
+> Guía pendiente de revisión humana. Comprueba siempre la fuente competente.
 
 ## Actuación prioritaria
 
@@ -24,3 +27,39 @@ La información crítica tiene hora, territorio, fuente y estado; las versiones 
 ## Recursos
 
 Consulta el [índice de desastres y crisis](../indices/escenario-disaster-crisis.md).
+
+## Recorrido de práctica y resultado esperado
+
+Un aviso ficticio sobre una inundación contiene dos horas de actualización distintas.
+
+1. Abre el índice de este escenario y selecciona el territorio.
+2. Comprueba si el recurso es local o aporta orientación general y lee sus carencias.
+3. Sigue los pasos anteriores usando únicamente datos ficticios; no envíes comunicaciones de prueba.
+4. Registra la referencia consultada, su fecha y las dudas pendientes.
+
+Se comprueba cuál es la publicación original vigente y se marca la anterior como superada. No se emite una alerta.
+
+## Si la fuente no responde o no cubre el caso
+
+No interpretes un bloqueo o una búsqueda vacía como ausencia del hecho. Consulta las alternativas y la fuente territorial competente. Ante peligro inmediato, prioriza el servicio oficial; no esperes al mantenimiento del catálogo.
+
+## Plantilla del resultado
+
+- Observación: descripción concreta y proporcionada, sin datos de víctimas.
+- Referencia: fuente responsable y fecha de consulta; en este ejercicio, referencia ficticia.
+- Incertidumbre: qué falta comprobar y qué otras explicaciones siguen siendo posibles.
+- Siguiente actuación: consulta o canal competente, distinguiendo ayuda, reporte y denuncia.
+
+## Cobertura territorial y revisión
+
+Guía general con ejemplos de España. La adaptación de otros territorios está pendiente.
+
+Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+
+## Referencias responsables
+
+- [Centro de Descargas CNIG y PNOA](https://centrodedescargas.cnig.es/)
+- [AEMET OpenData](https://opendata.aemet.es/)
+- [DGT Datos Abiertos](https://www.dgt.es/menusecundario/dgt-en-cifras/)
+- [MITECO Datos y Cartografía](https://www.miteco.gob.es/es/cartografia-y-sig/ide/descargas.html)
+- [IGN Información Geográfica](https://www.ign.es/)

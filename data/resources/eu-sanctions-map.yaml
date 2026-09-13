@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 90
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: eu-sanctions-map
+name: EU Sanctions Map
+owner: Unión Europea
+jurisdictions:
+- EU
+type: portal
+tier: P0
+categories:
+- administracion
+- empresas
+scenarios:
+- business
+- source-corroboration
+url: https://www.sanctionsmap.eu/
+purpose: Explorar regímenes de sanciones adoptados por la UE.
+inputs:
+- país
+- régimen
+- entidad
+outputs:
+- medidas
+- referencias jurídicas
+usage: Usar el mapa para localizar el acto jurídico y verificarlo en EUR-Lex.
+interpretation: La inclusión y alcance deben determinarse con el acto vigente.
+limitations: No sustituye asesoramiento ni listas nacionales adicionales.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: EU Sanctions Map — página responsable
+  url: https://www.sanctionsmap.eu/
+platforms: []
+maintenance_urls:
+- https://www.sanctionsmap.eu/
+input_types:
+- organizacion
+- pregunta
+output_types:
+- referencia
+- registro
+example:
+  input: La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+  steps:
+  - Usar el mapa para localizar el acto jurídico y verificarlo en EUR-Lex.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de
+    vincular publicaciones.
+  interpretation: La inclusión y alcance deben determinarse con el acto vigente.
+steps:
+- Usar el mapa para localizar el acto jurídico y verificarlo en EUR-Lex.
+- Comprueba en EU Sanctions Map la fecha, cobertura y definición de medidas.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

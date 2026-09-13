@@ -2,400 +2,288 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 import sqlite3
+from contextlib import closing
+import tempfile
 from datetime import date, datetime, timezone
 from pathlib import Path
-from typing import Any, Iterable
 
-from jsonschema import Draft202012Validator
+import yaml
+from jsonschema import Draft202012Validator, FormatChecker
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(os.environ.get("OSINT_ATLAS_ROOT", Path(__file__).resolve().parents[2])).resolve()
 DATA = ROOT / "data"
-
-SOURCE_FILES = (
-    DATA / "taxonomy.yaml",
-    DATA / "contacts.yaml",
-    DATA / "jurisdictions.yaml",
-    DATA / "maintainers.yaml",
-    DATA / "scenarios.yaml",
-    DATA / "playbooks.yaml",
-    DATA / "discovery.yaml",
-    DATA / "resources" / "core.yaml",
-    DATA / "schemas" / "resource.schema.json",
-)
+INDEX_FORMAT = "atlas-2"
 
 
 class CatalogError(ValueError):
     pass
 
 
-def load_yaml(path: Path) -> dict[str, Any]:
-    """Load the JSON-compatible YAML used by the project without dependencies."""
+class StrictLoader(yaml.SafeLoader):
+    """Safe YAML: no executable tags, duplicate keys or implicit date objects."""
+
+
+StrictLoader.yaml_implicit_resolvers = {
+    key: [(tag, regex) for tag, regex in values if tag != "tag:yaml.org,2002:timestamp"]
+    for key, values in yaml.SafeLoader.yaml_implicit_resolvers.items()
+}
+
+
+def _mapping(loader, node, deep=False):
+    result = {}
+    for key, value in loader.construct_pairs(node, deep=deep):
+        if key in result:
+            raise CatalogError(f"Clave YAML duplicada: {key}")
+        result[key] = value
+    return result
+
+
+StrictLoader.add_constructor("tag:yaml.org,2002:map", _mapping)
+
+
+def load_yaml(path: Path) -> dict:
     try:
-        return json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as exc:
-        raise CatalogError(f"No se pudo leer {path.relative_to(ROOT)}: {exc}") from exc
+        value = yaml.load(path.read_text(encoding="utf-8-sig"), Loader=StrictLoader)
+        if not isinstance(value, dict):
+            raise CatalogError(f"{path.name}: se esperaba un objeto")
+        return value
+    except (OSError, yaml.YAMLError) as exc:
+        raise CatalogError(f"No se pudo leer {path.name}: {exc}") from exc
 
 
-def load_catalog() -> dict[str, Any]:
-    taxonomy = load_yaml(DATA / "taxonomy.yaml")
-    contacts_doc = load_yaml(DATA / "contacts.yaml")
-    jurisdictions_doc = load_yaml(DATA / "jurisdictions.yaml")
-    maintainers = load_yaml(DATA / "maintainers.yaml")
-    scenarios_doc = load_yaml(DATA / "scenarios.yaml")
-    playbooks_doc = load_yaml(DATA / "playbooks.yaml")
-    resource_doc = load_yaml(DATA / "resources" / "core.yaml")
-    defaults = resource_doc.get("defaults", {})
-    resources = [{**defaults, **item} for item in resource_doc["resources"]]
-    return {
-        "taxonomy": taxonomy,
-        "contacts": contacts_doc["contacts"],
-        "jurisdictions": jurisdictions_doc["jurisdictions"],
-        "maintainers": maintainers,
-        "scenarios": scenarios_doc["scenarios"],
-        "playbooks": playbooks_doc["playbooks"],
-        "resources": resources,
-    }
+def load_catalog() -> dict:
+    catalog = {key: load_yaml(DATA / f"{key}.yaml")[key]
+               for key in ("contacts", "jurisdictions", "scenarios", "playbooks")}
+    catalog.update({key: load_yaml(DATA / f"{key}.yaml") for key in ("taxonomy", "maintainers")})
+    catalog["resources"] = [load_yaml(path) for path in sorted((DATA / "resources").glob("*.yaml"))]
+    return catalog
+
+
+def source_files() -> list[Path]:
+    files = list(DATA.glob("*.yaml")) + list((DATA / "resources").glob("*.yaml"))
+    files += list((DATA / "schemas").glob("*.json")) + list((ROOT / "content").rglob("*.md"))
+    files += list((ROOT / "src/osint_atlas").glob("*.py")) + [ROOT / "pyproject.toml", ROOT / "uv.lock"]
+    for path in [*ROOT.glob("*.md"), *(ROOT / "docs").rglob("*.md")]:
+        if not path.read_text(encoding="utf-8").startswith("<!-- GENERADO"):
+            files.append(path)
+    return sorted(set(files))
 
 
 def catalog_version() -> str:
-    digest = hashlib.sha256()
-    for path in SOURCE_FILES:
+    digest = hashlib.sha256(INDEX_FORMAT.encode())
+    for path in source_files():
         digest.update(path.relative_to(ROOT).as_posix().encode())
-        digest.update(path.read_bytes())
-    playbook_doc = load_yaml(DATA / "playbooks.yaml")
-    for item in sorted(playbook_doc["playbooks"], key=lambda x: x["path"]):
-        path = ROOT / item["path"]
-        digest.update(item["path"].encode())
-        digest.update(path.read_bytes())
+        digest.update(path.read_bytes().replace(b"\r\n", b"\n"))
     return digest.hexdigest()[:16]
 
 
-def _duplicates(values: Iterable[str]) -> set[str]:
-    seen: set[str] = set()
-    repeated: set[str] = set()
-    for value in values:
-        if value in seen:
-            repeated.add(value)
-        seen.add(value)
-    return repeated
+def safe_path(relative: str) -> Path:
+    path = (ROOT / relative).resolve()
+    if not path.is_relative_to(ROOT):
+        raise CatalogError("Ruta fuera del catálogo")
+    return path
 
 
-def validate_catalog(catalog: dict[str, Any]) -> list[str]:
-    errors: list[str] = []
-    resources = catalog["resources"]
-    contacts = catalog["contacts"]
-    jurisdictions = catalog["jurisdictions"]
-    scenarios = catalog["scenarios"]
-    playbooks = catalog["playbooks"]
-    taxonomy = catalog["taxonomy"]
+def validate_catalog(catalog: dict) -> list[str]:
+    validator = Draft202012Validator(load_yaml(DATA / "schemas/catalog.schema.json"), format_checker=FormatChecker())
+    errors = [f"{'.'.join(map(str, e.path))}: {e.message}" for e in validator.iter_errors(catalog)]
+    if errors:
+        return errors
+    ids = {}
+    for key in ("resources", "contacts", "jurisdictions", "scenarios", "playbooks"):
+        ids[key] = {item["id"] for item in catalog[key]}
+        if len(ids[key]) != len(catalog[key]):
+            errors.append(f"{key}: identificadores duplicados")
+    specs = catalog["maintainers"]["specialties"]
+    people = {p["login"] for p in catalog["maintainers"]["people"]}
+    specialty_ids = {s["id"] for s in specs}
+    if len(specialty_ids) != len(specs) or len(people) != len(catalog["maintainers"]["people"]):
+        errors.append("Colaboradores o especialidades duplicados")
+    for spec in specs:
+        for field in ("primary", "backup"):
+            if spec[field] and spec[field] not in people:
+                errors.append(f"{spec['id']}: colaborador desconocido")
+    if len(catalog["resources"]) < 84 or len(catalog["playbooks"]) < 16:
+        errors.append("Conservar al menos 84 recursos y 16 procedimientos")
 
-    for label, items in (
-        ("recurso", resources), ("contacto", contacts),
-        ("jurisdicción", jurisdictions), ("escenario", scenarios),
-        ("procedimiento", playbooks),
-    ):
-        repeated = _duplicates(item.get("id", "") for item in items)
-        errors.extend(f"{label} duplicado: {value}" for value in sorted(repeated))
+    def refs(item, field, allowed):
+        for value in item.get(field, []):
+            if value not in allowed:
+                errors.append(f"{item['id']}: {field} desconocido {value}")
 
-    jurisdiction_ids = {item["id"] for item in jurisdictions}
-    scenario_ids = {item["id"] for item in scenarios}
-    contact_ids = {item["id"] for item in contacts}
-    categories = set(taxonomy["categories"])
-    resource_types = set(taxonomy["resource_types"])
-    tiers = set(taxonomy["authority_tiers"])
-    criticalities = set(taxonomy["criticality"])
-    required = {
-        "id", "name", "owner", "jurisdictions", "type", "tier", "categories",
-        "scenarios", "url", "purpose", "inputs", "outputs", "usage",
-        "interpretation", "limitations", "review_days", "criticality",
-        "editorial_reviewed", "access", "cost", "languages", "terms",
-        "maintainer", "backup_maintainer", "technical_check", "pending_changes",
-    }
-    schema = load_yaml(DATA / "schemas" / "resource.schema.json")
-    schema_validator = Draft202012Validator(schema)
-
-    if len(resources) < 80:
-        errors.append(f"se esperaban al menos 80 recursos; hay {len(resources)}")
-    if len(playbooks) != 16:
-        errors.append(f"se esperaban 16 procedimientos; hay {len(playbooks)}")
-
-    for resource in resources:
-        rid = resource.get("id", "<sin-id>")
-        for schema_error in sorted(schema_validator.iter_errors(resource), key=lambda item: list(item.path)):
-            location = ".".join(str(part) for part in schema_error.path) or "ficha"
-            errors.append(f"{rid}: esquema {location}: {schema_error.message}")
-        missing = required - resource.keys()
-        if missing:
-            errors.append(f"{rid}: faltan campos {', '.join(sorted(missing))}")
-        if not re.fullmatch(r"[a-z0-9][a-z0-9-]+", rid):
-            errors.append(f"{rid}: id inválido")
-        if not str(resource.get("url", "")).startswith("https://"):
-            errors.append(f"{rid}: URL no HTTPS")
-        for field in ("purpose", "usage", "interpretation", "limitations"):
-            if len(str(resource.get(field, ""))) < 15:
-                errors.append(f"{rid}: explicación insuficiente en {field}")
-        unknown = set(resource.get("jurisdictions", [])) | set(resource.get("coverage_exclusions", []))
-        for value in sorted(unknown - jurisdiction_ids):
-            errors.append(f"{rid}: jurisdicción desconocida {value}")
-        for value in sorted(set(resource.get("scenarios", [])) - scenario_ids):
-            errors.append(f"{rid}: escenario desconocido {value}")
-        for value in sorted(set(resource.get("categories", [])) - categories):
-            errors.append(f"{rid}: categoría desconocida {value}")
-        for value in sorted(set(resource.get("reporting_routes", [])) - contact_ids):
-            errors.append(f"{rid}: contacto desconocido {value}")
-        for route_scenario, route_ids in resource.get("reporting_routes_by_scenario", {}).items():
-            if route_scenario not in resource.get("scenarios", []):
-                errors.append(f"{rid}: rutas definidas para un escenario no asociado {route_scenario}")
-            for value in sorted(set(route_ids) - contact_ids):
-                errors.append(f"{rid}: contacto desconocido {value}")
-        if resource.get("type") not in resource_types:
-            errors.append(f"{rid}: tipo desconocido {resource.get('type')}")
-        if resource.get("tier") not in tiers:
-            errors.append(f"{rid}: procedencia desconocida {resource.get('tier')}")
-        if resource.get("criticality") not in criticalities:
-            errors.append(f"{rid}: criticidad desconocida {resource.get('criticality')}")
-        technical = resource.get("technical_check", {})
-        if not isinstance(technical, dict) or technical.get("status") not in taxonomy["health_status"]:
-            errors.append(f"{rid}: comprobación técnica inválida")
-        if not isinstance(resource.get("pending_changes"), list):
-            errors.append(f"{rid}: pending_changes debe ser una lista")
+    for r in catalog["resources"]:
+        fields = {"jurisdictions": ids["jurisdictions"], "coverage_exclusions": ids["jurisdictions"],
+                  "scenarios": ids["scenarios"], "reporting_routes": ids["contacts"], "alternatives": ids["resources"],
+                  **{k: catalog["taxonomy"][k] for k in ("categories", "input_types", "output_types")}}
+        for field, allowed in fields.items():
+            refs(r, field, allowed)
+        for scenario, routes in r.get("reporting_routes_by_scenario", {}).items():
+            if scenario not in r["scenarios"] or not set(routes) <= ids["contacts"]:
+                errors.append(f"{r['id']}: rutas por escenario inválidas")
+        for field in ("maintainer", "backup_maintainer"):
+            if r[field] and r[field] not in people:
+                errors.append(f"{r['id']}: responsable desconocido")
+        if r["type"] not in catalog["taxonomy"]["resource_types"]:
+            errors.append(f"{r['id']}: tipo desconocido")
+    for c in catalog["contacts"]:
+        refs(c, "territories", ids["jurisdictions"])
+        refs(c, "scenarios", ids["scenarios"])
+    parents = {j["id"]: j["parent"] for j in catalog["jurisdictions"]}
+    for jid in parents:
+        current, visited = jid, set()
+        while current:
+            if current in visited or current not in parents:
+                errors.append(f"{jid}: ciclo o padre desconocido")
+                break
+            visited.add(current)
+            current = parents[current]
+    for s in catalog["scenarios"]:
+        if s["specialty"] not in specialty_ids:
+            errors.append(f"{s['id']}: especialidad desconocida")
+    for p in catalog["playbooks"]:
+        if p["scenario"] not in ids["scenarios"]:
+            errors.append(f"{p['id']}: escenario desconocido")
+        refs(p, "jurisdictions", ids["jurisdictions"])
+        refs(p, "contacts", ids["contacts"])
         try:
-            date.fromisoformat(resource.get("editorial_reviewed", ""))
-        except ValueError:
-            errors.append(f"{rid}: editorial_reviewed no es una fecha ISO")
-
-    for playbook in playbooks:
-        path = ROOT / playbook["path"]
-        if playbook.get("scenario") not in scenario_ids:
-            errors.append(f"{playbook['id']}: escenario de procedimiento desconocido")
-        if not path.is_file():
-            errors.append(f"{playbook['id']}: falta {playbook['path']}")
-        elif not path.read_text(encoding="utf-8").startswith("# "):
-            errors.append(f"{playbook['id']}: el documento debe comenzar con H1")
-
-    playbook_scenarios = {item["scenario"] for item in playbooks}
-    for scenario in sorted(scenario_ids - playbook_scenarios):
-        errors.append(f"escenario sin procedimiento: {scenario}")
+            body = safe_path(p["source_path"]).read_text(encoding="utf-8")
+            safe_path(p["path"])
+            if not body.startswith("# "):
+                errors.append(f"{p['id']}: falta H1")
+            for cid in re.findall(r"\{\{contact:([^}]+)\}\}", body):
+                if cid not in ids["contacts"] or cid not in p["contacts"]:
+                    errors.append(f"{p['id']}: contacto sin declarar {cid}")
+            if re.search(r"(?<!\d)(112|017|016|116[ ]?000)(?!\d)", re.sub(r"\{\{contact:[^}]+\}\}", "", body)):
+                errors.append(f"{p['id']}: contacto literal duplicado")
+        except (OSError, CatalogError) as exc:
+            errors.append(str(exc))
+    if ids["scenarios"] - {p["scenario"] for p in catalog["playbooks"]}:
+        errors.append("Escenarios sin procedimiento")
+    for group, field in (("resources", "editorial_reviewed"), ("contacts", "last_reviewed"), ("playbooks", "last_reviewed")):
+        for item in catalog[group]:
+            if item["review_status"] == "verified" and (not item[field] or not item["reviewer"] or not item["references"]):
+                errors.append(f"{item['id']}: revisión verificada sin evidencia/fecha/persona")
+            if item["reviewer"] and item["reviewer"] not in people:
+                errors.append(f"{item['id']}: revisor no registrado")
+            if item[field] and date.fromisoformat(item[field]) > date.today():
+                errors.append(f"{item['id']}: revisión futura")
     return errors
 
 
-def applies_to(resource: dict[str, Any], jurisdiction_id: str, jurisdictions: list[dict[str, Any]]) -> bool:
-    if jurisdiction_id in resource.get("coverage_exclusions", []):
+def applies_to(resource: dict, jurisdiction_id: str, jurisdictions: list[dict]) -> bool:
+    parents = {j["id"]: j.get("parent") for j in jurisdictions}
+    if jurisdiction_id not in parents:
         return False
-    if jurisdiction_id in resource["jurisdictions"] or "GLOBAL" in resource["jurisdictions"]:
-        return True
-    parents = {item["id"]: item.get("parent") for item in jurisdictions}
-    current = parents.get(jurisdiction_id)
-    while current:
-        if current in resource.get("coverage_exclusions", []):
-            return False
-        if current in resource["jurisdictions"]:
-            return True
+    current, lineage = jurisdiction_id, set()
+    while current and current not in lineage:
+        lineage.add(current)
         current = parents.get(current)
-    return False
+    return not bool(lineage & set(resource.get("coverage_exclusions", []))) and bool(
+        lineage & set(resource.get("jurisdictions", resource.get("territories", []))))
 
 
-def resource_markdown(resource: dict[str, Any], catalog: dict[str, Any], version: str) -> str:
-    contacts = {item["id"]: item for item in catalog["contacts"]}
-    tier = catalog["taxonomy"]["authority_tiers"][resource["tier"]]
-    lines = [
-        "<!-- GENERADO: edite data/resources/core.yaml -->",
-        f"# {resource['name']}", "",
-        f"> **Para qué sirve:** {resource['purpose']}", "",
-        "## Antes de empezar", "",
-        f"Necesitas: {', '.join(resource['inputs']) if resource['inputs'] else 'ningún identificador obligatorio'}.", "",
-        f"Acceso: **{resource['access']}**. Coste: **{resource['cost']}**. Idiomas: **{', '.join(resource['languages'])}**.", "",
-        f"Cobertura: **{', '.join(resource['jurisdictions'])}**.", "",
-        "## Cómo utilizarla", "",
-        f"1. {resource['usage']}",
-        f"2. Abre la [fuente principal]({resource['url']}) y registra la fecha de consulta.",
-        f"3. Conserva como resultado: {', '.join(resource['outputs'])}.", "",
-        "## Ejemplo", "",
-        f"Ejemplo ilustrativo: parte de {resource['inputs'][0] if resource['inputs'] else 'una pregunta concreta'}, realiza la consulta y conserva {resource['outputs'][0]} con su fecha y enlace.", "",
-        "## Cómo interpretar el resultado", "", resource["interpretation"], "",
-        "## Límites y alternativas", "", resource["limitations"], "",
-    ]
-    exclusions = resource.get("coverage_exclusions", [])
-    if exclusions:
-        lines.extend([f"Exclusiones territoriales conocidas: **{', '.join(exclusions)}**.", ""])
-    alternatives = resource.get("alternatives", [])
-    if alternatives:
-        lines.extend([f"Alternativas relacionadas: {', '.join(alternatives)}.", ""])
-    routes = [contacts[item] for item in resource.get("reporting_routes", [])]
-    if routes:
-        lines.extend(["## Asistencia o reporte", ""])
-        for contact in routes:
-            lines.append(f"- [{contact['name']}]({contact['url']}): {contact['value']}. {contact['note']}")
-        lines.append("")
-    technical = resource["technical_check"]
-    technical_date = technical.get("checked_at") or "todavía no registrada"
-    pending = resource["pending_changes"]
-    lines.extend([
-        "## Condiciones conocidas", "", resource["terms"], "",
-        "## Procedencia y revisión", "",
-        f"- Responsable de la fuente: {resource['owner']}",
-        f"- Nivel de procedencia: **{resource['tier']} — {tier}**",
-        f"- Revisión editorial: {resource['editorial_reviewed']}",
-        f"- Comprobación técnica: {technical['status']} ({technical_date})",
-        f"- Responsable del catálogo: {resource['maintainer'] or 'por asignar'}",
-        f"- Suplente: {resource['backup_maintainer'] or 'por asignar'}",
-        f"- Cambios pendientes: {len(pending)}",
-        f"- Próxima revisión prevista: cada {resource['review_days']} días",
-        f"- Criticidad: {resource['criticality']}",
-        f"- Versión del catálogo: `{version}`", "",
-    ])
-    for reference in resource.get("references", []):
-        lines.append(f"- [{reference['title']}]({reference['url']})")
-    lines.extend(["", "[Volver al catálogo](../CATALOGO.md)", ""])
-    return "\n".join(lines)
+def coverage(catalog: dict, scenario: dict, jurisdiction: str) -> dict:
+    matching = [r for r in catalog["resources"] if scenario["id"] in r["scenarios"] and applies_to(r, jurisdiction, catalog["jurisdictions"])]
+    local = [r for r in matching if jurisdiction in r["jurisdictions"]]
+    verified = [r for r in local if r["review_status"] == "verified" and r["editorial_reviewed"] and r["reviewer"]]
+    procedures = [p for p in catalog["playbooks"] if p["scenario"] == scenario["id"] and jurisdiction in p["jurisdictions"]
+                  and p["review_status"] == "verified" and p["last_reviewed"] and p["reviewer"]]
+    spec = next(s for s in catalog["maintainers"]["specialties"] if s["id"] == scenario["specialty"])
+    routes = [c for c in catalog["contacts"] if scenario["id"] in c["scenarios"] and jurisdiction in c["territories"]
+              and c["review_status"] == "verified" and c["last_reviewed"] and c["reviewer"]]
+    gaps = []
+    if not verified: gaps.append("Faltan fuentes revisadas específicamente para este territorio.")
+    if not procedures: gaps.append("Falta un procedimiento territorial revisado.")
+    if not spec["primary"]: gaps.append("Falta responsable de la especialidad.")
+    if scenario["requires_routes"] and not routes: gaps.append("Faltan vías competentes verificadas para este territorio.")
+    dates = [r["editorial_reviewed"] for r in verified] + [p["last_reviewed"] for p in procedures] + [c["last_reviewed"] for c in routes]
+    return {"scenario": scenario["id"], "jurisdiction": jurisdiction, "resources": len(matching),
+            "local_resources": len(local), "general_resources": len(matching) - len(local),
+            "status": "desarrollado" if not gaps else "inicial" if verified else "pendiente",
+            "specialty": scenario["specialty"], "maintainer": spec["primary"], "backup": spec["backup"],
+            "last_reviewed": min(dates) if dates else None, "gaps": gaps}
 
 
-def _resource_link(resource: dict[str, Any], prefix: str = "../fuentes") -> str:
-    return f"[{resource['name']}]({prefix}/{resource['id']}.md)"
-
-
-def build_outputs(catalog: dict[str, Any], version: str) -> dict[Path, str]:
-    outputs: dict[Path, str] = {}
-    resources = sorted(catalog["resources"], key=lambda item: item["name"].casefold())
-    scenarios = sorted(catalog["scenarios"], key=lambda item: item["name"].casefold())
-    jurisdictions = catalog["jurisdictions"]
-    playbooks = {item["scenario"]: item for item in catalog["playbooks"]}
-
-    for resource in resources:
-        outputs[ROOT / "docs" / "fuentes" / f"{resource['id']}.md"] = resource_markdown(resource, catalog, version)
-
-    catalog_lines = ["<!-- GENERADO: edite data/resources/core.yaml -->", "# Catálogo de fuentes", "", f"Esta versión contiene **{len(resources)} recursos**. Usa los índices por escenario o jurisdicción para reducir la búsqueda.", "", "| Fuente | Cobertura | Temas |", "|---|---|---|"]
-    for resource in resources:
-        catalog_lines.append(f"| {_resource_link(resource, 'fuentes')} | {', '.join(resource['jurisdictions'])} | {', '.join(resource['categories'])} |")
-    catalog_lines.append("")
-    outputs[ROOT / "docs" / "CATALOGO.md"] = "\n".join(catalog_lines)
-
-    coverage_rows: list[dict[str, Any]] = []
-    for scenario in scenarios:
-        matching = [item for item in resources if scenario["id"] in item["scenarios"]]
-        lines = ["<!-- GENERADO -->", f"# {scenario['name']}", "", scenario["description"], "", f"[Abrir el procedimiento](../procedimientos/{Path(playbooks[scenario['id']]['path']).name})", "", "## Fuentes", ""]
-        lines.extend(f"- {_resource_link(item)} — {item['purpose']}" for item in matching)
-        lines.append("")
-        outputs[ROOT / "docs" / "indices" / f"escenario-{scenario['id']}.md"] = "\n".join(lines)
-        for jurisdiction in jurisdictions:
-            count = sum(applies_to(item, jurisdiction["id"], jurisdictions) for item in matching)
-            status = "desarrollado" if count >= 3 else "inicial" if count else "pendiente"
-            coverage_rows.append({"scenario": scenario["id"], "jurisdiction": jurisdiction["id"], "resources": count, "status": status, "specialty": scenario["specialty"]})
-
-    for jurisdiction in jurisdictions:
-        matching = [item for item in resources if applies_to(item, jurisdiction["id"], jurisdictions)]
-        lines = ["<!-- GENERADO -->", f"# {jurisdiction['name']}", "", jurisdiction.get("notes", "Consulta las particularidades locales antes de utilizar una fuente."), "", f"Recursos aplicables: **{len(matching)}**.", "", "## Fuentes", ""]
-        lines.extend(f"- {_resource_link(item)} — {item['purpose']}" for item in matching)
-        lines.append("")
-        outputs[ROOT / "docs" / "indices" / f"jurisdiccion-{jurisdiction['id'].lower()}.md"] = "\n".join(lines)
-
-    matrix = ["<!-- GENERADO -->", "# Matriz de cobertura", "", "La matriz hace visibles las lagunas. **Desarrollado** significa tres o más recursos aplicables; **inicial**, uno o dos; **pendiente**, ninguno.", "", "| Escenario | Jurisdicción | Recursos | Estado | Especialidad |", "|---|---|---:|---|---|"]
-    scenario_names = {item["id"]: item["name"] for item in scenarios}
-    jurisdiction_names = {item["id"]: item["name"] for item in jurisdictions}
-    for row in coverage_rows:
-        matrix.append(f"| {scenario_names[row['scenario']]} | {jurisdiction_names[row['jurisdiction']]} | {row['resources']} | {row['status']} | {row['specialty']} |")
-    matrix.append("")
-    outputs[ROOT / "docs" / "COBERTURA.md"] = "\n".join(matrix)
-
-    procedures = ["<!-- GENERADO -->", "# Procedimientos", "", "Cada procedimiento explica el objetivo, los pasos, la interpretación y el criterio de finalización.", ""]
-    for item in catalog["playbooks"]:
-        procedures.append(f"- [{item['title']}]({Path(item['path']).name}) — revisado {item['last_reviewed']}")
-    procedures.append("")
-    outputs[ROOT / "docs" / "procedimientos" / "README.md"] = "\n".join(procedures)
-
-    contacts = ["<!-- GENERADO: edite data/contacts.yaml -->", "# Contactos y rutas de asistencia", "", "Comprueba siempre la página oficial antes de utilizar un contacto. Una vía de asistencia o retirada no equivale necesariamente a una denuncia.", "", "| Territorio | Contacto | Canal | Nota |", "|---|---|---|---|"]
-    for item in catalog["contacts"]:
-        contacts.append(f"| {', '.join(item['territories'])} | [{item['name']}]({item['url']}) | {item['value']} | {item['note']} |")
-    contacts.append("")
-    outputs[ROOT / "docs" / "CONTACTOS.md"] = "\n".join(contacts)
-
-    export = {"version": version, "generated_at": "deterministic-from-source", **catalog}
-    outputs[DATA / "export" / "catalog.json"] = json.dumps(export, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
-    outputs[DATA / "export" / "coverage.json"] = json.dumps({"version": version, "coverage": coverage_rows}, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
-    search_records = [{"id": r["id"], "name": r["name"], "text": " ".join([r["name"], r["purpose"], r["usage"], r["interpretation"], " ".join(r["categories"]), " ".join(r["scenarios"]), " ".join(r["jurisdictions"])]), "url": r["url"]} for r in resources]
-    outputs[DATA / "export" / "search-index.json"] = json.dumps({"version": version, "resources": search_records}, ensure_ascii=False, indent=2, sort_keys=True) + "\n"
-    return outputs
+def build_outputs(catalog: dict, version: str) -> dict[Path, str]:
+    from .render import build_outputs as render
+    return render(catalog, version)
 
 
 def write_outputs(outputs: dict[Path, str]) -> None:
-    expected = set(outputs)
-    for directory in (ROOT / "docs" / "fuentes", ROOT / "docs" / "indices"):
-        if directory.exists():
-            for path in directory.glob("*.md"):
-                if path not in expected:
-                    path.unlink()
     for path, content in outputs.items():
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(content, encoding="utf-8", newline="\n")
 
 
 def check_outputs(outputs: dict[Path, str]) -> list[str]:
-    errors: list[str] = []
-    for path, content in outputs.items():
-        if not path.is_file():
-            errors.append(f"falta generado: {path.relative_to(ROOT)}")
-        elif path.read_text(encoding="utf-8") != content:
-            errors.append(f"generado desactualizado: {path.relative_to(ROOT)}")
-    return errors
+    return [f"generado desactualizado: {p.relative_to(ROOT)}" for p, text in outputs.items()
+            if not p.exists() or p.read_text(encoding="utf-8") != text]
 
 
-def build_sqlite(catalog: dict[str, Any], version: str, path: Path) -> None:
+def documents(catalog: dict, outputs: dict[Path, str]) -> list[dict]:
+    aliases = {"README.md": "readme", "CONTRIBUTING.md": "contribuir", "LEGAL.md": "legal"}
+    aliases.update({p["path"]: p["id"] for p in catalog["playbooks"]})
+    paths = set(ROOT.glob("*.md")) | set((ROOT / "docs").rglob("*.md")) | {p for p in outputs if p.suffix == ".md"}
+    result = []
+    for path in sorted(paths):
+        if path.name == "AGENTS.md": continue
+        relative = path.relative_to(ROOT).as_posix()
+        content = outputs[path] if path in outputs else path.read_text(encoding="utf-8")
+        title = next((line[2:] for line in content.splitlines() if line.startswith("# ")), path.stem)
+        doc_id = aliases.get(relative, relative.removeprefix("docs/").removesuffix(".md").lower())
+        result.append({"id": doc_id, "title": title, "path": relative, "content": content})
+    return result
+
+
+def build_sqlite(catalog: dict, version: str, path: Path) -> None:
+    errors = validate_catalog(catalog)
+    if errors: raise CatalogError("\n".join(errors))
     path.parent.mkdir(parents=True, exist_ok=True)
-    if path.exists():
-        path.unlink()
-    connection = sqlite3.connect(path)
+    fd, name = tempfile.mkstemp(prefix="catalog-", suffix=".sqlite", dir=path.parent)
+    os.close(fd)
+    tmp = Path(name)
     try:
-        connection.executescript("""
-            CREATE TABLE meta (key TEXT PRIMARY KEY, value TEXT NOT NULL);
-            CREATE TABLE resources (id TEXT PRIMARY KEY, name TEXT NOT NULL, payload TEXT NOT NULL);
-            CREATE VIRTUAL TABLE resource_fts USING fts5(id UNINDEXED, name, purpose, body, tokenize='unicode61 remove_diacritics 2');
-            CREATE TABLE jurisdictions (id TEXT PRIMARY KEY, payload TEXT NOT NULL);
-            CREATE TABLE scenarios (id TEXT PRIMARY KEY, payload TEXT NOT NULL);
-            CREATE TABLE playbooks (id TEXT PRIMARY KEY, scenario TEXT NOT NULL, title TEXT NOT NULL, content TEXT NOT NULL, payload TEXT NOT NULL);
-            CREATE VIRTUAL TABLE docs_fts USING fts5(id UNINDEXED, title, content, tokenize='unicode61 remove_diacritics 2');
-        """)
-        connection.execute("INSERT INTO meta VALUES (?, ?)", ("catalog_version", version))
-        for resource in catalog["resources"]:
-            payload = json.dumps(resource, ensure_ascii=False, sort_keys=True)
-            body = " ".join([resource["purpose"], resource["usage"], resource["interpretation"], resource["limitations"], " ".join(resource["categories"]), " ".join(resource["scenarios"]), " ".join(resource["jurisdictions"])])
-            connection.execute("INSERT INTO resources VALUES (?, ?, ?)", (resource["id"], resource["name"], payload))
-            connection.execute("INSERT INTO resource_fts VALUES (?, ?, ?, ?)", (resource["id"], resource["name"], resource["purpose"], body))
-        for item in catalog["jurisdictions"]:
-            connection.execute("INSERT INTO jurisdictions VALUES (?, ?)", (item["id"], json.dumps(item, ensure_ascii=False, sort_keys=True)))
-        for item in catalog["scenarios"]:
-            connection.execute("INSERT INTO scenarios VALUES (?, ?)", (item["id"], json.dumps(item, ensure_ascii=False, sort_keys=True)))
-        for item in catalog["playbooks"]:
-            content = (ROOT / item["path"]).read_text(encoding="utf-8")
-            payload = json.dumps(item, ensure_ascii=False, sort_keys=True)
-            connection.execute("INSERT INTO playbooks VALUES (?, ?, ?, ?, ?)", (item["id"], item["scenario"], item["title"], content, payload))
-            connection.execute("INSERT INTO docs_fts VALUES (?, ?, ?)", (item["id"], item["title"], content))
-        manual_docs = {
-            "readme": ("Presentación", ROOT / "README.md"),
-            "empezar": ("Cómo empezar", ROOT / "docs" / "EMPEZAR.md"),
-            "ia": ("Uso con IA", ROOT / "docs" / "IA.md"),
-            "glosario": ("Glosario", ROOT / "docs" / "GLOSARIO.md"),
-            "contribuir": ("Cómo contribuir", ROOT / "CONTRIBUTING.md"),
-            "legal": ("Marco legal y uso responsable", ROOT / "LEGAL.md"),
-        }
-        for doc_id, (title, doc_path) in manual_docs.items():
-            connection.execute(
-                "INSERT INTO docs_fts VALUES (?, ?, ?)",
-                (doc_id, title, doc_path.read_text(encoding="utf-8")),
-            )
-        connection.commit()
+        with closing(sqlite3.connect(tmp)) as con:
+            con.executescript("""
+                CREATE TABLE meta (key TEXT PRIMARY KEY, value TEXT NOT NULL);
+                CREATE TABLE resources (id TEXT PRIMARY KEY, name TEXT, payload TEXT);
+                CREATE VIRTUAL TABLE resource_fts USING fts5(id UNINDEXED, name, body, tokenize='unicode61 remove_diacritics 2');
+                CREATE TABLE applicability (resource_id TEXT, jurisdiction TEXT, PRIMARY KEY(resource_id,jurisdiction));
+                CREATE TABLE playbooks (id TEXT PRIMARY KEY, scenario TEXT, title TEXT, content TEXT, payload TEXT);
+                CREATE TABLE docs (id TEXT PRIMARY KEY, title TEXT, path TEXT, content TEXT);
+                CREATE VIRTUAL TABLE docs_fts USING fts5(id UNINDEXED, title, content, tokenize='unicode61 remove_diacritics 2');
+            """)
+            con.executemany("INSERT INTO meta VALUES (?,?)", [
+                ("catalog_version", version), ("index_format", INDEX_FORMAT),
+                ("catalog", json.dumps(catalog, ensure_ascii=False, sort_keys=True))])
+            for r in sorted(catalog["resources"], key=lambda x: x["id"]):
+                payload = json.dumps(r, ensure_ascii=False, sort_keys=True)
+                con.execute("INSERT INTO resources VALUES (?,?,?)", (r["id"], r["name"], payload))
+                con.execute("INSERT INTO resource_fts VALUES (?,?,?)", (r["id"], r["name"], payload))
+                con.executemany("INSERT INTO applicability VALUES (?,?)", [(r["id"], j["id"]) for j in catalog["jurisdictions"] if applies_to(r, j["id"], catalog["jurisdictions"])])
+            output = build_outputs(catalog, version)
+            for doc in documents(catalog, output):
+                con.execute("INSERT INTO docs VALUES (?,?,?,?)", (doc["id"], doc["title"], doc["path"], doc["content"]))
+                con.execute("INSERT INTO docs_fts VALUES (?,?,?)", (doc["id"], doc["title"], doc["content"]))
+            for p in sorted(catalog["playbooks"], key=lambda x: x["id"]):
+                con.execute("INSERT INTO playbooks VALUES (?,?,?,?,?)", (p["id"], p["scenario"], p["title"], output[ROOT / p["path"]], json.dumps(p, ensure_ascii=False, sort_keys=True)))
+            con.commit()
+            if con.execute("PRAGMA integrity_check").fetchone()[0] != "ok":
+                raise CatalogError("Índice SQLite inválido")
+        os.replace(tmp, path)
     finally:
-        connection.close()
+        tmp.unlink(missing_ok=True)
 
 
 def database_is_current(path: Path, version: str) -> bool:
-    if not path.is_file():
-        return False
+    if not path.is_file(): return False
     try:
-        with sqlite3.connect(path) as connection:
-            row = connection.execute("SELECT value FROM meta WHERE key='catalog_version'").fetchone()
-        return bool(row and row[0] == version)
+        with closing(sqlite3.connect(path)) as con:
+            meta = dict(con.execute("SELECT key,value FROM meta WHERE key != 'catalog'"))
+        return meta.get("catalog_version") == version and meta.get("index_format") == INDEX_FORMAT
     except sqlite3.Error:
         return False
 

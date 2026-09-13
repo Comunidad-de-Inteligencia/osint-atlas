@@ -1,0 +1,75 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- fr
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: fr-data-gouv
+name: data.gouv.fr
+owner: République française
+jurisdictions:
+- FR
+type: dataset
+tier: P1
+categories:
+- datos-abiertos
+scenarios:
+- statistical-claim
+- source-corroboration
+url: https://www.data.gouv.fr/
+purpose: Descubrir datos abiertos franceses.
+inputs:
+- tema
+- organización
+outputs:
+- datasets
+- recursos
+- metadatos
+usage: Comprobar productor, licencia, cobertura y fecha de cada recurso.
+interpretation: El portal incluye datos oficiales y comunitarios con autoridad distinta.
+limitations: La calidad depende del publicador.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence:
+- fields:
+  - languages
+  url: https://www.data.gouv.fr/
+  observed_at: '2026-09-13'
+  method: assistant-source-check
+  note: Idiomas observados en la página consultada; no certifica todos sus servicios.
+alternatives: []
+references:
+- title: data.gouv.fr — página responsable
+  url: https://www.data.gouv.fr/
+platforms: []
+maintenance_urls:
+- https://www.data.gouv.fr/
+input_types:
+- indicador
+- pregunta
+output_types:
+- referencia
+- serie
+example:
+  input: Se compara un indicador agregado de dos periodos ficticios, 2023 y 2024.
+  steps:
+  - Comprobar productor, licencia, cobertura y fecha de cada recurso.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: La tabla de trabajo conserva unidad, población, periodo y revisión. Una unidad distinta impide
+    calcular una variación comparable.
+  interpretation: El portal incluye datos oficiales y comunitarios con autoridad distinta.
+steps:
+- Comprobar productor, licencia, cobertura y fecha de cada recurso.
+- Comprueba en data.gouv.fr la fecha, cobertura y definición de datasets.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

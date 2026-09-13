@@ -1,50 +1,64 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # EU Sanctions Map
 
-> **Para qué sirve:** Explorar regímenes de sanciones adoptados por la UE.
+## Para qué sirve
 
-## Antes de empezar
+Explorar regímenes de sanciones adoptados por la UE.
 
-Necesitas: país, régimen, entidad.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+país, régimen, entidad
 
-Cobertura: **EU**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: Unión Europea. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de EU Sanctions Map](https://www.sanctionsmap.eu/).
+
 1. Usar el mapa para localizar el acto jurídico y verificarlo en EUR-Lex.
-2. Abre la [fuente principal](https://www.sanctionsmap.eu/) y registra la fecha de consulta.
-3. Conserva como resultado: medidas, referencias jurídicas.
+2. Comprueba en EU Sanctions Map la fecha, cobertura y definición de medidas.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de país, realiza la consulta y conserva medidas con su fecha y enlace.
+La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+
+1. Usar el mapa para localizar el acto jurídico y verificarlo en EUR-Lex.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de vincular publicaciones.
 
 ## Cómo interpretar el resultado
 
 La inclusión y alcance deben determinarse con el acto vigente.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 No sustituye asesoramiento ni listas nacionales adicionales.
 
+Resultados que puede ofrecer: medidas, referencias jurídicas.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Unión Europea
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 90 días
-- Criticidad: normal
-- Versión del catálogo: `148623c324af8657`
+Publicador: Unión Europea. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [EU Sanctions Map — página responsable](https://www.sanctionsmap.eu/)
+
+Versión: d7623406100e17a9. [Volver al catálogo](../CATALOGO.md).

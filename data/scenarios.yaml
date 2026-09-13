@@ -1,21 +1,99 @@
-{
-  "version": 1,
-  "scenarios": [
-    {"id":"business","name":"Investigar una empresa","specialty":"public-data","description":"Resolver identidad, actividad, actos societarios y relaciones públicas de una organización."},
-    {"id":"procurement","name":"Contratos y subvenciones","specialty":"public-data","description":"Rastrear licitaciones, adjudicaciones, ayudas y sus documentos oficiales."},
-    {"id":"official-publications","name":"Publicaciones oficiales","specialty":"legal","description":"Localizar actos en diarios oficiales y conservar una referencia verificable."},
-    {"id":"domain-footprint","name":"Huella pública de un dominio","specialty":"cyber","description":"Examinar información pública de dominios e infraestructura sin interactuar con sistemas ajenos."},
-    {"id":"image-geolocation","name":"Verificar una imagen y su ubicación","specialty":"geoint","description":"Contrastar una imagen con mapas, ortofotos, tiempo y otras señales abiertas."},
-    {"id":"source-corroboration","name":"Contrastar y documentar conclusiones","specialty":"editorial","description":"Separar hechos, observaciones e inferencias y mantener su procedencia."},
-    {"id":"legal-claim","name":"Verificar una afirmación jurídica","specialty":"legal","description":"Comprobar texto, vigencia, ámbito y publicación oficial de una norma o resolución."},
-    {"id":"statistical-claim","name":"Verificar una afirmación estadística","specialty":"public-data","description":"Comprobar indicador, unidad, población, periodo y revisiones."},
-    {"id":"missing-adult","name":"Desaparición de adulto o persona vulnerable","specialty":"safeguarding","description":"Orientar las primeras actuaciones y el uso responsable de avisos oficiales."},
-    {"id":"missing-child","name":"Desaparición de menor","specialty":"safeguarding","description":"Priorizar denuncia inmediata y canales especializados por territorio."},
-    {"id":"immediate-emergency","name":"Emergencia inmediata","specialty":"geoint","description":"Identificar rápidamente el servicio competente y transmitir información útil."},
-    {"id":"disaster-crisis","name":"Desastres y crisis","specialty":"geoint","description":"Consultar avisos oficiales, mapas y recomendaciones sin amplificar rumores."},
-    {"id":"grooming-sextortion","name":"Grooming y sextorsión","specialty":"safeguarding","description":"Reconocer señales, proteger a la persona y acudir a ayuda o autoridades."},
-    {"id":"sexual-digital-violence","name":"Violencia sexual digital","specialty":"safeguarding","description":"Orientar retirada, apoyo y denuncia ante difusión íntima no consentida."},
-    {"id":"csam-report","name":"Posible material de abuso sexual infantil","specialty":"safeguarding","description":"Reportar referencias mínimas sin descargar, guardar ni compartir el contenido."},
-    {"id":"platform-report","name":"Telegram y otras plataformas","specialty":"cyber","description":"Elegir entre reporte de plataforma, retirada, asistencia, emergencia y denuncia."}
-  ]
-}
+version: 1
+scenarios:
+- id: business
+  name: Investigar una empresa
+  specialty: public-data
+  description: Resolver identidad, actividad, actos societarios y relaciones públicas de una organización.
+  sensitive: false
+  requires_routes: false
+- id: procurement
+  name: Contratos y subvenciones
+  specialty: public-data
+  description: Rastrear licitaciones, adjudicaciones, ayudas y sus documentos oficiales.
+  sensitive: false
+  requires_routes: false
+- id: official-publications
+  name: Publicaciones oficiales
+  specialty: legal
+  description: Localizar actos en diarios oficiales y conservar una referencia verificable.
+  sensitive: false
+  requires_routes: false
+- id: domain-footprint
+  name: Huella pública de un dominio
+  specialty: cyber
+  description: Examinar información pública de dominios e infraestructura sin interactuar con sistemas
+    ajenos.
+  sensitive: false
+  requires_routes: false
+- id: image-geolocation
+  name: Verificar una imagen y su ubicación
+  specialty: geoint
+  description: Contrastar una imagen con mapas, ortofotos, tiempo y otras señales abiertas.
+  sensitive: false
+  requires_routes: false
+- id: source-corroboration
+  name: Contrastar y documentar conclusiones
+  specialty: editorial
+  description: Separar hechos, observaciones e inferencias y mantener su procedencia.
+  sensitive: false
+  requires_routes: false
+- id: legal-claim
+  name: Verificar una afirmación jurídica
+  specialty: legal
+  description: Comprobar texto, vigencia, ámbito y publicación oficial de una norma o resolución.
+  sensitive: true
+  requires_routes: false
+- id: statistical-claim
+  name: Verificar una afirmación estadística
+  specialty: public-data
+  description: Comprobar indicador, unidad, población, periodo y revisiones.
+  sensitive: false
+  requires_routes: false
+- id: missing-adult
+  name: Desaparición de adulto o persona vulnerable
+  specialty: safeguarding
+  description: Orientar las primeras actuaciones y el uso responsable de avisos oficiales.
+  sensitive: true
+  requires_routes: true
+- id: missing-child
+  name: Desaparición de menor
+  specialty: safeguarding
+  description: Priorizar denuncia inmediata y canales especializados por territorio.
+  sensitive: true
+  requires_routes: true
+- id: immediate-emergency
+  name: Emergencia inmediata
+  specialty: geoint
+  description: Identificar rápidamente el servicio competente y transmitir información útil.
+  sensitive: true
+  requires_routes: true
+- id: disaster-crisis
+  name: Desastres y crisis
+  specialty: geoint
+  description: Consultar avisos oficiales, mapas y recomendaciones sin amplificar rumores.
+  sensitive: true
+  requires_routes: false
+- id: grooming-sextortion
+  name: Grooming y sextorsión
+  specialty: safeguarding
+  description: Reconocer señales, proteger a la persona y acudir a ayuda o autoridades.
+  sensitive: true
+  requires_routes: true
+- id: sexual-digital-violence
+  name: Violencia sexual digital
+  specialty: safeguarding
+  description: Orientar retirada, apoyo y denuncia ante difusión íntima no consentida.
+  sensitive: true
+  requires_routes: true
+- id: csam-report
+  name: Posible material de abuso sexual infantil
+  specialty: safeguarding
+  description: Reportar referencias mínimas sin descargar, guardar ni compartir el contenido.
+  sensitive: true
+  requires_routes: true
+- id: platform-report
+  name: Telegram y otras plataformas
+  specialty: cyber
+  description: Elegir entre reporte de plataforma, retirada, asistencia, emergencia y denuncia.
+  sensitive: true
+  requires_routes: true

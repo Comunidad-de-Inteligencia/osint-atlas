@@ -1,66 +1,47 @@
 # OSINT Atlas
 
-Catálogo privado y verificable de fuentes y procedimientos OSINT para España, la Unión Europea y una cobertura internacional progresiva. Está pensado para personas y asistentes de IA: cada recurso explica qué permite consultar, cómo interpretar el resultado y qué límites tiene.
+Fuentes y procedimientos OSINT para España, la Unión Europea y otros territorios. El catálogo ayuda a elegir una fuente, comprender sus resultados y reconocer lo que todavía falta comprobar.
 
-> [!IMPORTANT]
-> Si existe peligro inmediato, contacta con el servicio de emergencias de tu territorio. En la Unión Europea, llama al **112**. Este repositorio no recibe denuncias ni funciona como sistema de alertas en tiempo real.
+> Ante peligro inmediato, acude al servicio oficial de emergencias de tu territorio. Consulta el [procedimiento de emergencia](docs/procedimientos/emergencia-inmediata.md) y las [vías oficiales](docs/CONTACTOS.md). Atlas no recibe denuncias ni ofrece alertas en tiempo real.
 
-## Elige tu recorrido
+## Qué necesito hacer
 
-- [Empezar en cinco minutos](docs/EMPEZAR.md)
-- [Explorar las 84 fuentes](docs/CATALOGO.md)
-- [Elegir un procedimiento](docs/procedimientos/README.md)
-- [Consultar la matriz de cobertura](docs/COBERTURA.md)
-- [Usar el catálogo con IA mediante MCP](docs/IA.md)
-- [Entender y activar el mantenimiento](docs/MANTENIMIENTO.md)
-- [Añadir o corregir información](CONTRIBUTING.md)
+- **Empezar:** [un recorrido explicado en cinco minutos](docs/EMPEZAR.md).
+- **Investigar y contrastar:** [empresas](docs/procedimientos/investigar-empresa.md), [contratos y ayudas](docs/procedimientos/contratos-subvenciones.md), [publicaciones oficiales](docs/procedimientos/publicaciones-oficiales.md), [dominios](docs/procedimientos/huella-dominio.md), [imágenes](docs/procedimientos/verificar-imagen.md), [conclusiones](docs/procedimientos/contrastar-conclusiones.md), [afirmaciones jurídicas](docs/procedimientos/afirmacion-juridica.md) o [estadísticas](docs/procedimientos/afirmacion-estadistica.md).
+- **Desapariciones:** [adultos](docs/procedimientos/desaparicion-adulto.md) o [menores](docs/procedimientos/desaparicion-menor.md).
+- **Emergencias:** [actuación inmediata](docs/procedimientos/emergencia-inmediata.md) o [desastres y crisis](docs/procedimientos/desastre-crisis.md).
+- **Protección y reporte:** [grooming y sextorsión](docs/procedimientos/grooming-sextorsion.md), [violencia sexual digital](docs/procedimientos/violencia-sexual-digital.md), [posible abuso sexual infantil](docs/procedimientos/reportar-csam.md) o [Telegram y otras plataformas](docs/procedimientos/reportar-plataformas.md).
 
-## Escenarios prioritarios
+## En qué territorio
 
-### Protección de personas
+[España](docs/indices/jurisdiccion-es.md) · [Unión Europea](docs/indices/jurisdiccion-eu.md) · [Global](docs/indices/jurisdiccion-global.md).
 
-- [Desaparición de un adulto](docs/procedimientos/desaparicion-adulto.md)
-- [Desaparición de un menor](docs/procedimientos/desaparicion-menor.md)
-- [Emergencia inmediata](docs/procedimientos/emergencia-inmediata.md)
-- [Desastres y crisis](docs/procedimientos/desastre-crisis.md)
-- [Grooming o sextorsión](docs/procedimientos/grooming-sextorsion.md)
-- [Violencia sexual digital](docs/procedimientos/violencia-sexual-digital.md)
-- [Posible material de abuso sexual infantil](docs/procedimientos/reportar-csam.md)
-- [Telegram y otras plataformas](docs/procedimientos/reportar-plataformas.md)
+Consulta [todos los territorios y sus carencias](docs/COBERTURA.md), incluidos Portugal, Francia, Alemania, Italia, Reino Unido, Brasil, México, Colombia y Argentina. Un recurso global puede ayudar sin cubrir el procedimiento local.
 
-### Investigación y verificación
+## Qué información tengo
 
-- [Empresas](docs/procedimientos/investigar-empresa.md)
-- [Contratos y subvenciones](docs/procedimientos/contratos-subvenciones.md)
-- [Publicaciones oficiales](docs/procedimientos/publicaciones-oficiales.md)
-- [Huella pública de dominios](docs/procedimientos/huella-dominio.md)
-- [Verificación de imágenes](docs/procedimientos/verificar-imagen.md)
-- [Contraste de conclusiones](docs/procedimientos/contrastar-conclusiones.md)
-- [Afirmaciones jurídicas](docs/procedimientos/afirmacion-juridica.md)
-- [Afirmaciones estadísticas](docs/procedimientos/afirmacion-estadistica.md)
+Parte de una [organización](docs/indices/entrada-organizacion.md), un [expediente](docs/indices/entrada-expediente.md), un [documento](docs/indices/entrada-documento.md), un [dominio](docs/indices/entrada-dominio.md), un [lugar](docs/indices/entrada-lugar.md), un [indicador](docs/indices/entrada-indicador.md), una [situación](docs/indices/entrada-situacion.md), una [plataforma](docs/indices/entrada-plataforma.md) o una [pregunta por contrastar](docs/indices/entrada-pregunta.md).
 
-## Cómo está construido
+[Explorar el catálogo completo](docs/CATALOGO.md).
 
-Las fichas editables están en `data/`; los documentos de `docs/fuentes/`, los índices, las exportaciones JSON y la base SQLite se generan de forma determinista. El servidor MCP solo consulta el catálogo y nunca envía reportes ni accede a las fuentes externas.
+## Qué está revisado
 
-```mermaid
-flowchart LR
-    A[Datos y procedimientos revisados] --> B[Validador y generador]
-    B --> C[Documentación GitHub]
-    B --> D[JSON y SQLite]
-    D --> E[MCP local de solo lectura]
-    F[Comprobaciones programadas] --> G[Informes y propuestas]
-    G --> A
-```
+La v0.2 conserva **84 recursos y 16 procedimientos**. Las fichas distinguen información desconocida, observaciones del asistente y aprobación humana. Las revisiones pendientes se muestran: no debes interpretar la fecha de creación como validación del contenido.
 
-Descripción textual: los datos y procedimientos aprobados producen documentación y artefactos de búsqueda; las comprobaciones externas generan informes y propuestas que necesitan revisión antes de cambiar contenido sensible.
+Los cambios sensibles requieren una segunda persona competente. Por ahora solo está registrado el coordinador; las propuestas seguirán pendientes hasta disponer de revisión independiente.
 
-## Estado de la v0.1
+## Estado del mantenimiento
 
-- 84 recursos y 16 escenarios con procedimiento.
-- España en profundidad, fuentes comunes de la UE y recursos globales.
-- Cobertura inicial de Portugal, Francia, Alemania, Italia, Reino Unido, Brasil, México, Colombia y Argentina.
-- Revisión automática diaria, semanal y mensual preparada mediante GitHub Actions.
-- Reparto por especialidad preparado; faltan asignar los usuarios de GitHub de los colaboradores.
+Consulta la [última ejecución satisfactoria de cada proceso y sus incidencias](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md) y el [historial de GitHub Actions](https://github.com/P3M-ACTF/osint-atlas/actions).
 
-Consulta [las condiciones de uso](LEGAL.md), [la política de seguridad](SECURITY.md) y [la atribución](ATTRIBUTION.md).
+Las agendas siguen desactivadas hasta confirmar cuotas y control del gasto. Las pruebas manuales comprueban disponibilidad y cambios; no verifican automáticamente las instrucciones ni los contactos.
+
+## Usar, comprender y contribuir
+
+- [Consultar mediante IA y MCP](docs/IA.md).
+- [Entender el mantenimiento y la revisión humana](docs/MANTENIMIENTO.md).
+- [Añadir o corregir fichas](CONTRIBUTING.md).
+- [Glosario](docs/GLOSARIO.md), [accesibilidad y comprobaciones](docs/ACCESIBILIDAD.md).
+- [Condiciones de uso](LEGAL.md), [seguridad](SECURITY.md) y [atribución](ATTRIBUTION.md).
+
+Los archivos originales de datos y procedimientos producen documentación, JSON y un índice SQLite local. El MCP consulta esos resultados. Las comprobaciones externas producen informes y propuestas; solo los cambios editoriales revisados deben incorporarse al contenido aprobado.

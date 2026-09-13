@@ -1,0 +1,80 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: critica
+languages:
+- es
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: eu-emergency-112
+name: Servicio europeo de emergencias
+owner: Servicios nacionales de emergencias
+jurisdictions:
+- EU
+type: hotline
+tier: P0
+categories:
+- emergencias
+scenarios:
+- immediate-emergency
+- disaster-crisis
+- missing-adult
+- missing-child
+url: https://digital-strategy.ec.europa.eu/es/policies/112
+purpose: Contactar gratuitamente con policía, ambulancia o bomberos en toda la UE.
+inputs:
+- ubicación
+- naturaleza del peligro
+outputs:
+- derivación al servicio de emergencia
+usage: Llamar solo ante una emergencia real y seguir las instrucciones del operador.
+interpretation: El {{contact:eu-112}} coordina respuesta inmediata; otros trámites pueden requerir denuncia
+  posterior.
+limitations: No es un servicio de información general.
+reporting_routes:
+- eu-112
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence:
+- fields:
+  - languages
+  url: https://digital-strategy.ec.europa.eu/es/policies/112
+  observed_at: '2026-09-13'
+  method: assistant-source-check
+  note: Idiomas observados en la página consultada; no certifica todos sus servicios.
+alternatives: []
+references:
+- title: Servicio europeo de emergencias — página responsable
+  url: https://digital-strategy.ec.europa.eu/es/policies/112
+platforms: []
+maintenance_urls:
+- https://digital-strategy.ec.europa.eu/es/policies/112
+input_types:
+- lugar
+- situacion
+output_types:
+- aviso
+- orientacion
+example:
+  input: Un ejercicio de mesa describe humo en un edificio, sin ubicación ni personas reales.
+  steps:
+  - Llamar solo ante una emergencia real y seguir las instrucciones del operador.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se prepara una explicación breve de ubicación, peligro y afectados. No se contacta con servicios
+    reales durante la práctica.
+  interpretation: El {{contact:eu-112}} coordina respuesta inmediata; otros trámites pueden requerir denuncia
+    posterior.
+steps:
+- Llamar solo ante una emergencia real y seguir las instrucciones del operador.
+- Comprueba en Servicio europeo de emergencias la fecha, cobertura y definición de derivación al servicio
+  de emergencia.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

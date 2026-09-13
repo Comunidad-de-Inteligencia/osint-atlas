@@ -1,23 +1,23 @@
 name: Mantenimiento diario
-
 on:
   workflow_dispatch:
-  # Active esta agenda después de validar el flujo, asignar revisores y revisar cuotas:
+    inputs:
+      publish:
+        description: Publicar únicamente estado técnico y propuestas de revisión
+        type: boolean
+        default: false
+  # Agenda desactivada hasta confirmar resultados manuales, cuotas y límite de gasto.
   # schedule:
   #   - cron: "17 4 * * *"
-
 permissions:
   contents: read
-  issues: write
-
 concurrency:
-  group: maintenance-daily
+  group: atlas-maintenance-state
   cancel-in-progress: false
-
 jobs:
-  check:
+  collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
@@ -25,22 +25,47 @@ jobs:
         with:
           python-version: "3.12"
       - run: uv sync --locked
-      - run: uv run python tools/check_links.py --scope critical --timeout 10 --delay 1 --workers 3 --output reports/critical-links.json
-      - run: uv run python tools/check_reviews.py --output reports/stale-reviews.json
-      - name: Preparar etiquetas
+      - name: Recuperar el historial anterior
         env:
           GH_TOKEN: ${{ github.token }}
+        run: uv run python tools/fetch_state.py
+      - name: Recoger observaciones sin permisos de escritura
         run: |
-          gh label create maintenance --color 1D76DB --description "Revisión generada por mantenimiento" --force
-          gh label create critical-review --color B60205 --description "Revisión de recurso crítico" --force
-      - name: Agrupar avisos
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          uv run python tools/publish_maintenance_issue.py reports/critical-links.json --title "Revisar disponibilidad de recursos críticos" --label critical-review
-          uv run python tools/publish_maintenance_issue.py reports/stale-reviews.json --title "Revisiones editoriales vencidas" --label maintenance
+          uv run python tools/check_links.py --scope critical --timeout 10 --workers 3 --output reports/observations.json
+          uv run python tools/check_reviews.py --output reports/stale-reviews.json
       - uses: actions/upload-artifact@v4
+        if: always()
         with:
-          name: maintenance-daily-${{ github.run_id }}
-          path: reports/*.json
+          name: reports-${{ github.run_id }}
+          path: reports/
           retention-days: 7
+          if-no-files-found: error
+  publish:
+    needs: collect
+    if: ${{ always() && (inputs.publish || github.event_name == 'schedule') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: uv sync --locked
+      - uses: actions/download-artifact@v4
+        with:
+          name: reports-${{ github.run_id }}
+          path: reports/
+      - name: Publicar únicamente informes y propuestas
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          uv run python tools/publish_maintenance_issue.py reports/observations.json --publish
+          if test -f reports/stale-reviews.json; then
+            uv run python tools/publish_maintenance_issue.py reports/stale-reviews.json --label editorial-review --publish
+          fi
+          uv run python tools/publish_state.py reports/state.json --publish

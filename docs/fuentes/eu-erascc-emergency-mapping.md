@@ -1,50 +1,64 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Copernicus Emergency Management Service
 
-> **Para qué sirve:** Consultar cartografía y activaciones de respuesta a desastres.
+## Para qué sirve
 
-## Antes de empezar
+Consultar cartografía y activaciones de respuesta a desastres.
 
-Necesitas: evento, lugar, fecha.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+evento, lugar, fecha
 
-Cobertura: **EU, GLOBAL**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: Unión Europea, Global. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de Copernicus Emergency Management Service](https://emergency.copernicus.eu/).
+
 1. Citar código de activación, producto, fecha y versión.
-2. Abre la [fuente principal](https://emergency.copernicus.eu/) y registra la fecha de consulta.
-3. Conserva como resultado: mapas de emergencia, productos de activación.
+2. Comprueba en Copernicus Emergency Management Service la fecha, cobertura y definición de mapas de emergencia.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de evento, realiza la consulta y conserva mapas de emergencia con su fecha y enlace.
+Un aviso ficticio sobre una inundación contiene dos horas de actualización distintas.
+
+1. Citar código de activación, producto, fecha y versión.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Se comprueba cuál es la publicación original vigente y se marca la anterior como superada. No se emite una alerta.
 
 ## Cómo interpretar el resultado
 
 Los mapas se producen para un objetivo y ventana temporal concretos.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 No todas las emergencias generan activación pública.
 
+Resultados que puede ofrecer: mapas de emergencia, productos de activación.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Comisión Europea
-- Nivel de procedencia: **P1 — API o conjunto publicado por el organismo responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 30 días
-- Criticidad: alta
-- Versión del catálogo: `148623c324af8657`
+Publicador: Comisión Europea. Procedencia declarada: P1 (API o conjunto publicado por el organismo responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Copernicus Emergency Management Service — página responsable](https://emergency.copernicus.eu/)
+
+Versión: d7623406100e17a9. [Volver al catálogo](../CATALOGO.md).

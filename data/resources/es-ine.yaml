@@ -1,0 +1,72 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 90
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-ine
+name: INE Datos Abiertos
+owner: Instituto Nacional de Estadística
+jurisdictions:
+- ES
+type: api
+tier: P1
+categories:
+- estadistica
+- datos-abiertos
+scenarios:
+- statistical-claim
+- source-corroboration
+url: https://www.ine.es/datosabiertos/
+purpose: Consultar estadísticas oficiales españolas y series territoriales.
+inputs:
+- indicador
+- periodo
+- territorio
+outputs:
+- series estadísticas
+- tablas
+- metadatos
+usage: Identificar la operación estadística, seleccionar periodo y territorio y conservar unidad y revisión.
+interpretation: Comparar valores solo si comparten definición, unidad y periodo.
+limitations: Los microdatos restringidos no forman parte de los datos abiertos.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- eu-eurostat
+references:
+- title: INE Datos Abiertos — página responsable
+  url: https://www.ine.es/datosabiertos/
+platforms: []
+maintenance_urls:
+- https://www.ine.es/datosabiertos/
+input_types:
+- indicador
+- pregunta
+output_types:
+- referencia
+- serie
+example:
+  input: Se compara un indicador agregado de dos periodos ficticios, 2023 y 2024.
+  steps:
+  - Identificar la operación estadística, seleccionar periodo y territorio y conservar unidad y revisión.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: La tabla de trabajo conserva unidad, población, periodo y revisión. Una unidad distinta impide
+    calcular una variación comparable.
+  interpretation: Comparar valores solo si comparten definición, unidad y periodo.
+steps:
+- Identificar la operación estadística, seleccionar periodo y territorio y conservar unidad y revisión.
+- Comprueba en INE Datos Abiertos la fecha, cobertura y definición de series estadísticas.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

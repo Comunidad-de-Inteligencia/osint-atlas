@@ -1,0 +1,73 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: critica
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-policia-denuncias
+name: Policía Nacional - Denuncias
+owner: Policía Nacional
+jurisdictions:
+- ES
+type: guidance
+tier: P0
+categories:
+- justicia
+- emergencias
+scenarios:
+- missing-adult
+- missing-child
+- grooming-sextortion
+- sexual-digital-violence
+- csam-report
+url: https://www.policia.es/_es/denuncias.php
+purpose: Orientar sobre presentación de denuncias ante Policía Nacional.
+inputs:
+- hechos
+- ubicación
+- referencias disponibles
+outputs:
+- instrucciones de denuncia
+usage: Preservar referencias lícitas y explicar hechos sin investigar ni confrontar por cuenta propia.
+interpretation: La autoridad determina la calificación y diligencias.
+limitations: No usar canales no urgentes ante peligro inmediato.
+reporting_routes:
+- eu-112
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Policía Nacional - Denuncias — página responsable
+  url: https://www.policia.es/_es/denuncias.php
+platforms: []
+maintenance_urls:
+- https://www.policia.es/_es/denuncias.php
+input_types:
+- situacion
+output_types:
+- orientacion
+- ruta-reporte
+example:
+  input: En un ejercicio ficticio se necesita localizar la orientación oficial para comunicar una desaparición.
+  steps:
+  - Preservar referencias lícitas y explicar hechos sin investigar ni confrontar por cuenta propia.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se identifica la autoridad competente y la información que solicita. No se crea una ficha
+    personal en Atlas.
+  interpretation: La autoridad determina la calificación y diligencias.
+steps:
+- Preservar referencias lícitas y explicar hechos sin investigar ni confrontar por cuenta propia.
+- Comprueba en Policía Nacional - Denuncias la fecha, cobertura y definición de instrucciones de denuncia.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

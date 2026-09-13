@@ -1,50 +1,65 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Registro Imprese
 
-> **Para qué sirve:** Consultar información registral de empresas italianas.
+## Para qué sirve
 
-## Antes de empezar
+Consultar información registral de empresas italianas.
 
-Necesitas: denominación, codice fiscale, REA.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+denominación, codice fiscale, REA
 
-Cobertura: **IT**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **italiano**.
+
+Cobertura declarada: Italia. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de Registro Imprese](https://www.registroimprese.it/).
+
 1. Resolver la empresa por identificador y seleccionar el documento adecuado.
-2. Abre la [fuente principal](https://www.registroimprese.it/) y registra la fecha de consulta.
-3. Conserva como resultado: datos registrales, visure disponibles.
+2. Comprueba en Registro Imprese la fecha, cobertura y definición de datos registrales.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de denominación, realiza la consulta y conserva datos registrales con su fecha y enlace.
+La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+
+1. Resolver la empresa por identificador y seleccionar el documento adecuado.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de vincular publicaciones.
 
 ## Cómo interpretar el resultado
 
 Una ficha básica no sustituye una visura o certificación.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 Servicios documentales pueden ser de pago.
 
+Resultados que puede ofrecer: datos registrales, visure disponibles.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Camere di Commercio italiane
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 180 días
-- Criticidad: normal
-- Versión del catálogo: `148623c324af8657`
+Publicador: Camere di Commercio italiane. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Registro Imprese — página responsable](https://www.registroimprese.it/)
+- Observación de languages, 2026-09-13: [página comprobada](https://www.registroimprese.it/). Idiomas observados en la página consultada; no certifica todos sus servicios. No equivale a aprobación humana.
+
+Versión: d7623406100e17a9. [Volver al catálogo](../CATALOGO.md).

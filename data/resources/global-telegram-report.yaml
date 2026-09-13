@@ -1,0 +1,90 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: alta
+languages:
+- en
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: global-telegram-report
+name: Telegram - Reportar contenido ilegal
+owner: Telegram
+jurisdictions:
+- GLOBAL
+type: reporting-channel
+tier: P2
+categories:
+- reporte-plataformas
+- violencia-digital
+scenarios:
+- platform-report
+- csam-report
+- sexual-digital-violence
+url: https://telegram.org/faq#q-there-39s-illegal-content-on-telegram-how-do-i-take-it-down
+purpose: Reportar mensajes o contenido público ilegal a la plataforma.
+inputs:
+- enlace público t.me
+- mensaje o canal
+outputs:
+- revisión de moderación
+usage: Usar Reportar sobre el mensaje o incluir enlaces públicos en el canal oficial; no reenviar material
+  sensible.
+interpretation: El reporte a la plataforma busca moderación o retirada y no constituye denuncia.
+limitations: No investigar grupos privados ni eludir controles de acceso.
+reporting_routes:
+- telegram-report
+- global-inhope
+reporting_routes_by_scenario:
+  platform-report:
+  - telegram-report
+  csam-report:
+  - telegram-report
+  - global-inhope
+  sexual-digital-violence:
+  - telegram-report
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence:
+- fields:
+  - languages
+  url: https://telegram.org/faq
+  observed_at: '2026-09-13'
+  method: assistant-source-check
+  note: Idiomas observados en la página consultada; no certifica todos sus servicios.
+alternatives: []
+references:
+- title: Telegram - Reportar contenido ilegal — página responsable
+  url: https://telegram.org/faq#q-there-39s-illegal-content-on-telegram-how-do-i-take-it-down
+platforms:
+- telegram
+maintenance_urls:
+- https://telegram.org/faq#q-there-39s-illegal-content-on-telegram-how-do-i-take-it-down
+input_types:
+- plataforma
+- situacion
+output_types:
+- orientacion
+- ruta-reporte
+example:
+  input: Un ejercicio textual menciona una plataforma y una conducta observada, sin cuenta ni canal reales.
+  steps:
+  - Usar Reportar sobre el mensaje o incluir enlaces públicos en el canal oficial; no reenviar material
+    sensible.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se escoge una vía por plataforma, territorio y finalidad; una sospecha se describe como posible
+    y no como delito acreditado.
+  interpretation: El reporte a la plataforma busca moderación o retirada y no constituye denuncia.
+steps:
+- Usar Reportar sobre el mensaje o incluir enlaces públicos en el canal oficial; no reenviar material
+  sensible.
+- Comprueba en Telegram - Reportar contenido ilegal la fecha, cobertura y definición de revisión de moderación.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

@@ -1,0 +1,75 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- de
+- en
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: de-handelsregister
+name: Handelsregister
+owner: Justizverwaltungen der Länder
+jurisdictions:
+- DE
+type: register
+tier: P0
+categories:
+- empresas
+scenarios:
+- business
+url: https://www.handelsregister.de/
+purpose: Consultar registros mercantiles alemanes.
+inputs:
+- nombre
+- número registral
+- sede
+outputs:
+- datos registrales
+- documentos disponibles
+usage: Seleccionar registro, tipo y número de hoja cuando se conozcan.
+interpretation: Los documentos y extractos tienen alcances distintos.
+limitations: La información estructurada puede diferir del extracto actual o estar incompleta. Comprobar
+  el registro y documento concretos; tarifas pendientes de revisión.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence:
+- fields:
+  - languages
+  url: https://www.handelsregister.de/
+  observed_at: '2026-09-13'
+  method: assistant-source-check
+  note: Idiomas observados en la página consultada; no certifica todos sus servicios.
+alternatives:
+- de-bundesanzeiger
+references:
+- title: Handelsregister — página responsable
+  url: https://www.handelsregister.de/
+platforms: []
+maintenance_urls:
+- https://www.handelsregister.de/
+input_types:
+- organizacion
+output_types:
+- registro
+example:
+  input: La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+  steps:
+  - Seleccionar registro, tipo y número de hoja cuando se conozcan.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de
+    vincular publicaciones.
+  interpretation: Los documentos y extractos tienen alcances distintos.
+steps:
+- Seleccionar registro, tipo y número de hoja cuando se conozcan.
+- Comprueba en Handelsregister la fecha, cobertura y definición de datos registrales.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

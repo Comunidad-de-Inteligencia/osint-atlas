@@ -1,50 +1,66 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # AEMET OpenData
 
-> **Para qué sirve:** Consultar observaciones, avisos y climatología oficial.
+## Para qué sirve
 
-## Antes de empezar
+Consultar observaciones, avisos y climatología oficial.
 
-Necesitas: lugar, fecha, producto.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+lugar, fecha, producto
 
-Cobertura: **ES**.
+Acceso: **clave de API**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **español**.
+
+Cobertura declarada: España. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de AEMET OpenData](https://opendata.aemet.es/).
+
 1. Guardar identificador de producto, estación, periodo y momento de consulta.
-2. Abre la [fuente principal](https://opendata.aemet.es/) y registra la fecha de consulta.
-3. Conserva como resultado: observaciones, avisos, series meteorológicas.
+2. Comprueba en AEMET OpenData la fecha, cobertura y definición de observaciones.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de lugar, realiza la consulta y conserva observaciones con su fecha y enlace.
+Una imagen ficticia de un cruce sin personas se compara con una cartografía fechada.
+
+1. Guardar identificador de producto, estación, periodo y momento de consulta.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Se anotan dos rasgos concordantes y las diferencias. La coincidencia se expresa como hipótesis, sin localizar personas.
 
 ## Cómo interpretar el resultado
 
 Separar observación, predicción y aviso; no extrapolar una estación a todo un territorio.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 Requiere clave y algunas URLs de descarga son temporales.
 
+Resultados que puede ofrecer: observaciones, avisos, series meteorológicas.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Agencia Estatal de Meteorología
-- Nivel de procedencia: **P1 — API o conjunto publicado por el organismo responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 90 días
-- Criticidad: alta
-- Versión del catálogo: `148623c324af8657`
+Publicador: Agencia Estatal de Meteorología. Procedencia declarada: P1 (API o conjunto publicado por el organismo responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [AEMET OpenData — página responsable](https://opendata.aemet.es/)
+- Observación de languages, 2026-09-13: [página comprobada](https://opendata.aemet.es/centrodedescargas/inicio). Idiomas observados en la página consultada; no certifica todos sus servicios. No equivale a aprobación humana.
+- Observación de access, 2026-09-13: [página comprobada](https://opendata.aemet.es/centrodedescargas/inicio). El centro de descargas ofrece solicitar una API key. No equivale a aprobación humana.
+
+Versión: d7623406100e17a9. [Volver al catálogo](../CATALOGO.md).

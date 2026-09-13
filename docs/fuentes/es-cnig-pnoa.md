@@ -1,50 +1,66 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Centro de Descargas CNIG y PNOA
 
-> **Para qué sirve:** Obtener cartografía, ortofotos, modelos de terreno y LiDAR oficiales.
+## Para qué sirve
 
-## Antes de empezar
+Obtener cartografía, ortofotos, modelos de terreno y LiDAR oficiales.
 
-Necesitas: área, producto, fecha.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+área, producto, fecha
 
-Cobertura: **ES**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: España. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de Centro de Descargas CNIG y PNOA](https://centrodedescargas.cnig.es/).
+
 1. Elegir producto, fecha y resolución adecuados y conservar sus metadatos.
-2. Abre la [fuente principal](https://centrodedescargas.cnig.es/) y registra la fecha de consulta.
-3. Conserva como resultado: ortofotos, cartografía, modelos de elevación.
+2. Comprueba en Centro de Descargas CNIG y PNOA la fecha, cobertura y definición de ortofotos.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de área, realiza la consulta y conserva ortofotos con su fecha y enlace.
+Una imagen ficticia de un cruce sin personas se compara con una cartografía fechada.
+
+1. Elegir producto, fecha y resolución adecuados y conservar sus metadatos.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Se anotan dos rasgos concordantes y las diferencias. La coincidencia se expresa como hipótesis, sin localizar personas.
 
 ## Cómo interpretar el resultado
 
 Una coincidencia visual debe apoyarse en fecha, escala y más de un rasgo estable.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 Los productos son voluminosos y diferentes vuelos pueden tener fechas distintas.
 
+Resultados que puede ofrecer: ortofotos, cartografía, modelos de elevación.
+
+Fuentes complementarias; comprobar sus diferencias de cobertura:
+
+- [IGN Información Geográfica](./es-ign-geodesia.md)
+
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Instituto Geográfico Nacional
-- Nivel de procedencia: **P1 — API o conjunto publicado por el organismo responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 180 días
-- Criticidad: normal
-- Versión del catálogo: `148623c324af8657`
+Publicador: Instituto Geográfico Nacional. Procedencia declarada: P1 (API o conjunto publicado por el organismo responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Centro de Descargas CNIG y PNOA — página responsable](https://centrodedescargas.cnig.es/)
+
+Versión: d7623406100e17a9. [Volver al catálogo](../CATALOGO.md).

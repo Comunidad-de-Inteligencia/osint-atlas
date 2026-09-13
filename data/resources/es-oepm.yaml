@@ -1,0 +1,72 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-oepm
+name: OEPM y Consulta de Expedientes
+owner: Oficina Española de Patentes y Marcas
+jurisdictions:
+- ES
+type: register
+tier: P0
+categories:
+- propiedad-intelectual
+- empresas
+scenarios:
+- business
+- source-corroboration
+url: https://www.oepm.es/
+purpose: Consultar marcas, patentes, diseños y actos de tramitación.
+inputs:
+- titular
+- signo
+- número de expediente
+outputs:
+- expedientes
+- situación
+- titulares publicados
+usage: Buscar variantes del nombre y comprobar el estado y la fecha del expediente.
+interpretation: Solicitud, concesión y vigencia son estados diferentes.
+limitations: Algunos servicios automatizados requieren registro y ciertos documentos tienen publicidad
+  limitada.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: OEPM y Consulta de Expedientes — página responsable
+  url: https://www.oepm.es/
+platforms: []
+maintenance_urls:
+- https://www.oepm.es/
+input_types:
+- organizacion
+- pregunta
+output_types:
+- referencia
+- registro
+example:
+  input: La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+  steps:
+  - Buscar variantes del nombre y comprobar el estado y la fecha del expediente.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de
+    vincular publicaciones.
+  interpretation: Solicitud, concesión y vigencia son estados diferentes.
+steps:
+- Buscar variantes del nombre y comprobar el estado y la fecha del expediente.
+- Comprueba en OEPM y Consulta de Expedientes la fecha, cobertura y definición de expedientes.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

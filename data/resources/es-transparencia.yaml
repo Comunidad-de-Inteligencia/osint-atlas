@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-transparencia
+name: Portal de Transparencia de la AGE
+owner: Gobierno de España
+jurisdictions:
+- ES
+type: portal
+tier: P0
+categories:
+- administracion
+- datos-abiertos
+scenarios:
+- source-corroboration
+- procurement
+url: https://transparencia.gob.es/
+purpose: Consultar estructura, cargos, planes, presupuestos y otra publicidad activa estatal.
+inputs:
+- organismo
+- materia
+outputs:
+- publicidad activa
+- organigramas
+- documentos
+usage: Identificar el organismo competente y seguir la referencia hasta el documento original.
+interpretation: La ausencia en el portal estatal no implica inexistencia en portales autonómicos o locales.
+limitations: No centraliza toda la transparencia pública española.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Portal de Transparencia de la AGE — página responsable
+  url: https://transparencia.gob.es/
+platforms: []
+maintenance_urls:
+- https://transparencia.gob.es/
+input_types:
+- expediente
+- pregunta
+output_types:
+- documento
+- referencia
+example:
+  input: Dos textos ficticios repiten una afirmación y remiten al mismo documento.
+  steps:
+  - Identificar el organismo competente y seguir la referencia hasta el documento original.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: 'Se conserva una sola procedencia original: la repetición no cuenta como dos confirmaciones
+    independientes.'
+  interpretation: La ausencia en el portal estatal no implica inexistencia en portales autonómicos o locales.
+steps:
+- Identificar el organismo competente y seguir la referencia hasta el documento original.
+- Comprueba en Portal de Transparencia de la AGE la fecha, cobertura y definición de publicidad activa.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
