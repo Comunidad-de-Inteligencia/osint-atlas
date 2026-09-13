@@ -65,4 +65,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 
 - [Protección Civil - Recomendaciones — página responsable](https://www.proteccioncivil.es/gestion-riesgos/recomendaciones)
 
-Versión: ca3f80a057e132aa. [Volver al catálogo](../CATALOGO.md).
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

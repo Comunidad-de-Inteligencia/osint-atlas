@@ -61,4 +61,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 
 - [ECHA Information on Chemicals — página responsable](https://echa.europa.eu/information-on-chemicals)
 
-Versión: ca3f80a057e132aa. [Volver al catálogo](../CATALOGO.md).
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

@@ -64,4 +64,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 
 - [Eurostat — página responsable](https://ec.europa.eu/eurostat/)
 
-Versión: ca3f80a057e132aa. [Volver al catálogo](../CATALOGO.md).
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

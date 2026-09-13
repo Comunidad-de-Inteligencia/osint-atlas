@@ -63,4 +63,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 dí
 
 - [Plataforma de Contratación del Sector Público — página responsable](https://contrataciondelestado.es/)
 
-Versión: ca3f80a057e132aa. [Volver al catálogo](../CATALOGO.md).
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

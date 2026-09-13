@@ -61,4 +61,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 
 - [Global Missing Children's Network — página responsable](https://globalmissingkids.org/)
 
-Versión: ca3f80a057e132aa. [Volver al catálogo](../CATALOGO.md).
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

@@ -64,4 +64,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 - [Boletín Oficial del Estado — página responsable](https://www.boe.es/)
 - [Ayuda sobre legislación consolidada](https://www.boe.es/datosabiertos/faq/consolidada.php)
 
-Versión: ca3f80a057e132aa. [Volver al catálogo](../CATALOGO.md).
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

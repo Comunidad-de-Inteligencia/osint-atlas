@@ -2,7 +2,7 @@
 
 ## Estado de la entrega
 
-La implementación está en la [propuesta v0.2](https://github.com/P3M-ACTF/osint-atlas/pull/1), en borrador y sin fusionar. Se conservan 84 recursos, 16 procedimientos y 14 jurisdicciones. La rama principal y la versión publicada siguen siendo v0.1.
+La incorporación a la rama principal se realiza mediante la [propuesta v0.2](https://github.com/P3M-ACTF/osint-atlas/pull/1), por petición expresa del coordinador el 13 de septiembre de 2026, con conocimiento de la revisión independiente pendiente. Esta excepción permite fusionar la implementación; no convierte las fichas ni los procedimientos en contenido aprobado editorialmente. Se conservan 84 recursos, 16 procedimientos y 14 jurisdicciones. La etiqueta de publicación sigue siendo v0.1; esta fusión no crea una nueva versión etiquetada.
 
 Las fichas tienen campos explícitos para lo desconocido y para la revisión pendiente. Una observación del asistente no cuenta como aprobación humana. Quedan por contrastar condiciones concretas de numerosos servicios; no se presentan como revisados los 84 recursos.
 
@@ -36,7 +36,7 @@ Las simulaciones incluyen respuestas 304, 403 y 429, fallos persistentes, recupe
 
 ## Revisión independiente
 
-Solo está registrado P3M-ACTF como coordinador. Las especialidades y suplencias están vacantes. Las propuestas sensibles permanecen pendientes y no se asignan a personas inventadas.
+Solo está registrado P3M-ACTF como coordinador. Las especialidades y suplencias están vacantes. Las revisiones sensibles permanecen pendientes y no se asignan a personas inventadas. La excepción de incorporación de esta entrega no elimina el requisito de otra persona competente para las propuestas posteriores.
 
 Las pruebas comprueban suplencias a las 48 horas y a los siete días, ausencia de revisor, exclusión de bots y de la autoría, aprobación de la versión concreta y rechazo de aprobaciones antiguas. El estado de revisión se ha publicado como pendiente en la propuesta. La asignación con colaboradores reales queda pendiente de incorporar a esas personas y verificar su competencia y permisos.
 
@@ -54,4 +54,4 @@ Estas comprobaciones usan una representación local. **Quedan pendientes la lect
 
 Las agendas siguen desactivadas. Las consultas disponibles no permiten confirmar las cuotas y el límite de gasto de la cuenta. Los procesos pueden ejecutarse manualmente; su activación programada requiere comprobar ese control de gasto.
 
-La incorporación de cambios sensibles requiere una segunda persona competente. La publicación de v0.2 y la fusión de esta propuesta siguen pendientes de esa revisión. No se ha cambiado la privacidad ni contratado una suscripción.
+La revisión editorial de los cambios sensibles requiere una segunda persona competente y continúa pendiente. La incorporación de esta entrega responde a la excepción solicitada por el coordinador y no registra una aprobación inexistente. No se ha creado una publicación etiquetada de v0.2, cambiado la privacidad ni contratado una suscripción.
