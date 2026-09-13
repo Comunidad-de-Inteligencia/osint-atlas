@@ -51,7 +51,7 @@ Condiciones de reutilización pendientes de revisión. Acceso a la web no equiva
 
 Publicador: Ministerio para la Transición Ecológica. Procedencia declarada: P1 (API o conjunto publicado por el organismo responsable). No es una puntuación de veracidad.
 
-Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
 
@@ -61,4 +61,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 
 - [MITECO Datos y Cartografía — página responsable](https://www.miteco.gob.es/es/cartografia-y-sig/ide/descargas.html)
 
-Versión: 40f5a301058952de. [Volver al catálogo](../CATALOGO.md).
+Versión: e3a3c892121f70e5. [Volver al catálogo](../CATALOGO.md).

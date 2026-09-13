@@ -53,7 +53,7 @@ Condiciones de reutilización pendientes de revisión. Acceso a la web no equiva
 
 Publicador: OpenStreetMap Foundation y comunidad. Procedencia declarada: P3 (Fuente secundaria reputada). No es una puntuación de veracidad.
 
-Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
 
@@ -63,4 +63,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 
 - [OpenStreetMap — página responsable](https://www.openstreetmap.org/)
 
-Versión: 40f5a301058952de. [Volver al catálogo](../CATALOGO.md).
+Versión: e3a3c892121f70e5. [Volver al catálogo](../CATALOGO.md).

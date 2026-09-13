@@ -7,7 +7,7 @@ La adaptación territorial sigue pendiente.
 
 ### Investigar una empresa
 
-Estado: **pendiente**. Fuentes locales: 1; apoyo general: 6.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 1; apoyo general: 6.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -18,7 +18,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Contratos y subvenciones
 
-Estado: **pendiente**. Fuentes locales: 0; apoyo general: 1.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 1.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -29,7 +29,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Publicaciones oficiales
 
-Estado: **pendiente**. Fuentes locales: 0; apoyo general: 1.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 1.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -40,7 +40,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Huella pública de un dominio
 
-Estado: **pendiente**. Fuentes locales: 0; apoyo general: 3.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 3.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -51,7 +51,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Verificar una imagen y su ubicación
 
-Estado: **pendiente**. Fuentes locales: 0; apoyo general: 3.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 3.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -62,7 +62,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Contrastar y documentar conclusiones
 
-Estado: **pendiente**. Fuentes locales: 1; apoyo general: 6.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 1; apoyo general: 6.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -73,7 +73,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Verificar una afirmación jurídica
 
-Estado: **pendiente**. Fuentes locales: 0; apoyo general: 2.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 2.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -84,7 +84,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Verificar una afirmación estadística
 
-Estado: **pendiente**. Fuentes locales: 1; apoyo general: 5.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 1; apoyo general: 5.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -95,7 +95,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Desaparición de adulto o persona vulnerable
 
-Estado: **pendiente**. Fuentes locales: 0; apoyo general: 3.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 3.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -107,7 +107,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Desaparición de menor
 
-Estado: **pendiente**. Fuentes locales: 0; apoyo general: 6.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 6.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -119,7 +119,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Emergencia inmediata
 
-Estado: **pendiente**. Fuentes locales: 0; apoyo general: 1.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 1.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -131,7 +131,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Desastres y crisis
 
-Estado: **pendiente**. Fuentes locales: 0; apoyo general: 6.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 6.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -142,7 +142,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Grooming y sextorsión
 
-Estado: **pendiente**. Fuentes locales: 0; apoyo general: 4.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 4.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -154,7 +154,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Violencia sexual digital
 
-Estado: **pendiente**. Fuentes locales: 0; apoyo general: 3.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 3.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -166,7 +166,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Posible material de abuso sexual infantil
 
-Estado: **pendiente**. Fuentes locales: 0; apoyo general: 4.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 4.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -178,7 +178,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Telegram y otras plataformas
 
-Estado: **pendiente**. Fuentes locales: 0; apoyo general: 5.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 5.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.

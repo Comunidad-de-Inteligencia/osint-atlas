@@ -56,7 +56,7 @@ Condiciones de reutilización pendientes de revisión. Acceso a la web no equiva
 
 Publicador: Telegram. Procedencia declarada: P2 (Derivado reproducible con procedencia conservada). No es una puntuación de veracidad.
 
-Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 días.
 
@@ -67,4 +67,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 - [Telegram - Reportar contenido ilegal — página responsable](https://telegram.org/faq#q-there-39s-illegal-content-on-telegram-how-do-i-take-it-down)
 - Observación de languages, 2026-09-13: [página comprobada](https://telegram.org/faq). Idiomas observados en la página consultada; no certifica todos sus servicios. No equivale a aprobación humana.
 
-Versión: 40f5a301058952de. [Volver al catálogo](../CATALOGO.md).
+Versión: e3a3c892121f70e5. [Volver al catálogo](../CATALOGO.md).

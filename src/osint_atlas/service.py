@@ -7,11 +7,16 @@ from contextlib import closing
 import unicodedata
 from pathlib import Path
 from typing import Any
-from .catalog import ROOT, CatalogError, build_sqlite, catalog_version, database_is_current, load_catalog, coverage
+from datetime import date
+from .catalog import ROOT, CatalogError, build_sqlite, catalog_version, database_is_current, load_catalog, coverage as source_coverage
 from .sync import source_age_days
 
 DEFAULT_DB = ROOT / ".cache/catalog.sqlite"
 _INDEX_STATUS = "current"
+
+
+def coverage(catalog, scenario, jurisdiction):
+    return source_coverage(catalog, scenario, jurisdiction, as_of=date.today())
 
 
 def ensure_database(path: Path | None = None) -> tuple[Path, str]:

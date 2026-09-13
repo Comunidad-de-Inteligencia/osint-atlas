@@ -56,7 +56,7 @@ Condiciones de reutilización pendientes de revisión. Acceso a la web no equiva
 
 Publicador: Ministerio de Igualdad. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
-Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 días.
 
@@ -66,4 +66,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 
 - [Atención a todas las formas de violencia contra las mujeres — página responsable](https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/)
 
-Versión: 40f5a301058952de. [Volver al catálogo](../CATALOGO.md).
+Versión: e3a3c892121f70e5. [Volver al catálogo](../CATALOGO.md).

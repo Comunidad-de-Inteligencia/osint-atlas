@@ -48,6 +48,8 @@ jobs:
     permissions:
       contents: write
       issues: write
+      pull-requests: write
+      statuses: write
     steps:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v6
@@ -69,3 +71,4 @@ jobs:
             uv run python tools/publish_maintenance_issue.py reports/stale-reviews.json --label editorial-review --publish
           fi
           uv run python tools/publish_state.py reports/state.json --publish
+          uv run python tools/review_gate.py --all --publish

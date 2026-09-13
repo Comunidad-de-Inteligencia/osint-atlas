@@ -33,7 +33,8 @@ def resolve_contacts(value, catalog):
 
 
 def review_text(item, field):
-    return f"Estado editorial: **{item['review_status']}**. Revisión humana: **{item[field] or 'pendiente'}**; persona revisora: **{item['reviewer'] or 'por asignar'}**."
+    label = {'pending':'pendiente','verified':'verificado'}[item['review_status']]
+    return f"Estado editorial: **{label}**. Revisión humana: **{item[field] or 'pendiente'}**; persona revisora: **{item['reviewer'] or 'por asignar'}**."
 
 
 def render_playbook(p, catalog):
@@ -126,7 +127,7 @@ def build_outputs(catalog, version):
         lines=[GENERATED,f"# {j['name']}","",j.get("notes","La adaptación territorial sigue pendiente."),"","## Cobertura por escenario",""]
         for s in scenarios:
             row=next(x for x in rows if x["scenario"]==s["id"] and x["jurisdiction"]==j["id"])
-            lines += [f"### {s['name']}","",f"Estado: **{row['status']}**. Fuentes locales: {row['local_resources']}; apoyo general: {row['general_resources']}.",
+            lines += [f"### {s['name']}","",f"Estado a {row['as_of']}: **{row['status']}**. Fuentes locales: {row['local_resources']}; apoyo general: {row['general_resources']}.",
                       f"Responsable: {row['maintainer'] or 'por asignar'}; suplente: {row['backup'] or 'por asignar'}; revisión: {row['last_reviewed'] or 'pendiente'}.",""]
             lines += [f"- {g}" for g in row["gaps"]]
             lines += ["",f"[Ver fuentes de este escenario](escenario-{s['id']}.md)",""]

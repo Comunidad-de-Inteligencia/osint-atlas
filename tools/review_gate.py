@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse,base64,json,os,subprocess,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]; sys.path.insert(0,str(ROOT/"src"))
-from osint_atlas.governance import classify_changes,review_decision
+from osint_atlas.governance import classify_changes,review_decision,route_review
 
 
 def api(endpoint,method="GET",payload=None):
@@ -47,13 +47,21 @@ def evaluate(repo,number,publish=False):
             "state":"success" if result["approved"] else "pending","context":"Revisión independiente",
             "description":"Revisión humana válida" if result["approved"] else "Falta revisión humana competente de esta versión",
             "target_url":pr["html_url"]})
+        requested={user["login"] for user in pr.get("requested_reviewers",[])}
+        candidates={route_review({"specialty":specialty,"critical":sensitive,"opened_at":pr["created_at"]},registry).get("assignee") for specialty in specialties}
+        candidates-={None,pr["user"]["login"],result["human_author"],*requested,*result["reviewers"]}
+        if candidates and not result["approved"]:
+            api(f"repos/{repo}/pulls/{number}/requested_reviewers","POST",{"reviewers":sorted(candidates)})
     return result
 
 
 def main():
-    parser=argparse.ArgumentParser(); parser.add_argument("--pr",type=int,required=True)
+    parser=argparse.ArgumentParser()
+    choice=parser.add_mutually_exclusive_group(required=True)
+    choice.add_argument("--pr",type=int); choice.add_argument("--all",action="store_true")
     parser.add_argument("--repo",default="P3M-ACTF/osint-atlas"); parser.add_argument("--publish",action="store_true")
     args=parser.parse_args()
     if args.repo!="P3M-ACTF/osint-atlas": raise ValueError("Repositorio no autorizado")
-    evaluate(args.repo,args.pr,args.publish)
+    numbers=[p["number"] for p in pages(f"repos/{args.repo}/pulls?state=open")] if args.all else [args.pr]
+    for number in numbers: evaluate(args.repo,number,args.publish)
 if __name__=="__main__": main()

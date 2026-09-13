@@ -6,6 +6,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]; sys.path.insert(0,str(ROOT/"src"))
 from osint_atlas.catalog import load_catalog
 from osint_atlas.governance import route_review
+from osint_atlas.maintenance import markdown_url
 
 
 def gh(*args):
@@ -35,13 +36,13 @@ def render_issue(marker,items,registry):
            "","Los cambios sensibles requieren otra persona competente. Las cuentas de bot no cuentan como revisión independiente.",""]
     for item in items:
         routing=route_review(item,registry)
-        lines += [f"### {item['key']}","",f"Motivo: **{item['reason']}**. [Consultar la fuente responsable]({item['url']}).",
+        lines += [f"### {item['key']}","",f"Motivo: **{item['reason']}**. [Consultar la fuente responsable]({markdown_url(item['url'])}).",
                   f"Asignación: {routing['status']}.",""]
         if item.get("before_sha256"):
             lines += [f"Huella anterior: {item['before_sha256']}.",f"Huella observada: {item['after_sha256']}.",
                       "El texto visible cambió. Comprobar cobertura, contactos y requisitos; no hay sustitución automática.",""]
         if item.get("source_url"):
-            lines += [f"[Catálogo de procedencia]({item['source_url']}). {item.get('license_note','Licencia pendiente.')}",""]
+            lines += [f"[Catálogo de procedencia]({markdown_url(item['source_url'])}). {item.get('license_note','Licencia pendiente.')}",""]
     return "\n".join(lines)
 
 

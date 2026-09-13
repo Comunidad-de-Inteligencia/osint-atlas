@@ -53,7 +53,7 @@ Condiciones de reutilización pendientes de revisión. Acceso a la web no equiva
 
 Publicador: Instituto Nacional de Estadística. Procedencia declarada: P1 (API o conjunto publicado por el organismo responsable). No es una puntuación de veracidad.
 
-Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 días.
 
@@ -63,4 +63,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 dí
 
 - [INE Datos Abiertos — página responsable](https://www.ine.es/datosabiertos/)
 
-Versión: 40f5a301058952de. [Volver al catálogo](../CATALOGO.md).
+Versión: e3a3c892121f70e5. [Volver al catálogo](../CATALOGO.md).

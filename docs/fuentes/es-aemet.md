@@ -51,7 +51,7 @@ Condiciones de reutilización pendientes de revisión. Acceso a la web no equiva
 
 Publicador: Agencia Estatal de Meteorología. Procedencia declarada: P1 (API o conjunto publicado por el organismo responsable). No es una puntuación de veracidad.
 
-Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 días.
 
@@ -63,4 +63,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 dí
 - Observación de languages, 2026-09-13: [página comprobada](https://opendata.aemet.es/centrodedescargas/inicio). Idiomas observados en la página consultada; no certifica todos sus servicios. No equivale a aprobación humana.
 - Observación de access, 2026-09-13: [página comprobada](https://opendata.aemet.es/centrodedescargas/inicio). El centro de descargas ofrece solicitar una API key. No equivale a aprobación humana.
 
-Versión: 40f5a301058952de. [Volver al catálogo](../CATALOGO.md).
+Versión: e3a3c892121f70e5. [Volver al catálogo](../CATALOGO.md).

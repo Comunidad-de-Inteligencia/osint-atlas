@@ -7,7 +7,7 @@ import re
 import sqlite3
 from contextlib import closing
 import tempfile
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timezone, timedelta
 from pathlib import Path
 
 import yaml
@@ -92,6 +92,10 @@ def validate_catalog(catalog: dict) -> list[str]:
     errors = [f"{'.'.join(map(str, e.path))}: {e.message}" for e in validator.iter_errors(catalog)]
     if errors:
         return errors
+    for name in ("discovery", "resolutions"):
+        extra = load_yaml(DATA / f"{name}.yaml")
+        schema = load_yaml(DATA / "schemas" / f"{name}.schema.json")
+        errors.extend(f"{name}: {e.message}" for e in Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(extra))
     ids = {}
     for key in ("resources", "contacts", "jurisdictions", "scenarios", "playbooks"):
         ids[key] = {item["id"] for item in catalog[key]}
@@ -100,6 +104,9 @@ def validate_catalog(catalog: dict) -> list[str]:
     specs = catalog["maintainers"]["specialties"]
     people = {p["login"] for p in catalog["maintainers"]["people"]}
     specialty_ids = {s["id"] for s in specs}
+    for person in catalog["maintainers"]["people"]:
+        if set(person["specialties"]) - specialty_ids:
+            errors.append(f"{person['login']}: especialidad desconocida")
     if len(specialty_ids) != len(specs) or len(people) != len(catalog["maintainers"]["people"]):
         errors.append("Colaboradores o especialidades duplicados")
     for spec in specs:
@@ -185,22 +192,31 @@ def applies_to(resource: dict, jurisdiction_id: str, jurisdictions: list[dict]) 
         lineage & set(resource.get("jurisdictions", resource.get("territories", []))))
 
 
-def coverage(catalog: dict, scenario: dict, jurisdiction: str) -> dict:
+def coverage(catalog: dict, scenario: dict, jurisdiction: str, as_of: date | None = None) -> dict:
+    if as_of is None:
+        dates = [item['created_at'] for key in ('resources', 'contacts', 'playbooks') for item in catalog[key]]
+        dates += [item.get(field) for key, field in [('resources','editorial_reviewed'),('contacts','last_reviewed'),('playbooks','last_reviewed')] for item in catalog[key] if item.get(field)]
+        dates += [e['observed_at'] for r in catalog['resources'] for e in r['metadata_evidence']]
+        as_of = date.fromisoformat(max(dates))
+    def valid(item, field):
+        reviewed = item.get(field)
+        return bool(item['review_status']=='verified' and item['reviewer'] and reviewed
+                    and date.fromisoformat(reviewed) <= as_of <= date.fromisoformat(reviewed)+timedelta(days=item['review_days']))
     matching = [r for r in catalog["resources"] if scenario["id"] in r["scenarios"] and applies_to(r, jurisdiction, catalog["jurisdictions"])]
     local = [r for r in matching if jurisdiction in r["jurisdictions"]]
-    verified = [r for r in local if r["review_status"] == "verified" and r["editorial_reviewed"] and r["reviewer"]]
+    verified = [r for r in local if valid(r,'editorial_reviewed')]
     procedures = [p for p in catalog["playbooks"] if p["scenario"] == scenario["id"] and jurisdiction in p["jurisdictions"]
-                  and p["review_status"] == "verified" and p["last_reviewed"] and p["reviewer"]]
+                  and valid(p,'last_reviewed')]
     spec = next(s for s in catalog["maintainers"]["specialties"] if s["id"] == scenario["specialty"])
     routes = [c for c in catalog["contacts"] if scenario["id"] in c["scenarios"] and jurisdiction in c["territories"]
-              and c["review_status"] == "verified" and c["last_reviewed"] and c["reviewer"]]
+              and valid(c,'last_reviewed')]
     gaps = []
     if not verified: gaps.append("Faltan fuentes revisadas específicamente para este territorio.")
     if not procedures: gaps.append("Falta un procedimiento territorial revisado.")
     if not spec["primary"]: gaps.append("Falta responsable de la especialidad.")
     if scenario["requires_routes"] and not routes: gaps.append("Faltan vías competentes verificadas para este territorio.")
     dates = [r["editorial_reviewed"] for r in verified] + [p["last_reviewed"] for p in procedures] + [c["last_reviewed"] for c in routes]
-    return {"scenario": scenario["id"], "jurisdiction": jurisdiction, "resources": len(matching),
+    return {"scenario": scenario["id"], "jurisdiction": jurisdiction, "as_of": as_of.isoformat(), "resources": len(matching),
             "local_resources": len(local), "general_resources": len(matching) - len(local),
             "status": "desarrollado" if not gaps else "inicial" if verified else "pendiente",
             "specialty": scenario["specialty"], "maintainer": spec["primary"], "backup": spec["backup"],

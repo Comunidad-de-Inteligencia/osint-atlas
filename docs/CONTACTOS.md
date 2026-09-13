@@ -12,7 +12,7 @@ Comprueba la página responsable. Ayuda, comunicación de indicios, retirada y d
 Requisitos: Pendiente de revisión; comprobar los requisitos en la página responsable.
 Accesibilidad: Pendiente de revisión territorial y de canales alternativos.
 
-Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 ## Línea europea para menores desaparecidos
 
@@ -23,7 +23,7 @@ Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora
 Requisitos: Pendiente de revisión; comprobar los requisitos en la página responsable.
 Accesibilidad: Pendiente de revisión territorial y de canales alternativos.
 
-Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 ## Línea de Ayuda en Ciberseguridad de INCIBE
 
@@ -34,7 +34,7 @@ Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora
 Requisitos: Pendiente de revisión; comprobar los requisitos en la página responsable.
 Accesibilidad: Pendiente de revisión territorial y de canales alternativos.
 
-Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 ## Servicio de atención a todas las formas de violencia contra las mujeres
 
@@ -45,7 +45,7 @@ Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora
 Requisitos: Pendiente de revisión; comprobar los requisitos en la página responsable.
 Accesibilidad: Pendiente de revisión territorial y de canales alternativos.
 
-Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 ## Centro Nacional de Desaparecidos
 
@@ -56,7 +56,7 @@ Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora
 Requisitos: Pendiente de revisión; comprobar los requisitos en la página responsable.
 Accesibilidad: Pendiente de revisión territorial y de canales alternativos.
 
-Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 ## Línea de reporte CSAM de INCIBE
 
@@ -67,7 +67,7 @@ Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora
 Requisitos: Pendiente de revisión; comprobar los requisitos en la página responsable.
 Accesibilidad: Pendiente de revisión territorial y de canales alternativos.
 
-Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 ## Canal prioritario de la AEPD
 
@@ -78,7 +78,7 @@ Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora
 Requisitos: Pendiente de revisión; comprobar los requisitos en la página responsable.
 Accesibilidad: Pendiente de revisión territorial y de canales alternativos.
 
-Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 ## Directorio internacional de líneas INHOPE
 
@@ -89,7 +89,7 @@ Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora
 Requisitos: Pendiente de revisión; comprobar los requisitos en la página responsable.
 Accesibilidad: Pendiente de revisión territorial y de canales alternativos.
 
-Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 ## Reporte de contenido ilegal en Telegram
 
@@ -100,4 +100,4 @@ Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora
 Requisitos: Pendiente de revisión; comprobar los requisitos en la página responsable.
 Accesibilidad: Pendiente de revisión territorial y de canales alternativos.
 
-Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.

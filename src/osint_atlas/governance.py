@@ -46,12 +46,14 @@ def review_decision(author,author_type,head_sha,reviews,registry,specialties,sen
         if sensitive and login==registry["default_owner"] and author_type!="User": continue
         approved.append(login)
     missing=[specialty for specialty in specialties if not any(eligible(people.get(login,{}),specialty,now) for login in approved)]
+    objections=[login for login,review in latest.items() if review.get("state")=="CHANGES_REQUESTED"
+                and any(eligible(people.get(login,{}),specialty,now) for specialty in specialties)]
     # Ordinary editorial/code work still requires a different human with write permissions.
     if not sensitive:
         valid=[login for login in approved if people.get(login,{}).get("permission") in {"admin","maintain","write"}
                and people.get(login,{}).get("kind")=="human"]
         missing=[] if valid else ["independent-human"]
-    return {"approved":not missing,"missing_specialties":missing,"reviewers":approved,
+    return {"approved":not missing and not objections,"missing_specialties":missing,"reviewers":approved,"changes_requested_by":objections,
             "head_sha":head_sha,"sensitive":sensitive,"human_author":human_author}
 
 

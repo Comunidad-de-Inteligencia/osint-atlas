@@ -59,7 +59,7 @@ No interpretes un bloqueo o una búsqueda vacía como ausencia del hecho. Consul
 
 Guía general con ejemplos de España. La adaptación de otros territorios está pendiente.
 
-Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 ## Referencias responsables
 

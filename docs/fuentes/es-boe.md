@@ -53,7 +53,7 @@ Condiciones de reutilización pendientes de revisión. Acceso a la web no equiva
 
 Publicador: Agencia Estatal BOE. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
-Ficha creada: 2026-09-12. Estado editorial: **pending**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
 Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
 
@@ -64,4 +64,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 - [Boletín Oficial del Estado — página responsable](https://www.boe.es/)
 - [Ayuda sobre legislación consolidada](https://www.boe.es/datosabiertos/faq/consolidada.php)
 
-Versión: 40f5a301058952de. [Volver al catálogo](../CATALOGO.md).
+Versión: e3a3c892121f70e5. [Volver al catálogo](../CATALOGO.md).
