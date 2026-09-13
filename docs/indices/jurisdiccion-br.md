@@ -1,32 +1,218 @@
-<!-- GENERADO -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Brasil
 
-Consulta las particularidades locales antes de utilizar una fuente.
+La adaptación territorial sigue pendiente.
 
-Recursos aplicables: **23**.
+## Cobertura por escenario
 
-## Fuentes
+### Investigar una empresa
 
-- [Copernicus Data Space Ecosystem](../fuentes/eu-copernicus.md) — Acceder a observación terrestre Sentinel y productos Copernicus.
-- [Copernicus Emergency Management Service](../fuentes/eu-erascc-emergency-mapping.md) — Consultar cartografía y activaciones de respuesta a desastres.
-- [Dados Abertos CNPJ](../fuentes/br-cnpj-abertos.md) — Acceder a datos abiertos del cadastro de personas jurídicas brasileñas.
-- [GLEIF LEI Search](../fuentes/global-gleif.md) — Resolver entidades jurídicas y relaciones mediante identificadores LEI.
-- [Global Disaster Alert and Coordination System](../fuentes/global-gdacs.md) — Consultar alertas y coordinación inicial sobre grandes desastres.
-- [Global Missing Children's Network](../fuentes/global-missing-children-network.md) — Localizar organizaciones y carteles autorizados de menores desaparecidos en países participantes.
-- [INHOPE - Encontrar una línea de reporte](../fuentes/global-inhope-report.md) — Localizar la línea nacional adecuada para reportar posible material de abuso sexual infantil.
-- [Internet Archive Wayback Machine](../fuentes/global-wayback.md) — Consultar capturas históricas de páginas públicas.
-- [Internet Watch Foundation Report](../fuentes/gb-iwf-report.md) — Reportar de forma confidencial posible material de abuso sexual infantil alojado en Internet.
-- [INTERPOL Red Notices](../fuentes/global-interpol-notices.md) — Consultar notificaciones públicas seleccionadas de INTERPOL.
-- [INTERPOL Yellow Notices](../fuentes/global-interpol-yellow.md) — Consultar notificaciones amarillas públicas de personas desaparecidas.
-- [Meta Safety Center - Reporting](../fuentes/global-meta-safety.md) — Localizar mecanismos oficiales de reporte de Facebook e Instagram.
-- [NCMEC CyberTipline](../fuentes/us-ncmec-cybertipline.md) — Comunicar sospechas de explotación sexual infantil a NCMEC cuando corresponda.
-- [OpenStreetMap](../fuentes/global-osm.md) — Consultar cartografía colaborativa y objetos geográficos.
-- [Portal da Transparência](../fuentes/br-transparencia.md) — Consultar gasto, contratos, transferencias y sanciones federales brasileñas.
-- [Restoring Family Links](../fuentes/global-red-cross-family-links.md) — Ayudar a restablecer contacto familiar afectado por conflicto, migración o desastre.
-- [Shodan](../fuentes/global-shodan.md) — Consultar servicios de Internet observados públicamente.
-- [Telegram - Reportar contenido ilegal](../fuentes/global-telegram-report.md) — Reportar mensajes o contenido público ilegal a la plataforma.
-- [TikTok - Reportar contenido](../fuentes/global-tiktok-report.md) — Consultar la vía oficial para reportar vídeos y cuentas.
-- [UNdata](../fuentes/global-un-data.md) — Descubrir estadísticas compiladas por organismos de Naciones Unidas.
-- [VirusTotal](../fuentes/global-virustotal.md) — Consultar señales agregadas sobre dominios, IP, URLs y archivos.
-- [World Bank Open Data](../fuentes/global-world-bank.md) — Consultar indicadores internacionales de desarrollo.
-- [X Help Center - Reportar](../fuentes/global-x-report.md) — Localizar procedimientos de reporte de publicaciones y cuentas en X.
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 2; apoyo general: 1.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-business.md)
+
+### Contratos y subvenciones
+
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 1; apoyo general: 0.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-procurement.md)
+
+### Publicaciones oficiales
+
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 0.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-official-publications.md)
+
+### Huella pública de un dominio
+
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 3.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-domain-footprint.md)
+
+### Verificar una imagen y su ubicación
+
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 3.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-image-geolocation.md)
+
+### Contrastar y documentar conclusiones
+
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 3.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-source-corroboration.md)
+
+### Verificar una afirmación jurídica
+
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 0.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-legal-claim.md)
+
+### Verificar una afirmación estadística
+
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 2.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-statistical-claim.md)
+
+### Desaparición de adulto o persona vulnerable
+
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 2.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+- Faltan vías competentes verificadas para este territorio.
+
+[Ver fuentes de este escenario](escenario-missing-adult.md)
+
+### Desaparición de menor
+
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 4.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+- Faltan vías competentes verificadas para este territorio.
+
+[Ver fuentes de este escenario](escenario-missing-child.md)
+
+### Emergencia inmediata
+
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 0.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+- Faltan vías competentes verificadas para este territorio.
+
+[Ver fuentes de este escenario](escenario-immediate-emergency.md)
+
+### Desastres y crisis
+
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 5.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+
+[Ver fuentes de este escenario](escenario-disaster-crisis.md)
+
+### Grooming y sextorsión
+
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 3.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+- Faltan vías competentes verificadas para este territorio.
+
+[Ver fuentes de este escenario](escenario-grooming-sextortion.md)
+
+### Violencia sexual digital
+
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 3.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+- Faltan vías competentes verificadas para este territorio.
+
+[Ver fuentes de este escenario](escenario-sexual-digital-violence.md)
+
+### Posible material de abuso sexual infantil
+
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 4.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+- Faltan vías competentes verificadas para este territorio.
+
+[Ver fuentes de este escenario](escenario-csam-report.md)
+
+### Telegram y otras plataformas
+
+Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 4.
+Responsable: por asignar; suplente: por asignar; revisión: pendiente.
+
+- Faltan fuentes revisadas específicamente para este territorio.
+- Falta un procedimiento territorial revisado.
+- Falta responsable de la especialidad.
+- Faltan vías competentes verificadas para este territorio.
+
+[Ver fuentes de este escenario](escenario-platform-report.md)
+
+## Fuentes del territorio
+
+- [Dados Abertos CNPJ](../fuentes/br-cnpj-abertos.md)
+- [Portal da Transparência](../fuentes/br-transparencia.md)
+
+## Apoyo de otras coberturas
+
+- [Copernicus Data Space Ecosystem](../fuentes/eu-copernicus.md)
+- [Copernicus Emergency Management Service](../fuentes/eu-erascc-emergency-mapping.md)
+- [GLEIF LEI Search](../fuentes/global-gleif.md)
+- [Global Disaster Alert and Coordination System](../fuentes/global-gdacs.md)
+- [Global Missing Children's Network](../fuentes/global-missing-children-network.md)
+- [INHOPE - Encontrar una línea de reporte](../fuentes/global-inhope-report.md)
+- [Internet Archive Wayback Machine](../fuentes/global-wayback.md)
+- [Internet Watch Foundation Report](../fuentes/gb-iwf-report.md)
+- [INTERPOL Red Notices](../fuentes/global-interpol-notices.md)
+- [INTERPOL Yellow Notices](../fuentes/global-interpol-yellow.md)
+- [Meta Safety Center - Reporting](../fuentes/global-meta-safety.md)
+- [NCMEC CyberTipline](../fuentes/us-ncmec-cybertipline.md)
+- [OpenStreetMap](../fuentes/global-osm.md)
+- [Restoring Family Links](../fuentes/global-red-cross-family-links.md)
+- [Shodan](../fuentes/global-shodan.md)
+- [Telegram - Reportar contenido ilegal](../fuentes/global-telegram-report.md)
+- [TikTok - Reportar contenido](../fuentes/global-tiktok-report.md)
+- [UNdata](../fuentes/global-un-data.md)
+- [VirusTotal](../fuentes/global-virustotal.md)
+- [World Bank Open Data](../fuentes/global-world-bank.md)
+- [X Help Center - Reportar](../fuentes/global-x-report.md)

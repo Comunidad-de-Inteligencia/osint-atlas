@@ -1,54 +1,68 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # AlertCops
 
-> **Para qué sirve:** Facilitar comunicación y alertas de seguridad ciudadana mediante la aplicación oficial.
+## Para qué sirve
 
-## Antes de empezar
+Facilitar comunicación y alertas de seguridad ciudadana mediante la aplicación oficial.
 
-Necesitas: tipo de incidente, ubicación.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+tipo de incidente, ubicación
 
-Cobertura: **ES**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: España. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de AlertCops](https://alertcops.ses.mir.es/publico/alertcops/).
+
 1. Usar la aplicación conforme a sus indicaciones; ante peligro inmediato priorizar el número de emergencias.
-2. Abre la [fuente principal](https://alertcops.ses.mir.es/publico/alertcops/) y registra la fecha de consulta.
-3. Conserva como resultado: comunicación con fuerzas de seguridad, alertas.
+2. Comprueba en AlertCops la fecha, cobertura y definición de comunicación con fuerzas de seguridad.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de tipo de incidente, realiza la consulta y conserva comunicación con fuerzas de seguridad con su fecha y enlace.
+Un ejercicio de mesa describe humo en un edificio, sin ubicación ni personas reales.
+
+1. Usar la aplicación conforme a sus indicaciones; ante peligro inmediato priorizar el número de emergencias.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Se prepara una explicación breve de ubicación, peligro y afectados. No se contacta con servicios reales durante la práctica.
 
 ## Cómo interpretar el resultado
 
 Una comunicación por la aplicación no debe asumirse como denuncia formal salvo confirmación.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 Requiere dispositivo, registro y conectividad.
 
+Resultados que puede ofrecer: comunicación con fuerzas de seguridad, alertas.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Asistencia o reporte
 
-- [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112): 112. Solo para emergencias reales; gratuito en toda la UE.
+- **Emergencia:** [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112) — **112**. Solo para emergencias reales; gratuito en toda la UE.
 
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Ministerio del Interior
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 30 días
-- Criticidad: critica
-- Versión del catálogo: `148623c324af8657`
+Publicador: Ministerio del Interior. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [AlertCops — página responsable](https://alertcops.ses.mir.es/publico/alertcops/)
+
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

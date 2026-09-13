@@ -1,0 +1,69 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: global-un-data
+name: UNdata
+owner: Naciones Unidas
+jurisdictions:
+- GLOBAL
+type: dataset
+tier: P1
+categories:
+- estadistica
+- datos-abiertos
+scenarios:
+- statistical-claim
+url: https://data.un.org/
+purpose: Descubrir estadísticas compiladas por organismos de Naciones Unidas.
+inputs:
+- indicador
+- país
+- periodo
+outputs:
+- tablas
+- series
+- fuente productora
+usage: Seguir la serie hasta el organismo que la produce y conservar notas metodológicas.
+interpretation: UNdata agrega fuentes con calendarios y definiciones diferentes.
+limitations: Algunas series se actualizan con retraso.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- global-world-bank
+references:
+- title: UNdata — página responsable
+  url: https://data.un.org/
+platforms: []
+maintenance_urls:
+- https://data.un.org/
+input_types:
+- indicador
+output_types:
+- serie
+example:
+  input: Se compara un indicador agregado de dos periodos ficticios, 2023 y 2024.
+  steps:
+  - Seguir la serie hasta el organismo que la produce y conservar notas metodológicas.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: La tabla de trabajo conserva unidad, población, periodo y revisión. Una unidad distinta impide
+    calcular una variación comparable.
+  interpretation: UNdata agrega fuentes con calendarios y definiciones diferentes.
+steps:
+- Seguir la serie hasta el organismo que la produce y conservar notas metodológicas.
+- Comprueba en UNdata la fecha, cobertura y definición de tablas.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

@@ -1,0 +1,72 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-registradores
+name: Registradores de España
+owner: Colegio de Registradores
+jurisdictions:
+- ES
+type: register
+tier: P0
+categories:
+- empresas
+- geoint
+scenarios:
+- business
+- source-corroboration
+url: https://www.registradores.org/
+purpose: Solicitar publicidad mercantil y de la propiedad disponible legalmente.
+inputs:
+- sociedad
+- finca
+- persona con interés legítimo cuando proceda
+outputs:
+- notas
+- certificaciones
+- cuentas
+usage: Elegir el producto adecuado y documentar la fecha y el registro emisor.
+interpretation: Nota informativa y certificación tienen distinto alcance probatorio.
+limitations: Existen tarifas, autenticación y límites de acceso.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- es-rmc
+references:
+- title: Registradores de España — página responsable
+  url: https://www.registradores.org/
+platforms: []
+maintenance_urls:
+- https://www.registradores.org/
+input_types:
+- organizacion
+- pregunta
+output_types:
+- referencia
+- registro
+example:
+  input: La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+  steps:
+  - Elegir el producto adecuado y documentar la fecha y el registro emisor.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de
+    vincular publicaciones.
+  interpretation: Nota informativa y certificación tienen distinto alcance probatorio.
+steps:
+- Elegir el producto adecuado y documentar la fecha y el registro emisor.
+- Comprueba en Registradores de España la fecha, cobertura y definición de notas.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

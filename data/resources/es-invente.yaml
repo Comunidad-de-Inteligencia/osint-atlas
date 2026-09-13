@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-invente
+name: INVENTE
+owner: IGAE
+jurisdictions:
+- ES
+type: register
+tier: P0
+categories:
+- administracion
+- empresas
+scenarios:
+- business
+- source-corroboration
+url: https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/BasesDatos/invente/Paginas/inicio.aspx
+purpose: Resolver identidades de entidades de los sectores públicos estatal, autonómico y local.
+inputs:
+- nombre de entidad
+- NIF
+outputs:
+- clasificación institucional
+- dependencia
+- identificadores
+usage: Confirmar la entidad exacta antes de cruzarla con contratos, subvenciones o presupuestos.
+interpretation: La presencia identifica pertenencia al inventario, no valida cualquier dato de terceros.
+limitations: Los cambios organizativos pueden tardar en reflejarse.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: INVENTE — página responsable
+  url: https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/BasesDatos/invente/Paginas/inicio.aspx
+platforms: []
+maintenance_urls:
+- https://www.igae.pap.hacienda.gob.es/sitios/igae/es-ES/BasesDatos/invente/Paginas/inicio.aspx
+input_types:
+- organizacion
+- pregunta
+output_types:
+- referencia
+- registro
+example:
+  input: La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+  steps:
+  - Confirmar la entidad exacta antes de cruzarla con contratos, subvenciones o presupuestos.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de
+    vincular publicaciones.
+  interpretation: La presencia identifica pertenencia al inventario, no valida cualquier dato de terceros.
+steps:
+- Confirmar la entidad exacta antes de cruzarla con contratos, subvenciones o presupuestos.
+- Comprueba en INVENTE la fecha, cobertura y definición de clasificación institucional.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

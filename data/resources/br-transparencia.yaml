@@ -1,0 +1,72 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: br-transparencia
+name: Portal da Transparência
+owner: Controladoria-Geral da União
+jurisdictions:
+- BR
+type: portal
+tier: P0
+categories:
+- administracion
+- contratacion
+- subvenciones
+scenarios:
+- procurement
+- business
+url: https://portaldatransparencia.gov.br/
+purpose: Consultar gasto, contratos, transferencias y sanciones federales brasileñas.
+inputs:
+- CPF/CNPJ cuando sea legalmente publicable
+- órgano
+- periodo
+outputs:
+- gastos
+- contratos
+- sanciones
+usage: Documentar filtro, periodo y conjunto consultado.
+interpretation: La publicación está delimitada por competencias y reglas brasileñas.
+limitations: No centraliza todos los niveles de gobierno.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Portal da Transparência — página responsable
+  url: https://portaldatransparencia.gov.br/
+platforms: []
+maintenance_urls:
+- https://portaldatransparencia.gov.br/
+input_types:
+- expediente
+- organizacion
+output_types:
+- documento
+- registro
+example:
+  input: Se utiliza el expediente ficticio ATLAS-DEMO-2026 para ensayar una búsqueda.
+  steps:
+  - Documentar filtro, periodo y conjunto consultado.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una búsqueda sin coincidencias es válida. En un expediente existente se distinguirían anuncio,
+    adjudicación y modificaciones.
+  interpretation: La publicación está delimitada por competencias y reglas brasileñas.
+steps:
+- Documentar filtro, periodo y conjunto consultado.
+- Comprueba en Portal da Transparência la fecha, cobertura y definición de gastos.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: critica
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-violencia-016
+name: Atención a todas las formas de violencia contra las mujeres
+owner: Ministerio de Igualdad
+jurisdictions:
+- ES
+type: hotline
+tier: P0
+categories:
+- violencia-digital
+- emergencias
+scenarios:
+- sexual-digital-violence
+- grooming-sextortion
+url: https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/
+purpose: Proporcionar información y atención especializada sobre violencia contra las mujeres.
+inputs:
+- necesidad de información o ayuda
+outputs:
+- información
+- asesoramiento
+- atención psicosocial
+usage: Consultar los canales disponibles; ante peligro inmediato llamar al {{contact:eu-112}}.
+interpretation: Es un servicio de atención, no una denuncia formal.
+limitations: Comprobar accesibilidad, idiomas y condiciones en la fuente.
+reporting_routes:
+- es-016
+- eu-112
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Atención a todas las formas de violencia contra las mujeres — página responsable
+  url: https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/
+platforms: []
+maintenance_urls:
+- https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/
+input_types:
+- situacion
+output_types:
+- orientacion
+example:
+  input: Un ejercicio sin imágenes plantea una difusión íntima sin consentimiento.
+  steps:
+  - Consultar los canales disponibles; ante peligro inmediato llamar al {{contact:eu-112}}.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se distinguen asistencia, retirada y denuncia; no se adjunta ni reproduce contenido íntimo.
+  interpretation: Es un servicio de atención, no una denuncia formal.
+steps:
+- Consultar los canales disponibles; ante peligro inmediato llamar al {{contact:eu-112}}.
+- Comprueba en Atención a todas las formas de violencia contra las mujeres la fecha, cobertura y definición
+  de información.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

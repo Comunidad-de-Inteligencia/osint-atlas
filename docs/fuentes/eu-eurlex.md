@@ -1,50 +1,64 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # EUR-Lex
 
-> **Para qué sirve:** Consultar legislación, jurisprudencia y Diario Oficial de la UE.
+## Para qué sirve
 
-## Antes de empezar
+Consultar legislación, jurisprudencia y Diario Oficial de la UE.
 
-Necesitas: CELEX, texto, fecha.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+CELEX, texto, fecha
 
-Cobertura: **EU**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: Unión Europea. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de EUR-Lex](https://eur-lex.europa.eu/).
+
 1. Preferir el identificador CELEX y revisar estado, relaciones y versión lingüística.
-2. Abre la [fuente principal](https://eur-lex.europa.eu/) y registra la fecha de consulta.
-3. Conserva como resultado: actos jurídicos, versiones, metadatos.
+2. Comprueba en EUR-Lex la fecha, cobertura y definición de actos jurídicos.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de CELEX, realiza la consulta y conserva actos jurídicos con su fecha y enlace.
+Se ensaya la búsqueda de una publicación ficticia ATLAS-DEMO del año 2026.
+
+1. Preferir el identificador CELEX y revisar estado, relaciones y versión lingüística.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Anota diario, fecha y referencia; si no existe, informa de ausencia de resultados sin deducir inexistencia del acto.
 
 ## Cómo interpretar el resultado
 
 Distinguir acto adoptado, consolidación y medidas nacionales de transposición.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 Los textos consolidados pueden no tener valor oficial.
 
+Resultados que puede ofrecer: actos jurídicos, versiones, metadatos.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Oficina de Publicaciones de la Unión Europea
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 180 días
-- Criticidad: normal
-- Versión del catálogo: `148623c324af8657`
+Publicador: Oficina de Publicaciones de la Unión Europea. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [EUR-Lex — página responsable](https://eur-lex.europa.eu/)
+
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

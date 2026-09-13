@@ -1,54 +1,68 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Protección Civil - Recomendaciones
 
-> **Para qué sirve:** Consultar recomendaciones oficiales de autoprotección por tipo de riesgo.
+## Para qué sirve
 
-## Antes de empezar
+Consultar recomendaciones oficiales de autoprotección por tipo de riesgo.
 
-Necesitas: tipo de riesgo, ubicación.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+tipo de riesgo, ubicación
 
-Cobertura: **ES**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: España. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de Protección Civil - Recomendaciones](https://www.proteccioncivil.es/gestion-riesgos/recomendaciones).
+
 1. Seguir primero instrucciones de autoridades locales y usar estas guías como preparación y apoyo.
-2. Abre la [fuente principal](https://www.proteccioncivil.es/gestion-riesgos/recomendaciones) y registra la fecha de consulta.
-3. Conserva como resultado: medidas de autoprotección.
+2. Comprueba en Protección Civil - Recomendaciones la fecha, cobertura y definición de medidas de autoprotección.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de tipo de riesgo, realiza la consulta y conserva medidas de autoprotección con su fecha y enlace.
+Un aviso ficticio sobre una inundación contiene dos horas de actualización distintas.
+
+1. Seguir primero instrucciones de autoridades locales y usar estas guías como preparación y apoyo.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Se comprueba cuál es la publicación original vigente y se marca la anterior como superada. No se emite una alerta.
 
 ## Cómo interpretar el resultado
 
 Una recomendación general puede ser desplazada por una orden oficial específica.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 No muestra por sí sola todos los avisos activos.
 
+Resultados que puede ofrecer: medidas de autoprotección.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Asistencia o reporte
 
-- [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112): 112. Solo para emergencias reales; gratuito en toda la UE.
+- **Emergencia:** [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112) — **112**. Solo para emergencias reales; gratuito en toda la UE.
 
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Dirección General de Protección Civil y Emergencias
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 30 días
-- Criticidad: critica
-- Versión del catálogo: `148623c324af8657`
+Publicador: Dirección General de Protección Civil y Emergencias. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Protección Civil - Recomendaciones — página responsable](https://www.proteccioncivil.es/gestion-riesgos/recomendaciones)
+
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

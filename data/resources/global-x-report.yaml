@@ -1,0 +1,69 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: alta
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: global-x-report
+name: X Help Center - Reportar
+owner: X Corp.
+jurisdictions:
+- GLOBAL
+type: reporting-channel
+tier: P2
+categories:
+- reporte-plataformas
+- violencia-digital
+scenarios:
+- platform-report
+- sexual-digital-violence
+url: https://help.x.com/es/safety-and-security/report-a-tweet
+purpose: Localizar procedimientos de reporte de publicaciones y cuentas en X.
+inputs:
+- publicación o cuenta
+- motivo
+outputs:
+- reporte de moderación
+usage: Reportar desde la publicación y documentar su URL sin amplificarla.
+interpretation: Moderación y actuación de autoridades son procesos distintos.
+limitations: Formularios y requisitos dependen del motivo y la sesión.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: X Help Center - Reportar — página responsable
+  url: https://help.x.com/es/safety-and-security/report-a-tweet
+platforms:
+- x
+maintenance_urls:
+- https://help.x.com/es/safety-and-security/report-a-tweet
+input_types:
+- plataforma
+- situacion
+output_types:
+- orientacion
+- ruta-reporte
+example:
+  input: Un ejercicio textual menciona una plataforma y una conducta observada, sin cuenta ni canal reales.
+  steps:
+  - Reportar desde la publicación y documentar su URL sin amplificarla.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se escoge una vía por plataforma, territorio y finalidad; una sospecha se describe como posible
+    y no como delito acreditado.
+  interpretation: Moderación y actuación de autoridades son procesos distintos.
+steps:
+- Reportar desde la publicación y documentar su URL sin amplificarla.
+- Comprueba en X Help Center - Reportar la fecha, cobertura y definición de reporte de moderación.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

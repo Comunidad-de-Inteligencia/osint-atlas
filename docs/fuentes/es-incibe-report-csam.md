@@ -1,55 +1,70 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Reporte de material de abuso sexual infantil de INCIBE
 
-> **Para qué sirve:** Comunicar de forma anónima una URL con posible material de abuso sexual infantil.
+## Para qué sirve
 
-## Antes de empezar
+Comunicar de forma anónima una URL con posible material de abuso sexual infantil.
 
-Necesitas: URL completa, descripción mínima.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+URL completa, descripción mínima
 
-Cobertura: **ES**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **español**.
+
+Cobertura declarada: España. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de Reporte de material de abuso sexual infantil de INCIBE](https://www.incibe.es/menores/reporte-abuso).
+
 1. Copiar únicamente la URL y contexto mínimo; no descargar, guardar, capturar ni compartir el material.
-2. Abre la [fuente principal](https://www.incibe.es/menores/reporte-abuso) y registra la fecha de consulta.
-3. Conserva como resultado: derivación a autoridades y red INHOPE.
+2. Comprueba en Reporte de material de abuso sexual infantil de INCIBE la fecha, cobertura y definición de derivación a autoridades y red INHOPE.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de URL completa, realiza la consulta y conserva derivación a autoridades y red INHOPE con su fecha y enlace.
+Una ficha de ejercicio indica únicamente «referencia ficticia», sin enlazar a contenido real.
+
+1. Copiar únicamente la URL y contexto mínimo; no descargar, guardar, capturar ni compartir el material.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Se localiza el canal competente. No se abre, descarga, guarda ni comparte material; no se envía un reporte de práctica.
 
 ## Cómo interpretar el resultado
 
 El reporte ayuda a tramitar retirada, pero no constituye denuncia policial.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 El formulario puede usar CAPTCHA y no sirve para peligro inmediato.
 
+Resultados que puede ofrecer: derivación a autoridades y red INHOPE.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Asistencia o reporte
 
-- [Línea de reporte CSAM de INCIBE](https://www.incibe.es/menores/reporte-abuso): Formulario web anónimo. El reporte no tiene carácter de denuncia y no requiere descargar el material.
-- [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112): 112. Solo para emergencias reales; gratuito en toda la UE.
+- **Comunicación de indicios:** [Línea de reporte CSAM de INCIBE](https://www.incibe.es/menores/reporte-abuso) — **Formulario web anónimo**. El reporte no tiene carácter de denuncia y no requiere descargar el material.
+- **Emergencia:** [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112) — **112**. Solo para emergencias reales; gratuito en toda la UE.
 
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: INCIBE-CERT e INHOPE
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 30 días
-- Criticidad: critica
-- Versión del catálogo: `148623c324af8657`
+Publicador: INCIBE-CERT e INHOPE. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Reporte de material de abuso sexual infantil de INCIBE — página responsable](https://www.incibe.es/menores/reporte-abuso)
+- Observación de languages, 2026-09-13: [página comprobada](https://www.incibe.es/menores/reporte-abuso). Idiomas observados en la página consultada; no certifica todos sus servicios. No equivale a aprobación humana.
+
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

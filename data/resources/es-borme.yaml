@@ -1,0 +1,73 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 90
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-borme
+name: Boletín Oficial del Registro Mercantil
+owner: Agencia Estatal BOE
+jurisdictions:
+- ES
+type: portal
+tier: P0
+categories:
+- empresas
+- administracion
+scenarios:
+- business
+- official-publications
+url: https://www.boe.es/borme/
+purpose: Seguir actos inscritos y anuncios legales de sociedades españolas.
+inputs:
+- denominación social
+- fecha
+- provincia
+outputs:
+- actos societarios
+- anuncios
+- documentos publicados
+usage: Buscar la sociedad y ordenar los actos por fecha; conservar el identificador y el enlace al anuncio.
+interpretation: Acredita que el acto fue publicado, pero no equivale al expediente mercantil completo.
+limitations: Los sumarios estructurados comienzan en 2009 y algunos documentos contienen datos personales.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- es-rmc
+- es-registradores
+references:
+- title: Boletín Oficial del Registro Mercantil — página responsable
+  url: https://www.boe.es/borme/
+platforms: []
+maintenance_urls:
+- https://www.boe.es/borme/
+input_types:
+- documento
+- organizacion
+output_types:
+- documento
+- registro
+example:
+  input: La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+  steps:
+  - Buscar la sociedad y ordenar los actos por fecha; conservar el identificador y el enlace al anuncio.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de
+    vincular publicaciones.
+  interpretation: Acredita que el acto fue publicado, pero no equivale al expediente mercantil completo.
+steps:
+- Buscar la sociedad y ordenar los actos por fecha; conservar el identificador y el enlace al anuncio.
+- Comprueba en Boletín Oficial del Registro Mercantil la fecha, cobertura y definición de actos societarios.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

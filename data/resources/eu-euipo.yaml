@@ -1,0 +1,68 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: eu-euipo
+name: EUIPO eSearch plus
+owner: Oficina de Propiedad Intelectual de la UE
+jurisdictions:
+- EU
+type: register
+tier: P0
+categories:
+- propiedad-intelectual
+- empresas
+scenarios:
+- business
+url: https://euipo.europa.eu/eSearch/
+purpose: Consultar marcas y diseños de la Unión Europea.
+inputs:
+- signo
+- titular
+- número
+outputs:
+- expedientes
+- estado
+- titulares publicados
+usage: Buscar variantes y comprobar estado y fechas procesales.
+interpretation: Solicitud y registro vigente no son equivalentes.
+limitations: Algunos enlaces de resultado pueden ser temporales.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: EUIPO eSearch plus — página responsable
+  url: https://euipo.europa.eu/eSearch/
+platforms: []
+maintenance_urls:
+- https://euipo.europa.eu/eSearch/
+input_types:
+- organizacion
+output_types:
+- registro
+example:
+  input: La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+  steps:
+  - Buscar variantes y comprobar estado y fechas procesales.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de
+    vincular publicaciones.
+  interpretation: Solicitud y registro vigente no son equivalentes.
+steps:
+- Buscar variantes y comprobar estado y fechas procesales.
+- Comprueba en EUIPO eSearch plus la fecha, cobertura y definición de expedientes.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

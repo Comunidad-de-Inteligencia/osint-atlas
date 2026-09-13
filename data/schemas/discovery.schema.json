@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "version",
+    "approved_catalogs",
+    "policy"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "approved_catalogs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "url",
+          "territory",
+          "include_patterns",
+          "exclude_patterns",
+          "license_note"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https://",
+            "format": "uri"
+          },
+          "territory": {
+            "type": "string",
+            "minLength": 1
+          },
+          "include_patterns": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "exclude_patterns": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "license_note": {
+            "type": "string",
+            "minLength": 1
+          },
+          "format": {
+            "enum": [
+              "html",
+              "markdown"
+            ]
+          },
+          "provenance_url": {
+            "type": "string",
+            "pattern": "^https://",
+            "format": "uri"
+          },
+          "specialty": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "policy": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "additionalProperties": false
+}

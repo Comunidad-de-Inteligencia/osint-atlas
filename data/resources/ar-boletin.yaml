@@ -1,0 +1,72 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: ar-boletin
+name: Boletín Oficial de la República Argentina
+owner: Presidencia de la Nación
+jurisdictions:
+- AR
+type: portal
+tier: P0
+categories:
+- legislacion
+- administracion
+scenarios:
+- official-publications
+- legal-claim
+- business
+url: https://www.boletinoficial.gob.ar/
+purpose: Consultar actos y publicaciones oficiales nacionales argentinas.
+inputs:
+- fecha
+- sección
+- texto
+outputs:
+- ediciones
+- normas
+- avisos
+usage: Citar edición, sección, fecha e identificador.
+interpretation: Distinguir publicación nacional de boletines provinciales.
+limitations: La vigencia requiere revisar modificaciones posteriores.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Boletín Oficial de la República Argentina — página responsable
+  url: https://www.boletinoficial.gob.ar/
+platforms: []
+maintenance_urls:
+- https://www.boletinoficial.gob.ar/
+input_types:
+- documento
+- organizacion
+output_types:
+- documento
+- registro
+example:
+  input: Se ensaya la búsqueda de una publicación ficticia ATLAS-DEMO del año 2026.
+  steps:
+  - Citar edición, sección, fecha e identificador.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Anota diario, fecha y referencia; si no existe, informa de ausencia de resultados sin deducir
+    inexistencia del acto.
+  interpretation: Distinguir publicación nacional de boletines provinciales.
+steps:
+- Citar edición, sección, fecha e identificador.
+- Comprueba en Boletín Oficial de la República Argentina la fecha, cobertura y definición de ediciones.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

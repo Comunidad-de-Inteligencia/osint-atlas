@@ -1,50 +1,66 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Tenders Electronic Daily
 
-> **Para qué sirve:** Consultar anuncios de contratación pública de alcance europeo.
+## Para qué sirve
 
-## Antes de empezar
+Consultar anuncios de contratación pública de alcance europeo.
 
-Necesitas: comprador, adjudicatario, CPV, país.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+comprador, adjudicatario, CPV, país
 
-Cobertura: **EU**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: Unión Europea. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de Tenders Electronic Daily](https://ted.europa.eu/).
+
 1. Seguir el identificador del anuncio y revisar correcciones y adjudicaciones relacionadas.
-2. Abre la [fuente principal](https://ted.europa.eu/) y registra la fecha de consulta.
-3. Conserva como resultado: anuncios, adjudicaciones, documentos.
+2. Comprueba en Tenders Electronic Daily la fecha, cobertura y definición de anuncios.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de comprador, realiza la consulta y conserva anuncios con su fecha y enlace.
+Se utiliza el expediente ficticio ATLAS-DEMO-2026 para ensayar una búsqueda.
+
+1. Seguir el identificador del anuncio y revisar correcciones y adjudicaciones relacionadas.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Una búsqueda sin coincidencias es válida. En un expediente existente se distinguirían anuncio, adjudicación y modificaciones.
 
 ## Cómo interpretar el resultado
 
 Un anuncio puede ser corregido o cancelado posteriormente.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 No reúne toda la contratación por debajo de umbrales europeos.
 
+Resultados que puede ofrecer: anuncios, adjudicaciones, documentos.
+
+Fuentes complementarias; comprobar sus diferencias de cobertura:
+
+- [Plataforma de Contratación del Sector Público](./es-placsp.md)
+
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Oficina de Publicaciones de la Unión Europea
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 180 días
-- Criticidad: normal
-- Versión del catálogo: `148623c324af8657`
+Publicador: Oficina de Publicaciones de la Unión Europea. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Tenders Electronic Daily — página responsable](https://ted.europa.eu/)
+
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

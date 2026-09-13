@@ -1,0 +1,73 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-cnmv
+name: CNMV
+owner: Comisión Nacional del Mercado de Valores
+jurisdictions:
+- ES
+type: register
+tier: P0
+categories:
+- empresas
+- economia
+scenarios:
+- business
+- source-corroboration
+url: https://www.cnmv.es/
+purpose: Consultar información regulada de emisores y entidades supervisadas.
+inputs:
+- nombre
+- NIF
+- ISIN
+outputs:
+- comunicaciones
+- informes
+- registros
+usage: Resolver primero la entidad y después ordenar sus comunicaciones por fecha y tipo.
+interpretation: Una comunicación acredita lo declarado al regulador, no confirma todos sus contenidos
+  materiales.
+limitations: Documentos pueden contener datos personales o derechos de terceros.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: CNMV — página responsable
+  url: https://www.cnmv.es/
+platforms: []
+maintenance_urls:
+- https://www.cnmv.es/
+input_types:
+- organizacion
+- pregunta
+output_types:
+- referencia
+- registro
+example:
+  input: La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+  steps:
+  - Resolver primero la entidad y después ordenar sus comunicaciones por fecha y tipo.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de
+    vincular publicaciones.
+  interpretation: Una comunicación acredita lo declarado al regulador, no confirma todos sus contenidos
+    materiales.
+steps:
+- Resolver primero la entidad y después ordenar sus comunicaciones por fecha y tipo.
+- Comprueba en CNMV la fecha, cobertura y definición de comunicaciones.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

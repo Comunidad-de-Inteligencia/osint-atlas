@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: eu-ecourts
+name: Portal Europeo de e-Justicia
+owner: Comisión Europea
+jurisdictions:
+- EU
+type: portal
+tier: P0
+categories:
+- justicia
+- legislacion
+scenarios:
+- legal-claim
+- business
+url: https://e-justice.europa.eu/
+purpose: Localizar registros, procedimientos y herramientas judiciales transfronterizas.
+inputs:
+- país
+- materia
+outputs:
+- guías
+- registros conectados
+- formularios
+usage: Elegir país y materia, y seguir al organismo nacional competente.
+interpretation: La información general no sustituye normas procesales nacionales vigentes.
+limitations: Cobertura y traducciones varían.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Portal Europeo de e-Justicia — página responsable
+  url: https://e-justice.europa.eu/
+platforms: []
+maintenance_urls:
+- https://e-justice.europa.eu/
+input_types:
+- documento
+- organizacion
+output_types:
+- documento
+- registro
+example:
+  input: Una nota ficticia afirma que una obligación comenzó en una fecha determinada.
+  steps:
+  - Elegir país y materia, y seguir al organismo nacional competente.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: El resultado esperado es una referencia a publicación original y disposición temporal; no
+    una conclusión jurídica automática.
+  interpretation: La información general no sustituye normas procesales nacionales vigentes.
+steps:
+- Elegir país y materia, y seguir al organismo nacional competente.
+- Comprueba en Portal Europeo de e-Justicia la fecha, cobertura y definición de guías.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

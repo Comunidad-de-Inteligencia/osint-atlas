@@ -1,0 +1,66 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: alta
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: global-interpol-yellow
+name: INTERPOL Yellow Notices
+owner: INTERPOL
+jurisdictions:
+- GLOBAL
+type: register
+tier: P0
+categories:
+- desapariciones
+scenarios:
+- missing-adult
+- missing-child
+url: https://www.interpol.int/How-we-work/Notices/Yellow-Notices/View-Yellow-Notices
+purpose: Consultar notificaciones amarillas públicas de personas desaparecidas.
+inputs:
+- nombre
+- nacionalidad
+- edad
+outputs:
+- notificaciones públicas vigentes
+usage: Usar varios identificadores y remitir cualquier información al canal indicado por las autoridades.
+interpretation: La ausencia en la lista pública no significa que no exista investigación.
+limitations: Solo una parte de las notificaciones es pública; no conservar copias cuando se retiren.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: INTERPOL Yellow Notices — página responsable
+  url: https://www.interpol.int/How-we-work/Notices/Yellow-Notices/View-Yellow-Notices
+platforms: []
+maintenance_urls:
+- https://www.interpol.int/How-we-work/Notices/About-Notices
+input_types:
+- situacion
+output_types:
+- orientacion
+example:
+  input: En un ejercicio ficticio se necesita localizar la orientación oficial para comunicar una desaparición.
+  steps:
+  - Usar varios identificadores y remitir cualquier información al canal indicado por las autoridades.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se identifica la autoridad competente y la información que solicita. No se crea una ficha
+    personal en Atlas.
+  interpretation: La ausencia en la lista pública no significa que no exista investigación.
+steps:
+- Usar varios identificadores y remitir cualquier información al canal indicado por las autoridades.
+- Comprueba en INTERPOL Yellow Notices la fecha, cobertura y definición de notificaciones públicas vigentes.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

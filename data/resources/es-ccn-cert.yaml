@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-ccn-cert
+name: CCN-CERT
+owner: Centro Criptológico Nacional
+jurisdictions:
+- ES
+type: guidance
+tier: P0
+categories:
+- ciberseguridad
+scenarios:
+- domain-footprint
+- source-corroboration
+url: https://www.ccn-cert.cni.es/
+purpose: Consultar alertas, guías y metodología institucional de ciberseguridad.
+inputs:
+- producto
+- vulnerabilidad
+- técnica
+outputs:
+- avisos
+- guías
+- recomendaciones
+usage: Citar el documento y su versión, y contrastar indicadores operativos con su fuente.
+interpretation: Una guía describe buenas prácticas; no atribuye automáticamente una actividad.
+limitations: Parte de los servicios puede requerir acceso restringido.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: CCN-CERT — página responsable
+  url: https://www.ccn-cert.cni.es/
+platforms: []
+maintenance_urls:
+- https://www.ccn-cert.cni.es/
+input_types:
+- dominio
+- pregunta
+output_types:
+- observacion
+- referencia
+example:
+  input: El dominio reservado example.org sirve como entrada didáctica, sin escanearlo ni enviar archivos.
+  steps:
+  - Citar el documento y su versión, y contrastar indicadores operativos con su fuente.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se registra fuente, fecha y tipo de observación. Compartir infraestructura no identifica a
+    una persona ni acredita control.
+  interpretation: Una guía describe buenas prácticas; no atribuye automáticamente una actividad.
+steps:
+- Citar el documento y su versión, y contrastar indicadores operativos con su fuente.
+- Comprueba en CCN-CERT la fecha, cobertura y definición de avisos.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

@@ -1,0 +1,71 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-dgt-datos
+name: DGT Datos Abiertos
+owner: Dirección General de Tráfico
+jurisdictions:
+- ES
+type: dataset
+tier: P1
+categories:
+- transporte
+- datos-abiertos
+scenarios:
+- statistical-claim
+- disaster-crisis
+url: https://www.dgt.es/menusecundario/dgt-en-cifras/
+purpose: Consultar estadísticas y datos publicados sobre tráfico y movilidad.
+inputs:
+- indicador
+- periodo
+- territorio
+outputs:
+- series
+- mapas
+- informes
+usage: Comprobar definición, cobertura y fecha antes de comparar territorios.
+interpretation: Datos agregados no identifican por sí solos la causa de un incidente.
+limitations: Los datos en tiempo real y las estadísticas consolidadas tienen objetivos distintos.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: DGT Datos Abiertos — página responsable
+  url: https://www.dgt.es/menusecundario/dgt-en-cifras/
+platforms: []
+maintenance_urls:
+- https://www.dgt.es/menusecundario/dgt-en-cifras/
+input_types:
+- indicador
+- lugar
+output_types:
+- aviso
+- serie
+example:
+  input: Se compara un indicador agregado de dos periodos ficticios, 2023 y 2024.
+  steps:
+  - Comprobar definición, cobertura y fecha antes de comparar territorios.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: La tabla de trabajo conserva unidad, población, periodo y revisión. Una unidad distinta impide
+    calcular una variación comparable.
+  interpretation: Datos agregados no identifican por sí solos la causa de un incidente.
+steps:
+- Comprobar definición, cobertura y fecha antes de comparar territorios.
+- Comprueba en DGT Datos Abiertos la fecha, cobertura y definición de series.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

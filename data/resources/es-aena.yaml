@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 90
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-aena
+name: Aena Información de Aeropuertos
+owner: Aena
+jurisdictions:
+- ES
+type: portal
+tier: P0
+categories:
+- transporte
+scenarios:
+- source-corroboration
+- disaster-crisis
+url: https://www.aena.es/
+purpose: Consultar aeropuertos, vuelos publicados y avisos operativos.
+inputs:
+- aeropuerto
+- vuelo
+- fecha
+outputs:
+- estado publicado
+- horarios
+- avisos
+usage: Comprobar aeropuerto, zona horaria y momento de actualización.
+interpretation: La información operativa cambia y debe citarse con hora de consulta.
+limitations: No sustituye confirmación de aerolínea ni registros históricos completos.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Aena Información de Aeropuertos — página responsable
+  url: https://www.aena.es/
+platforms: []
+maintenance_urls:
+- https://www.aena.es/
+input_types:
+- lugar
+- pregunta
+output_types:
+- aviso
+- referencia
+example:
+  input: Dos textos ficticios repiten una afirmación y remiten al mismo documento.
+  steps:
+  - Comprobar aeropuerto, zona horaria y momento de actualización.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: 'Se conserva una sola procedencia original: la repetición no cuenta como dos confirmaciones
+    independientes.'
+  interpretation: La información operativa cambia y debe citarse con hora de consulta.
+steps:
+- Comprobar aeropuerto, zona horaria y momento de actualización.
+- Comprueba en Aena Información de Aeropuertos la fecha, cobertura y definición de estado publicado.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

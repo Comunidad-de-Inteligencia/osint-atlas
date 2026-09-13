@@ -1,0 +1,68 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: global-shodan
+name: Shodan
+owner: Shodan
+jurisdictions:
+- GLOBAL
+type: tool
+tier: P3
+categories:
+- ciberseguridad
+- dominios-internet
+scenarios:
+- domain-footprint
+url: https://www.shodan.io/
+purpose: Consultar servicios de Internet observados públicamente.
+inputs:
+- IP
+- dominio
+- consulta
+outputs:
+- banners
+- puertos observados
+- historial limitado
+usage: Usar para descubrimiento pasivo y verificar fecha y dirección observada.
+interpretation: Un banner histórico no demuestra que el servicio siga activo ni quién lo opera.
+limitations: Funciones y cuotas dependen de la cuenta; no autoriza acceso al sistema observado.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Shodan — página responsable
+  url: https://www.shodan.io/
+platforms: []
+maintenance_urls:
+- https://www.shodan.io/
+input_types:
+- dominio
+output_types:
+- observacion
+example:
+  input: El dominio reservado example.org sirve como entrada didáctica, sin escanearlo ni enviar archivos.
+  steps:
+  - Usar para descubrimiento pasivo y verificar fecha y dirección observada.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se registra fuente, fecha y tipo de observación. Compartir infraestructura no identifica a
+    una persona ni acredita control.
+  interpretation: Un banner histórico no demuestra que el servicio siga activo ni quién lo opera.
+steps:
+- Usar para descubrimiento pasivo y verificar fecha y dirección observada.
+- Comprueba en Shodan la fecha, cobertura y definición de banners.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

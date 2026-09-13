@@ -1,0 +1,72 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 90
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-incibe
+name: INCIBE
+owner: Instituto Nacional de Ciberseguridad
+jurisdictions:
+- ES
+type: guidance
+tier: P0
+categories:
+- ciberseguridad
+- verificacion
+scenarios:
+- domain-footprint
+- grooming-sextortion
+- platform-report
+url: https://www.incibe.es/
+purpose: Consultar guías y servicios españoles de ciberseguridad.
+inputs:
+- tipo de incidente
+- público afectado
+outputs:
+- recomendaciones
+- canales de ayuda
+usage: Elegir la guía correspondiente y comprobar que el canal sigue vigente.
+interpretation: La orientación general no sustituye la respuesta de emergencias ni una denuncia.
+limitations: Los contenidos educativos no determinan por sí solos la naturaleza jurídica de un hecho.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: INCIBE — página responsable
+  url: https://www.incibe.es/
+platforms: []
+maintenance_urls:
+- https://www.incibe.es/
+input_types:
+- dominio
+- plataforma
+- situacion
+output_types:
+- observacion
+- orientacion
+- ruta-reporte
+example:
+  input: El dominio reservado example.org sirve como entrada didáctica, sin escanearlo ni enviar archivos.
+  steps:
+  - Elegir la guía correspondiente y comprobar que el canal sigue vigente.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se registra fuente, fecha y tipo de observación. Compartir infraestructura no identifica a
+    una persona ni acredita control.
+  interpretation: La orientación general no sustituye la respuesta de emergencias ni una denuncia.
+steps:
+- Elegir la guía correspondiente y comprobar que el canal sigue vigente.
+- Comprueba en INCIBE la fecha, cobertura y definición de recomendaciones.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

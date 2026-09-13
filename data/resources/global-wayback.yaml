@@ -1,0 +1,68 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: global-wayback
+name: Internet Archive Wayback Machine
+owner: Internet Archive
+jurisdictions:
+- GLOBAL
+type: archive
+tier: P2
+categories:
+- verificacion
+- dominios-internet
+scenarios:
+- domain-footprint
+- source-corroboration
+url: https://web.archive.org/
+purpose: Consultar capturas históricas de páginas públicas.
+inputs:
+- URL
+- fecha
+outputs:
+- capturas archivadas
+usage: Abrir la captura y documentar URL original, fecha de captura y elementos ausentes.
+interpretation: La captura prueba lo archivado, no necesariamente el estado completo del sitio.
+limitations: Exclusiones, recursos faltantes y fechas aproximadas.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Internet Archive Wayback Machine — página responsable
+  url: https://web.archive.org/
+platforms: []
+maintenance_urls:
+- https://web.archive.org/
+input_types:
+- dominio
+- pregunta
+output_types:
+- observacion
+- referencia
+example:
+  input: El dominio reservado example.org sirve como entrada didáctica, sin escanearlo ni enviar archivos.
+  steps:
+  - Abrir la captura y documentar URL original, fecha de captura y elementos ausentes.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se registra fuente, fecha y tipo de observación. Compartir infraestructura no identifica a
+    una persona ni acredita control.
+  interpretation: La captura prueba lo archivado, no necesariamente el estado completo del sitio.
+steps:
+- Abrir la captura y documentar URL original, fecha de captura y elementos ausentes.
+- Comprueba en Internet Archive Wayback Machine la fecha, cobertura y definición de capturas archivadas.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

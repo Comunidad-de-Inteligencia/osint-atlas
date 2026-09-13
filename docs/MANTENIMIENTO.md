@@ -1,44 +1,72 @@
-# Mantenimiento compartido
+# Mantenimiento y revisión compartida
 
-Esta guía explica qué hace la automatización, qué necesita una persona revisora y cómo activar las agendas sin convertir el catálogo en una fuente de cambios sin control.
+El mantenimiento comprueba documentación aprobada, conserva resultados y prepara propuestas. Su ejecución puede continuar aunque falten revisores; los cambios sensibles permanecen pendientes.
 
-## Qué se comprueba
+## Qué hace cada proceso
 
-| Frecuencia prevista | Alcance | Resultado |
-|---|---|---|
-| En cada propuesta | Datos, documentos, enlaces internos, índice y pruebas | Aceptación o error comprobable |
-| Diaria | Recursos críticos y revisiones vencidas | Informe agrupado y, si hace falta, incidencia |
-| Semanal | Resto de recursos aprobados | Estado técnico, redirecciones y cambios que revisar |
-| Mensual | Catálogos institucionales aprobados | Lista de candidatos, nunca altas automáticas |
+- **Diario:** páginas de contactos, fuentes y procedimientos críticos; revisiones editoriales pendientes.
+- **Semanal:** el conjunto de fuentes y referencias aprobadas, incluidas páginas de documentación de API.
+- **Mensual:** candidatos de seis catálogos de datos institucionales, el repositorio OSINT Brazuca y el canal institucional de INCIBE. Lee enlaces HTML y Markdown, conserva procedencia y condiciones conocidas. Un enlace nuevo del mismo dominio también puede ser candidato.
+- **En propuestas de cambio:** validación de datos, documentos, índice y pruebas.
 
-Los informes distinguen disponibilidad técnica de revisión editorial. Un error temporal, un bloqueo 403 o un límite 429 no retiran una fuente. Un cambio de teléfono, destinatario o procedimiento siempre requiere revisión humana.
+[Últimas ejecuciones satisfactorias e incidencias](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md).
 
-## Estado inicial de las agendas
+## Cómo interpretar un resultado técnico
 
-Los tres flujos periódicos incluyen ejecución manual y la expresión de su agenda está comentada. Esta decisión permite comprobar primero tiempos, cuotas, gasto, permisos e incidencias generadas.
+- **ok / not-modified:** respuesta utilizable o sin cambios respecto a la anterior.
+- **blocked:** acceso bloqueado o redirección fuera de los destinos aprobados. No presupone que baste crear una cuenta.
+- **auth-required:** el servicio ha solicitado autenticación.
+- **rate-limited:** hay un límite de peticiones. Se respeta la espera indicada dentro del tiempo disponible.
+- **temporary-error:** fallo de red, certificado, tiempo máximo o servidor. Se abre incidencia tras tres ejecuciones consecutivas fallidas.
+- **offline:** respuesta de retirada o ausencia; requiere revisión, no elimina la fuente.
+- **partial:** no se pudo analizar el documento completo dentro de los límites. No se compara una huella incompleta como si fuera completa.
+- **redirected:** la documentación responde en otra dirección de los dominios aprobados; revisar si debe corregirse el enlace.
 
-Para activarlos:
+Las peticiones usan límites por dominio y reintentos moderados. Las respuestas no se ejecutan ni se adoptan como instrucciones. No se descargan avisos personales ni contenido de casos: las fuentes sensibles tienen direcciones de mantenimiento documental específicas.
 
-1. Asigna responsable y suplente reales en `data/maintainers.yaml`.
-2. Comprueba que esas personas tienen acceso al repositorio privado.
-3. Ejecuta manualmente `Mantenimiento diario`, `Mantenimiento semanal` y `Descubrimiento mensual`.
-4. Revisa artefactos, duración y consumo en GitHub Actions.
-5. Descomenta `schedule` en cada flujo y abre una propuesta de cambio.
+## Qué se conserva
 
-La hora de creación de cada informe demuestra cuándo terminó una comprobación. Las ejecuciones programadas de GitHub pueden retrasarse, por lo que nunca debe deducirse actualidad solo de la agenda configurada.
+La rama separada maintenance-state contiene estado técnico e informe legible. Guarda última ejecución, huellas, cabeceras de caché, fallos consecutivos e incidencias. El historial resumido dura 90 días; los artefactos de Actions, siete. No conserva cuerpos completos de páginas.
 
-## Reparto de revisiones
+Un cambio del texto visible puede producir una propuesta editorial aunque la página responda correctamente. La propuesta enlaza la fuente e identifica las huellas anterior y observada; una persona deberá comprobar la diferencia. La automatización no atribuye significado jurídico al cambio.
 
-`data/maintainers.yaml` es el registro principal. Define seis especialidades, un responsable y un suplente. Las propuestas críticas pasan al suplente tras 48 horas sin respuesta; las ordinarias, tras siete días. El autor no puede ser la única persona que apruebe su cambio.
+## Reparto del trabajo
 
-Cuando el plan de GitHub lo permita, copia `.github/CODEOWNERS.example` a `.github/CODEOWNERS` y sustituye todos los marcadores por usuarios reales. El registro del proyecto sigue siendo la referencia aunque CODEOWNERS no esté disponible.
+El registro data/maintainers.yaml conserva personas, especialidades, responsables, suplentes y permisos comprobados. P3M-ACTF es coordinador; las plazas especializadas siguen vacantes.
 
-## Qué puede cambiar automáticamente
+Las incidencias se agrupan por especialidad y finalidad, con identidad estable. Al transcurrir 48 horas para propuestas críticas o siete días para ordinarias se selecciona al suplente. Si falta una persona competente, se muestra missing-reviewer; no se inventa una asignación.
 
-La automatización puede producir fechas de comprobación, códigos de estado, huellas parciales, informes y documentos derivados de contenido aprobado. No modifica por sí sola explicaciones, cobertura, condiciones, contactos, destinatarios ni procedimientos.
+Para cambios sensibles, una persona competente distinta de la autoría humana debe aprobar la versión concreta propuesta. Una cuenta de bot no sustituye a la autoría humana. Las aprobaciones antiguas no sirven tras cambiar la propuesta.
 
-Las respuestas externas se leen como datos. Los comprobadores limitan el cuerpo leído, el número de procesos, el tiempo por petición y la frecuencia por dominio. No ejecutan código ni instrucciones encontradas en una web.
+El control usa el registro de la rama base y consulta los permisos reales en GitHub. El proceso diario con publicación vuelve a comprobar las propuestas abiertas y solicita revisión al responsable o suplente elegible. Tras una revisión también puede actualizarse mediante un comentario en la propuesta o la ejecución manual de Revisión humana; no necesita interpretar el texto del comentario.
 
-## Cómo se agrupan los avisos
+## Resolver incidencias
 
-Cada incidencia usa una huella estable de los elementos que requieren acción. Las marcas de tiempo y la duración de una petición no crean duplicados. Un problema ya abierto no vuelve a publicarse hasta que cambie el conjunto material de elementos afectados.
+Una recuperación cierra automáticamente solo incidencias técnicas explícitamente resueltas. Una propuesta editorial requiere revisión.
+
+Para registrar una resolución de cambio de contenido, una propuesta revisada añade a data/resolutions.yaml la clave de incidencia, la huella comprobada y el enlace de revisión. La siguiente comprobación resolverá únicamente esa huella. Si la página vuelve a cambiar, aparece otra observación en la misma propuesta agrupada.
+
+Los candidatos siguen pendientes de selección y revisión; no se incorporan automáticamente. Cerrar una incidencia editorial indica una decisión humana, no una comprobación técnica.
+
+## Activación y gasto
+
+Los tres procesos permiten ejecución manual. El parámetro publish está desactivado por defecto: el ensayo produce artefactos; al activarlo publica estado técnico y propuestas. Ejecuta los ensayos uno después de otro: comparten una cola para no sobrescribir el historial y GitHub puede sustituir una ejecución que aún esté esperando.
+
+Antes de habilitar una agenda hay que verificar los ensayos, duración, cuotas y límite de gasto. La falta de especialistas no impide activar las comprobaciones técnicas. Si no se confirma el control del gasto, las agendas permanecen manuales.
+
+En la comprobación del 13 de septiembre de 2026, GitHub rechazó la protección de la rama privada por requerir un plan superior. La consulta de facturación no proporcionó información suficiente. No se ha cambiado la suscripción ni se han activado agendas. Sin protección disponible, el estado de revisión avisa pero no impide que una cuenta administradora fuerce una incorporación manual.
+
+La fecha de última ejecución importa: una agenda de GitHub puede retrasarse. El MCP marca como atrasado un proceso diario sin éxito durante 48 horas, uno semanal durante diez días y uno mensual durante cuarenta. Si ningún proceso se ejecuta, no puede generar un aviso nuevo por sí mismo; el informe y el MCP permiten detectar esa ausencia.
+
+## Ensayos locales
+
+Desde la raíz del repositorio, con dependencias instaladas, los comandos de comprobación son:
+
+~~~console
+uv run python tools/check_links.py --scope critical --output reports/daily.json
+uv run python tools/check_reviews.py
+uv run python tools/check_links.py --scope all --state reports/state.json --output reports/weekly.json
+uv run python tools/discover_candidates.py --state reports/state.json
+~~~
+
+Estas operaciones no envían reportes a autoridades ni plataformas.

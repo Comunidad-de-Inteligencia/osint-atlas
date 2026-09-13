@@ -1,50 +1,66 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # OpenStreetMap
 
-> **Para qué sirve:** Consultar cartografía colaborativa y objetos geográficos.
+## Para qué sirve
 
-## Antes de empezar
+Consultar cartografía colaborativa y objetos geográficos.
 
-Necesitas: topónimo, coordenadas, etiqueta.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+topónimo, coordenadas, etiqueta
 
-Cobertura: **GLOBAL**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: Global. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de OpenStreetMap](https://www.openstreetmap.org/).
+
 1. Corroborar elementos con fuentes primarias o imágenes recientes.
-2. Abre la [fuente principal](https://www.openstreetmap.org/) y registra la fecha de consulta.
-3. Conserva como resultado: geometrías, etiquetas, historial.
+2. Comprueba en OpenStreetMap la fecha, cobertura y definición de geometrías.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de topónimo, realiza la consulta y conserva geometrías con su fecha y enlace.
+Una imagen ficticia de un cruce sin personas se compara con una cartografía fechada.
+
+1. Corroborar elementos con fuentes primarias o imágenes recientes.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Se anotan dos rasgos concordantes y las diferencias. La coincidencia se expresa como hipótesis, sin localizar personas.
 
 ## Cómo interpretar el resultado
 
 Los datos son colaborativos y pueden contener errores o ediciones recientes.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 Cobertura y precisión no son uniformes.
 
+Resultados que puede ofrecer: geometrías, etiquetas, historial.
+
+Fuentes complementarias; comprobar sus diferencias de cobertura:
+
+- [Centro de Descargas CNIG y PNOA](./es-cnig-pnoa.md)
+
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: OpenStreetMap Foundation y comunidad
-- Nivel de procedencia: **P3 — Fuente secundaria reputada**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 180 días
-- Criticidad: normal
-- Versión del catálogo: `148623c324af8657`
+Publicador: OpenStreetMap Foundation y comunidad. Procedencia declarada: P3 (Fuente secundaria reputada). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [OpenStreetMap — página responsable](https://www.openstreetmap.org/)
+
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

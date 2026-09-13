@@ -1,54 +1,68 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Guardia Civil - Delitos telemáticos
 
-> **Para qué sirve:** Consultar orientación y vías oficiales ante delitos cometidos mediante Internet.
+## Para qué sirve
 
-## Antes de empezar
+Consultar orientación y vías oficiales ante delitos cometidos mediante Internet.
 
-Necesitas: hechos, referencias.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+hechos, referencias
 
-Cobertura: **ES**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: España. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
-1. Distinguir información general, colaboración y denuncia; ante urgencia usar 112.
-2. Abre la [fuente principal](https://www.guardiacivil.es/es/servicios/delitos_telematicos/) y registra la fecha de consulta.
-3. Conserva como resultado: orientación, acceso a denuncia o comunicación.
+Abre la [página responsable de Guardia Civil - Delitos telemáticos](https://www.guardiacivil.es/es/servicios/delitos_telematicos/).
 
-## Ejemplo
+1. Distinguir información general, colaboración y denuncia; ante urgencia usar [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112) — **112**.
+2. Comprueba en Guardia Civil - Delitos telemáticos la fecha, cobertura y definición de orientación.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-Ejemplo ilustrativo: parte de hechos, realiza la consulta y conserva orientación con su fecha y enlace.
+## Ejemplo ficticio
+
+Un mensaje ficticio y no sexual amenaza con divulgar información si se paga.
+
+1. Distinguir información general, colaboración y denuncia; ante urgencia usar [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112) — **112**.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** La plantilla separa la amenaza observada de la interpretación y remite a ayuda especializada sin negociar ni investigar.
 
 ## Cómo interpretar el resultado
 
 Una comunicación de indicios no equivale necesariamente a denuncia.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 Las vías y competencias dependen del caso.
 
+Resultados que puede ofrecer: orientación, acceso a denuncia o comunicación.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Asistencia o reporte
 
-- [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112): 112. Solo para emergencias reales; gratuito en toda la UE.
+- **Emergencia:** [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112) — **112**. Solo para emergencias reales; gratuito en toda la UE.
 
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Guardia Civil
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 30 días
-- Criticidad: critica
-- Versión del catálogo: `148623c324af8657`
+Publicador: Guardia Civil. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Guardia Civil - Delitos telemáticos — página responsable](https://www.guardiacivil.es/es/servicios/delitos_telematicos/)
+
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

@@ -1,0 +1,67 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: br-cnpj-abertos
+name: Dados Abertos CNPJ
+owner: Receita Federal do Brasil
+jurisdictions:
+- BR
+type: dataset
+tier: P1
+categories:
+- empresas
+- datos-abiertos
+scenarios:
+- business
+url: https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj
+purpose: Acceder a datos abiertos del cadastro de personas jurídicas brasileñas.
+inputs:
+- CNPJ
+- razão social
+outputs:
+- datos cadastrais
+- situação
+- atividades
+usage: Conservar fecha del lote y validar el CNPJ antes de cruzar información.
+interpretation: Un lote refleja el estado publicado en su fecha de referencia.
+limitations: Gran volumen y posibles cambios de distribución.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Dados Abertos CNPJ — página responsable
+  url: https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj
+platforms: []
+maintenance_urls:
+- https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj
+input_types:
+- organizacion
+output_types:
+- registro
+example:
+  input: La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+  steps:
+  - Conservar fecha del lote y validar el CNPJ antes de cruzar información.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de
+    vincular publicaciones.
+  interpretation: Un lote refleja el estado publicado en su fecha de referencia.
+steps:
+- Conservar fecha del lote y validar el CNPJ antes de cruzar información.
+- Comprueba en Dados Abertos CNPJ la fecha, cobertura y definición de datos cadastrais.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

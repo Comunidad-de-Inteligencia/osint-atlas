@@ -1,55 +1,69 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Centro Nacional de Desaparecidos
 
-> **Para qué sirve:** Consultar orientación oficial y alertas públicas vigentes sobre desapariciones.
+## Para qué sirve
 
-## Antes de empezar
+Consultar orientación oficial y alertas públicas vigentes sobre desapariciones.
 
-Necesitas: circunstancias, último lugar y hora, descripción.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+circunstancias, último lugar y hora, descripción
 
-Cobertura: **ES**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: España. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de Centro Nacional de Desaparecidos](https://cndes-web.ses.mir.es/publico/Desaparecidos/).
+
 1. Ante una desaparición, realizar la comprobación inicial recomendada y denunciar de inmediato; no esperar 24 horas.
-2. Abre la [fuente principal](https://cndes-web.ses.mir.es/publico/Desaparecidos/) y registra la fecha de consulta.
-3. Conserva como resultado: primeros pasos, alertas autorizadas, informes.
+2. Comprueba en Centro Nacional de Desaparecidos la fecha, cobertura y definición de primeros pasos.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de circunstancias, realiza la consulta y conserva primeros pasos con su fecha y enlace.
+En un ejercicio ficticio se necesita localizar la orientación oficial para comunicar una desaparición.
+
+1. Ante una desaparición, realizar la comprobación inicial recomendada y denunciar de inmediato; no esperar 24 horas.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Se identifica la autoridad competente y la información que solicita. No se crea una ficha personal en Atlas.
 
 ## Cómo interpretar el resultado
 
 Solo difundir alertas vigentes y autorizadas por la fuente oficial.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 El catálogo no es un servicio de emergencias ni mantiene copias de fichas personales.
 
+Resultados que puede ofrecer: primeros pasos, alertas autorizadas, informes.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Asistencia o reporte
 
-- [Centro Nacional de Desaparecidos](https://cndes-web.ses.mir.es/publico/Desaparecidos/): Portal CNDES. No es necesario esperar 24 horas para denunciar una desaparición.
-- [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112): 112. Solo para emergencias reales; gratuito en toda la UE.
+- **Orientación:** [Centro Nacional de Desaparecidos](https://cndes-web.ses.mir.es/publico/Desaparecidos/) — **Portal CNDES**. No es necesario esperar 24 horas para denunciar una desaparición.
+- **Emergencia:** [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112) — **112**. Solo para emergencias reales; gratuito en toda la UE.
 
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Ministerio del Interior
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 30 días
-- Criticidad: critica
-- Versión del catálogo: `148623c324af8657`
+Publicador: Ministerio del Interior. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Centro Nacional de Desaparecidos — página responsable](https://cndes-web.ses.mir.es/publico/Desaparecidos/)
+
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

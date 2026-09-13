@@ -1,51 +1,67 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Boletín Oficial del Estado
 
-> **Para qué sirve:** Localizar publicaciones oficiales, normas y actos administrativos estatales.
+## Para qué sirve
 
-## Antes de empezar
+Localizar publicaciones oficiales, normas y actos administrativos estatales.
 
-Necesitas: fecha, identificador BOE, texto o materia.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+fecha, identificador BOE, texto o materia
 
-Cobertura: **ES**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: España. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de Boletín Oficial del Estado](https://www.boe.es/).
+
 1. Buscar por identificador o fecha y abrir el documento original cuando la conclusión requiera valor jurídico.
-2. Abre la [fuente principal](https://www.boe.es/) y registra la fecha de consulta.
-3. Conserva como resultado: publicación oficial, metadatos, texto consolidado informativo.
+2. Comprueba en Boletín Oficial del Estado la fecha, cobertura y definición de publicación oficial.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de fecha, realiza la consulta y conserva publicación oficial con su fecha y enlace.
+Se ensaya la búsqueda de una publicación ficticia ATLAS-DEMO del año 2026.
+
+1. Buscar por identificador o fecha y abrir el documento original cuando la conclusión requiera valor jurídico.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Anota diario, fecha y referencia; si no existe, informa de ausencia de resultados sin deducir inexistencia del acto.
 
 ## Cómo interpretar el resultado
 
 La publicación original es la referencia oficial; el texto consolidado facilita la lectura pero carece de valor jurídico.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 La consolidación puede estar en proceso y no sustituye el diario oficial.
 
+Resultados que puede ofrecer: publicación oficial, metadatos, texto consolidado informativo.
+
+Fuentes complementarias; comprobar sus diferencias de cobertura:
+
+- [EUR-Lex](./eu-eurlex.md)
+
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Agencia Estatal BOE
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 180 días
-- Criticidad: normal
-- Versión del catálogo: `148623c324af8657`
+Publicador: Agencia Estatal BOE. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
+
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Boletín Oficial del Estado — página responsable](https://www.boe.es/)
 - [Ayuda sobre legislación consolidada](https://www.boe.es/datosabiertos/faq/consolidada.php)
 
-[Volver al catálogo](../CATALOGO.md)
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

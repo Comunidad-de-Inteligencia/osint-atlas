@@ -1,0 +1,67 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: co-rues
+name: RUES
+owner: Cámaras de Comercio de Colombia
+jurisdictions:
+- CO
+type: register
+tier: P0
+categories:
+- empresas
+scenarios:
+- business
+url: https://www.rues.org.co/
+purpose: Consultar registros empresariales y sociales colombianos.
+inputs:
+- NIT
+- nombre
+- matrícula
+outputs:
+- estado registral
+- identificación
+- cámara
+usage: Resolver por NIT o matrícula y seguir a la cámara competente.
+interpretation: La consulta básica no sustituye un certificado.
+limitations: Algunos documentos requieren pago o autenticación.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: RUES — página responsable
+  url: https://www.rues.org.co/
+platforms: []
+maintenance_urls:
+- https://www.rues.org.co/
+input_types:
+- organizacion
+output_types:
+- registro
+example:
+  input: La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+  steps:
+  - Resolver por NIT o matrícula y seguir a la cámara competente.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de
+    vincular publicaciones.
+  interpretation: La consulta básica no sustituye un certificado.
+steps:
+- Resolver por NIT o matrícula y seguir a la cámara competente.
+- Comprueba en RUES la fecha, cobertura y definición de estado registral.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

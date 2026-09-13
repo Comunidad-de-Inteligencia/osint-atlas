@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: alta
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: global-meta-safety
+name: Meta Safety Center - Reporting
+owner: Meta
+jurisdictions:
+- GLOBAL
+type: reporting-channel
+tier: P2
+categories:
+- reporte-plataformas
+- violencia-digital
+scenarios:
+- platform-report
+- sexual-digital-violence
+- grooming-sextortion
+url: https://www.facebook.com/help/reportlinks
+purpose: Localizar mecanismos oficiales de reporte de Facebook e Instagram.
+inputs:
+- tipo de contenido
+- cuenta o publicación
+outputs:
+- ruta de reporte
+usage: Reportar desde el elemento cuando sea posible y conservar solo referencias necesarias.
+interpretation: Una decisión de moderación no determina responsabilidad penal.
+limitations: Rutas y disponibilidad cambian según producto y sesión.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Meta Safety Center - Reporting — página responsable
+  url: https://www.facebook.com/help/reportlinks
+platforms:
+- meta
+maintenance_urls:
+- https://www.facebook.com/help/reportlinks
+input_types:
+- plataforma
+- situacion
+output_types:
+- orientacion
+- ruta-reporte
+example:
+  input: Un ejercicio textual menciona una plataforma y una conducta observada, sin cuenta ni canal reales.
+  steps:
+  - Reportar desde el elemento cuando sea posible y conservar solo referencias necesarias.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se escoge una vía por plataforma, territorio y finalidad; una sospecha se describe como posible
+    y no como delito acreditado.
+  interpretation: Una decisión de moderación no determina responsabilidad penal.
+steps:
+- Reportar desde el elemento cuando sea posible y conservar solo referencias necesarias.
+- Comprueba en Meta Safety Center - Reporting la fecha, cobertura y definición de ruta de reporte.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

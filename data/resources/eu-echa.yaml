@@ -1,0 +1,71 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: eu-echa
+name: ECHA Information on Chemicals
+owner: Agencia Europea de Sustancias y Mezclas Químicas
+jurisdictions:
+- EU
+type: register
+tier: P0
+categories:
+- medio-ambiente
+- datos-abiertos
+scenarios:
+- source-corroboration
+- statistical-claim
+url: https://echa.europa.eu/information-on-chemicals
+purpose: Consultar expedientes públicos y clasificación de sustancias.
+inputs:
+- nombre
+- CAS
+- EC
+outputs:
+- identidad
+- clasificación
+- expedientes públicos
+usage: Resolver la sustancia por identificador y citar la sección consultada.
+interpretation: Distinguir clasificación armonizada, notificada y evaluación en curso.
+limitations: Algunos datos proceden de expedientes presentados por empresas.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: ECHA Information on Chemicals — página responsable
+  url: https://echa.europa.eu/information-on-chemicals
+platforms: []
+maintenance_urls:
+- https://echa.europa.eu/information-on-chemicals
+input_types:
+- indicador
+- pregunta
+output_types:
+- referencia
+- serie
+example:
+  input: Dos textos ficticios repiten una afirmación y remiten al mismo documento.
+  steps:
+  - Resolver la sustancia por identificador y citar la sección consultada.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: 'Se conserva una sola procedencia original: la repetición no cuenta como dos confirmaciones
+    independientes.'
+  interpretation: Distinguir clasificación armonizada, notificada y evaluación en curso.
+steps:
+- Resolver la sustancia por identificador y citar la sección consultada.
+- Comprueba en ECHA Information on Chemicals la fecha, cobertura y definición de identidad.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

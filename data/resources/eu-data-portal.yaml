@@ -1,0 +1,71 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: eu-data-portal
+name: data.europa.eu
+owner: Oficina de Publicaciones de la Unión Europea
+jurisdictions:
+- EU
+type: dataset
+tier: P1
+categories:
+- datos-abiertos
+- administracion
+scenarios:
+- statistical-claim
+- source-corroboration
+url: https://data.europa.eu/
+purpose: Descubrir datos abiertos de instituciones europeas y países participantes.
+inputs:
+- tema
+- publicador
+- país
+outputs:
+- datasets
+- distribuciones
+- licencias declaradas
+usage: Usar el portal como descubridor y verificar la distribución en el publicador original.
+interpretation: La licencia y calidad dependen del conjunto subyacente.
+limitations: Metadatos multilingües y heterogéneos.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: data.europa.eu — página responsable
+  url: https://data.europa.eu/
+platforms: []
+maintenance_urls:
+- https://data.europa.eu/
+input_types:
+- indicador
+- pregunta
+output_types:
+- referencia
+- serie
+example:
+  input: Se compara un indicador agregado de dos periodos ficticios, 2023 y 2024.
+  steps:
+  - Usar el portal como descubridor y verificar la distribución en el publicador original.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: La tabla de trabajo conserva unidad, población, periodo y revisión. Una unidad distinta impide
+    calcular una variación comparable.
+  interpretation: La licencia y calidad dependen del conjunto subyacente.
+steps:
+- Usar el portal como descubridor y verificar la distribución en el publicador original.
+- Comprueba en data.europa.eu la fecha, cobertura y definición de datasets.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

@@ -7,7 +7,6 @@ from typing import Any
 from mcp.server import MCPServer
 
 from . import service
-from .sync import try_safe_sync
 
 mcp = MCPServer("OSINT Atlas")
 
@@ -17,9 +16,9 @@ def _result(value: dict[str, Any]) -> str:
 
 
 @mcp.tool()
-def search_resources(query: str = "", jurisdiction: str | None = None, category: str | None = None, scenario: str | None = None, access: str | None = None, limit: int = 20) -> str:
+def search_resources(query: str = "", jurisdiction: str | None = None, category: str | None = None, scenario: str | None = None, access: str | None = None, limit: int = 20, offset: int = 0, input_type: str | None = None, output_type: str | None = None, platform: str | None = None) -> str:
     """Busca fuentes OSINT por texto y filtros. No consulta las fuentes externas."""
-    return _result(service.search_resources(query, jurisdiction, category, scenario, access, limit))
+    return _result(service.search_resources(query, jurisdiction, category, scenario, access, limit, offset, input_type, output_type, platform))
 
 
 @mcp.tool()
@@ -29,15 +28,15 @@ def get_resource(resource_id: str) -> str:
 
 
 @mcp.tool()
-def get_jurisdiction(jurisdiction_id: str) -> str:
+def get_jurisdiction(jurisdiction_id: str, limit: int = 20, offset: int = 0) -> str:
     """Devuelve particularidades y recursos aplicables de una jurisdicción."""
-    return _result(service.get_jurisdiction(jurisdiction_id))
+    return _result(service.get_jurisdiction(jurisdiction_id, limit, offset))
 
 
 @mcp.tool()
-def search_playbooks(query: str = "", scenario: str | None = None, limit: int = 20) -> str:
+def search_playbooks(query: str = "", scenario: str | None = None, limit: int = 20, offset: int = 0, jurisdiction: str | None = None) -> str:
     """Busca procedimientos por texto o escenario."""
-    return _result(service.search_playbooks(query, scenario, limit))
+    return _result(service.search_playbooks(query, scenario, limit, offset, jurisdiction))
 
 
 @mcp.tool()
@@ -47,9 +46,9 @@ def get_playbook(playbook_id: str) -> str:
 
 
 @mcp.tool()
-def search_docs(query: str, limit: int = 20) -> str:
+def search_docs(query: str = "", limit: int = 20, offset: int = 0) -> str:
     """Busca explicaciones dentro de la documentación indexada."""
-    return _result(service.search_docs(query, limit))
+    return _result(service.search_docs(query, limit, offset))
 
 
 @mcp.tool()
@@ -65,14 +64,12 @@ def list_scenarios(jurisdiction: str | None = None) -> str:
 
 
 @mcp.tool()
-def get_reporting_routes(scenario: str, jurisdiction: str) -> str:
+def get_reporting_routes(scenario: str, jurisdiction: str, platform: str | None = None, kind: str | None = None) -> str:
     """Recupera vías oficiales de ayuda o reporte; no envía comunicaciones."""
-    return _result(service.get_reporting_routes(scenario, jurisdiction))
+    return _result(service.get_reporting_routes(scenario, jurisdiction, platform, kind))
 
 
 def main() -> None:
-    sync_status = try_safe_sync()
-    print(json.dumps({"osint_atlas_sync": sync_status}, ensure_ascii=False), file=sys.stderr)
     service.ensure_database()
     mcp.run(transport="stdio")
 

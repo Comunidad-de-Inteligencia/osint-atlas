@@ -8,7 +8,7 @@ from tools.publish_maintenance_issue import stable_fingerprint
 
 class MaintenanceTests(unittest.TestCase):
     def test_http_states_are_distinct(self) -> None:
-        self.assertEqual(classify(403, None), "auth-required")
+        self.assertEqual(classify(403, None), "blocked")
         self.assertEqual(classify(429, None), "rate-limited")
         self.assertEqual(classify(503, None), "temporary-error")
         self.assertEqual(classify(410, None), "offline")

@@ -1,0 +1,72 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: eu-ted
+name: Tenders Electronic Daily
+owner: Oficina de Publicaciones de la Unión Europea
+jurisdictions:
+- EU
+type: portal
+tier: P0
+categories:
+- contratacion
+scenarios:
+- procurement
+- business
+url: https://ted.europa.eu/
+purpose: Consultar anuncios de contratación pública de alcance europeo.
+inputs:
+- comprador
+- adjudicatario
+- CPV
+- país
+outputs:
+- anuncios
+- adjudicaciones
+- documentos
+usage: Seguir el identificador del anuncio y revisar correcciones y adjudicaciones relacionadas.
+interpretation: Un anuncio puede ser corregido o cancelado posteriormente.
+limitations: No reúne toda la contratación por debajo de umbrales europeos.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- es-placsp
+references:
+- title: Tenders Electronic Daily — página responsable
+  url: https://ted.europa.eu/
+platforms: []
+maintenance_urls:
+- https://ted.europa.eu/
+input_types:
+- expediente
+- organizacion
+output_types:
+- documento
+- registro
+example:
+  input: Se utiliza el expediente ficticio ATLAS-DEMO-2026 para ensayar una búsqueda.
+  steps:
+  - Seguir el identificador del anuncio y revisar correcciones y adjudicaciones relacionadas.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una búsqueda sin coincidencias es válida. En un expediente existente se distinguirían anuncio,
+    adjudicación y modificaciones.
+  interpretation: Un anuncio puede ser corregido o cancelado posteriormente.
+steps:
+- Seguir el identificador del anuncio y revisar correcciones y adjudicaciones relacionadas.
+- Comprueba en Tenders Electronic Daily la fecha, cobertura y definición de anuncios.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

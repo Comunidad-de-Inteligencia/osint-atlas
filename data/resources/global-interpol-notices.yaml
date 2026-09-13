@@ -1,0 +1,66 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 90
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: global-interpol-notices
+name: INTERPOL Red Notices
+owner: INTERPOL
+jurisdictions:
+- GLOBAL
+type: register
+tier: P0
+categories:
+- justicia
+- verificacion
+scenarios:
+- source-corroboration
+url: https://www.interpol.int/How-we-work/Notices/Red-Notices/View-Red-Notices
+purpose: Consultar notificaciones públicas seleccionadas de INTERPOL.
+inputs:
+- nombre
+- nacionalidad
+outputs:
+- notificaciones públicas
+- datos publicados
+usage: Confirmar identidad mediante varios datos y conservar el enlace oficial vigente.
+interpretation: Una notificación roja no es una orden de detención internacional ni prueba culpabilidad.
+limitations: Solo una parte de las notificaciones es pública.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: INTERPOL Red Notices — página responsable
+  url: https://www.interpol.int/How-we-work/Notices/Red-Notices/View-Red-Notices
+platforms: []
+maintenance_urls:
+- https://www.interpol.int/How-we-work/Notices/About-Notices
+input_types:
+- pregunta
+output_types:
+- referencia
+example:
+  input: Dos textos ficticios repiten una afirmación y remiten al mismo documento.
+  steps:
+  - Confirmar identidad mediante varios datos y conservar el enlace oficial vigente.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: 'Se conserva una sola procedencia original: la repetición no cuenta como dos confirmaciones
+    independientes.'
+  interpretation: Una notificación roja no es una orden de detención internacional ni prueba culpabilidad.
+steps:
+- Confirmar identidad mediante varios datos y conservar el enlace oficial vigente.
+- Comprueba en INTERPOL Red Notices la fecha, cobertura y definición de notificaciones públicas.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

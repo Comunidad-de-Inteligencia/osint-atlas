@@ -1,55 +1,69 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
-# 017 - Ayuda en Ciberseguridad
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
+# Ayuda en Ciberseguridad de INCIBE
 
-> **Para qué sirve:** Obtener orientación gratuita y confidencial ante riesgos e incidentes digitales.
+## Para qué sirve
 
-## Antes de empezar
+Obtener orientación gratuita y confidencial ante riesgos e incidentes digitales.
 
-Necesitas: descripción del incidente.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+descripción del incidente
 
-Cobertura: **ES**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: España. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de Ayuda en Ciberseguridad de INCIBE](https://www.incibe.es/linea-de-ayuda-en-ciberseguridad).
+
 1. Contactar sin reenviar material sensible y explicar hechos, plataforma y urgencia.
-2. Abre la [fuente principal](https://www.incibe.es/linea-de-ayuda-en-ciberseguridad) y registra la fecha de consulta.
-3. Conserva como resultado: orientación, derivación.
+2. Comprueba en Ayuda en Ciberseguridad de INCIBE la fecha, cobertura y definición de orientación.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de descripción del incidente, realiza la consulta y conserva orientación con su fecha y enlace.
+Un mensaje ficticio y no sexual amenaza con divulgar información si se paga.
+
+1. Contactar sin reenviar material sensible y explicar hechos, plataforma y urgencia.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** La plantilla separa la amenaza observada de la interpretación y remite a ayuda especializada sin negociar ni investigar.
 
 ## Cómo interpretar el resultado
 
 Es asistencia especializada; no sustituye denuncia ni emergencia.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 Horarios y canales deben comprobarse en la página oficial.
 
+Resultados que puede ofrecer: orientación, derivación.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Asistencia o reporte
 
-- [Línea de Ayuda en Ciberseguridad de INCIBE](https://www.incibe.es/linea-de-ayuda-en-ciberseguridad): 017. Ayuda gratuita y confidencial; no sustituye una denuncia.
-- [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112): 112. Solo para emergencias reales; gratuito en toda la UE.
+- **Asistencia:** [Línea de Ayuda en Ciberseguridad de INCIBE](https://www.incibe.es/linea-de-ayuda-en-ciberseguridad) — **017**. Ayuda gratuita y confidencial; no sustituye una denuncia.
+- **Emergencia:** [Número europeo de emergencias 112](https://digital-strategy.ec.europa.eu/es/policies/112) — **112**. Solo para emergencias reales; gratuito en toda la UE.
 
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: INCIBE
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 30 días
-- Criticidad: critica
-- Versión del catálogo: `148623c324af8657`
+Publicador: INCIBE. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Ayuda en Ciberseguridad de INCIBE — página responsable](https://www.incibe.es/linea-de-ayuda-en-ciberseguridad)
+
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

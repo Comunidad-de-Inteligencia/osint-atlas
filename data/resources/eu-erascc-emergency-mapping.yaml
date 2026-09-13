@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: alta
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: eu-erascc-emergency-mapping
+name: Copernicus Emergency Management Service
+owner: Comisión Europea
+jurisdictions:
+- EU
+- GLOBAL
+type: map
+tier: P1
+categories:
+- emergencias
+- geoint
+scenarios:
+- disaster-crisis
+- image-geolocation
+url: https://emergency.copernicus.eu/
+purpose: Consultar cartografía y activaciones de respuesta a desastres.
+inputs:
+- evento
+- lugar
+- fecha
+outputs:
+- mapas de emergencia
+- productos de activación
+usage: Citar código de activación, producto, fecha y versión.
+interpretation: Los mapas se producen para un objetivo y ventana temporal concretos.
+limitations: No todas las emergencias generan activación pública.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Copernicus Emergency Management Service — página responsable
+  url: https://emergency.copernicus.eu/
+platforms: []
+maintenance_urls:
+- https://emergency.copernicus.eu/
+input_types:
+- lugar
+output_types:
+- aviso
+- mapa
+example:
+  input: Un aviso ficticio sobre una inundación contiene dos horas de actualización distintas.
+  steps:
+  - Citar código de activación, producto, fecha y versión.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se comprueba cuál es la publicación original vigente y se marca la anterior como superada.
+    No se emite una alerta.
+  interpretation: Los mapas se producen para un objetivo y ventana temporal concretos.
+steps:
+- Citar código de activación, producto, fecha y versión.
+- Comprueba en Copernicus Emergency Management Service la fecha, cobertura y definición de mapas de emergencia.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

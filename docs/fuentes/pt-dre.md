@@ -1,50 +1,64 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Diário da República Electrónico
 
-> **Para qué sirve:** Consultar publicaciones y legislación oficial portuguesa.
+## Para qué sirve
 
-## Antes de empezar
+Consultar publicaciones y legislación oficial portuguesa.
 
-Necesitas: número, fecha, texto.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+número, fecha, texto
 
-Cobertura: **PT**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: Portugal. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de Diário da República Electrónico](https://diariodarepublica.pt/).
+
 1. Citar número, serie, fecha y enlace permanente.
-2. Abre la [fuente principal](https://diariodarepublica.pt/) y registra la fecha de consulta.
-3. Conserva como resultado: diario oficial, legislación.
+2. Comprueba en Diário da República Electrónico la fecha, cobertura y definición de diario oficial.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de número, realiza la consulta y conserva diario oficial con su fecha y enlace.
+Se ensaya la búsqueda de una publicación ficticia ATLAS-DEMO del año 2026.
+
+1. Citar número, serie, fecha y enlace permanente.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Anota diario, fecha y referencia; si no existe, informa de ausencia de resultados sin deducir inexistencia del acto.
 
 ## Cómo interpretar el resultado
 
 Verificar vigencia y alteraciones de la norma.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 Las traducciones no sustituyen el texto oficial portugués.
 
+Resultados que puede ofrecer: diario oficial, legislación.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: República Portuguesa
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 180 días
-- Criticidad: normal
-- Versión del catálogo: `148623c324af8657`
+Publicador: República Portuguesa. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Diário da República Electrónico — página responsable](https://diariodarepublica.pt/)
+
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

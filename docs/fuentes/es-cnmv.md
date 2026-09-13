@@ -1,50 +1,64 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # CNMV
 
-> **Para qué sirve:** Consultar información regulada de emisores y entidades supervisadas.
+## Para qué sirve
 
-## Antes de empezar
+Consultar información regulada de emisores y entidades supervisadas.
 
-Necesitas: nombre, NIF, ISIN.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+nombre, NIF, ISIN
 
-Cobertura: **ES**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: España. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de CNMV](https://www.cnmv.es/).
+
 1. Resolver primero la entidad y después ordenar sus comunicaciones por fecha y tipo.
-2. Abre la [fuente principal](https://www.cnmv.es/) y registra la fecha de consulta.
-3. Conserva como resultado: comunicaciones, informes, registros.
+2. Comprueba en CNMV la fecha, cobertura y definición de comunicaciones.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de nombre, realiza la consulta y conserva comunicaciones con su fecha y enlace.
+La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+
+1. Resolver primero la entidad y después ordenar sus comunicaciones por fecha y tipo.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de vincular publicaciones.
 
 ## Cómo interpretar el resultado
 
 Una comunicación acredita lo declarado al regulador, no confirma todos sus contenidos materiales.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 Documentos pueden contener datos personales o derechos de terceros.
 
+Resultados que puede ofrecer: comunicaciones, informes, registros.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Comisión Nacional del Mercado de Valores
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 180 días
-- Criticidad: normal
-- Versión del catálogo: `148623c324af8657`
+Publicador: Comisión Nacional del Mercado de Valores. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [CNMV — página responsable](https://www.cnmv.es/)
+
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

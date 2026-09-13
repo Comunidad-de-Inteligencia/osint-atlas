@@ -1,0 +1,66 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: fr-inpi-rne
+name: Registre national des entreprises
+owner: INPI France
+jurisdictions:
+- FR
+type: register
+tier: P0
+categories:
+- empresas
+scenarios:
+- business
+url: https://data.inpi.fr/
+purpose: Consultar información pública del registro nacional francés de empresas.
+inputs:
+- denominación
+- SIREN
+- SIRET
+outputs:
+- identidad empresarial
+- actos y documentos disponibles
+usage: Resolver la entidad por SIREN y revisar la fecha de los datos.
+interpretation: Distinguir establecimiento SIRET de entidad SIREN.
+limitations: Algunos documentos y usos están sujetos a condiciones específicas.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Registre national des entreprises — página responsable
+  url: https://data.inpi.fr/
+platforms: []
+maintenance_urls:
+- https://data.inpi.fr/
+input_types:
+- organizacion
+output_types:
+- registro
+example:
+  input: La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+  steps:
+  - Resolver la entidad por SIREN y revisar la fecha de los datos.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de
+    vincular publicaciones.
+  interpretation: Distinguir establecimiento SIRET de entidad SIREN.
+steps:
+- Resolver la entidad por SIREN y revisar la fecha de los datos.
+- Comprueba en Registre national des entreprises la fecha, cobertura y definición de identidad empresarial.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

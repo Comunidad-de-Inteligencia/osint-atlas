@@ -1,0 +1,68 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: critica
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: us-ncmec-cybertipline
+name: NCMEC CyberTipline
+owner: National Center for Missing & Exploited Children
+jurisdictions:
+- GLOBAL
+type: reporting-channel
+tier: P2
+categories:
+- proteccion-menores
+- desapariciones
+scenarios:
+- csam-report
+- grooming-sextortion
+- missing-child
+url: https://report.cybertip.org/
+purpose: Comunicar sospechas de explotación sexual infantil a NCMEC cuando corresponda.
+inputs:
+- tipo de incidente
+- referencias mínimas
+outputs:
+- reporte para revisión y derivación
+usage: Comprobar jurisdicción; no descargar ni redistribuir contenido.
+interpretation: La derivación depende de competencia y datos aportados.
+limitations: Servicio estadounidense con alcance internacional limitado por el caso.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: NCMEC CyberTipline — página responsable
+  url: https://report.cybertip.org/
+platforms: []
+maintenance_urls:
+- https://report.cybertip.org/
+input_types:
+- situacion
+output_types:
+- orientacion
+- ruta-reporte
+example:
+  input: Una ficha de ejercicio indica únicamente «referencia ficticia», sin enlazar a contenido real.
+  steps:
+  - Comprobar jurisdicción; no descargar ni redistribuir contenido.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se localiza el canal competente. No se abre, descarga, guarda ni comparte material; no se
+    envía un reporte de práctica.
+  interpretation: La derivación depende de competencia y datos aportados.
+steps:
+- Comprobar jurisdicción; no descargar ni redistribuir contenido.
+- Comprueba en NCMEC CyberTipline la fecha, cobertura y definición de reporte para revisión y derivación.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

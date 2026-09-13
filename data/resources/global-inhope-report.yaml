@@ -1,0 +1,67 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: critica
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: global-inhope-report
+name: INHOPE - Encontrar una línea de reporte
+owner: INHOPE Association
+jurisdictions:
+- GLOBAL
+type: reporting-channel
+tier: P2
+categories:
+- proteccion-menores
+scenarios:
+- csam-report
+url: https://www.inhope.org/EN#hotlineReferral
+purpose: Localizar la línea nacional adecuada para reportar posible material de abuso sexual infantil.
+inputs:
+- país
+- URL
+outputs:
+- derivación a hotline nacional
+usage: No descargar, guardar ni compartir el contenido; comunicar la URL a la línea competente.
+interpretation: Puede reportarse incluso si existe incertidumbre sobre la edad.
+limitations: No sustituye servicios de emergencia ni denuncia cuando haya peligro inmediato.
+reporting_routes:
+- global-inhope
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: INHOPE - Encontrar una línea de reporte — página responsable
+  url: https://www.inhope.org/EN#hotlineReferral
+platforms: []
+maintenance_urls:
+- https://www.inhope.org/EN#hotlineReferral
+input_types:
+- situacion
+output_types:
+- ruta-reporte
+example:
+  input: Una ficha de ejercicio indica únicamente «referencia ficticia», sin enlazar a contenido real.
+  steps:
+  - No descargar, guardar ni compartir el contenido; comunicar la URL a la línea competente.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se localiza el canal competente. No se abre, descarga, guarda ni comparte material; no se
+    envía un reporte de práctica.
+  interpretation: Puede reportarse incluso si existe incertidumbre sobre la edad.
+steps:
+- No descargar, guardar ni compartir el contenido; comunicar la URL a la línea competente.
+- Comprueba en INHOPE - Encontrar una línea de reporte la fecha, cobertura y definición de derivación
+  a hotline nacional.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

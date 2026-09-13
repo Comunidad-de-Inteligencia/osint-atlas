@@ -1,50 +1,64 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas
 
-> **Para qué sirve:** Consultar convocatorias, concesiones y planes de ayudas públicas.
+## Para qué sirve
 
-## Antes de empezar
+Consultar convocatorias, concesiones y planes de ayudas públicas.
 
-Necesitas: beneficiario, convocatoria, órgano, fecha.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+beneficiario, convocatoria, órgano, fecha
 
-Cobertura: **ES**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: España. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas](https://www.pap.hacienda.gob.es/bdnstrans/GE/es/).
+
 1. Relacionar convocatoria y concesión, comprobando organismo, fecha e instrumento regulador.
-2. Abre la [fuente principal](https://www.pap.hacienda.gob.es/bdnstrans/GE/es/) y registra la fecha de consulta.
-3. Conserva como resultado: convocatorias, concesiones publicables, importes.
+2. Comprueba en Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas la fecha, cobertura y definición de convocatorias.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de beneficiario, realiza la consulta y conserva convocatorias con su fecha y enlace.
+Se utiliza el expediente ficticio ATLAS-DEMO-2026 para ensayar una búsqueda.
+
+1. Relacionar convocatoria y concesión, comprobando organismo, fecha e instrumento regulador.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** Una búsqueda sin coincidencias es válida. En un expediente existente se distinguirían anuncio, adjudicación y modificaciones.
 
 ## Cómo interpretar el resultado
 
 El portal muestra la parte legalmente publicable de la base.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 La información sobre personas físicas puede tener ventanas de publicación limitadas.
 
+Resultados que puede ofrecer: convocatorias, concesiones publicables, importes.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: IGAE
-- Nivel de procedencia: **P0 — Publicación oficial o registro responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 90 días
-- Criticidad: normal
-- Versión del catálogo: `148623c324af8657`
+Publicador: IGAE. Procedencia declarada: P0 (Publicación oficial o registro responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas — página responsable](https://www.pap.hacienda.gob.es/bdnstrans/GE/es/)
+
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

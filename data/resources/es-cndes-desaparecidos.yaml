@@ -1,0 +1,75 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: critica
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-cndes-desaparecidos
+name: Centro Nacional de Desaparecidos
+owner: Ministerio del Interior
+jurisdictions:
+- ES
+type: portal
+tier: P0
+categories:
+- desapariciones
+- proteccion-menores
+scenarios:
+- missing-adult
+- missing-child
+url: https://cndes-web.ses.mir.es/publico/Desaparecidos/
+purpose: Consultar orientación oficial y alertas públicas vigentes sobre desapariciones.
+inputs:
+- circunstancias
+- último lugar y hora
+- descripción
+outputs:
+- primeros pasos
+- alertas autorizadas
+- informes
+usage: Ante una desaparición, realizar la comprobación inicial recomendada y denunciar de inmediato; no
+  esperar 24 horas.
+interpretation: Solo difundir alertas vigentes y autorizadas por la fuente oficial.
+limitations: El catálogo no es un servicio de emergencias ni mantiene copias de fichas personales.
+reporting_routes:
+- es-cndes
+- eu-112
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Centro Nacional de Desaparecidos — página responsable
+  url: https://cndes-web.ses.mir.es/publico/Desaparecidos/
+platforms: []
+maintenance_urls:
+- https://cndes-web.ses.mir.es/publico/Desaparecidos/Primeros-Pasos.html
+input_types:
+- situacion
+output_types:
+- orientacion
+example:
+  input: En un ejercicio ficticio se necesita localizar la orientación oficial para comunicar una desaparición.
+  steps:
+  - Ante una desaparición, realizar la comprobación inicial recomendada y denunciar de inmediato; no esperar
+    24 horas.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se identifica la autoridad competente y la información que solicita. No se crea una ficha
+    personal en Atlas.
+  interpretation: Solo difundir alertas vigentes y autorizadas por la fuente oficial.
+steps:
+- Ante una desaparición, realizar la comprobación inicial recomendada y denunciar de inmediato; no esperar
+  24 horas.
+- Comprueba en Centro Nacional de Desaparecidos la fecha, cobertura y definición de primeros pasos.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

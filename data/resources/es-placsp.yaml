@@ -1,0 +1,74 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 90
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-placsp
+name: Plataforma de Contratación del Sector Público
+owner: Ministerio de Hacienda
+jurisdictions:
+- ES
+type: portal
+tier: P0
+categories:
+- contratacion
+- administracion
+scenarios:
+- procurement
+- business
+url: https://contrataciondelestado.es/
+purpose: Localizar licitaciones, adjudicaciones y perfiles del contratante.
+inputs:
+- expediente
+- órgano
+- adjudicatario
+- CPV
+outputs:
+- anuncios
+- adjudicaciones
+- documentos
+- fechas
+usage: Buscar el expediente y revisar todas sus versiones y documentos asociados.
+interpretation: Distinguir presupuesto, importe adjudicado y modificaciones posteriores.
+limitations: Puede haber revisiones duplicadas y cobertura histórica desigual.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- eu-ted
+references:
+- title: Plataforma de Contratación del Sector Público — página responsable
+  url: https://contrataciondelestado.es/
+platforms: []
+maintenance_urls:
+- https://contrataciondelestado.es/
+input_types:
+- expediente
+- organizacion
+output_types:
+- documento
+- registro
+example:
+  input: Se utiliza el expediente ficticio ATLAS-DEMO-2026 para ensayar una búsqueda.
+  steps:
+  - Buscar el expediente y revisar todas sus versiones y documentos asociados.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una búsqueda sin coincidencias es válida. En un expediente existente se distinguirían anuncio,
+    adjudicación y modificaciones.
+  interpretation: Distinguir presupuesto, importe adjudicado y modificaciones posteriores.
+steps:
+- Buscar el expediente y revisar todas sus versiones y documentos asociados.
+- Comprueba en Plataforma de Contratación del Sector Público la fecha, cobertura y definición de anuncios.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

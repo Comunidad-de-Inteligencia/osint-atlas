@@ -1,35 +1,43 @@
 # Contribuir a OSINT Atlas
 
-## Qué puedes proponer
+Puedes mejorar una explicación, corregir una ficha o cubrir una carencia. Cada contribución debe permitir que otra persona compruebe el cambio.
 
-Puedes añadir una fuente, corregir una ficha, actualizar un contacto, retirar un recurso o mejorar una explicación. No incluyas investigaciones reales ni datos personales.
+## Preparar una propuesta
 
-## Requisitos de una ficha
+1. Busca la ficha y el escenario. Evita duplicar una fuente que ya existe.
+2. Edita su archivo YAML en data/resources/. Conserva el identificador, incluso si cambia el nombre del servicio.
+3. Cita la página responsable para cada corrección. Si no puedes verificar idioma, coste o acceso, conserva el estado desconocido.
+4. Explica la entrada, los pasos, el resultado esperado, su interpretación y los límites.
+5. Usa ejemplos ficticios sin personas identificables ni material sensible.
+6. Abre una propuesta con el problema, el cambio observado y cómo comprobarlo.
 
-1. Identifica al responsable y la procedencia.
-2. Explica finalidad, entradas, resultados, interpretación y límites.
-3. Indica jurisdicción, escenarios, acceso y frecuencia de revisión.
-4. Añade referencias oficiales para las afirmaciones críticas.
-5. Usa lenguaje de incertidumbre cuando corresponda.
+Los procedimientos originales están en content/procedimientos/. Sus páginas de docs/procedimientos/ se generan. Usa referencias de contacto con la forma {{contact:identificador}}; los valores se mantienen en data/contacts.yaml.
 
-Edita `data/resources/core.yaml`, ejecuta el generador y revisa los documentos producidos:
+## Revisar antes de entregar
 
-```console
-uv run python tools/build_catalog.py --report
-uv run python tools/build_catalog.py --check
+~~~console
+uv sync --locked
+uv run python tools/build_catalog.py
+uv run python tools/validate_docs.py
 uv run python -m unittest discover -s tests -v
-```
+~~~
 
-## Cambios sensibles
+No edites a mano fichas generadas, índices o exportaciones. La generación no inventa explicaciones: usa el contenido original.
 
-Los contactos, destinatarios de reporte, procedimientos de emergencia y criterios jurídicos necesitan revisión humana. La automatización puede detectar un cambio y preparar un informe, pero no sustituye el contenido aprobado.
+## Qué significa aprobar
 
-## Revisión por especialidad
+Una observación del asistente no es una revisión humana. El estado verified exige referencia, fecha y persona registrada. La fecha de creación permanece separada.
 
-El registro `data/maintainers.yaml` define responsable y suplente para legislación, datos públicos, geolocalización, ciberseguridad, protección y documentación. Antes de exigir revisiones, asigna usuarios reales con permiso de escritura.
+Los cambios sensibles necesitan aprobación de otra persona competente sobre la versión actual de la propuesta. Mientras no exista esa persona, deben permanecer pendientes. El bot puede preparar incidencias; no puede aprobar ni fusionar esos cambios.
 
-Los cambios críticos se escalan al suplente tras 48 horas; los ordinarios, tras siete días. Una persona distinta del autor debe revisar el contenido.
+## Incorporar responsables
 
-## Accesibilidad
+Añade el usuario real, tipo de cuenta, especialidades y permiso comprobado al registro de colaboradores. Para asignar revisiones se requiere acceso de escritura y comprobación reciente de permisos. Registra responsable y suplente por especialidad; no rellenes vacantes con nombres ficticios.
 
-Usa un único título H1, no saltes niveles de encabezado, escribe enlaces descriptivos y proporciona texto alternativo y una explicación equivalente para cualquier elemento visual.
+La incorporación de revisores y los cambios de política también requieren revisión. La primera incorporación necesita una decisión explícita del propietario que identifique a la persona competente; no se acepta que una propuesta se conceda capacidad de autoaprobarse.
+
+## Accesibilidad y privacidad
+
+Usa lenguaje sencillo, encabezados ordenados y enlaces descriptivos. Evita tablas extensas y explica cualquier diagrama con texto. Consulta la [guía de comprobación de accesibilidad](docs/ACCESIBILIDAD.md).
+
+No añadas investigaciones reales, datos de víctimas, capturas sensibles ni URLs de casos. Para una incidencia del catálogo basta la página documental del organismo o plataforma.

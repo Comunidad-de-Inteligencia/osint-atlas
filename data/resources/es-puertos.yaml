@@ -1,0 +1,71 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-puertos
+name: Puertos del Estado
+owner: Puertos del Estado
+jurisdictions:
+- ES
+type: portal
+tier: P0
+categories:
+- transporte
+- medio-ambiente
+scenarios:
+- source-corroboration
+- disaster-crisis
+url: https://www.puertos.es/
+purpose: Consultar información portuaria, oceanográfica y meteorológica marítima.
+inputs:
+- puerto
+- boya
+- fecha
+outputs:
+- observaciones
+- predicciones
+- estadísticas
+usage: Seleccionar estación y periodo y diferenciar observación de predicción.
+interpretation: Una boya representa condiciones locales y no toda la costa.
+limitations: Series operativas pueden tener huecos o revisiones.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Puertos del Estado — página responsable
+  url: https://www.puertos.es/
+platforms: []
+maintenance_urls:
+- https://www.puertos.es/
+input_types:
+- lugar
+- pregunta
+output_types:
+- aviso
+- referencia
+example:
+  input: Dos textos ficticios repiten una afirmación y remiten al mismo documento.
+  steps:
+  - Seleccionar estación y periodo y diferenciar observación de predicción.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: 'Se conserva una sola procedencia original: la repetición no cuenta como dos confirmaciones
+    independientes.'
+  interpretation: Una boya representa condiciones locales y no toda la costa.
+steps:
+- Seleccionar estación y periodo y diferenciar observación de predicción.
+- Comprueba en Puertos del Estado la fecha, cobertura y definición de observaciones.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

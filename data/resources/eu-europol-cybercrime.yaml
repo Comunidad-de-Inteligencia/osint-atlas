@@ -1,0 +1,68 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: alta
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: eu-europol-cybercrime
+name: Europol - Report Cybercrime
+owner: Europol
+jurisdictions:
+- EU
+type: guidance
+tier: P0
+categories:
+- ciberseguridad
+- justicia
+scenarios:
+- grooming-sextortion
+- platform-report
+url: https://www.europol.europa.eu/report-a-crime/report-cybercrime-online
+purpose: Dirigir a las vías nacionales europeas para reportar ciberdelitos.
+inputs:
+- país
+- tipo de incidente
+outputs:
+- autoridad nacional competente
+usage: Seleccionar el país y seguir el enlace policial nacional.
+interpretation: Europol no recibe normalmente denuncias directas de particulares.
+limitations: Las rutas nacionales cambian y deben revisarse.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Europol - Report Cybercrime — página responsable
+  url: https://www.europol.europa.eu/report-a-crime/report-cybercrime-online
+platforms: []
+maintenance_urls:
+- https://www.europol.europa.eu/report-a-crime/report-cybercrime-online
+input_types:
+- plataforma
+- situacion
+output_types:
+- orientacion
+- ruta-reporte
+example:
+  input: Un mensaje ficticio y no sexual amenaza con divulgar información si se paga.
+  steps:
+  - Seleccionar el país y seguir el enlace policial nacional.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: La plantilla separa la amenaza observada de la interpretación y remite a ayuda especializada
+    sin negociar ni investigar.
+  interpretation: Europol no recibe normalmente denuncias directas de particulares.
+steps:
+- Seleccionar el país y seguir el enlace policial nacional.
+- Comprueba en Europol - Report Cybercrime la fecha, cobertura y definición de autoridad nacional competente.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

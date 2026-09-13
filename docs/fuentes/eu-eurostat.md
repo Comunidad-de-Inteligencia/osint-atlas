@@ -1,50 +1,67 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Eurostat
 
-> **Para qué sirve:** Comparar estadísticas armonizadas europeas.
+## Para qué sirve
 
-## Antes de empezar
+Comparar estadísticas armonizadas europeas.
 
-Necesitas: código de dataset, geografía, periodo.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+código de dataset, geografía, periodo
 
-Cobertura: **EU**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: Unión Europea. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de Eurostat](https://ec.europa.eu/eurostat/).
+
 1. Conservar código, unidad, filtros, banderas de calidad y fecha de extracción.
-2. Abre la [fuente principal](https://ec.europa.eu/eurostat/) y registra la fecha de consulta.
-3. Conserva como resultado: series comparables, metadatos.
+2. Comprueba en Eurostat la fecha, cobertura y definición de series comparables.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de código de dataset, realiza la consulta y conserva series comparables con su fecha y enlace.
+Se compara un indicador agregado de dos periodos ficticios, 2023 y 2024.
+
+1. Conservar código, unidad, filtros, banderas de calidad y fecha de extracción.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** La tabla de trabajo conserva unidad, población, periodo y revisión. Una unidad distinta impide calcular una variación comparable.
 
 ## Cómo interpretar el resultado
 
 Las diferencias nacionales solo son comparables bajo la definición armonizada.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 Series pueden revisarse y tener valores estimados o provisionales.
 
+Resultados que puede ofrecer: series comparables, metadatos.
+
+Fuentes complementarias; comprobar sus diferencias de cobertura:
+
+- [INE Datos Abiertos](./es-ine.md)
+- [World Bank Open Data](./global-world-bank.md)
+
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Comisión Europea
-- Nivel de procedencia: **P1 — API o conjunto publicado por el organismo responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 180 días
-- Criticidad: normal
-- Versión del catálogo: `148623c324af8657`
+Publicador: Comisión Europea. Procedencia declarada: P1 (API o conjunto publicado por el organismo responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [Eurostat — página responsable](https://ec.europa.eu/eurostat/)
+
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

@@ -1,50 +1,64 @@
-<!-- GENERADO: edite data/resources/core.yaml -->
+<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # datos.gob.mx
 
-> **Para qué sirve:** Descubrir conjuntos de datos del Gobierno de México.
+## Para qué sirve
 
-## Antes de empezar
+Descubrir conjuntos de datos del Gobierno de México.
 
-Necesitas: tema, institución.
+## Qué necesitas
 
-Acceso: **open**. Coste: **gratis o no indicado**. Idiomas: **es**.
+tema, institución
 
-Cobertura: **MX**.
+Acceso: **desconocido**. Coste: **Desconocido; consultar el servicio concreto.**.
+Idiomas observados: **desconocido**.
+
+Cobertura declarada: México. Consulta el estado de revisión antes de darla por validada.
 
 ## Cómo utilizarla
 
+Abre la [página responsable de datos.gob.mx](https://www.datos.gob.mx/).
+
 1. Verificar la dependencia publicadora, actualización y formato.
-2. Abre la [fuente principal](https://www.datos.gob.mx/) y registra la fecha de consulta.
-3. Conserva como resultado: datasets, recursos, metadatos.
+2. Comprueba en datos.gob.mx la fecha, cobertura y definición de datasets.
+3. Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
 
-## Ejemplo
+## Ejemplo ficticio
 
-Ejemplo ilustrativo: parte de tema, realiza la consulta y conserva datasets con su fecha y enlace.
+Se compara un indicador agregado de dos periodos ficticios, 2023 y 2024.
+
+1. Verificar la dependencia publicadora, actualización y formato.
+2. Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos personales.
+
+**Resultado esperado:** La tabla de trabajo conserva unidad, población, periodo y revisión. Una unidad distinta impide calcular una variación comparable.
 
 ## Cómo interpretar el resultado
 
 El catálogo agrega fuentes con frecuencias distintas.
 
-## Límites y alternativas
+## Limitaciones y alternativas
 
 Algunos recursos enlazados pueden cambiar o retirarse.
 
+Resultados que puede ofrecer: datasets, recursos, metadatos.
+
+Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+
 ## Condiciones conocidas
 
-Consultar las condiciones de la fuente antes de reutilizar o redistribuir datos.
+Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
 
 ## Procedencia y revisión
 
-- Responsable de la fuente: Gobierno de México
-- Nivel de procedencia: **P1 — API o conjunto publicado por el organismo responsable**
-- Revisión editorial: 2026-09-12
-- Comprobación técnica: unknown (todavía no registrada)
-- Responsable del catálogo: por asignar
-- Suplente: por asignar
-- Cambios pendientes: 0
-- Próxima revisión prevista: cada 180 días
-- Criticidad: normal
-- Versión del catálogo: `148623c324af8657`
+Publicador: Gobierno de México. Procedencia declarada: P1 (API o conjunto publicado por el organismo responsable). No es una puntuación de veracidad.
 
+Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **pendiente**; persona revisora: **por asignar**.
 
-[Volver al catálogo](../CATALOGO.md)
+Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
+
+[Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+
+## Referencias
+
+- [datos.gob.mx — página responsable](https://www.datos.gob.mx/)
+
+Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).

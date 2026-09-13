@@ -1,0 +1,66 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: alta
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: global-missing-children-network
+name: Global Missing Children's Network
+owner: ICMEC
+jurisdictions:
+- GLOBAL
+type: portal
+tier: P2
+categories:
+- desapariciones
+- proteccion-menores
+scenarios:
+- missing-child
+url: https://globalmissingkids.org/
+purpose: Localizar organizaciones y carteles autorizados de menores desaparecidos en países participantes.
+inputs:
+- país
+- nombre
+outputs:
+- organización nacional
+- carteles públicos
+usage: Verificar que el cartel siga activo en la fuente nacional antes de difundirlo.
+interpretation: La ausencia no descarta una investigación en curso.
+limitations: Cobertura limitada a miembros y publicaciones autorizadas.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Global Missing Children's Network — página responsable
+  url: https://globalmissingkids.org/
+platforms: []
+maintenance_urls:
+- https://globalmissingkids.org/about-us/
+input_types:
+- situacion
+output_types:
+- orientacion
+example:
+  input: Una familia ficticia necesita orientación territorial ante la desaparición de un menor.
+  steps:
+  - Verificar que el cartel siga activo en la fuente nacional antes de difundirlo.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se distingue atención urgente, denuncia y ayuda especializada. No se publica un aviso inventado
+    ni se llama en un ejercicio.
+  interpretation: La ausencia no descarta una investigación en curso.
+steps:
+- Verificar que el cartel siga activo en la fuente nacional antes de difundirlo.
+- Comprueba en Global Missing Children's Network la fecha, cobertura y definición de organización nacional.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

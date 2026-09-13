@@ -1,0 +1,73 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 90
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-bdns
+name: Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas
+owner: IGAE
+jurisdictions:
+- ES
+type: portal
+tier: P0
+categories:
+- subvenciones
+- administracion
+scenarios:
+- procurement
+- business
+url: https://www.pap.hacienda.gob.es/bdnstrans/GE/es/
+purpose: Consultar convocatorias, concesiones y planes de ayudas públicas.
+inputs:
+- beneficiario
+- convocatoria
+- órgano
+- fecha
+outputs:
+- convocatorias
+- concesiones publicables
+- importes
+usage: Relacionar convocatoria y concesión, comprobando organismo, fecha e instrumento regulador.
+interpretation: El portal muestra la parte legalmente publicable de la base.
+limitations: La información sobre personas físicas puede tener ventanas de publicación limitadas.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas — página responsable
+  url: https://www.pap.hacienda.gob.es/bdnstrans/GE/es/
+platforms: []
+maintenance_urls:
+- https://www.pap.hacienda.gob.es/bdnstrans/GE/es/
+input_types:
+- expediente
+- organizacion
+output_types:
+- documento
+- registro
+example:
+  input: Se utiliza el expediente ficticio ATLAS-DEMO-2026 para ensayar una búsqueda.
+  steps:
+  - Relacionar convocatoria y concesión, comprobando organismo, fecha e instrumento regulador.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una búsqueda sin coincidencias es válida. En un expediente existente se distinguirían anuncio,
+    adjudicación y modificaciones.
+  interpretation: El portal muestra la parte legalmente publicable de la base.
+steps:
+- Relacionar convocatoria y concesión, comprobando organismo, fecha e instrumento regulador.
+- Comprueba en Sistema Nacional de Publicidad de Subvenciones y Ayudas Públicas la fecha, cobertura y
+  definición de convocatorias.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

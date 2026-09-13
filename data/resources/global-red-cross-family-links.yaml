@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 90
+criticality: alta
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: global-red-cross-family-links
+name: Restoring Family Links
+owner: Comité Internacional de la Cruz Roja
+jurisdictions:
+- GLOBAL
+type: hotline
+tier: P0
+categories:
+- desapariciones
+- emergencias
+scenarios:
+- missing-adult
+- missing-child
+- disaster-crisis
+url: https://familylinks.icrc.org/
+purpose: Ayudar a restablecer contacto familiar afectado por conflicto, migración o desastre.
+inputs:
+- país
+- circunstancias familiares
+outputs:
+- servicio o sociedad nacional competente
+usage: Seleccionar el contexto y país y seguir el canal humanitario indicado.
+interpretation: Es un servicio humanitario especializado, no un buscador público de personas.
+limitations: Elegibilidad y servicios dependen del contexto.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Restoring Family Links — página responsable
+  url: https://familylinks.icrc.org/
+platforms: []
+maintenance_urls:
+- https://familylinks.icrc.org/
+input_types:
+- lugar
+- situacion
+output_types:
+- aviso
+- orientacion
+example:
+  input: En un ejercicio ficticio se necesita localizar la orientación oficial para comunicar una desaparición.
+  steps:
+  - Seleccionar el contexto y país y seguir el canal humanitario indicado.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se identifica la autoridad competente y la información que solicita. No se crea una ficha
+    personal en Atlas.
+  interpretation: Es un servicio humanitario especializado, no un buscador público de personas.
+steps:
+- Seleccionar el contexto y país y seguir el canal humanitario indicado.
+- Comprueba en Restoring Family Links la fecha, cobertura y definición de servicio o sociedad nacional
+  competente.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

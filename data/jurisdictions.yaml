@@ -1,19 +1,84 @@
-{
-  "version": 1,
-  "jurisdictions": [
-    {"id":"GLOBAL","name":"Global","parent":null,"languages":["en","es"],"notes":"Recursos sin una jurisdicción única; verificar siempre la disponibilidad local."},
-    {"id":"EU","name":"Unión Europea","parent":"GLOBAL","languages":["multilingual"],"notes":"Distinguir normativa y servicios comunes de las implementaciones nacionales."},
-    {"id":"ES","name":"España","parent":"EU","languages":["es","ca","eu","gl"],"notes":"Distinguir Estado, comunidades autónomas, provincias y municipios. Catastro estatal excluye País Vasco y Navarra."},
-    {"id":"ES-PV","name":"País Vasco","parent":"ES","languages":["es","eu"],"notes":"Cuenta con administraciones forales y sistemas catastrales propios."},
-    {"id":"ES-NC","name":"Comunidad Foral de Navarra","parent":"ES","languages":["es","eu"],"notes":"Cuenta con Hacienda y Registro de la Riqueza Territorial propios."},
-    {"id":"PT","name":"Portugal","parent":"EU","languages":["pt"]},
-    {"id":"FR","name":"Francia","parent":"EU","languages":["fr"]},
-    {"id":"DE","name":"Alemania","parent":"EU","languages":["de"]},
-    {"id":"IT","name":"Italia","parent":"EU","languages":["it"]},
-    {"id":"GB","name":"Reino Unido","parent":"GLOBAL","languages":["en"]},
-    {"id":"BR","name":"Brasil","parent":"GLOBAL","languages":["pt"]},
-    {"id":"MX","name":"México","parent":"GLOBAL","languages":["es"]},
-    {"id":"CO","name":"Colombia","parent":"GLOBAL","languages":["es"]},
-    {"id":"AR","name":"Argentina","parent":"GLOBAL","languages":["es"]}
-  ]
-}
+version: 1
+jurisdictions:
+- id: GLOBAL
+  name: Global
+  parent: null
+  languages:
+  - en
+  - es
+  notes: Recursos sin una jurisdicción única; verificar siempre la disponibilidad local.
+- id: EU
+  name: Unión Europea
+  parent: GLOBAL
+  languages:
+  - multilingual
+  notes: Distinguir normativa y servicios comunes de las implementaciones nacionales.
+- id: ES
+  name: España
+  parent: EU
+  languages:
+  - es
+  - ca
+  - eu
+  - gl
+  notes: Distinguir Estado, comunidades autónomas, provincias y municipios. Catastro estatal excluye País
+    Vasco y Navarra.
+- id: ES-PV
+  name: País Vasco
+  parent: ES
+  languages:
+  - es
+  - eu
+  notes: Cuenta con administraciones forales y sistemas catastrales propios.
+- id: ES-NC
+  name: Comunidad Foral de Navarra
+  parent: ES
+  languages:
+  - es
+  - eu
+  notes: Cuenta con Hacienda y Registro de la Riqueza Territorial propios.
+- id: PT
+  name: Portugal
+  parent: EU
+  languages:
+  - pt
+- id: FR
+  name: Francia
+  parent: EU
+  languages:
+  - fr
+- id: DE
+  name: Alemania
+  parent: EU
+  languages:
+  - de
+- id: IT
+  name: Italia
+  parent: EU
+  languages:
+  - it
+- id: GB
+  name: Reino Unido
+  parent: GLOBAL
+  languages:
+  - en
+- id: BR
+  name: Brasil
+  parent: GLOBAL
+  languages:
+  - pt
+- id: MX
+  name: México
+  parent: GLOBAL
+  languages:
+  - es
+- id: CO
+  name: Colombia
+  parent: GLOBAL
+  languages:
+  - es
+- id: AR
+  name: Argentina
+  parent: GLOBAL
+  languages:
+  - es

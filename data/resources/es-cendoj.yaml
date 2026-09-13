@@ -1,0 +1,73 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-cendoj
+name: Buscador de Jurisprudencia CENDOJ
+owner: Consejo General del Poder Judicial
+jurisdictions:
+- ES
+type: portal
+tier: P0
+categories:
+- justicia
+- legislacion
+scenarios:
+- legal-claim
+- source-corroboration
+url: https://www.poderjudicial.es/search/
+purpose: Localizar resoluciones judiciales publicadas por el poder judicial.
+inputs:
+- jurisdicción
+- ponente
+- fecha
+- texto
+outputs:
+- resoluciones
+- metadatos judiciales
+usage: Buscar por varios criterios y citar órgano, fecha y número de resolución.
+interpretation: Una resolución concreta debe contextualizarse con recursos, jurisprudencia posterior y
+  normativa aplicable.
+limitations: No debe utilizarse para crear perfiles permanentes de personas mencionadas.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: Buscador de Jurisprudencia CENDOJ — página responsable
+  url: https://www.poderjudicial.es/search/
+platforms: []
+maintenance_urls:
+- https://www.poderjudicial.es/search/
+input_types:
+- documento
+- pregunta
+output_types:
+- documento
+- referencia
+example:
+  input: Una nota ficticia afirma que una obligación comenzó en una fecha determinada.
+  steps:
+  - Buscar por varios criterios y citar órgano, fecha y número de resolución.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: El resultado esperado es una referencia a publicación original y disposición temporal; no
+    una conclusión jurídica automática.
+  interpretation: Una resolución concreta debe contextualizarse con recursos, jurisprudencia posterior
+    y normativa aplicable.
+steps:
+- Buscar por varios criterios y citar órgano, fecha y número de resolución.
+- Comprueba en Buscador de Jurisprudencia CENDOJ la fecha, cobertura y definición de resoluciones.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

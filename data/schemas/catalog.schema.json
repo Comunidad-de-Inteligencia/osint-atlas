@@ -1,0 +1,1066 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]+$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 3
+          },
+          "owner": {
+            "type": "string",
+            "minLength": 2
+          },
+          "jurisdictions": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "coverage_exclusions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "type": {
+            "type": "string"
+          },
+          "tier": {
+            "type": "string",
+            "pattern": "^P[0-4]$"
+          },
+          "categories": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "scenarios": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "purpose": {
+            "type": "string",
+            "minLength": 20
+          },
+          "inputs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "outputs": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "usage": {
+            "type": "string",
+            "minLength": 20
+          },
+          "interpretation": {
+            "type": "string",
+            "minLength": 20
+          },
+          "limitations": {
+            "type": "string",
+            "minLength": 15
+          },
+          "access": {
+            "enum": [
+              "unknown",
+              "open",
+              "registration",
+              "api-key",
+              "restricted"
+            ]
+          },
+          "cost": {
+            "type": "string",
+            "minLength": 2
+          },
+          "languages": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "terms": {
+            "type": "string",
+            "minLength": 15
+          },
+          "reporting_routes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "reporting_routes_by_scenario": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "review_days": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "criticality": {
+            "enum": [
+              "normal",
+              "alta",
+              "critica"
+            ]
+          },
+          "editorial_reviewed": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "maintainer": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "backup_maintainer": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "technical_check": {
+            "type": "object",
+            "required": [
+              "status",
+              "checked_at"
+            ],
+            "properties": {
+              "status": {
+                "enum": [
+                  "unknown",
+                  "ok",
+                  "redirected",
+                  "auth-required",
+                  "rate-limited",
+                  "temporary-error",
+                  "offline",
+                  "retired",
+                  "blocked",
+                  "not-modified",
+                  "partial"
+                ]
+              },
+              "checked_at": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date-time"
+              }
+            },
+            "additionalProperties": false
+          },
+          "pending_changes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date"
+          },
+          "review_status": {
+            "enum": [
+              "pending",
+              "verified"
+            ]
+          },
+          "reviewer": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "pattern": "^https://"
+                }
+              },
+              "required": [
+                "title",
+                "url"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "input_types": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "output_types": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "platforms": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0,
+            "uniqueItems": true
+          },
+          "maintenance_urls": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https://"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0,
+            "uniqueItems": true
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "metadata_evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "fields": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "minItems": 1,
+                  "uniqueItems": true
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "pattern": "^https://"
+                },
+                "observed_at": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "method": {
+                  "enum": [
+                    "assistant-source-check",
+                    "human-source-check"
+                  ]
+                },
+                "note": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "fields",
+                "url",
+                "observed_at",
+                "method",
+                "note"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 0,
+            "uniqueItems": true
+          },
+          "example": {
+            "type": "object",
+            "properties": {
+              "input": {
+                "type": "string",
+                "minLength": 1
+              },
+              "steps": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1,
+                "uniqueItems": true
+              },
+              "expected": {
+                "type": "string",
+                "minLength": 1
+              },
+              "interpretation": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "input",
+              "steps",
+              "expected",
+              "interpretation"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "owner",
+          "jurisdictions",
+          "type",
+          "tier",
+          "categories",
+          "scenarios",
+          "url",
+          "purpose",
+          "inputs",
+          "outputs",
+          "usage",
+          "interpretation",
+          "limitations",
+          "access",
+          "cost",
+          "languages",
+          "terms",
+          "review_days",
+          "criticality",
+          "editorial_reviewed",
+          "maintainer",
+          "backup_maintainer",
+          "technical_check",
+          "pending_changes",
+          "created_at",
+          "review_status",
+          "reviewer",
+          "references",
+          "input_types",
+          "output_types",
+          "platforms",
+          "maintenance_urls",
+          "alternatives",
+          "steps",
+          "metadata_evidence",
+          "example"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 84,
+      "uniqueItems": true
+    },
+    "contacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "created_at": {
+            "type": "string",
+            "format": "date"
+          },
+          "review_status": {
+            "enum": [
+              "pending",
+              "verified"
+            ]
+          },
+          "reviewer": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "review_days": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "territories": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "kind": {
+            "enum": [
+              "emergency",
+              "hotline",
+              "assistance",
+              "guidance",
+              "reporting",
+              "takedown",
+              "platform-report",
+              "formal-complaint"
+            ]
+          },
+          "value": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          },
+          "last_reviewed": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "requirements": {
+            "type": "string",
+            "minLength": 1
+          },
+          "accessibility": {
+            "type": "string",
+            "minLength": 1
+          },
+          "platforms": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0,
+            "uniqueItems": true
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "pattern": "^https://"
+                }
+              },
+              "required": [
+                "title",
+                "url"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "scenarios": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "maintenance_urls": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https://"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "created_at",
+          "review_status",
+          "reviewer",
+          "review_days",
+          "id",
+          "name",
+          "territories",
+          "kind",
+          "value",
+          "url",
+          "note",
+          "last_reviewed",
+          "requirements",
+          "accessibility",
+          "platforms",
+          "references",
+          "scenarios",
+          "maintenance_urls"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "jurisdictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "parent": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "languages": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "notes": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "parent",
+          "languages"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "specialty": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sensitive": {
+            "type": "boolean"
+          },
+          "requires_routes": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "specialty",
+          "description",
+          "sensitive",
+          "requires_routes"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 16,
+      "uniqueItems": true
+    },
+    "playbooks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "created_at": {
+            "type": "string",
+            "format": "date"
+          },
+          "review_status": {
+            "enum": [
+              "pending",
+              "verified"
+            ]
+          },
+          "reviewer": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "review_days": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "path": {
+            "type": "string",
+            "pattern": "^docs/procedimientos/[a-z0-9-]+\\.md$"
+          },
+          "source_path": {
+            "type": "string",
+            "pattern": "^content/procedimientos/[a-z0-9-]+\\.md$"
+          },
+          "scenario": {
+            "type": "string",
+            "minLength": 1
+          },
+          "last_reviewed": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "jurisdictions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0,
+            "uniqueItems": true
+          },
+          "contacts": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0,
+            "uniqueItems": true
+          },
+          "references": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "pattern": "^https://"
+                }
+              },
+              "required": [
+                "title",
+                "url"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "territorial_limitations": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "created_at",
+          "review_status",
+          "reviewer",
+          "review_days",
+          "id",
+          "title",
+          "path",
+          "source_path",
+          "scenario",
+          "last_reviewed",
+          "jurisdictions",
+          "contacts",
+          "references",
+          "territorial_limitations"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 16,
+      "uniqueItems": true
+    },
+    "maintainers": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "const": 2
+        },
+        "default_owner": {
+          "type": "string",
+          "minLength": 1
+        },
+        "policy": {
+          "type": "object",
+          "properties": {
+            "critical_escalation_hours": {
+              "const": 48
+            },
+            "normal_escalation_days": {
+              "const": 7
+            },
+            "independent_review_required": {
+              "const": true
+            },
+            "sensitive_requires_second_human": {
+              "const": true
+            }
+          },
+          "required": [
+            "critical_escalation_hours",
+            "normal_escalation_days",
+            "independent_review_required",
+            "sensitive_requires_second_human"
+          ],
+          "additionalProperties": false
+        },
+        "specialties": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label": {
+                "type": "string",
+                "minLength": 1
+              },
+              "primary": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "backup": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "status": {
+                "enum": [
+                  "por-asignar",
+                  "activo"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "label",
+              "primary",
+              "backup",
+              "status"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "people": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "login": {
+                "type": "string",
+                "minLength": 1
+              },
+              "kind": {
+                "enum": [
+                  "human",
+                  "bot"
+                ]
+              },
+              "role": {
+                "type": "string",
+                "minLength": 1
+              },
+              "specialties": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 0,
+                "uniqueItems": true
+              },
+              "permission": {
+                "enum": [
+                  "admin",
+                  "maintain",
+                  "write",
+                  "triage",
+                  "read",
+                  "unknown"
+                ]
+              },
+              "permission_checked_at": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date"
+              }
+            },
+            "required": [
+              "login",
+              "kind",
+              "role",
+              "specialties",
+              "permission",
+              "permission_checked_at"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "version",
+        "default_owner",
+        "policy",
+        "specialties",
+        "people"
+      ],
+      "additionalProperties": false
+    },
+    "taxonomy": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "integer"
+        },
+        "authority_tiers": {
+          "type": "object",
+          "properties": {
+            "P0": {
+              "type": "string",
+              "minLength": 1
+            },
+            "P1": {
+              "type": "string",
+              "minLength": 1
+            },
+            "P2": {
+              "type": "string",
+              "minLength": 1
+            },
+            "P3": {
+              "type": "string",
+              "minLength": 1
+            },
+            "P4": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "P0",
+            "P1",
+            "P2",
+            "P3",
+            "P4"
+          ],
+          "additionalProperties": false
+        },
+        "resource_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "coverage_status": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "criticality": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "health_status": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "input_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "output_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "access_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "version",
+        "authority_tiers",
+        "resource_types",
+        "categories",
+        "coverage_status",
+        "criticality",
+        "health_status",
+        "input_types",
+        "output_types",
+        "access_types"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "resources",
+    "contacts",
+    "jurisdictions",
+    "scenarios",
+    "playbooks",
+    "maintainers",
+    "taxonomy"
+  ],
+  "additionalProperties": false
+}

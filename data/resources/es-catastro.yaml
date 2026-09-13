@@ -1,0 +1,78 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: es-catastro
+name: Sede Electrónica del Catastro
+owner: Dirección General del Catastro
+jurisdictions:
+- ES
+coverage_exclusions:
+- ES-PV
+- ES-NC
+type: register
+tier: P0
+categories:
+- geoint
+- administracion
+scenarios:
+- image-geolocation
+- source-corroboration
+url: https://www.sedecatastro.gob.es/
+purpose: Consultar cartografía parcelaria y datos catastrales no protegidos.
+inputs:
+- referencia catastral
+- dirección
+- coordenadas
+outputs:
+- parcela
+- geometría
+- datos descriptivos no protegidos
+usage: Localizar la parcela y contrastar su geometría con cartografía y ortofotos.
+interpretation: La referencia catastral describe un inmueble, pero no prueba por sí sola titularidad ni
+  límites jurídicos.
+limitations: No cubre País Vasco ni Navarra; datos de titulares y valores individualizados están protegidos.
+references:
+- title: Sede Electrónica del Catastro — página responsable
+  url: https://www.sedecatastro.gob.es/
+- title: Cobertura del Catastro
+  url: https://www.catastro.hacienda.gob.es/es-ES/usos_utilidades.html
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+platforms: []
+maintenance_urls:
+- https://www.sedecatastro.gob.es/
+input_types:
+- lugar
+- pregunta
+output_types:
+- mapa
+- referencia
+example:
+  input: Una imagen ficticia de un cruce sin personas se compara con una cartografía fechada.
+  steps:
+  - Localizar la parcela y contrastar su geometría con cartografía y ortofotos.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Se anotan dos rasgos concordantes y las diferencias. La coincidencia se expresa como hipótesis,
+    sin localizar personas.
+  interpretation: La referencia catastral describe un inmueble, pero no prueba por sí sola titularidad
+    ni límites jurídicos.
+steps:
+- Localizar la parcela y contrastar su geometría con cartografía y ortofotos.
+- Comprueba en Sede Electrónica del Catastro la fecha, cobertura y definición de parcela.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.

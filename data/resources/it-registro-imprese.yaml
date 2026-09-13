@@ -1,0 +1,72 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- it
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+id: it-registro-imprese
+name: Registro Imprese
+owner: Camere di Commercio italiane
+jurisdictions:
+- IT
+type: register
+tier: P0
+categories:
+- empresas
+scenarios:
+- business
+url: https://www.registroimprese.it/
+purpose: Consultar información registral de empresas italianas.
+inputs:
+- denominación
+- codice fiscale
+- REA
+outputs:
+- datos registrales
+- visure disponibles
+usage: Resolver la empresa por identificador y seleccionar el documento adecuado.
+interpretation: Una ficha básica no sustituye una visura o certificación.
+limitations: Servicios documentales pueden ser de pago.
+created_at: '2026-09-12'
+reviewer: null
+review_status: pending
+metadata_evidence:
+- fields:
+  - languages
+  url: https://www.registroimprese.it/
+  observed_at: '2026-09-13'
+  method: assistant-source-check
+  note: Idiomas observados en la página consultada; no certifica todos sus servicios.
+alternatives: []
+references:
+- title: Registro Imprese — página responsable
+  url: https://www.registroimprese.it/
+platforms: []
+maintenance_urls:
+- https://www.registroimprese.it/
+input_types:
+- organizacion
+output_types:
+- registro
+example:
+  input: La sociedad ficticia Ejemplo Atlántico solicita contrastar su denominación y país.
+  steps:
+  - Resolver la empresa por identificador y seleccionar el documento adecuado.
+  - Anota la consulta, sus filtros y la fecha. En esta práctica no envíes solicitudes, reportes ni datos
+    personales.
+  expected: Una coincidencia de nombre es un candidato. Registra el identificador y la fecha antes de
+    vincular publicaciones.
+  interpretation: Una ficha básica no sustituye una visura o certificación.
+steps:
+- Resolver la empresa por identificador y seleccionar el documento adecuado.
+- Comprueba en Registro Imprese la fecha, cobertura y definición de datos registrales.
+- Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones.
