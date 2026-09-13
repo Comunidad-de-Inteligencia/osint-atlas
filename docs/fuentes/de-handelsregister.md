@@ -64,4 +64,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 - [Handelsregister — página responsable](https://www.handelsregister.de/)
 - Observación de languages, 2026-09-13: [página comprobada](https://www.handelsregister.de/). Idiomas observados en la página consultada; no certifica todos sus servicios. No equivale a aprobación humana.
 
-Versión: e3a3c892121f70e5. [Volver al catálogo](../CATALOGO.md).
+Versión: a1c438413d9b26bd. [Volver al catálogo](../CATALOGO.md).

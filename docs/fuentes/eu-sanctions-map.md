@@ -61,4 +61,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 dí
 
 - [EU Sanctions Map — página responsable](https://www.sanctionsmap.eu/)
 
-Versión: e3a3c892121f70e5. [Volver al catálogo](../CATALOGO.md).
+Versión: a1c438413d9b26bd. [Volver al catálogo](../CATALOGO.md).

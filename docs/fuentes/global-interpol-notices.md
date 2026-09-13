@@ -61,4 +61,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 dí
 
 - [INTERPOL Red Notices — página responsable](https://www.interpol.int/How-we-work/Notices/Red-Notices/View-Red-Notices)
 
-Versión: e3a3c892121f70e5. [Volver al catálogo](../CATALOGO.md).
+Versión: a1c438413d9b26bd. [Volver al catálogo](../CATALOGO.md).

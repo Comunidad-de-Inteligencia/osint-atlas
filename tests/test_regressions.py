@@ -11,6 +11,21 @@ from tools.publish_state import publish_state
 
 
 class AdditionalRegressionTests(unittest.TestCase):
+    def test_repository_discovery_preserves_provenance_and_ignores_images(self):
+        from tools.discover_candidates import select_candidates
+        source={"id":"repo","url":"https://example.org/README.md","provenance_url":"https://github.com/example/catalog",
+                "format":"markdown","territory":"BR","specialty":"editorial","include_patterns":["/"],"exclude_patterns":[],"license_note":"MIT; destinos por revisar"}
+        body="![Imagen](https://example.org/image.svg)\n[Fuente](https://example.org/dataset/one)\n[Ejecutar](javascript:alert)"
+        candidates=select_candidates(source,body,set())
+        self.assertEqual(len(candidates),1)
+        self.assertEqual(candidates[0]["source_url"],source["provenance_url"])
+        self.assertEqual(candidates[0]["specialty"],"editorial")
+
+    def test_unknown_resource_contact_is_rejected(self):
+        c=copy.deepcopy(cat.load_catalog())
+        c["resources"][0]["purpose"]="Consultar {{contact:invented}}"
+        self.assertTrue(any("contacto desconocido" in error for error in cat.validate_catalog(c)))
+
     def test_catalog_paths_have_portable_order(self):
         paths=cat.source_files()
         self.assertEqual(paths,sorted(paths,key=lambda p:p.relative_to(cat.ROOT).as_posix()))

@@ -21,9 +21,12 @@ def canonical_url(url):
 
 
 def select_candidates(source,body,known,limit=20):
-    parser=Links(); parser.feed(body)
+    if source.get("format","html")=="markdown":
+        links=set(re.findall(r"(?<!!)\[[^\]\n]+\]\((https://[^\s)]+)\)",body))
+    else:
+        parser=Links(); parser.feed(body); links=parser.urls
     selected={}
-    for href in parser.urls:
+    for href in links:
         url=canonical_url(urllib.parse.urljoin(source["url"],href))
         p=urllib.parse.urlsplit(url)
         if p.scheme!="https" or not p.hostname or p.username or p.password or url in known: continue
@@ -31,7 +34,7 @@ def select_candidates(source,body,known,limit=20):
         if not any(pattern in p.path.lower() for pattern in source["include_patterns"]): continue
         key="candidate:"+url_key(url)
         selected[key]={"key":key,"kind":"editorial","reason":"candidate","url":url,"catalog":source["id"],
-                       "source_url":source["url"],"territory":source["territory"],"specialty":"public-data",
+                       "source_url":source.get("provenance_url",source["url"]),"territory":source["territory"],"specialty":source.get("specialty","public-data"),
                        "license_note":source["license_note"],"critical":False,"opened_at":generated_timestamp(),"resolved":False}
     return sorted(selected.values(),key=lambda c:c["url"])[:limit]
 

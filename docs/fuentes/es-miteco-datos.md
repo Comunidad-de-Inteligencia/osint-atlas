@@ -61,4 +61,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 
 - [MITECO Datos y Cartografía — página responsable](https://www.miteco.gob.es/es/cartografia-y-sig/ide/descargas.html)
 
-Versión: e3a3c892121f70e5. [Volver al catálogo](../CATALOGO.md).
+Versión: a1c438413d9b26bd. [Volver al catálogo](../CATALOGO.md).

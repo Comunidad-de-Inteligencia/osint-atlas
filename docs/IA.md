@@ -60,4 +60,4 @@ Cita la fuente responsable y conserva las limitaciones. Explica qué revisión f
 
 Los resultados separan versión del catálogo, estado del índice, antigüedad del commit y mantenimiento. Un índice desactualizado se reconstruye de forma atómica; si el nuevo contenido es inválido, el estado last-valid-snapshot identifica la copia anterior utilizada.
 
-Las mediciones técnicas locales se leen desde .cache/maintenance-state/state.json. Sin una copia del estado se indica unknown, nunca una ejecución satisfactoria inventada.
+Las mediciones técnicas locales se leen desde .cache/maintenance-state/state.json. La sincronización de la copia dedicada intenta recuperar ese archivo de la rama maintenance-state. Sin una copia del estado se indica unknown, nunca una ejecución satisfactoria inventada.

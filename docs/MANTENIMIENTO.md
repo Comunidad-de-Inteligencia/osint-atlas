@@ -6,7 +6,7 @@ El mantenimiento comprueba documentación aprobada, conserva resultados y prepar
 
 - **Diario:** páginas de contactos, fuentes y procedimientos críticos; revisiones editoriales pendientes.
 - **Semanal:** el conjunto de fuentes y referencias aprobadas, incluidas páginas de documentación de API.
-- **Mensual:** candidatos procedentes de catálogos institucionales seleccionados. Un enlace nuevo del mismo dominio también puede ser candidato.
+- **Mensual:** candidatos de seis catálogos de datos institucionales, el repositorio OSINT Brazuca y el canal institucional de INCIBE. Lee enlaces HTML y Markdown, conserva procedencia y condiciones conocidas. Un enlace nuevo del mismo dominio también puede ser candidato.
 - **En propuestas de cambio:** validación de datos, documentos, índice y pruebas.
 
 [Últimas ejecuciones satisfactorias e incidencias](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md).
@@ -20,6 +20,7 @@ El mantenimiento comprueba documentación aprobada, conserva resultados y prepar
 - **temporary-error:** fallo de red, certificado, tiempo máximo o servidor. Se abre incidencia tras tres ejecuciones consecutivas fallidas.
 - **offline:** respuesta de retirada o ausencia; requiere revisión, no elimina la fuente.
 - **partial:** no se pudo analizar el documento completo dentro de los límites. No se compara una huella incompleta como si fuera completa.
+- **redirected:** la documentación responde en otra dirección de los dominios aprobados; revisar si debe corregirse el enlace.
 
 Las peticiones usan límites por dominio y reintentos moderados. Las respuestas no se ejecutan ni se adoptan como instrucciones. No se descargan avisos personales ni contenido de casos: las fuentes sensibles tienen direcciones de mantenimiento documental específicas.
 
@@ -37,7 +38,7 @@ Las incidencias se agrupan por especialidad y finalidad, con identidad estable. 
 
 Para cambios sensibles, una persona competente distinta de la autoría humana debe aprobar la versión concreta propuesta. Una cuenta de bot no sustituye a la autoría humana. Las aprobaciones antiguas no sirven tras cambiar la propuesta.
 
-El control usa el registro de la rama base y consulta los permisos reales en GitHub. Tras una revisión puede actualizarse mediante un comentario en la propuesta o la ejecución manual de Revisión humana; no necesita interpretar el texto del comentario.
+El control usa el registro de la rama base y consulta los permisos reales en GitHub. El proceso diario con publicación vuelve a comprobar las propuestas abiertas y solicita revisión al responsable o suplente elegible. Tras una revisión también puede actualizarse mediante un comentario en la propuesta o la ejecución manual de Revisión humana; no necesita interpretar el texto del comentario.
 
 ## Resolver incidencias
 
@@ -49,7 +50,7 @@ Los candidatos siguen pendientes de selección y revisión; no se incorporan aut
 
 ## Activación y gasto
 
-Los tres procesos permiten ejecución manual. El parámetro publish está desactivado por defecto: el ensayo produce artefactos; al activarlo publica estado técnico y propuestas.
+Los tres procesos permiten ejecución manual. El parámetro publish está desactivado por defecto: el ensayo produce artefactos; al activarlo publica estado técnico y propuestas. Ejecuta los ensayos uno después de otro: comparten una cola para no sobrescribir el historial y GitHub puede sustituir una ejecución que aún esté esperando.
 
 Antes de habilitar una agenda hay que verificar los ensayos, duración, cuotas y límite de gasto. La falta de especialistas no impide activar las comprobaciones técnicas. Si no se confirma el control del gasto, las agendas permanecen manuales.
 

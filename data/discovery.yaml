@@ -126,5 +126,42 @@ approved_catalogs:
   - /group
   - /organization
   license_note: 'Metadatos candidatos: comprobar licencia de la ficha y del conjunto antes de incorporar.'
+- id: brazuca-repository
+  url: https://raw.githubusercontent.com/osintbrazuca/osint-brazuca/main/README.md
+  provenance_url: https://github.com/osintbrazuca/osint-brazuca
+  format: markdown
+  territory: BR
+  specialty: editorial
+  include_patterns:
+  - /
+  exclude_patterns:
+  - .svg
+  - .png
+  - .jpg
+  - .md
+  - /sponsors
+  - /osintbrazuca/osint-brazuca
+  - /shields.io
+  - /badge
+  license_note: Repositorio de referencia con licencia MIT; verificar por separado las condiciones de
+    cada destino. Se guardan enlaces candidatos, no se copia su contenido.
+- id: incibe-institutional
+  url: https://www.incibe.es/
+  format: html
+  territory: ES
+  specialty: cyber
+  include_patterns:
+  - /ciudadania/
+  - /menores/
+  - /incibe-cert/
+  - /avisos
+  exclude_patterns:
+  - /contacto
+  - /privacidad
+  - /legal
+  - /cookies
+  - /user
+  license_note: 'Canal institucional: conservar procedencia y comprobar condiciones de reutilización antes
+    de incorporar una ficha.'
 policy: El descubrimiento solo produce candidatos. Nunca modifica recursos, contactos ni procedimientos
   aprobados.

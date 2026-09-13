@@ -92,10 +92,13 @@ def validate_catalog(catalog: dict) -> list[str]:
     errors = [f"{'.'.join(map(str, e.path))}: {e.message}" for e in validator.iter_errors(catalog)]
     if errors:
         return errors
+    extra_errors = []
     for name in ("discovery", "resolutions"):
         extra = load_yaml(DATA / f"{name}.yaml")
         schema = load_yaml(DATA / "schemas" / f"{name}.schema.json")
-        errors.extend(f"{name}: {e.message}" for e in Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(extra))
+        extra_errors.extend(f"{name}: {e.message}" for e in Draft202012Validator(schema, format_checker=FormatChecker()).iter_errors(extra))
+    if extra_errors:
+        return extra_errors
     ids = {}
     for key in ("resources", "contacts", "jurisdictions", "scenarios", "playbooks"):
         ids[key] = {item["id"] for item in catalog[key]}
@@ -104,6 +107,12 @@ def validate_catalog(catalog: dict) -> list[str]:
     specs = catalog["maintainers"]["specialties"]
     people = {p["login"] for p in catalog["maintainers"]["people"]}
     specialty_ids = {s["id"] for s in specs}
+    sources = load_yaml(DATA / "discovery.yaml")["approved_catalogs"]
+    if len({s["id"] for s in sources}) != len(sources):
+        errors.append("Descubrimiento: identificadores duplicados")
+    for source in sources:
+        if source["territory"] not in ids["jurisdictions"] or source.get("specialty", "public-data") not in specialty_ids:
+            errors.append(f"{source['id']}: territorio o especialidad desconocidos")
     for person in catalog["maintainers"]["people"]:
         if set(person["specialties"]) - specialty_ids:
             errors.append(f"{person['login']}: especialidad desconocida")
@@ -122,6 +131,9 @@ def validate_catalog(catalog: dict) -> list[str]:
                 errors.append(f"{item['id']}: {field} desconocido {value}")
 
     for r in catalog["resources"]:
+        for cid in re.findall(r"\{\{contact:([^}]+)\}\}", json.dumps(r, ensure_ascii=False)):
+            if cid not in ids["contacts"]:
+                errors.append(f"{r['id']}: contacto desconocido {cid}")
         fields = {"jurisdictions": ids["jurisdictions"], "coverage_exclusions": ids["jurisdictions"],
                   "scenarios": ids["scenarios"], "reporting_routes": ids["contacts"], "alternatives": ids["resources"],
                   **{k: catalog["taxonomy"][k] for k in ("categories", "input_types", "output_types")}}

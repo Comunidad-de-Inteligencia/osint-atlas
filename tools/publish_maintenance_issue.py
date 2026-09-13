@@ -2,6 +2,7 @@
 from __future__ import annotations
 import argparse,hashlib,json,os,subprocess,sys,tempfile
 from collections import defaultdict
+from datetime import date
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]; sys.path.insert(0,str(ROOT/"src"))
 from osint_atlas.catalog import load_catalog
@@ -93,6 +94,13 @@ def main():
     if not os.environ.get("GITHUB_REPOSITORY"): raise ValueError("Falta repositorio autorizado")
     if os.environ["GITHUB_REPOSITORY"]!="P3M-ACTF/osint-atlas": raise ValueError("Repositorio no autorizado")
     gh("label","create",args.label,"--color","1D76DB","--description","Revisión agrupada del catálogo","--force")
-    publish(report,args.label,load_catalog()["maintainers"])
+    registry=load_catalog()["maintainers"]
+    for person in registry["people"]:
+        try:
+            permission=json.loads(gh("api",f"repos/{os.environ['GITHUB_REPOSITORY']}/collaborators/{person['login']}/permission"))
+            person.update(permission=permission.get("permission","unknown"),permission_checked_at=date.today().isoformat())
+        except subprocess.CalledProcessError:
+            person["permission"]="unknown"
+    publish(report,args.label,registry)
     return 0
 if __name__=="__main__": raise SystemExit(main())
