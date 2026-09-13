@@ -69,7 +69,7 @@ def source_files() -> list[Path]:
     for path in [*ROOT.glob("*.md"), *(ROOT / "docs").rglob("*.md")]:
         if not path.read_text(encoding="utf-8").startswith("<!-- GENERADO"):
             files.append(path)
-    return sorted(set(files))
+    return sorted(set(files), key=lambda p: p.relative_to(ROOT).as_posix())
 
 
 def catalog_version() -> str:
@@ -228,7 +228,7 @@ def documents(catalog: dict, outputs: dict[Path, str]) -> list[dict]:
     aliases.update({p["path"]: p["id"] for p in catalog["playbooks"]})
     paths = set(ROOT.glob("*.md")) | set((ROOT / "docs").rglob("*.md")) | {p for p in outputs if p.suffix == ".md"}
     result = []
-    for path in sorted(paths):
+    for path in sorted(paths, key=lambda p: p.relative_to(ROOT).as_posix()):
         if path.name == "AGENTS.md": continue
         relative = path.relative_to(ROOT).as_posix()
         content = outputs[path] if path in outputs else path.read_text(encoding="utf-8")

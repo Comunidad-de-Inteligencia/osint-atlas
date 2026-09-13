@@ -63,4 +63,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 dí
 - Observación de languages, 2026-09-13: [página comprobada](https://opendata.aemet.es/centrodedescargas/inicio). Idiomas observados en la página consultada; no certifica todos sus servicios. No equivale a aprobación humana.
 - Observación de access, 2026-09-13: [página comprobada](https://opendata.aemet.es/centrodedescargas/inicio). El centro de descargas ofrece solicitar una API key. No equivale a aprobación humana.
 
-Versión: d7623406100e17a9. [Volver al catálogo](../CATALOGO.md).
+Versión: 40f5a301058952de. [Volver al catálogo](../CATALOGO.md).

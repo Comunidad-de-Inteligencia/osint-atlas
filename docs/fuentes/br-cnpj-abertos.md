@@ -61,4 +61,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 
 - [Dados Abertos CNPJ — página responsable](https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj)
 
-Versión: d7623406100e17a9. [Volver al catálogo](../CATALOGO.md).
+Versión: 40f5a301058952de. [Volver al catálogo](../CATALOGO.md).
