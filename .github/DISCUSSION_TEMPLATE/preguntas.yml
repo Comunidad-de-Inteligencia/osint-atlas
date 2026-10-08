@@ -1,0 +1,15 @@
+name: Preguntas y Respuestas / Q&A
+description: Pregunta sobre cómo leer el catálogo. No pegues casos ni datos personales.
+title: "Pregunta: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Pregunta sobre cómo leer el catálogo. No pegues casos, datos personales ni texto de un manual de pago. Un cambio de ficha o de procedimiento es una incidencia, no un debate.
+  - type: textarea
+    id: pregunta
+    attributes:
+      label: Pregunta
+      description: Qué quieres consultar y qué ya miraste en el catálogo.
+    validations:
+      required: true

@@ -1,0 +1,10 @@
+ignore: /en/**
+nav:
+  - index.md
+  - EMPEZAR.md
+  - GLOSARIO.md
+  - referencias
+  - procedimientos
+  - COBERTURA.md
+  - CATALOGO.md
+append_unmatched: true

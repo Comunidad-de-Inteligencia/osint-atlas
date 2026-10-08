@@ -67,4 +67,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 
 - [Centro Nacional de Desaparecidos — página responsable](https://cndes-web.ses.mir.es/publico/Desaparecidos/)
 
-Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).
+Versión: f284f49148a09ea0. [Volver al catálogo](../CATALOGO.md).

@@ -1,10 +1,11 @@
-import base64,json,subprocess,sys
+import base64,json,os,subprocess,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/"src"))
 from osint_atlas.maintenance import empty_state
 def main():
     path=ROOT/".cache/maintenance-state/state.json"
-    r=subprocess.run(["gh","api","repos/P3M-ACTF/osint-atlas/contents/state.json?ref=maintenance-state"],capture_output=True,text=True,encoding="utf-8",timeout=30)
+    repo=os.environ.get("GITHUB_REPOSITORY","Comunidad-de-Inteligencia/osint-atlas")
+    r=subprocess.run(["gh","api",f"repos/{repo}/contents/state.json?ref=maintenance-state"],capture_output=True,text=True,encoding="utf-8",timeout=30)
     if r.returncode:
         if "404" not in r.stderr: raise RuntimeError("No se pudo recuperar el estado anterior; no se reinicia")
         state=empty_state()

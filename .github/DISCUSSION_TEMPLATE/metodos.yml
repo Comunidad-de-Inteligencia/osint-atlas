@@ -1,0 +1,22 @@
+name: Métodos / Methodologies
+description: Método de consulta en fuentes abiertas. No pegues texto de un manual de pago.
+title: "Método: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Método de consulta en fuentes abiertas. No pegues casos, datos personales ni el texto de un curso o manual de pago. Si el método cambia una ficha, abre una incidencia.
+  - type: textarea
+    id: metodo
+    attributes:
+      label: Método
+      description: Qué pregunta ayuda a responder, qué fuente pública usa y qué no demuestra.
+    validations:
+      required: true
+  - type: input
+    id: fuente
+    attributes:
+      label: Fuente pública
+      description: Página HTTPS del organismo o del estándar, si ya existe.
+    validations:
+      required: false

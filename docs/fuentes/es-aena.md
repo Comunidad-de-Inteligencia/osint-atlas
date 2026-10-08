@@ -62,4 +62,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 dí
 
 - [Aena Información de Aeropuertos — página responsable](https://www.aena.es/)
 
-Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).
+Versión: f284f49148a09ea0. [Volver al catálogo](../CATALOGO.md).

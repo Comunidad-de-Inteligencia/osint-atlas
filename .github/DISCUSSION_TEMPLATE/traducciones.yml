@@ -1,0 +1,28 @@
+name: Traducciones / Translations
+description: Idea de traducción. El castellano es el original. No es una revisión editorial.
+title: "Traducción: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Idea de traducción. El castellano es el original. Una traducción no es una revisión editorial. No pegues casos, datos personales ni texto de un manual de pago.
+  - type: input
+    id: idioma
+    attributes:
+      label: Idioma
+      description: Código o nombre, por ejemplo en, pt o ca.
+    validations:
+      required: true
+  - type: input
+    id: pagina
+    attributes:
+      label: Página
+      description: README, contribuir, glosario, índice u otra puerta. Las fichas no se traducen solas.
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Propuesta
+    validations:
+      required: true

@@ -4,7 +4,17 @@
 
 # OSINT Atlas
 
-Catálogo de consulta. Ayuda a elegir una fuente, leer su resultado y ver qué falta comprobar. No es una aplicación, ni un visor, ni un mapa en directo.
+## English
+
+OSINT Atlas is a reference catalog. It helps you choose an open source, read what a result can mean, and see what is still unchecked. It is not an application and it does not receive reports.
+
+In immediate danger, contact the official emergency service where you are. Start with the [emergency procedure](docs/procedimientos/emergencia-inmediata.md). The English door of the published guide is the [English index](docs/en/index.md). Glossary: [English](docs/en/glosario.md). Contributing: [English](docs/en/contribuir.md).
+
+Sponsorship does not buy a catalog entry or a review.
+
+## Castellano
+
+Catálogo de consulta. Ayuda a elegir una fuente, leer su resultado y ver qué falta comprobar. No es una aplicación, ni un visor, ni un mapa en directo. Patrocinar no compra una ficha ni una revisión.
 
 > Ante un peligro inmediato, acude al servicio oficial de emergencias de tu territorio. Consulta el [procedimiento de emergencia](docs/procedimientos/emergencia-inmediata.md) y las [vías oficiales](docs/CONTACTOS.md). Atlas no recibe denuncias ni envía alertas.
 
@@ -64,7 +74,7 @@ Hay **100 fichas** y **16 procedimientos**. Las fichas nuevas de esta entrega es
 
 Los cambios sensibles necesitan otra persona competente. Mientras no esté registrada, las propuestas siguen pendientes.
 
-La última comprobación de una página se lee en su ficha y en el [informe de mantenimiento](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md): disponible, sin respuesta, autenticación o sin comprobación. Si no hubo ejecución, es sin comprobación. Un escudo de Actions solo dice si el proceso corrió. Las agendas siguen comentadas.
+La última comprobación de una página se lee en su ficha y en el [informe de mantenimiento](https://github.com/Comunidad-de-Inteligencia/osint-atlas/blob/maintenance-state/README.md): disponible, sin respuesta, autenticación o sin comprobación. Si no hubo ejecución, es sin comprobación. Un escudo de Actions solo dice si el proceso corrió. Las agendas siguen comentadas.
 
 ## Guías de referencia
 
@@ -74,19 +84,11 @@ La última comprobación de una página se lee en su ficha y en el [informe de m
 
 ## Cómo proponer una fuente
 
-Abre una incidencia con la plantilla en [castellano](https://github.com/P3M-ACTF/osint-atlas/issues/new?template=proponer-fuente.yml) o en [inglés](https://github.com/P3M-ACTF/osint-atlas/issues/new?template=propose-source.yml). Para una corrección, usa [castellano](https://github.com/P3M-ACTF/osint-atlas/issues/new?template=corregir-contenido.yml) o [inglés](https://github.com/P3M-ACTF/osint-atlas/issues/new?template=correct-content.yml). No pegues casos ni datos personales. El detalle está en [CONTRIBUTING.md](CONTRIBUTING.md).
+Abre una incidencia con la plantilla en [castellano](https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues/new?template=proponer-fuente.yml) o en [inglés](https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues/new?template=propose-source.yml). Para una corrección, usa [castellano](https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues/new?template=corregir-contenido.yml) o [inglés](https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues/new?template=correct-content.yml). No pegues casos ni datos personales. El detalle está en [CONTRIBUTING.md](CONTRIBUTING.md). La guía publicada está en [comunidad-de-inteligencia.github.io/osint-atlas](https://comunidad-de-inteligencia.github.io/osint-atlas/).
 
 ## Panel de trabajo humano
 
-El panel es un Project de GitHub para el trabajo de las personas: fuentes propuestas, correcciones, guías y revisión. No lista la salud de cada ficha.
-
-En esta entrega el token no pudo crearlo: la cuenta del agente no tiene permiso para crear proyectos del propietario. Créalo en GitHub con este nombre y estos datos.
-
-- **Nombre:** Trabajo humano del catálogo
-- **Columnas:** Por hacer, En curso, En revisión, Hecho
-- **Campos:** Territorio; Tipo, con los valores fuente, guía y corrección
-
-Las tarjetas son las incidencias de las plantillas del apartado anterior.
+El Project Comunidad de Inteligencia es el tablero de las personas: fuentes propuestas, correcciones, guías y revisión. No lista la salud de cada ficha. Las columnas de trabajo son Por hacer, En curso, En revisión y Hecho. Las tarjetas son las incidencias de las plantillas del apartado anterior.
 
 ## Con qué está hecho
 
@@ -101,9 +103,9 @@ Las tarjetas son las incidencias de las plantillas del apartado anterior.
 
 Uso bajo la licencia MIT. Lee [LEGAL.md](LEGAL.md) y el archivo [LICENSE](LICENSE).
 
-El repositorio es privado. Los escudos públicos de estrellas, bifurcaciones e incidencias no muestran una cifra. No se inventa un número. [Incidencias][issues]. [Licencia MIT][license].
+[Incidencias][issues]. [Licencia MIT][license]. [Guía](https://comunidad-de-inteligencia.github.io/osint-atlas/).
 
 [Glosario](docs/GLOSARIO.md). [Mantenimiento](docs/MANTENIMIENTO.md). [Accesibilidad](docs/ACCESIBILIDAD.md).
 
-[issues]: https://github.com/P3M-ACTF/osint-atlas/issues
-[license]: https://github.com/P3M-ACTF/osint-atlas/blob/main/LICENSE
+[issues]: https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues
+[license]: https://github.com/Comunidad-de-Inteligencia/osint-atlas/blob/main/LICENSE
