@@ -27,4 +27,4 @@ Distingue las rutas oficiales de asistencia, comunicación de indicios, reporte 
 
 ## Cuando falta cobertura
 
-Lee las carencias del territorio. Puedes utilizar fuentes generales como contexto, pero no debes trasladar contactos, reglas o requisitos de un país a otro. [Propón una mejora](../CONTRIBUTING.md) indicando la fuente responsable y qué falta comprobar.
+Lee las carencias del territorio. Puedes utilizar fuentes generales como contexto, pero no debes trasladar contactos, reglas o requisitos de un país a otro. [Propón una mejora](https://github.com/Comunidad-de-Inteligencia/osint-atlas/blob/main/CONTRIBUTING.md) indicando la fuente responsable y qué falta comprobar.

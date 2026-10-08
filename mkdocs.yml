@@ -1,0 +1,36 @@
+site_name: OSINT Atlas
+site_description: Catálogo de consulta de fuentes abiertas. No es una aplicación.
+site_url: https://comunidad-de-inteligencia.github.io/osint-atlas/
+repo_url: https://github.com/Comunidad-de-Inteligencia/osint-atlas
+repo_name: Comunidad-de-Inteligencia/osint-atlas
+edit_uri: edit/main/docs/
+docs_dir: docs
+theme:
+  name: material
+  language: es
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  features:
+    - navigation.indexes
+    - search.suggest
+    - content.action.edit
+plugins:
+  - search
+  - awesome-nav
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      languages:
+        - locale: es
+          default: true
+          name: Castellano
+          build: true
+        - locale: en
+          name: English
+          build: true
+          site_description: Open-source reference catalog. Not an application.
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - attr_list

@@ -1,6 +1,8 @@
 # Contribuir a OSINT Atlas
 
-Puedes mejorar una explicación, corregir una ficha o cubrir una carencia. Cada contribución debe permitir que otra persona compruebe el cambio.
+En inglés: [How to contribute](docs/en/contribuir.md).
+
+Puedes mejorar una explicación, corregir una ficha o cubrir una carencia. Cada contribución debe permitir que otra persona compruebe el cambio. Patrocinar no compra una ficha ni una revisión.
 
 ## Preparar una propuesta
 

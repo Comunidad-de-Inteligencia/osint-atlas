@@ -65,4 +65,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 dí
 
 - [Punto de Acceso Nacional de Tráfico — página responsable](https://nap.dgt.es/)
 
-Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).
+Versión: 3881764316ce9a58. [Volver al catálogo](../CATALOGO.md).
