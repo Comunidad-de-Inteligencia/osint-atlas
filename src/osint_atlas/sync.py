@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT=Path(os.environ.get("OSINT_ATLAS_ROOT",Path(__file__).resolve().parents[2])).resolve()
-APPROVED_REMOTES={"https://github.com/P3M-ACTF/osint-atlas.git","https://github.com/P3M-ACTF/osint-atlas","git@github.com:P3M-ACTF/osint-atlas.git"}
+APPROVED_REMOTES={"https://github.com/Comunidad-de-Inteligencia/osint-atlas.git","https://github.com/Comunidad-de-Inteligencia/osint-atlas","git@github.com:Comunidad-de-Inteligencia/osint-atlas.git","https://github.com/P3M-ACTF/osint-atlas.git","https://github.com/P3M-ACTF/osint-atlas","git@github.com:P3M-ACTF/osint-atlas.git"}
 
 
 def _git(*args,timeout=20,root=None):

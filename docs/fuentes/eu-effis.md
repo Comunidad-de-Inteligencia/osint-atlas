@@ -66,4 +66,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 
 - [EFFIS — página responsable](https://forest-fire.emergency.copernicus.eu/)
 
-Versión: 3881764316ce9a58. [Volver al catálogo](../CATALOGO.md).
+Versión: f284f49148a09ea0. [Volver al catálogo](../CATALOGO.md).

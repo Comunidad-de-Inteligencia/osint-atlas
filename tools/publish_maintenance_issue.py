@@ -92,7 +92,7 @@ def main():
     if not args.publish:
         print(f"Propuestas preparadas: {len(groups(report))}; publicación desactivada"); return 0
     if not os.environ.get("GITHUB_REPOSITORY"): raise ValueError("Falta repositorio autorizado")
-    if os.environ["GITHUB_REPOSITORY"]!="P3M-ACTF/osint-atlas": raise ValueError("Repositorio no autorizado")
+    if os.environ["GITHUB_REPOSITORY"] not in {"Comunidad-de-Inteligencia/osint-atlas","P3M-ACTF/osint-atlas"}: raise ValueError("Repositorio no autorizado")
     gh("label","create",args.label,"--color","1D76DB","--description","Revisión agrupada del catálogo","--force")
     registry=load_catalog()["maintainers"]
     for person in registry["people"]:

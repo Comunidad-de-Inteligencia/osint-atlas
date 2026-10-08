@@ -59,9 +59,9 @@ def main():
     parser=argparse.ArgumentParser()
     choice=parser.add_mutually_exclusive_group(required=True)
     choice.add_argument("--pr",type=int); choice.add_argument("--all",action="store_true")
-    parser.add_argument("--repo",default="P3M-ACTF/osint-atlas"); parser.add_argument("--publish",action="store_true")
+    parser.add_argument("--repo",default=os.environ.get("GITHUB_REPOSITORY","Comunidad-de-Inteligencia/osint-atlas")); parser.add_argument("--publish",action="store_true")
     args=parser.parse_args()
-    if args.repo!="P3M-ACTF/osint-atlas": raise ValueError("Repositorio no autorizado")
+    if args.repo not in {"Comunidad-de-Inteligencia/osint-atlas","P3M-ACTF/osint-atlas"}: raise ValueError("Repositorio no autorizado")
     numbers=[p["number"] for p in pages(f"repos/{args.repo}/pulls?state=open")] if args.all else [args.pr]
     for number in numbers: evaluate(args.repo,number,args.publish)
 if __name__=="__main__": main()
