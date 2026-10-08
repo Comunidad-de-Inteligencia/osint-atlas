@@ -1,5 +1,3 @@
-name: Métodos / Methodologies
-description: Método de consulta en fuentes abiertas. No pegues texto de un manual de pago.
 title: "Método: "
 body:
   - type: markdown
