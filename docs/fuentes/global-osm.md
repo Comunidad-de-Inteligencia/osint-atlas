@@ -37,13 +37,14 @@ Los datos son colaborativos y pueden contener errores o ediciones recientes.
 
 ## Limitaciones y alternativas
 
-Cobertura y precisión no son uniformes.
+Cobertura y precisión no son uniformes. Overpass consulta los mismos datos con otra interfaz. No es un mapa distinto ni una fuente oficial.
 
 Resultados que puede ofrecer: geometrías, etiquetas, historial.
 
 Fuentes complementarias; comprobar sus diferencias de cobertura:
 
 - [Centro de Descargas CNIG y PNOA](./es-cnig-pnoa.md)
+- [Overpass Turbo](./global-overpass.md)
 
 ## Condiciones conocidas
 
@@ -58,9 +59,10 @@ Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **p
 Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
 
 [Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+Última comprobación: **sin comprobación**.
 
 ## Referencias
 
 - [OpenStreetMap — página responsable](https://www.openstreetmap.org/)
 
-Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).
+Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).

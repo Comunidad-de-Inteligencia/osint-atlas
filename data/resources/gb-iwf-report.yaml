@@ -34,7 +34,9 @@ outputs:
 - evaluación y posible derivación
 usage: No descargar ni compartir; seguir el selector territorial del servicio.
 interpretation: El servicio evalúa el contenido conforme a su competencia.
-limitations: La competencia y los tipos de reporte admitidos están delimitados.
+limitations: La competencia y los tipos de reporte admitidos están delimitados. GB indica el domicilio del
+  organismo. GLOBAL se conserva porque la vía puede usarse desde otros territorios; si se quitara,
+  dejaría de aparecer fuera del Reino Unido.
 reporting_routes:
 - global-inhope
 created_at: '2026-09-12'

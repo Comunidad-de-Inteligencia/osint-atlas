@@ -13,6 +13,8 @@ technical_check:
   checked_at: null
 pending_changes:
 - Verificar metadatos y recorrido con una persona revisora.
+- El organismo está en Estados Unidos y este catálogo no tiene un nodo de ese país. Se mantiene GLOBAL
+  para que la vía siga apareciendo en otros territorios. No se ha cambiado el canal ni el destinatario.
 id: us-ncmec-cybertipline
 name: NCMEC CyberTipline
 owner: National Center for Missing & Exploited Children

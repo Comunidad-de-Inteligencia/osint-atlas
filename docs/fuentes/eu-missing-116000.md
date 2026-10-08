@@ -61,9 +61,10 @@ Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **p
 Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 días.
 
 [Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+Última comprobación: **sin comprobación**.
 
 ## Referencias
 
 - [Línea europea para menores desaparecidos — página responsable](https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/faq/index_es.htm)
 
-Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).
+Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).

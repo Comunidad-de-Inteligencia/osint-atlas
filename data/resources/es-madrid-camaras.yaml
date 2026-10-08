@@ -1,0 +1,78 @@
+access: open
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 90
+criticality: normal
+languages:
+- es
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+- El coste y la licencia completa no se leyeron.
+id: es-madrid-camaras
+name: Cámaras de tráfico del Ayuntamiento de Madrid
+owner: Ayuntamiento de Madrid
+jurisdictions:
+- ES-MAD
+type: dataset
+tier: P1
+categories:
+- geoint
+- transporte
+- datos-abiertos
+scenarios:
+- image-geolocation
+- disaster-crisis
+url: https://datos.madrid.es/dataset/202088-0-trafico-camaras
+purpose: Consultar la posición y las capturas de las cámaras fijas de tráfico que publica el Ayuntamiento de Madrid.
+inputs:
+- vía
+- fecha de consulta
+outputs:
+- posición de cámaras
+- captura de imagen
+usage: Anota la cámara y la hora. La ficha municipal consultada habla de una captura cada cinco minutos.
+interpretation: La imagen sirve para ver el tráfico en ese punto. No identifica a una persona ni prueba un hecho.
+limitations: El propio conjunto dice que las cámaras están para conocer el tráfico y los eventos que afectan
+  a la movilidad. Una captura cada cinco minutos, según esa página, no es un vídeo continuo. No cubre otras ciudades.
+created_at: '2026-10-08'
+reviewer: null
+review_status: pending
+metadata_evidence:
+- fields:
+  - languages
+  - access
+  url: https://datos.madrid.es/dataset/202088-0-trafico-camaras
+  observed_at: '2026-10-08'
+  method: assistant-source-check
+  note: La ficha está en español y se abrió sin inicio de sesión. Dice que incluye una captura cada cinco
+    minutos. No se revisó la licencia ni el coste.
+alternatives:
+- es-dgt-camaras
+references:
+- title: Tráfico. Cámaras — Ayuntamiento de Madrid
+  url: https://datos.madrid.es/dataset/202088-0-trafico-camaras
+platforms: []
+maintenance_urls:
+- https://datos.madrid.es/dataset/202088-0-trafico-camaras
+input_types:
+- lugar
+output_types:
+- mapa
+- observacion
+example:
+  input: Se localiza una cámara ficticia de una glorieta vacía de nombres y se anota la periodicidad publicada.
+  steps:
+  - Anota el identificador de la cámara y que la ficha habla de cinco minutos.
+  - No describas matrículas ni personas.
+  expected: La nota separa la captura de cualquier conclusión sobre un hecho.
+  interpretation: Sirve para el estado del tráfico en ese punto, no para identificar a alguien.
+steps:
+- Abre el conjunto y elige una cámara por su posición.
+- Anota la hora de la captura y la periodicidad que declara el Ayuntamiento.
+- No uses la imagen para identificar a una persona.

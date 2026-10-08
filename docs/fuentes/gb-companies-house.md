@@ -56,10 +56,11 @@ Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **p
 Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
 
 [Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+Última comprobación: **sin comprobación**.
 
 ## Referencias
 
 - [Companies House — página responsable](https://find-and-update.company-information.service.gov.uk/)
 - Observación de languages, 2026-09-13: [página comprobada](https://www.gov.uk/government/organisations/companies-house). Idiomas observados en la página consultada; no certifica todos sus servicios. No equivale a aprobación humana.
 
-Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).
+Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).

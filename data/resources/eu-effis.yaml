@@ -1,0 +1,74 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 30
+criticality: alta
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+- Acceso, coste e idioma no se comprobaron en el visor.
+- La URL anterior del JRC redirige a este servicio; no se leyó el contenido del mapa.
+id: eu-effis
+name: EFFIS
+owner: Copernicus y Centro Común de Investigación
+jurisdictions:
+- EU
+type: map
+tier: P1
+categories:
+- geoint
+- emergencias
+- medio-ambiente
+scenarios:
+- disaster-crisis
+- image-geolocation
+url: https://forest-fire.emergency.copernicus.eu/
+purpose: Consultar el sistema europeo de información sobre incendios forestales como panorama de fuegos.
+inputs:
+- zona
+- fecha
+- tipo de aviso
+outputs:
+- perímetros o puntos de incendio publicados
+- fecha del producto
+usage: Cita la fecha del producto y la zona. No lo uses como orden de evacuación.
+interpretation: Un punto de incendio es un aviso del sistema, no la prueba de un hecho ni la imagen en directo.
+limitations: No todos los fuegos aparecen. La latencia no se contrastó en el servicio. El aviso no sustituye
+  a protección civil ni a los bomberos.
+created_at: '2026-10-08'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- global-nasa-firms
+- eu-erascc-emergency-mapping
+- global-gdacs
+references:
+- title: EFFIS — página responsable
+  url: https://forest-fire.emergency.copernicus.eu/
+platforms: []
+maintenance_urls:
+- https://forest-fire.emergency.copernicus.eu/
+input_types:
+- lugar
+output_types:
+- aviso
+- mapa
+example:
+  input: Un ejercicio ficticio busca si un monte sin habitantes figura en el mapa de incendios de un día concreto.
+  steps:
+  - Anota la fecha del producto y el nombre de la capa.
+  - No emitas un aviso ni contactes con servicios reales.
+  expected: Se distingue un punto publicado de la ausencia de punto. La ausencia no prueba que no haya fuego.
+  interpretation: EFFIS orienta. La autoridad local confirma la situación.
+steps:
+- Fija la zona y el día antes de leer el mapa.
+- Anota el nombre del producto y su fecha.
+- Si no hay marca, dilo como ausencia en esa capa, no como ausencia del fuego.

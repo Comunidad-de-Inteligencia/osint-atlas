@@ -37,13 +37,15 @@ outputs:
 - historial
 usage: Corroborar elementos con fuentes primarias o imágenes recientes.
 interpretation: Los datos son colaborativos y pueden contener errores o ediciones recientes.
-limitations: Cobertura y precisión no son uniformes.
+limitations: Cobertura y precisión no son uniformes. Overpass consulta los mismos datos con otra interfaz.
+  No es un mapa distinto ni una fuente oficial.
 created_at: '2026-09-12'
 reviewer: null
 review_status: pending
 metadata_evidence: []
 alternatives:
 - es-cnig-pnoa
+- global-overpass
 references:
 - title: OpenStreetMap — página responsable
   url: https://www.openstreetmap.org/

@@ -10,6 +10,7 @@ Selecciona una fuente y comprueba territorio, límites y resultados esperados.
 - [Buscador de Jurisprudencia CENDOJ](../fuentes/es-cendoj.md) — Localizar resoluciones judiciales publicadas por el poder judicial.
 - [Diario Oficial de la Federación](../fuentes/mx-dof.md) — Consultar publicaciones oficiales federales mexicanas.
 - [Diário da República Electrónico](../fuentes/pt-dre.md) — Consultar publicaciones y legislación oficial portuguesa.
+- [ESA SNAP](../fuentes/global-esa-snap.md) — Descargar el programa de escritorio SNAP para abrir y revisar productos Sentinel en el equipo de quien consulta.
 - [EUR-Lex](../fuentes/eu-eurlex.md) — Consultar legislación, jurisprudencia y Diario Oficial de la UE.
 - [Gazzetta Ufficiale](../fuentes/it-gazzetta.md) — Consultar publicaciones y normativa oficial italiana.
 - [Portal Europeo de e-Justicia](../fuentes/eu-ecourts.md) — Localizar registros, procedimientos y herramientas judiciales transfronterizas.

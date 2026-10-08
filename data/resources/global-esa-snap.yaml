@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. El programa no se instala con este catálogo.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+- Acceso, coste e idioma de la página de descarga no se leyeron en detalle.
+- No se comprobó qué versión está publicada hoy.
+id: global-esa-snap
+name: ESA SNAP
+owner: Agencia Espacial Europea
+jurisdictions:
+- EUROPE
+- GLOBAL
+type: tool
+tier: P1
+categories:
+- geoint
+scenarios:
+- image-geolocation
+url: https://step.esa.int/main/download/snap-download/
+purpose: Descargar el programa de escritorio SNAP para abrir y revisar productos Sentinel en el equipo de quien consulta.
+inputs:
+- producto Sentinel ya obtenido
+- pregunta sobre una escena
+outputs:
+- lectura local de un producto
+- notas de quien analiza
+usage: Instálalo aparte. Anota misión, producto y fecha. Este repositorio no lo incluye.
+interpretation: SNAP procesa un archivo. El resultado depende del producto y de los pasos de quien lo usa. No es una prueba por sí solo.
+limitations: EUROPE marca al publicador europeo. GLOBAL se conserva porque el programa puede usarse desde
+  otros lugares. No es tiempo real. No identifica personas. No forma parte de OSINT Atlas.
+created_at: '2026-10-08'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- eu-copernicus
+references:
+- title: ESA SNAP — página de descarga
+  url: https://step.esa.int/main/download/snap-download/
+platforms: []
+maintenance_urls:
+- https://step.esa.int/main/download/snap-download/
+input_types:
+- lugar
+- documento
+output_types:
+- observacion
+- mapa
+example:
+  input: Se anota que un producto Sentinel ficticio, sin personas, se abriría en SNAP para leer su fecha.
+  steps:
+  - Escribe misión, producto y fecha antes de interpretar colores.
+  - No subas el archivo ni una clave a este repositorio.
+  expected: La nota dice que la vista es un análisis local, no una emisión en directo.
+  interpretation: SNAP ayuda a leer un producto. No demuestra un hecho sin otra fuente.
+steps:
+- Descarga el programa desde la página de la ESA, fuera de este repositorio.
+- Abre un producto del que ya tengas misión, fecha y licencia.
+- Anota qué hiciste con la imagen y qué no puedes concluir.

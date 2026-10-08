@@ -59,9 +59,10 @@ Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **p
 Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
 
 [Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+Última comprobación: **sin comprobación**.
 
 ## Referencias
 
 - [Eurostat — página responsable](https://ec.europa.eu/eurostat/)
 
-Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).
+Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).

@@ -47,6 +47,26 @@ class CatalogTests(unittest.TestCase):
         self.assertTrue(applies_to(resource, "ES", self.catalog["jurisdictions"]))
         self.assertFalse(applies_to(resource, "ES-PV", self.catalog["jurisdictions"]))
         self.assertFalse(applies_to(resource, "ES-NC", self.catalog["jurisdictions"]))
+        self.assertFalse(applies_to(resource, "ES-BI", self.catalog["jurisdictions"]))
+
+    def test_new_parents_keep_national_cards(self) -> None:
+        jurisdictions = self.catalog["jurisdictions"]
+        parents = {item["id"]: item["parent"] for item in jurisdictions}
+        self.assertEqual(parents["EU"], "EUROPE")
+        self.assertEqual(parents["GB"], "EUROPE")
+        self.assertNotEqual(parents["GB"], "EU")
+        self.assertEqual(parents["AR"], "AMERICA")
+        self.assertEqual(parents["ES-BI"], "ES-PV")
+        self.assertEqual(parents["ES-MAD"], "ES")
+        by_id = {item["id"]: item for item in self.catalog["resources"]}
+        self.assertTrue(applies_to(by_id["es-boe"], "ES", jurisdictions))
+        self.assertTrue(applies_to(by_id["ar-boletin"], "AR", jurisdictions))
+        self.assertTrue(applies_to(by_id["gb-companies-house"], "GB", jurisdictions))
+        self.assertTrue(applies_to(by_id["eu-eurlex"], "ES", jurisdictions))
+        self.assertFalse(applies_to(by_id["eu-eurlex"], "GB", jurisdictions))
+        spain = build_outputs(self.catalog, self.version)[Path(__file__).resolve().parents[1] / "docs/indices/jurisdiccion-es.md"]
+        self.assertIn("## Fuentes de un territorio más concreto", spain)
+        self.assertIn("Cámaras de tráfico del Ayuntamiento de Madrid", spain)
 
     def test_generation_is_deterministic(self) -> None:
         self.assertEqual(build_outputs(self.catalog, self.version), build_outputs(self.catalog, self.version))

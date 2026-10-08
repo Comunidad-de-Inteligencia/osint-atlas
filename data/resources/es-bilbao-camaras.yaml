@@ -1,0 +1,71 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 90
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+- El catálogo nacional titula el conjunto como tiempo real. No se leyó el intervalo de cada imagen.
+- Acceso, coste e idioma del fichero no se comprobaron.
+id: es-bilbao-camaras
+name: Cámaras de tráfico de Bilbao
+owner: Ayuntamiento de Bilbao
+jurisdictions:
+- ES-BI
+type: dataset
+tier: P1
+categories:
+- geoint
+- transporte
+- datos-abiertos
+scenarios:
+- image-geolocation
+- disaster-crisis
+url: https://datos.gob.es/es/catalogo/l01480209-camaras-de-trafico-de-bilbao-en-tiempo-real
+purpose: Localizar el conjunto municipal de cámaras de tráfico de Bilbao publicado en el catálogo de datos abiertos.
+inputs:
+- vía de Bilbao
+- fecha de consulta
+outputs:
+- ficha del conjunto
+- enlace a las cámaras que publique el Ayuntamiento
+usage: Entra por la ficha del catálogo y anota la fecha de actualización que veas. No des por hecho el intervalo.
+interpretation: Una cámara municipal muestra un punto de la calle. No identifica a una persona ni prueba un hecho.
+limitations: El título dice «en tiempo real» y esa frase no se contrastó con el fichero. El Ayuntamiento puede
+  apagar una cámara. La imagen no es una prueba.
+created_at: '2026-10-08'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- es-dgt-camaras
+references:
+- title: Cámaras de tráfico de Bilbao en tiempo real — datos.gob.es
+  url: https://datos.gob.es/es/catalogo/l01480209-camaras-de-trafico-de-bilbao-en-tiempo-real
+platforms: []
+maintenance_urls:
+- https://datos.gob.es/es/catalogo/l01480209-camaras-de-trafico-de-bilbao-en-tiempo-real
+input_types:
+- lugar
+output_types:
+- mapa
+- observacion
+example:
+  input: Se abre la ficha de una cámara ficticia de un puente de Bilbao, sin vehículos descritos.
+  steps:
+  - Anota la fecha de la ficha y que el intervalo no se leyó.
+  - No identifiques personas ni matrículas.
+  expected: La nota dice que el título habla de tiempo real y que el intervalo sigue pendiente.
+  interpretation: La cámara orienta sobre el tráfico de ese punto. No cierra un hecho.
+steps:
+- Abre la ficha del catálogo y sigue el enlace del Ayuntamiento.
+- Anota qué hora muestra la imagen.
+- No uses la captura para identificar a una persona.

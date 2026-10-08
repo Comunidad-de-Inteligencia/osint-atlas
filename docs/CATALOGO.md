@@ -1,7 +1,7 @@
 <!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->
 # Catálogo de fuentes
 
-Hay 84 fichas. Los metadatos pendientes se muestran expresamente; no se presuponen gratuitos ni en español.
+Hay 100 fichas. Los metadatos pendientes se muestran expresamente; no se presuponen gratuitos ni en español.
 
 ## Qué necesito hacer
 
@@ -25,19 +25,23 @@ Hay 84 fichas. Los metadatos pendientes se muestran expresamente; no se presupon
 ## En qué territorio
 
 - [Global](indices/jurisdiccion-global.md)
-- [Unión Europea](indices/jurisdiccion-eu.md)
-- [España](indices/jurisdiccion-es.md)
-- [País Vasco](indices/jurisdiccion-es-pv.md)
-- [Comunidad Foral de Navarra](indices/jurisdiccion-es-nc.md)
-- [Portugal](indices/jurisdiccion-pt.md)
-- [Francia](indices/jurisdiccion-fr.md)
-- [Alemania](indices/jurisdiccion-de.md)
-- [Italia](indices/jurisdiccion-it.md)
-- [Reino Unido](indices/jurisdiccion-gb.md)
-- [Brasil](indices/jurisdiccion-br.md)
-- [México](indices/jurisdiccion-mx.md)
-- [Colombia](indices/jurisdiccion-co.md)
-- [Argentina](indices/jurisdiccion-ar.md)
+  - [Europa](indices/jurisdiccion-europe.md)
+    - [Unión Europea](indices/jurisdiccion-eu.md)
+      - [España](indices/jurisdiccion-es.md)
+        - [País Vasco](indices/jurisdiccion-es-pv.md)
+          - [Bilbao](indices/jurisdiccion-es-bi.md)
+        - [Comunidad Foral de Navarra](indices/jurisdiccion-es-nc.md)
+        - [Madrid](indices/jurisdiccion-es-mad.md)
+      - [Portugal](indices/jurisdiccion-pt.md)
+      - [Francia](indices/jurisdiccion-fr.md)
+      - [Alemania](indices/jurisdiccion-de.md)
+      - [Italia](indices/jurisdiccion-it.md)
+    - [Reino Unido](indices/jurisdiccion-gb.md)
+  - [América](indices/jurisdiccion-america.md)
+    - [Brasil](indices/jurisdiccion-br.md)
+    - [México](indices/jurisdiccion-mx.md)
+    - [Colombia](indices/jurisdiccion-co.md)
+    - [Argentina](indices/jurisdiccion-ar.md)
 
 ## Qué información tengo
 

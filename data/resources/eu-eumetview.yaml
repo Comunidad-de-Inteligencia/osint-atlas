@@ -1,0 +1,73 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+- Acceso, coste e idioma no se comprobaron en el servicio.
+- La periodicidad de las imágenes meteorológicas no se contrastó en la página.
+id: eu-eumetview
+name: EUMETView
+owner: EUMETSAT
+jurisdictions:
+- EUROPE
+- GLOBAL
+type: map
+tier: P1
+categories:
+- geoint
+- medio-ambiente
+scenarios:
+- image-geolocation
+- disaster-crisis
+url: https://view.eumetsat.int/
+purpose: Ver imágenes meteorológicas de EUMETSAT para seguir nubes, tormentas o humo a escala amplia.
+inputs:
+- zona
+- hora
+- producto
+outputs:
+- imágenes meteorológicas
+- hora de la escena
+usage: Anota el satélite, el producto y la hora. No la uses como mapa de calles.
+interpretation: Sirve para el tiempo y para fenómenos grandes. No identifica una calle ni una persona.
+limitations: EUROPE marca al publicador europeo. GLOBAL se conserva porque la imagen puede consultarse
+  desde otros lugares; si se quitara, dejaría de aparecer fuera de Europa. La cadencia que se cita en
+  guías no se contrastó aquí. Una vista meteorológica no es una ortofoto.
+created_at: '2026-10-08'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- es-aemet
+references:
+- title: EUMETView — página responsable
+  url: https://view.eumetsat.int/
+platforms: []
+maintenance_urls:
+- https://view.eumetsat.int/
+input_types:
+- lugar
+output_types:
+- aviso
+- mapa
+example:
+  input: Se compara una mancha de nubes ficticia sobre una costa sin nombres de personas.
+  steps:
+  - Anota satélite, producto y hora de la escena.
+  - No envíes solicitudes ni datos personales en esta práctica.
+  expected: Queda anotada la hora y que la mancha no localiza un cruce.
+  interpretation: La imagen meteorológica no sustituye una ortofoto ni un aviso local.
+steps:
+- Elige zona y producto y anota la hora que muestra el visor.
+- Compara con un aviso meteorológico oficial si la pregunta es de emergencia.
+- Si la escena no cubre la hora buscada, dilo y no completes el hueco.

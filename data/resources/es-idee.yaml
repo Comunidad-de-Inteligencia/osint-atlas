@@ -1,0 +1,74 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+- Acceso, coste e idioma del directorio no se comprobaron en detalle.
+- El número de servicios WMS o WMTS no se contó en esta ficha.
+id: es-idee
+name: IDEE
+owner: Infraestructura de Datos Espaciales de España
+jurisdictions:
+- ES
+type: portal
+tier: P1
+categories:
+- geoint
+- datos-abiertos
+scenarios:
+- image-geolocation
+- disaster-crisis
+url: https://www.idee.es/
+purpose: Encontrar servicios de mapas de organismos españoles, como WMS o WMTS, y abrirlos en un SIG.
+inputs:
+- tema
+- organismo
+- zona
+outputs:
+- fichas de servicios
+- direcciones de mapas
+usage: Anota el organismo que publica la capa, la dirección y la fecha en que la consultas.
+interpretation: IDEE es un directorio. La capa sigue siendo del organismo que la publica.
+limitations: Un servicio listado puede estar caído o tener otra licencia. Esta ficha no cuenta cuántos
+  servicios hay. No sustituye al centro de descargas ni a una ortofoto concreta.
+created_at: '2026-10-08'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- es-cnig-pnoa
+- es-ign-geodesia
+references:
+- title: IDEE — página responsable
+  url: https://www.idee.es/
+- title: IDEE — directorio por tipo de servicio
+  url: https://www.idee.es/segun-tipo-de-servicio
+platforms: []
+maintenance_urls:
+- https://www.idee.es/
+input_types:
+- lugar
+output_types:
+- mapa
+- referencia
+example:
+  input: Se busca un servicio de ortofoto de un municipio ficticio y se anota solo la dirección del servicio.
+  steps:
+  - Copia la dirección y el nombre del publicador.
+  - No descargues una capa entera para este ejercicio.
+  expected: La nota dice qué servicio se encontró y quién lo publica.
+  interpretation: Encontrar la ficha no demuestra que la imagen sea de hoy.
+steps:
+- Busca por tema o por organismo en el directorio.
+- Abre la ficha del servicio y copia su dirección.
+- Comprueba en el organismo la fecha y la licencia antes de concluir.

@@ -6,7 +6,7 @@ from pathlib import Path
 from unittest.mock import patch
 from osint_atlas import catalog as cat,service,sync
 from osint_atlas.governance import route_review,review_decision
-from osint_atlas.maintenance import empty_state,advance,check_target,normalize_content,process_health
+from osint_atlas.maintenance import empty_state,advance,check_target,normalize_content,process_health,dashboard,resource_check_summary
 from tools.discover_candidates import select_candidates
 from tools.validate_docs import validate_document
 from tools.publish_maintenance_issue import stable_fingerprint,groups
@@ -18,7 +18,7 @@ class CatalogueV2Tests(unittest.TestCase):
         cls.catalog=cat.load_catalog()
 
     def test_unknown_metadata_and_sources(self):
-        self.assertEqual(len(self.catalog["resources"]),84)
+        self.assertEqual(len(self.catalog["resources"]),100)
         self.assertTrue(all(r["references"] and r["steps"] and r["example"]["expected"] for r in self.catalog["resources"]))
         de=next(r for r in self.catalog["resources"] if r["id"]=="de-handelsregister")
         self.assertNotIn("es",de["languages"])
@@ -94,7 +94,7 @@ class SearchV2Tests(unittest.TestCase):
             all_ids.extend(r["id"] for r in page["results"])
             if page["next_offset"] is None:break
             offset=page["next_offset"]
-        self.assertEqual(len(all_ids),84);self.assertEqual(len(set(all_ids)),84)
+        self.assertEqual(len(all_ids),100);self.assertEqual(len(set(all_ids)),100)
 
     def test_unknown_territory_and_alias(self):
         self.assertEqual(service.search_resources(jurisdiction="ZZ")["error"]["code"],"unknown_filter")
@@ -180,6 +180,20 @@ class MaintenanceV2Tests(unittest.TestCase):
         b={"actionable":[{"key":"same","kind":"editorial","etag":"two"}]}
         self.assertEqual(stable_fingerprint(a,"m"),stable_fingerprint(b,"m"))
         self.assertEqual(set(groups(a)),set(groups(b)))
+
+    def test_public_check_words_and_dates(self):
+        self.assertIn("Sin comprobación", dashboard(empty_state()))
+        state=empty_state()
+        state["checks"]["one"]={"id":"one","url":"https://example.org/a","status":"ok","checked_at":"2026-10-08T00:00:00+00:00","items":["resources:demo"]}
+        state["checks"]["two"]={"id":"two","url":"https://example.org/b","status":"auth-required","checked_at":"2026-10-07T00:00:00+00:00","items":[]}
+        state["checks"]["three"]={"id":"three","url":"https://example.org/c","status":"offline","checked_at":"2026-10-06T00:00:00+00:00","items":[]}
+        text=dashboard(state)
+        self.assertIn("**disponible**, 2026-10-08T00:00:00+00:00", text)
+        self.assertIn("**autenticación**, 2026-10-07T00:00:00+00:00", text)
+        self.assertIn("**sin respuesta**, 2026-10-06T00:00:00+00:00", text)
+        resource={"id":"demo","url":"https://example.org/missing","maintenance_urls":["https://example.org/a"]}
+        self.assertEqual(resource_check_summary(resource, None), "Última comprobación: **sin comprobación**.")
+        self.assertIn("**disponible** (2026-10-08T00:00:00+00:00)", resource_check_summary(resource, state))
 
 
 class GovernanceV2Tests(unittest.TestCase):

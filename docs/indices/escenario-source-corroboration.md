@@ -11,6 +11,8 @@ Separar hechos, observaciones e inferencias y mantener su procedencia.
 
 - [Internet Archive Wayback Machine](../fuentes/global-wayback.md) — Consultar capturas históricas de páginas públicas.
 - [INTERPOL Red Notices](../fuentes/global-interpol-notices.md) — Consultar notificaciones públicas seleccionadas de INTERPOL.
+- [OpenSky Network](../fuentes/global-opensky.md) — Consultar trayectorias públicas de aviación recibidas por la red OpenSky, cuando el servicio responde.
+- [Overpass Turbo](../fuentes/global-overpass.md) — Consultar objetos de OpenStreetMap con una pregunta geográfica, sin tratar el resultado como mapa oficial.
 - [VirusTotal](../fuentes/global-virustotal.md) — Consultar señales agregadas sobre dominios, IP, URLs y archivos.
 
 ## Unión Europea

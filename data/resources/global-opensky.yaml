@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+- El 8 de octubre de 2026 la página no completó la conexión desde este entorno. Acceso, coste e idioma siguen
+  sin comprobar.
+id: global-opensky
+name: OpenSky Network
+owner: OpenSky Network
+jurisdictions:
+- GLOBAL
+type: portal
+tier: P3
+categories:
+- geoint
+- transporte
+scenarios:
+- image-geolocation
+- source-corroboration
+url: https://opensky-network.org/
+purpose: Consultar trayectorias públicas de aviación recibidas por la red OpenSky, cuando el servicio responde.
+inputs:
+- zona
+- intervalo
+- identificador de vuelo publicado
+outputs:
+- trayectorias o estados publicados
+- hora de la recepción
+usage: Anota la hora y que la cobertura depende de receptores. No la uses para navegar.
+interpretation: Un trazo es lo que un receptor publicó. Puede faltar un vuelo o llegar tarde.
+limitations: No es un servicio de seguridad aérea. La página no respondió en la comprobación de esta ficha.
+  No identifica personas a bordo.
+created_at: '2026-10-08'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives: []
+references:
+- title: OpenSky Network — página responsable
+  url: https://opensky-network.org/
+platforms: []
+maintenance_urls:
+- https://opensky-network.org/
+input_types:
+- lugar
+output_types:
+- observacion
+- mapa
+example:
+  input: Se busca si un corredor aéreo ficticio tiene estados publicados en una hora, sin matrícula de persona.
+  steps:
+  - Anota la hora de los estados y la zona.
+  - No uses el dato para seguir a alguien.
+  expected: Se anota si hubo estados y se deja constancia de que pueden faltar vuelos.
+  interpretation: OpenSky no demuestra quién viaja ni que un silencio sea un vuelo ausente.
+steps:
+- Acota hora y zona antes de leer.
+- Conserva la hora de recepción que muestre el servicio.
+- Si la página no abre, no concluyas que no hubo tráfico.

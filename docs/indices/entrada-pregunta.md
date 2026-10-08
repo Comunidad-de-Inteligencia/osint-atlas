@@ -6,6 +6,7 @@ Selecciona una fuente y comprueba territorio, límites y resultados esperados.
 - [Aena Información de Aeropuertos](../fuentes/es-aena.md) — Consultar aeropuertos, vuelos publicados y avisos operativos.
 - [Buscador de Jurisprudencia CENDOJ](../fuentes/es-cendoj.md) — Localizar resoluciones judiciales publicadas por el poder judicial.
 - [CCN-CERT](../fuentes/es-ccn-cert.md) — Consultar alertas, guías y metodología institucional de ciberseguridad.
+- [CelesTrak](../fuentes/global-celestrak.md) — Consultar elementos orbitales públicos para estimar dónde está un satélite, no qué imagen toma.
 - [CNMV](../fuentes/es-cnmv.md) — Consultar información regulada de emisores y entidades supervisadas.
 - [data.europa.eu](../fuentes/eu-data-portal.md) — Descubrir datos abiertos de instituciones europeas y países participantes.
 - [data.gouv.fr](../fuentes/fr-data-gouv.md) — Descubrir datos abiertos franceses.
