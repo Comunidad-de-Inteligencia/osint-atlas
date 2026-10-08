@@ -64,4 +64,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 
 - [DGT Datos Abiertos — página responsable](https://www.dgt.es/menusecundario/dgt-en-cifras/)
 
-Versión: 3881764316ce9a58. [Volver al catálogo](../CATALOGO.md).
+Versión: f284f49148a09ea0. [Volver al catálogo](../CATALOGO.md).

@@ -33,4 +33,4 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           PR_NUMBER: ${{ github.event.pull_request.number || github.event.issue.number || inputs.pr }}
-        run: uv run python tools/review_gate.py --pr "$PR_NUMBER" --publish
+        run: uv run python tools/review_gate.py --repo "$GITHUB_REPOSITORY" --pr "$PR_NUMBER" --publish

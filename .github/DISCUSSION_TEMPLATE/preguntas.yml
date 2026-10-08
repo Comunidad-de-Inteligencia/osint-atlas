@@ -1,3 +1,5 @@
+name: Preguntas y Respuestas / Q&A
+description: Pregunta sobre cómo leer el catálogo. No pegues casos ni datos personales.
 title: "Pregunta: "
 body:
   - type: markdown

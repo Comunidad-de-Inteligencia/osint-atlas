@@ -3,7 +3,7 @@ import argparse,base64,json,os,subprocess,sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]; sys.path.insert(0,str(ROOT/"src"))
 from osint_atlas.maintenance import read_state,dashboard
-REPO="P3M-ACTF/osint-atlas"
+REPO=os.environ.get("GITHUB_REPOSITORY","Comunidad-de-Inteligencia/osint-atlas")
 BRANCH="maintenance-state"
 
 
@@ -18,6 +18,7 @@ def api(path,method="GET",payload=None,optional=False):
 
 
 def publish_state(path):
+    if REPO not in {"Comunidad-de-Inteligencia/osint-atlas","P3M-ACTF/osint-atlas"}: raise ValueError("Repositorio no autorizado")
     state=read_state(path)
     if not state["processes"]: raise ValueError("No se publican estados sin ninguna ejecución")
     previous=api(f"git/ref/heads/{BRANCH}",optional=True)
