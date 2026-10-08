@@ -7,9 +7,15 @@ jurisdictions:
   - en
   - es
   notes: Recursos sin una jurisdicción única; verificar siempre la disponibilidad local.
+- id: EUROPE
+  name: Europa
+  parent: GLOBAL
+  languages:
+  - multilingual
+  notes: Agrupa la Unión Europea y el Reino Unido. El Reino Unido no forma parte de la Unión Europea.
 - id: EU
   name: Unión Europea
-  parent: GLOBAL
+  parent: EUROPE
   languages:
   - multilingual
   notes: Distinguir normativa y servicios comunes de las implementaciones nacionales.
@@ -22,7 +28,7 @@ jurisdictions:
   - eu
   - gl
   notes: Distinguir Estado, comunidades autónomas, provincias y municipios. Catastro estatal excluye País
-    Vasco y Navarra.
+    Vasco y Navarra. Madrid, Bilbao y Navarra tienen nodo propio solo porque hay una ficha de ese territorio.
 - id: ES-PV
   name: País Vasco
   parent: ES
@@ -30,6 +36,13 @@ jurisdictions:
   - es
   - eu
   notes: Cuenta con administraciones forales y sistemas catastrales propios.
+- id: ES-BI
+  name: Bilbao
+  parent: ES-PV
+  languages:
+  - es
+  - eu
+  notes: Municipio. El nodo existe porque hay una ficha de cámaras municipales, no como provincia vacía.
 - id: ES-NC
   name: Comunidad Foral de Navarra
   parent: ES
@@ -37,6 +50,13 @@ jurisdictions:
   - es
   - eu
   notes: Cuenta con Hacienda y Registro de la Riqueza Territorial propios.
+- id: ES-MAD
+  name: Madrid
+  parent: ES
+  languages:
+  - es
+  notes: Municipio de Madrid. El nodo existe porque hay una ficha de cámaras del Ayuntamiento, no como
+    comunidad vacía.
 - id: PT
   name: Portugal
   parent: EU
@@ -59,26 +79,34 @@ jurisdictions:
   - it
 - id: GB
   name: Reino Unido
-  parent: GLOBAL
+  parent: EUROPE
   languages:
   - en
+  notes: No es un Estado miembro de la Unión Europea. Su padre es Europa, no la Unión Europea.
+- id: AMERICA
+  name: América
+  parent: GLOBAL
+  languages:
+  - es
+  - pt
+  notes: Agrupa Argentina, Brasil, Colombia y México, que ya tienen fichas. No crea un procedimiento común.
 - id: BR
   name: Brasil
-  parent: GLOBAL
+  parent: AMERICA
   languages:
   - pt
 - id: MX
   name: México
-  parent: GLOBAL
+  parent: AMERICA
   languages:
   - es
 - id: CO
   name: Colombia
-  parent: GLOBAL
+  parent: AMERICA
   languages:
   - es
 - id: AR
   name: Argentina
-  parent: GLOBAL
+  parent: AMERICA
   languages:
   - es

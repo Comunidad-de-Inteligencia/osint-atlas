@@ -24,6 +24,13 @@ El mantenimiento comprueba documentación aprobada, conserva resultados y prepar
 
 Las peticiones usan límites por dominio y reintentos moderados. Las respuestas no se ejecutan ni se adoptan como instrucciones. No se descargan avisos personales ni contenido de casos: las fuentes sensibles tienen direcciones de mantenimiento documental específicas.
 
+El informe y cada ficha resumen la última comprobación con una palabra y una fecha. La palabra sale del estado publicado. No se copia al YAML.
+
+- **disponible:** la página respondió (ok, redirected, not-modified o partial).
+- **sin respuesta:** no hubo respuesta utilizable (offline, temporary-error, blocked, rate-limited o retired).
+- **autenticación:** el servicio pidió identificarse (auth-required).
+- **sin comprobación:** no hay una ejecución publicada para esa página, o el catálogo se generó sin el estado.
+
 ## Qué se conserva
 
 La rama separada maintenance-state contiene estado técnico e informe legible. Guarda última ejecución, huellas, cabeceras de caché, fallos consecutivos e incidencias. El historial resumido dura 90 días; los artefactos de Actions, siete. No conserva cuerpos completos de páginas.

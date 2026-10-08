@@ -85,6 +85,12 @@
       "url": "https://www.ccn-cert.cni.es/"
     },
     {
+      "id": "global-celestrak",
+      "name": "CelesTrak",
+      "text": "Consultar elementos orbitales públicos para estimar dónde está un satélite, no qué imagen toma. Anota el nombre del conjunto y la época. No dibujes esa posición como si fuera una foto. nombre del satélite fecha elementos orbitales época del elemento",
+      "url": "https://celestrak.org/"
+    },
+    {
       "id": "es-cnig-pnoa",
       "name": "Centro de Descargas CNIG y PNOA",
       "text": "Obtener cartografía, ortofotos, modelos de terreno y LiDAR oficiales. Elegir producto, fecha y resolución adecuados y conservar sus metadatos. área producto fecha ortofotos cartografía modelos de elevación",
@@ -111,7 +117,7 @@
     {
       "id": "eu-copernicus",
       "name": "Copernicus Data Space Ecosystem",
-      "text": "Acceder a observación terrestre Sentinel y productos Copernicus. Registrar misión, producto, fecha, cobertura nubosa y transformación aplicada. área intervalo sensor imágenes satelitales productos derivados",
+      "text": "Consultar escenas Sentinel. El navegador sirve para mirar una escena. El Data Space es el acceso a los productos. Registrar misión, producto, fecha, cobertura nubosa y transformación aplicada. área intervalo sensor imágenes satelitales productos derivados",
       "url": "https://dataspace.copernicus.eu/"
     },
     {
@@ -119,6 +125,30 @@
       "name": "Copernicus Emergency Management Service",
       "text": "Consultar cartografía y activaciones de respuesta a desastres. Citar código de activación, producto, fecha y versión. evento lugar fecha mapas de emergencia productos de activación",
       "url": "https://emergency.copernicus.eu/"
+    },
+    {
+      "id": "eu-copernicus-marine",
+      "name": "Copernicus Marine",
+      "text": "Consultar productos marinos de Copernicus, como corrientes, temperatura o nivel del mar. Anota la variable, la profundidad si existe, y la fecha del producto. zona marina fecha variable mapas o series marinas metadatos del producto",
+      "url": "https://marine.copernicus.eu/"
+    },
+    {
+      "id": "es-bilbao-camaras",
+      "name": "Cámaras de tráfico de Bilbao",
+      "text": "Localizar el conjunto municipal de cámaras de tráfico de Bilbao publicado en el catálogo de datos abiertos. Entra por la ficha del catálogo y anota la fecha de actualización que veas. No des por hecho el intervalo. vía de Bilbao fecha de consulta ficha del conjunto enlace a las cámaras que publique el Ayuntamiento",
+      "url": "https://datos.gob.es/es/catalogo/l01480209-camaras-de-trafico-de-bilbao-en-tiempo-real"
+    },
+    {
+      "id": "es-madrid-camaras",
+      "name": "Cámaras de tráfico del Ayuntamiento de Madrid",
+      "text": "Consultar la posición y las capturas de las cámaras fijas de tráfico que publica el Ayuntamiento de Madrid. Anota la cámara y la hora. La ficha municipal consultada habla de una captura cada cinco minutos. vía fecha de consulta posición de cámaras captura de imagen",
+      "url": "https://datos.madrid.es/dataset/202088-0-trafico-camaras"
+    },
+    {
+      "id": "es-dgt-camaras",
+      "name": "Cámaras del Punto de Acceso Nacional de la DGT",
+      "text": "Consultar el punto de acceso nacional de tráfico para localizar cámaras y datos de la red que publica la DGT. Anota la carretera, la hora de la imagen y que es una cámara de tráfico. carretera fecha de consulta localización de cámaras publicadas imagen o dato de tráfico si el servicio lo muestra",
+      "url": "https://nap.dgt.es/"
     },
     {
       "id": "br-cnpj-abertos",
@@ -193,6 +223,18 @@
       "url": "https://echa.europa.eu/information-on-chemicals"
     },
     {
+      "id": "eu-effis",
+      "name": "EFFIS",
+      "text": "Consultar el sistema europeo de información sobre incendios forestales como panorama de fuegos. Cita la fecha del producto y la zona. No lo uses como orden de evacuación. zona fecha tipo de aviso perímetros o puntos de incendio publicados fecha del producto",
+      "url": "https://forest-fire.emergency.copernicus.eu/"
+    },
+    {
+      "id": "global-esa-snap",
+      "name": "ESA SNAP",
+      "text": "Descargar el programa de escritorio SNAP para abrir y revisar productos Sentinel en el equipo de quien consulta. Instálalo aparte. Anota misión, producto y fecha. Este repositorio no lo incluye. producto Sentinel ya obtenido pregunta sobre una escena lectura local de un producto notas de quien analiza",
+      "url": "https://step.esa.int/main/download/snap-download/"
+    },
+    {
       "id": "eu-sanctions-map",
       "name": "EU Sanctions Map",
       "text": "Explorar regímenes de sanciones adoptados por la UE. Usar el mapa para localizar el acto jurídico y verificarlo en EUR-Lex. país régimen entidad medidas referencias jurídicas",
@@ -203,6 +245,12 @@
       "name": "EUIPO eSearch plus",
       "text": "Consultar marcas y diseños de la Unión Europea. Buscar variantes y comprobar estado y fechas procesales. signo titular número expedientes estado titulares publicados",
       "url": "https://euipo.europa.eu/eSearch/"
+    },
+    {
+      "id": "eu-eumetview",
+      "name": "EUMETView",
+      "text": "Ver imágenes meteorológicas de EUMETSAT para seguir nubes, tormentas o humo a escala amplia. Anota el satélite, el producto y la hora. No la uses como mapa de calles. zona hora producto imágenes meteorológicas hora de la escena",
+      "url": "https://view.eumetsat.int/"
     },
     {
       "id": "eu-eurlex",
@@ -247,6 +295,12 @@
       "url": "https://globalmissingkids.org/"
     },
     {
+      "id": "global-gods-eye-view",
+      "name": "God's Eye View",
+      "text": "Consultar un visor experimental que reúne fuentes públicas en un globo. No es una herramienta de este repositorio. Úsalo para encontrar una fuente y ábrela en su página. No cierres un análisis en el globo. capa pública zona vista combinada de fuentes ajenas pista hacia la fuente original",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view"
+    },
+    {
       "id": "es-guardia-civil-delitos-telematicos",
       "name": "Guardia Civil - Delitos telemáticos",
       "text": "Consultar orientación y vías oficiales ante delitos cometidos mediante Internet. Distinguir información general, colaboración y denuncia; ante urgencia usar {{contact:eu-112}}. hechos referencias orientación acceso a denuncia o comunicación",
@@ -257,6 +311,12 @@
       "name": "Handelsregister",
       "text": "Consultar registros mercantiles alemanes. Seleccionar registro, tipo y número de hoja cuando se conozcan. nombre número registral sede datos registrales documentos disponibles",
       "url": "https://www.handelsregister.de/"
+    },
+    {
+      "id": "es-idee",
+      "name": "IDEE",
+      "text": "Encontrar servicios de mapas de organismos españoles, como WMS o WMTS, y abrirlos en un SIG. Anota el organismo que publica la capa, la dirección y la fecha en que la consultas. tema organismo zona fichas de servicios direcciones de mapas",
+      "url": "https://www.idee.es/"
     },
     {
       "id": "es-ign-geodesia",
@@ -337,6 +397,18 @@
       "url": "https://www.miteco.gob.es/es/cartografia-y-sig/ide/descargas.html"
     },
     {
+      "id": "global-nasa-firms",
+      "name": "NASA FIRMS",
+      "text": "Consultar detecciones de fuego activo publicadas por NASA FIRMS como primer vistazo. Anota sensor, fecha y confianza si el visor la muestra. Contrasta con una fuente local. zona fecha sensor detecciones de fuego fecha de la pasada",
+      "url": "https://firms.modaps.eosdis.nasa.gov/"
+    },
+    {
+      "id": "global-nasa-worldview",
+      "name": "NASA Worldview",
+      "text": "Explorar capas de observación de la Tierra de NASA, con fecha, para comparar una escena amplia. Anota la capa y el día. No la trates como un callejero ni como tiempo real. zona fecha capa vista de una capa fechada nombre de la capa",
+      "url": "https://worldview.earthdata.nasa.gov/"
+    },
+    {
       "id": "us-ncmec-cybertipline",
       "name": "NCMEC CyberTipline",
       "text": "Comunicar sospechas de explotación sexual infantil a NCMEC cuando corresponda. Comprobar jurisdicción; no descargar ni redistribuir contenido. tipo de incidente referencias mínimas reporte para revisión y derivación",
@@ -349,10 +421,22 @@
       "url": "https://www.oepm.es/"
     },
     {
+      "id": "global-opensky",
+      "name": "OpenSky Network",
+      "text": "Consultar trayectorias públicas de aviación recibidas por la red OpenSky, cuando el servicio responde. Anota la hora y que la cobertura depende de receptores. No la uses para navegar. zona intervalo identificador de vuelo publicado trayectorias o estados publicados hora de la recepción",
+      "url": "https://opensky-network.org/"
+    },
+    {
       "id": "global-osm",
       "name": "OpenStreetMap",
       "text": "Consultar cartografía colaborativa y objetos geográficos. Corroborar elementos con fuentes primarias o imágenes recientes. topónimo coordenadas etiqueta geometrías etiquetas historial",
       "url": "https://www.openstreetmap.org/"
+    },
+    {
+      "id": "global-overpass",
+      "name": "Overpass Turbo",
+      "text": "Consultar objetos de OpenStreetMap con una pregunta geográfica, sin tratar el resultado como mapa oficial. Guarda la consulta y la fecha. Contrasta los objetos con una fuente primaria o una ortofoto fechada. zona tipo de objeto geometrías y etiquetas de OpenStreetMap consulta utilizada",
+      "url": "https://overpass-turbo.eu/"
     },
     {
       "id": "es-placsp",
@@ -481,10 +565,22 @@
       "url": "https://support.tiktok.com/es/safety-hc/report-a-problem/report-a-video"
     },
     {
+      "id": "es-navarra-trafico",
+      "name": "Tráfico de Navarra",
+      "text": "Consultar la página de tráfico de Navarra para incidencias y, si el visor las ofrece, cámaras de carretera. Anota la hora de la página. No des por hecho una cámara hasta verla en el visor. carretera de Navarra fecha de consulta incidencias publicadas cámaras si el visor las muestra",
+      "url": "https://www.navarra.es/es/trafico"
+    },
+    {
       "id": "global-un-data",
       "name": "UNdata",
       "text": "Descubrir estadísticas compiladas por organismos de Naciones Unidas. Seguir la serie hasta el organismo que la produce y conservar notas metodológicas. indicador país periodo tablas series fuente productora",
       "url": "https://data.un.org/"
+    },
+    {
+      "id": "global-usgs-landsat",
+      "name": "USGS Landsat",
+      "text": "Orientarse en la misión Landsat y llegar a sus escenas ópticas históricas y recientes. Anota sensor, fecha y nivel de producto. El visor LandsatLook es una puerta distinta de la página de la misión. zona fecha sensor escenas Landsat metadatos de la escena",
+      "url": "https://www.usgs.gov/landsat-missions"
     },
     {
       "id": "global-virustotal",
@@ -505,5 +601,5 @@
       "url": "https://help.x.com/es/safety-and-security/report-a-tweet"
     }
   ],
-  "version": "e23dc83633770515"
+  "version": "cb8f12dd34cd99fb"
 }

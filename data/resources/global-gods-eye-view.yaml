@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. El repositorio de terceros no es software de este catálogo.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+- Acceso, coste e idioma no se comprobaron más allá de la página del repositorio.
+id: global-gods-eye-view
+name: God's Eye View
+owner: Proyecto público gods-eye-view
+jurisdictions:
+- GLOBAL
+type: tool
+tier: P4
+categories:
+- geoint
+scenarios:
+- image-geolocation
+- disaster-crisis
+url: https://github.com/bilawalsidhu/gods-eye-view
+purpose: Consultar un visor experimental que reúne fuentes públicas en un globo. No es una herramienta de este repositorio.
+inputs:
+- capa pública
+- zona
+outputs:
+- vista combinada de fuentes ajenas
+- pista hacia la fuente original
+usage: Úsalo para encontrar una fuente y ábrela en su página. No cierres un análisis en el globo.
+interpretation: El globo superpone señales de otros sitios. Un marcador de satélite no es la imagen de ese satélite.
+limitations: No sirve para una operación crítica ni para una emergencia. Puede mezclar datos retrasados, modelos
+  y posiciones estimadas. No identifica personas. No forma parte de OSINT Atlas.
+created_at: '2026-10-08'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- eu-copernicus
+- global-osm
+- global-celestrak
+references:
+- title: God's Eye View — repositorio público
+  url: https://github.com/bilawalsidhu/gods-eye-view
+platforms: []
+maintenance_urls:
+- https://github.com/bilawalsidhu/gods-eye-view
+input_types:
+- lugar
+output_types:
+- mapa
+- referencia
+example:
+  input: Se mira un globo ficticio y se anota qué capa viene de un servicio con ficha y cuál no.
+  steps:
+  - Apunta la fuente de cada capa antes de creer la vista.
+  - Abre esa fuente en su página, no solo en el globo.
+  expected: La nota dice que el marcador no es una imagen en directo.
+  interpretation: El visor enseña a cruzar fuentes. No las sustituye.
+steps:
+- Abre el repositorio y lee qué fuentes dice usar.
+- Contrasta cada señal en la ficha o la página de origen.
+- No uses el globo como prueba ni como imagen en directo.

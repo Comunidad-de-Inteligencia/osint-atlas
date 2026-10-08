@@ -10,8 +10,9 @@ Evaluar lugar y momento probables mediante señales reproducibles.
 2. Observa texto, relieve, arquitectura, vegetación, sombras, clima y elementos viales.
 3. Formula varias hipótesis de ubicación antes de buscar coincidencias.
 4. Contrasta topónimos y geometría con mapas y ortofotos fechadas.
-5. Comprueba meteorología y posición solar solo como apoyo.
-6. Busca al menos dos rasgos independientes y explica las alternativas descartadas.
+5. Elige una ortofoto o una escena Sentinel con fecha. Anota la resolución y la latencia. Un visor tridimensional no sirve como prueba.
+6. Comprueba meteorología y posición solar solo como apoyo.
+7. Busca al menos dos rasgos independientes y explica las alternativas descartadas.
 
 ## Ejemplo ficticio
 

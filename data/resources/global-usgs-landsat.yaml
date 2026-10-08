@@ -1,0 +1,73 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+- Acceso, coste e idioma no se comprobaron en la misión ni en el visor.
+id: global-usgs-landsat
+name: USGS Landsat
+owner: Servicio Geológico de Estados Unidos
+jurisdictions:
+- GLOBAL
+type: map
+tier: P1
+categories:
+- geoint
+- datos-abiertos
+scenarios:
+- image-geolocation
+- disaster-crisis
+url: https://www.usgs.gov/landsat-missions
+purpose: Orientarse en la misión Landsat y llegar a sus escenas ópticas históricas y recientes.
+inputs:
+- zona
+- fecha
+- sensor
+outputs:
+- escenas Landsat
+- metadatos de la escena
+usage: Anota sensor, fecha y nivel de producto. El visor LandsatLook es una puerta distinta de la página de la misión.
+interpretation: Una escena Landsat tiene fecha y resolución. No es una imagen en directo ni una ortofoto nacional.
+limitations: El organismo está en Estados Unidos y el catálogo no tiene nodo de ese país. GLOBAL se mantiene
+  porque las escenas cubren otros territorios. La licencia y el retraso de cada producto siguen pendientes.
+created_at: '2026-10-08'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- eu-copernicus
+- global-nasa-worldview
+references:
+- title: USGS Landsat Missions — página responsable
+  url: https://www.usgs.gov/landsat-missions
+- title: LandsatLook
+  url: https://landsatlook.usgs.gov/
+platforms: []
+maintenance_urls:
+- https://www.usgs.gov/landsat-missions
+- https://landsatlook.usgs.gov/
+input_types:
+- lugar
+output_types:
+- mapa
+example:
+  input: Se busca una escena ficticia de un valle sin edificaciones identificables, en un mes concreto.
+  steps:
+  - Anota identificador de escena, sensor y fecha.
+  - No la superpongas a un domicilio.
+  expected: La nota distingue la escena de una ortofoto más reciente.
+  interpretation: Landsat muestra cambios amplios. No detalla una fachada.
+steps:
+- Parte de la página de la misión y abre el visor solo para elegir una escena.
+- Conserva identificador, fecha y sensor.
+- No llames actual a una escena de otro año.

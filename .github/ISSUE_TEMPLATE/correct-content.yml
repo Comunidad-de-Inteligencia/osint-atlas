@@ -1,0 +1,26 @@
+name: Correct content
+description: Report a checkable change without publishing sensitive information.
+title: "Correction: "
+labels: [maintenance]
+body:
+  - type: markdown
+    attributes:
+      value: "For contacts or sensitive procedures, give only the official page that should be reviewed. Do not copy victim data or illegal content."
+  - type: input
+    id: entry
+    attributes:
+      label: Identifier or document
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed change
+    validations:
+      required: true
+  - type: input
+    id: reference
+    attributes:
+      label: Official reference
+    validations:
+      required: true

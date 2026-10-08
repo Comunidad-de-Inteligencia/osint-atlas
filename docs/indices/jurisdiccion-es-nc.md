@@ -7,7 +7,7 @@ Cuenta con Hacienda y Registro de la Riqueza Territorial propios.
 
 ### Investigar una empresa
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 15.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 0; apoyo general: 15.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -18,7 +18,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Contratos y subvenciones
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 4.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 0; apoyo general: 4.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -29,7 +29,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Publicaciones oficiales
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 3.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 0; apoyo general: 3.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -40,7 +40,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Huella pública de un dominio
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 5.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 0; apoyo general: 5.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -51,7 +51,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Verificar una imagen y su ubicación
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 6.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 1; apoyo general: 19.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -62,7 +62,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Contrastar y documentar conclusiones
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 17.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 0; apoyo general: 19.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -73,7 +73,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Verificar una afirmación jurídica
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 4.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 0; apoyo general: 4.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -84,7 +84,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Verificar una afirmación estadística
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 11.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 0; apoyo general: 11.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -95,7 +95,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Desaparición de adulto o persona vulnerable
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 6.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 0; apoyo general: 6.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -107,7 +107,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Desaparición de menor
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 9.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 0; apoyo general: 9.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -119,7 +119,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Emergencia inmediata
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 3.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 0; apoyo general: 3.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -131,7 +131,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Desastres y crisis
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 14.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 1; apoyo general: 23.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -142,7 +142,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Grooming y sextorsión
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 10.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 0; apoyo general: 10.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -154,7 +154,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Violencia sexual digital
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 8.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 0; apoyo general: 8.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -166,7 +166,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Posible material de abuso sexual infantil
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 6.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 0; apoyo general: 6.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -178,7 +178,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ### Telegram y otras plataformas
 
-Estado a 2026-09-13: **pendiente**. Fuentes locales: 0; apoyo general: 8.
+Estado a 2026-10-08: **pendiente**. Fuentes locales: 0; apoyo general: 8.
 Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 - Faltan fuentes revisadas específicamente para este territorio.
@@ -190,6 +190,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 
 ## Fuentes del territorio
 
+- [Tráfico de Navarra](../fuentes/es-navarra-trafico.md)
 
 ## Apoyo de otras coberturas
 
@@ -205,24 +206,32 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 - [Buscador de Jurisprudencia CENDOJ](../fuentes/es-cendoj.md)
 - [Canal prioritario de la AEPD](../fuentes/es-aepd-canal-prioritario.md)
 - [CCN-CERT](../fuentes/es-ccn-cert.md)
+- [CelesTrak](../fuentes/global-celestrak.md)
 - [Centro de Descargas CNIG y PNOA](../fuentes/es-cnig-pnoa.md)
 - [Centro Nacional de Desaparecidos](../fuentes/es-cndes-desaparecidos.md)
 - [CNMV](../fuentes/es-cnmv.md)
 - [Copernicus Data Space Ecosystem](../fuentes/eu-copernicus.md)
 - [Copernicus Emergency Management Service](../fuentes/eu-erascc-emergency-mapping.md)
+- [Copernicus Marine](../fuentes/eu-copernicus-marine.md)
+- [Cámaras del Punto de Acceso Nacional de la DGT](../fuentes/es-dgt-camaras.md)
 - [data.europa.eu](../fuentes/eu-data-portal.md)
 - [datos.gob.es](../fuentes/es-datos-gob.md)
 - [DGT Datos Abiertos](../fuentes/es-dgt-datos.md)
 - [ECHA Information on Chemicals](../fuentes/eu-echa.md)
+- [EFFIS](../fuentes/eu-effis.md)
+- [ESA SNAP](../fuentes/global-esa-snap.md)
 - [EU Sanctions Map](../fuentes/eu-sanctions-map.md)
 - [EUIPO eSearch plus](../fuentes/eu-euipo.md)
+- [EUMETView](../fuentes/eu-eumetview.md)
 - [EUR-Lex](../fuentes/eu-eurlex.md)
 - [Europol - Report Cybercrime](../fuentes/eu-europol-cybercrime.md)
 - [Eurostat](../fuentes/eu-eurostat.md)
 - [GLEIF LEI Search](../fuentes/global-gleif.md)
 - [Global Disaster Alert and Coordination System](../fuentes/global-gdacs.md)
 - [Global Missing Children's Network](../fuentes/global-missing-children-network.md)
+- [God's Eye View](../fuentes/global-gods-eye-view.md)
 - [Guardia Civil - Delitos telemáticos](../fuentes/es-guardia-civil-delitos-telematicos.md)
+- [IDEE](../fuentes/es-idee.md)
 - [IGN Información Geográfica](../fuentes/es-ign-geodesia.md)
 - [INCIBE](../fuentes/es-incibe.md)
 - [INE Datos Abiertos](../fuentes/es-ine.md)
@@ -235,9 +244,13 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 - [Línea europea para menores desaparecidos](../fuentes/eu-missing-116000.md)
 - [Meta Safety Center - Reporting](../fuentes/global-meta-safety.md)
 - [MITECO Datos y Cartografía](../fuentes/es-miteco-datos.md)
+- [NASA FIRMS](../fuentes/global-nasa-firms.md)
+- [NASA Worldview](../fuentes/global-nasa-worldview.md)
 - [NCMEC CyberTipline](../fuentes/us-ncmec-cybertipline.md)
 - [OEPM y Consulta de Expedientes](../fuentes/es-oepm.md)
+- [OpenSky Network](../fuentes/global-opensky.md)
 - [OpenStreetMap](../fuentes/global-osm.md)
+- [Overpass Turbo](../fuentes/global-overpass.md)
 - [Plataforma de Contratación del Sector Público](../fuentes/es-placsp.md)
 - [Policía Nacional - Denuncias](../fuentes/es-policia-denuncias.md)
 - [Portal de Transparencia de la AGE](../fuentes/es-transparencia.md)
@@ -255,6 +268,7 @@ Responsable: por asignar; suplente: por asignar; revisión: pendiente.
 - [Tenders Electronic Daily](../fuentes/eu-ted.md)
 - [TikTok - Reportar contenido](../fuentes/global-tiktok-report.md)
 - [UNdata](../fuentes/global-un-data.md)
+- [USGS Landsat](../fuentes/global-usgs-landsat.md)
 - [VirusTotal](../fuentes/global-virustotal.md)
 - [World Bank Open Data](../fuentes/global-world-bank.md)
 - [X Help Center - Reportar](../fuentes/global-x-report.md)

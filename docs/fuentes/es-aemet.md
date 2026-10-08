@@ -37,7 +37,7 @@ Separar observación, predicción y aviso; no extrapolar una estación a todo un
 
 ## Limitaciones y alternativas
 
-Requiere clave y algunas URLs de descarga son temporales.
+Requiere clave y algunas URLs de descarga son temporales. Una predicción o un modelo no es una observación medida en ese punto.
 
 Resultados que puede ofrecer: observaciones, avisos, series meteorológicas.
 
@@ -56,6 +56,7 @@ Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **p
 Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 días.
 
 [Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+Última comprobación: **sin comprobación**.
 
 ## Referencias
 
@@ -63,4 +64,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 dí
 - Observación de languages, 2026-09-13: [página comprobada](https://opendata.aemet.es/centrodedescargas/inicio). Idiomas observados en la página consultada; no certifica todos sus servicios. No equivale a aprobación humana.
 - Observación de access, 2026-09-13: [página comprobada](https://opendata.aemet.es/centrodedescargas/inicio). El centro de descargas ofrece solicitar una API key. No equivale a aprobación humana.
 
-Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).
+Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).

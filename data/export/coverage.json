@@ -1,7 +1,7 @@
 {
   "coverage": [
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -19,7 +19,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 1,
+      "jurisdiction": "EUROPE",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 1,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -37,7 +55,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -55,7 +73,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -73,7 +91,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 15,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 15,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -91,7 +127,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 15,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 15,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -109,7 +163,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -127,7 +181,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -145,7 +199,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -163,7 +217,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -181,7 +235,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 1,
+      "jurisdiction": "AMERICA",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 1,
+      "scenario": "business",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -199,7 +271,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -217,7 +289,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -235,7 +307,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -253,7 +325,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -271,7 +343,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 0,
+      "jurisdiction": "EUROPE",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 0,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -289,7 +379,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -307,7 +397,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -325,7 +415,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 4,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 4,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -343,7 +451,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 4,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 4,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -361,7 +487,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -379,7 +505,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -397,7 +523,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -415,7 +541,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -433,7 +559,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 0,
+      "jurisdiction": "AMERICA",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 0,
+      "scenario": "procurement",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -451,7 +595,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -469,7 +613,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -487,7 +631,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -505,7 +649,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -523,7 +667,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 0,
+      "jurisdiction": "EUROPE",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 0,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -541,7 +703,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -559,7 +721,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -577,7 +739,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 3,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 3,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -595,7 +775,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 3,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 3,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -613,7 +811,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -631,7 +829,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -649,7 +847,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -667,7 +865,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -685,7 +883,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 0,
+      "jurisdiction": "AMERICA",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 0,
+      "scenario": "official-publications",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -703,7 +919,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -721,7 +937,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -739,7 +955,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -757,7 +973,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -775,7 +991,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 3,
+      "jurisdiction": "EUROPE",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 3,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -793,7 +1027,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -811,7 +1045,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -829,7 +1063,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 5,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 5,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -847,7 +1099,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 5,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 5,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -865,7 +1135,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -883,7 +1153,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -901,7 +1171,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -919,7 +1189,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -937,7 +1207,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 3,
+      "jurisdiction": "AMERICA",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 3,
+      "scenario": "domain-footprint",
+      "specialty": "cyber",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -955,7 +1243,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -973,7 +1261,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -991,7 +1279,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1009,7 +1297,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1019,249 +1307,321 @@
       "general_resources": 0,
       "jurisdiction": "GLOBAL",
       "last_reviewed": null,
-      "local_resources": 3,
+      "local_resources": 13,
       "maintainer": null,
-      "resources": 3,
+      "resources": 13,
       "scenario": "image-geolocation",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 1,
-      "jurisdiction": "EU",
+      "general_resources": 11,
+      "jurisdiction": "EUROPE",
       "last_reviewed": null,
       "local_resources": 2,
       "maintainer": null,
-      "resources": 3,
+      "resources": 13,
       "scenario": "image-geolocation",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
-      "jurisdiction": "ES",
+      "general_resources": 10,
+      "jurisdiction": "EU",
       "last_reviewed": null,
       "local_resources": 4,
       "maintainer": null,
-      "resources": 7,
+      "resources": 14,
       "scenario": "image-geolocation",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 6,
+      "general_resources": 14,
+      "jurisdiction": "ES",
+      "last_reviewed": null,
+      "local_resources": 6,
+      "maintainer": null,
+      "resources": 20,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 19,
       "jurisdiction": "ES-PV",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 6,
+      "resources": 19,
       "scenario": "image-geolocation",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 6,
+      "general_resources": 19,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 1,
+      "maintainer": null,
+      "resources": 20,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 19,
       "jurisdiction": "ES-NC",
       "last_reviewed": null,
-      "local_resources": 0,
+      "local_resources": 1,
       "maintainer": null,
-      "resources": 6,
+      "resources": 20,
       "scenario": "image-geolocation",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
+      "general_resources": 20,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 1,
+      "maintainer": null,
+      "resources": 21,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 14,
       "jurisdiction": "PT",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 3,
+      "resources": 14,
       "scenario": "image-geolocation",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
+      "general_resources": 14,
       "jurisdiction": "FR",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 3,
+      "resources": 14,
       "scenario": "image-geolocation",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
+      "general_resources": 14,
       "jurisdiction": "DE",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 3,
+      "resources": 14,
       "scenario": "image-geolocation",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
+      "general_resources": 14,
       "jurisdiction": "IT",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 3,
+      "resources": 14,
       "scenario": "image-geolocation",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
+      "general_resources": 13,
       "jurisdiction": "GB",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 3,
+      "resources": 13,
       "scenario": "image-geolocation",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
+      "general_resources": 13,
+      "jurisdiction": "AMERICA",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 13,
+      "scenario": "image-geolocation",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 13,
       "jurisdiction": "BR",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 3,
+      "resources": 13,
       "scenario": "image-geolocation",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
+      "general_resources": 13,
       "jurisdiction": "MX",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 3,
+      "resources": 13,
       "scenario": "image-geolocation",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
+      "general_resources": 13,
       "jurisdiction": "CO",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 3,
+      "resources": 13,
       "scenario": "image-geolocation",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
+      "general_resources": 13,
       "jurisdiction": "AR",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 3,
+      "resources": 13,
       "scenario": "image-geolocation",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1271,249 +1631,321 @@
       "general_resources": 0,
       "jurisdiction": "GLOBAL",
       "last_reviewed": null,
-      "local_resources": 3,
+      "local_resources": 5,
       "maintainer": null,
-      "resources": 3,
+      "resources": 5,
       "scenario": "source-corroboration",
       "specialty": "editorial",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
+      "general_resources": 5,
+      "jurisdiction": "EUROPE",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 5,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 5,
       "jurisdiction": "EU",
       "last_reviewed": null,
       "local_resources": 3,
       "maintainer": null,
-      "resources": 6,
+      "resources": 8,
       "scenario": "source-corroboration",
       "specialty": "editorial",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 6,
+      "general_resources": 8,
       "jurisdiction": "ES",
       "last_reviewed": null,
       "local_resources": 12,
       "maintainer": null,
-      "resources": 18,
+      "resources": 20,
       "scenario": "source-corroboration",
       "specialty": "editorial",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 17,
+      "general_resources": 19,
       "jurisdiction": "ES-PV",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 17,
+      "resources": 19,
       "scenario": "source-corroboration",
       "specialty": "editorial",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 17,
+      "general_resources": 19,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 19,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 19,
       "jurisdiction": "ES-NC",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 17,
+      "resources": 19,
       "scenario": "source-corroboration",
       "specialty": "editorial",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 6,
+      "general_resources": 20,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 20,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 8,
       "jurisdiction": "PT",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 6,
+      "resources": 8,
       "scenario": "source-corroboration",
       "specialty": "editorial",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 6,
+      "general_resources": 8,
       "jurisdiction": "FR",
       "last_reviewed": null,
       "local_resources": 1,
       "maintainer": null,
-      "resources": 7,
+      "resources": 9,
       "scenario": "source-corroboration",
       "specialty": "editorial",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 6,
+      "general_resources": 8,
       "jurisdiction": "DE",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 6,
+      "resources": 8,
       "scenario": "source-corroboration",
       "specialty": "editorial",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 6,
+      "general_resources": 8,
       "jurisdiction": "IT",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
+      "resources": 8,
+      "scenario": "source-corroboration",
+      "specialty": "editorial",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 5,
+      "jurisdiction": "GB",
+      "last_reviewed": null,
+      "local_resources": 1,
+      "maintainer": null,
       "resources": 6,
       "scenario": "source-corroboration",
       "specialty": "editorial",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
-      "jurisdiction": "GB",
+      "general_resources": 5,
+      "jurisdiction": "AMERICA",
       "last_reviewed": null,
-      "local_resources": 1,
+      "local_resources": 0,
       "maintainer": null,
-      "resources": 4,
+      "resources": 5,
       "scenario": "source-corroboration",
       "specialty": "editorial",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
+      "general_resources": 5,
       "jurisdiction": "BR",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 3,
+      "resources": 5,
       "scenario": "source-corroboration",
       "specialty": "editorial",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
+      "general_resources": 5,
       "jurisdiction": "MX",
       "last_reviewed": null,
       "local_resources": 1,
       "maintainer": null,
-      "resources": 4,
+      "resources": 6,
       "scenario": "source-corroboration",
       "specialty": "editorial",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
+      "general_resources": 5,
       "jurisdiction": "CO",
       "last_reviewed": null,
       "local_resources": 1,
       "maintainer": null,
-      "resources": 4,
+      "resources": 6,
       "scenario": "source-corroboration",
       "specialty": "editorial",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
+      "general_resources": 5,
       "jurisdiction": "AR",
       "last_reviewed": null,
       "local_resources": 1,
       "maintainer": null,
-      "resources": 4,
+      "resources": 6,
       "scenario": "source-corroboration",
       "specialty": "editorial",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1531,7 +1963,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 0,
+      "jurisdiction": "EUROPE",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 0,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1549,7 +1999,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1567,7 +2017,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1585,7 +2035,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 4,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 4,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1603,7 +2071,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 4,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 4,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1621,7 +2107,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1639,7 +2125,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1657,7 +2143,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1675,7 +2161,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1693,7 +2179,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 0,
+      "jurisdiction": "AMERICA",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 0,
+      "scenario": "legal-claim",
+      "specialty": "legal",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1711,7 +2215,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1729,7 +2233,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1747,7 +2251,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1765,7 +2269,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1783,7 +2287,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 2,
+      "jurisdiction": "EUROPE",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 2,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1801,7 +2323,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1819,7 +2341,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1837,7 +2359,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 11,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 11,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1855,7 +2395,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 11,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 11,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1873,7 +2431,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1891,7 +2449,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1909,7 +2467,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1927,7 +2485,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1945,7 +2503,25 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 2,
+      "jurisdiction": "AMERICA",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 2,
+      "scenario": "statistical-claim",
+      "specialty": "public-data",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1963,7 +2539,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1981,7 +2557,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -1999,7 +2575,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2017,7 +2593,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2036,7 +2612,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 2,
+      "jurisdiction": "EUROPE",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 2,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2055,7 +2650,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2074,7 +2669,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2093,7 +2688,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 6,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 6,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2112,7 +2726,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 6,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 6,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2131,7 +2764,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2150,7 +2783,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2169,7 +2802,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2188,7 +2821,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2207,7 +2840,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 2,
+      "jurisdiction": "AMERICA",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 2,
+      "scenario": "missing-adult",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2226,7 +2878,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2245,7 +2897,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2264,7 +2916,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2283,7 +2935,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2302,7 +2954,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 4,
+      "jurisdiction": "EUROPE",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 4,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2321,7 +2992,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2340,7 +3011,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2359,7 +3030,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 9,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 9,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2378,7 +3068,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 9,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 9,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2397,7 +3106,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2416,7 +3125,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2435,7 +3144,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2454,7 +3163,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2473,7 +3182,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 4,
+      "jurisdiction": "AMERICA",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 4,
+      "scenario": "missing-child",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2492,7 +3220,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2511,7 +3239,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2530,7 +3258,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2549,7 +3277,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2568,7 +3296,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 0,
+      "jurisdiction": "EUROPE",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 0,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2587,7 +3334,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2606,7 +3353,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2625,7 +3372,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 3,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 3,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2644,7 +3410,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 3,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 3,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2663,7 +3448,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2682,7 +3467,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2701,7 +3486,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2720,7 +3505,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2739,7 +3524,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 0,
+      "jurisdiction": "AMERICA",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 0,
+      "scenario": "immediate-emergency",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2758,7 +3562,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2777,7 +3581,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2796,7 +3600,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2815,7 +3619,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -2825,249 +3629,321 @@
       "general_resources": 0,
       "jurisdiction": "GLOBAL",
       "last_reviewed": null,
-      "local_resources": 5,
+      "local_resources": 11,
       "maintainer": null,
-      "resources": 5,
+      "resources": 11,
       "scenario": "disaster-crisis",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 3,
+      "general_resources": 10,
+      "jurisdiction": "EUROPE",
+      "last_reviewed": null,
+      "local_resources": 1,
+      "maintainer": null,
+      "resources": 11,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 8,
       "jurisdiction": "EU",
       "last_reviewed": null,
-      "local_resources": 3,
+      "local_resources": 5,
       "maintainer": null,
-      "resources": 6,
+      "resources": 13,
       "scenario": "disaster-crisis",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 6,
+      "general_resources": 13,
       "jurisdiction": "ES",
       "last_reviewed": null,
-      "local_resources": 8,
+      "local_resources": 10,
       "maintainer": null,
-      "resources": 14,
+      "resources": 23,
       "scenario": "disaster-crisis",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 14,
+      "general_resources": 23,
       "jurisdiction": "ES-PV",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 14,
+      "resources": 23,
       "scenario": "disaster-crisis",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 14,
+      "general_resources": 23,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 1,
+      "maintainer": null,
+      "resources": 24,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 23,
       "jurisdiction": "ES-NC",
       "last_reviewed": null,
-      "local_resources": 0,
+      "local_resources": 1,
       "maintainer": null,
-      "resources": 14,
+      "resources": 24,
       "scenario": "disaster-crisis",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 6,
+      "general_resources": 23,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 1,
+      "maintainer": null,
+      "resources": 24,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 13,
       "jurisdiction": "PT",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 6,
+      "resources": 13,
       "scenario": "disaster-crisis",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 6,
+      "general_resources": 13,
       "jurisdiction": "FR",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 6,
+      "resources": 13,
       "scenario": "disaster-crisis",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 6,
+      "general_resources": 13,
       "jurisdiction": "DE",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 6,
+      "resources": 13,
       "scenario": "disaster-crisis",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 6,
+      "general_resources": 13,
       "jurisdiction": "IT",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 6,
+      "resources": 13,
       "scenario": "disaster-crisis",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 5,
+      "general_resources": 11,
       "jurisdiction": "GB",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 5,
+      "resources": 11,
       "scenario": "disaster-crisis",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 5,
+      "general_resources": 11,
+      "jurisdiction": "AMERICA",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 11,
+      "scenario": "disaster-crisis",
+      "specialty": "geoint",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad."
+      ],
+      "general_resources": 11,
       "jurisdiction": "BR",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 5,
+      "resources": 11,
       "scenario": "disaster-crisis",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 5,
+      "general_resources": 11,
       "jurisdiction": "MX",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 5,
+      "resources": 11,
       "scenario": "disaster-crisis",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 5,
+      "general_resources": 11,
       "jurisdiction": "CO",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 5,
+      "resources": 11,
       "scenario": "disaster-crisis",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
         "Falta un procedimiento territorial revisado.",
         "Falta responsable de la especialidad."
       ],
-      "general_resources": 5,
+      "general_resources": 11,
       "jurisdiction": "AR",
       "last_reviewed": null,
       "local_resources": 0,
       "maintainer": null,
-      "resources": 5,
+      "resources": 11,
       "scenario": "disaster-crisis",
       "specialty": "geoint",
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3086,7 +3962,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 3,
+      "jurisdiction": "EUROPE",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 3,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3105,7 +4000,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3124,7 +4019,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3143,7 +4038,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 10,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 10,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3162,7 +4076,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 10,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 10,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3181,7 +4114,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3200,7 +4133,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3219,7 +4152,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3238,7 +4171,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3257,7 +4190,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 3,
+      "jurisdiction": "AMERICA",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 3,
+      "scenario": "grooming-sextortion",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3276,7 +4228,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3295,7 +4247,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3314,7 +4266,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3333,7 +4285,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3352,7 +4304,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 3,
+      "jurisdiction": "EUROPE",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 3,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3371,7 +4342,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3390,7 +4361,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3409,7 +4380,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 8,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 8,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3428,7 +4418,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 8,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 8,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3447,7 +4456,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3466,7 +4475,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3485,7 +4494,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3504,7 +4513,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3523,7 +4532,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 3,
+      "jurisdiction": "AMERICA",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 3,
+      "scenario": "sexual-digital-violence",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3542,7 +4570,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3561,7 +4589,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3580,7 +4608,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3599,7 +4627,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3618,7 +4646,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 4,
+      "jurisdiction": "EUROPE",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 4,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3637,7 +4684,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3656,7 +4703,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3675,7 +4722,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 6,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 6,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3694,7 +4760,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 6,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 6,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3713,7 +4798,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3732,7 +4817,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3751,7 +4836,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3770,7 +4855,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3789,7 +4874,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 4,
+      "jurisdiction": "AMERICA",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 4,
+      "scenario": "csam-report",
+      "specialty": "safeguarding",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3808,7 +4912,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3827,7 +4931,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3846,7 +4950,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3865,7 +4969,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3884,7 +4988,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 4,
+      "jurisdiction": "EUROPE",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 4,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3903,7 +5026,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3922,7 +5045,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3941,7 +5064,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 8,
+      "jurisdiction": "ES-BI",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 8,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3960,7 +5102,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 8,
+      "jurisdiction": "ES-MAD",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 8,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3979,7 +5140,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -3998,7 +5159,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -4017,7 +5178,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -4036,7 +5197,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -4055,7 +5216,26 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
+      "backup": null,
+      "gaps": [
+        "Faltan fuentes revisadas específicamente para este territorio.",
+        "Falta un procedimiento territorial revisado.",
+        "Falta responsable de la especialidad.",
+        "Faltan vías competentes verificadas para este territorio."
+      ],
+      "general_resources": 4,
+      "jurisdiction": "AMERICA",
+      "last_reviewed": null,
+      "local_resources": 0,
+      "maintainer": null,
+      "resources": 4,
+      "scenario": "platform-report",
+      "specialty": "cyber",
+      "status": "pendiente"
+    },
+    {
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -4074,7 +5254,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -4093,7 +5273,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -4112,7 +5292,7 @@
       "status": "pendiente"
     },
     {
-      "as_of": "2026-09-13",
+      "as_of": "2026-10-08",
       "backup": null,
       "gaps": [
         "Faltan fuentes revisadas específicamente para este territorio.",
@@ -4131,5 +5311,5 @@
       "status": "pendiente"
     }
   ],
-  "version": "e23dc83633770515"
+  "version": "cb8f12dd34cd99fb"
 }

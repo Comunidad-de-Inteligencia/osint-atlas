@@ -1,0 +1,74 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+- Acceso, coste e idioma no se comprobaron.
+- No se abrió una capa WMTS concreta en esta entrega.
+id: eu-copernicus-marine
+name: Copernicus Marine
+owner: Copernicus Marine Service
+jurisdictions:
+- EU
+- GLOBAL
+type: map
+tier: P1
+categories:
+- geoint
+- medio-ambiente
+scenarios:
+- disaster-crisis
+- image-geolocation
+url: https://marine.copernicus.eu/
+purpose: Consultar productos marinos de Copernicus, como corrientes, temperatura o nivel del mar.
+inputs:
+- zona marina
+- fecha
+- variable
+outputs:
+- mapas o series marinas
+- metadatos del producto
+usage: Anota la variable, la profundidad si existe, y la fecha del producto.
+interpretation: Un campo marino es un producto del servicio. No es la foto de un barco ni un parte de puerto.
+limitations: EU marca el servicio europeo. GLOBAL se conserva porque el océano se consulta desde otros
+  lugares; si se quitara, dejaría de aparecer fuera de la Unión. La latencia y la licencia de cada producto
+  siguen sin contrastar. No sustituye el aviso de un puerto.
+created_at: '2026-10-08'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- es-puertos
+references:
+- title: Copernicus Marine — página responsable
+  url: https://marine.copernicus.eu/
+platforms: []
+maintenance_urls:
+- https://marine.copernicus.eu/
+input_types:
+- lugar
+output_types:
+- aviso
+- mapa
+- serie
+example:
+  input: Se mira una zona de mar ficticia, sin nombre de buque, para ver si hay un producto de temperatura fechado.
+  steps:
+  - Anota variable, fecha y zona.
+  - No cruces el dato con un viaje real ni con personas.
+  expected: Queda escrito qué producto se vio y qué no cubre.
+  interpretation: El mapa marino no localiza un hecho en la costa por sí solo.
+steps:
+- Elige la variable y la fecha en el catálogo del servicio.
+- Conserva el nombre del producto.
+- Si falta la hora, no supongas que el mapa es actual.

@@ -13,6 +13,8 @@ Puedes mejorar una explicación, corregir una ficha o cubrir una carencia. Cada 
 
 Los procedimientos originales están en content/procedimientos/. Sus páginas de docs/procedimientos/ se generan. Usa referencias de contacto con la forma {{contact:identificador}}; los valores se mantienen en data/contacts.yaml.
 
+La ficha va en data/resources/. El procedimiento va en content/procedimientos/. Una guía o una lista que no cabe en una ficha va en docs/referencias/. Una ficha nueva con maintenance_urls entra sola en el chequeo semanal.
+
 ## Revisar antes de entregar
 
 ~~~console

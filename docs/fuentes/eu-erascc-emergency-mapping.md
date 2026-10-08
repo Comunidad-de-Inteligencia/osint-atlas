@@ -37,11 +37,15 @@ Los mapas se producen para un objetivo y ventana temporal concretos.
 
 ## Limitaciones y alternativas
 
-No todas las emergencias generan activación pública.
+No todas las emergencias generan activación pública. El mapa corresponde a una activación y a una fecha; no es una imagen continua del lugar. EU marca el servicio europeo. GLOBAL se conserva porque el mapa puede consultarse desde otros territorios; si se quitara, dejaría de aparecer fuera de la Unión.
 
 Resultados que puede ofrecer: mapas de emergencia, productos de activación.
 
-Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+Fuentes complementarias; comprobar sus diferencias de cobertura:
+
+- [Global Disaster Alert and Coordination System](./global-gdacs.md)
+- [EFFIS](./eu-effis.md)
+- [NASA FIRMS](./global-nasa-firms.md)
 
 ## Condiciones conocidas
 
@@ -56,9 +60,10 @@ Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **p
 Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 días.
 
 [Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+Última comprobación: **sin comprobación**.
 
 ## Referencias
 
 - [Copernicus Emergency Management Service — página responsable](https://emergency.copernicus.eu/)
 
-Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).
+Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).

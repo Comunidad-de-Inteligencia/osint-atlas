@@ -38,12 +38,14 @@ outputs:
 - informes
 usage: Comprobar definición, cobertura y fecha antes de comparar territorios.
 interpretation: Datos agregados no identifican por sí solos la causa de un incidente.
-limitations: Los datos en tiempo real y las estadísticas consolidadas tienen objetivos distintos.
+limitations: Los datos en tiempo real y las estadísticas consolidadas tienen objetivos distintos. Esta ficha
+  es estadística. Las cámaras de tráfico están en otra ficha y no se mezclan aquí.
 created_at: '2026-09-12'
 reviewer: null
 review_status: pending
 metadata_evidence: []
-alternatives: []
+alternatives:
+- es-dgt-camaras
 references:
 - title: DGT Datos Abiertos — página responsable
   url: https://www.dgt.es/menusecundario/dgt-en-cifras/

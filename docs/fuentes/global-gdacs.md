@@ -37,11 +37,15 @@ Las estimaciones tempranas tienen incertidumbre y pueden cambiar.
 
 ## Limitaciones y alternativas
 
-No sustituye alertas locales ni instrucciones de evacuación.
+No sustituye alertas locales ni instrucciones de evacuación. El aviso es un panorama inicial. No es una orden ni la imagen del satélite.
 
 Resultados que puede ofrecer: alertas, mapas, estimaciones.
 
-Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+Fuentes complementarias; comprobar sus diferencias de cobertura:
+
+- [Copernicus Emergency Management Service](./eu-erascc-emergency-mapping.md)
+- [EFFIS](./eu-effis.md)
+- [NASA FIRMS](./global-nasa-firms.md)
 
 ## Condiciones conocidas
 
@@ -56,9 +60,10 @@ Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **p
 Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 días.
 
 [Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+Última comprobación: **sin comprobación**.
 
 ## Referencias
 
 - [Global Disaster Alert and Coordination System — página responsable](https://www.gdacs.org/)
 
-Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).
+Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).

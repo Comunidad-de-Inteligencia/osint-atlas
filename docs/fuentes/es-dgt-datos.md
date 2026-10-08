@@ -37,11 +37,13 @@ Datos agregados no identifican por sí solos la causa de un incidente.
 
 ## Limitaciones y alternativas
 
-Los datos en tiempo real y las estadísticas consolidadas tienen objetivos distintos.
+Los datos en tiempo real y las estadísticas consolidadas tienen objetivos distintos. Esta ficha es estadística. Las cámaras de tráfico están en otra ficha y no se mezclan aquí.
 
 Resultados que puede ofrecer: series, mapas, informes.
 
-Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.
+Fuentes complementarias; comprobar sus diferencias de cobertura:
+
+- [Cámaras del Punto de Acceso Nacional de la DGT](./es-dgt-camaras.md)
 
 ## Condiciones conocidas
 
@@ -56,9 +58,10 @@ Ficha creada: 2026-09-12. Estado editorial: **pendiente**. Revisión humana: **p
 Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 días.
 
 [Consultar la disponibilidad técnica y última ejecución](https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md). Responder en la web no implica revisión editorial.
+Última comprobación: **sin comprobación**.
 
 ## Referencias
 
 - [DGT Datos Abiertos — página responsable](https://www.dgt.es/menusecundario/dgt-en-cifras/)
 
-Versión: e23dc83633770515. [Volver al catálogo](../CATALOGO.md).
+Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).

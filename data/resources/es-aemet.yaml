@@ -39,7 +39,8 @@ outputs:
 - series meteorológicas
 usage: Guardar identificador de producto, estación, periodo y momento de consulta.
 interpretation: Separar observación, predicción y aviso; no extrapolar una estación a todo un territorio.
-limitations: Requiere clave y algunas URLs de descarga son temporales.
+limitations: Requiere clave y algunas URLs de descarga son temporales. Una predicción o un modelo no es una
+  observación medida en ese punto.
 created_at: '2026-09-12'
 reviewer: null
 review_status: pending

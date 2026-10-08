@@ -1,0 +1,71 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+- Acceso, coste e idioma no se comprobaron más allá de que la página respondió.
+id: global-overpass
+name: Overpass Turbo
+owner: Comunidad OpenStreetMap
+jurisdictions:
+- GLOBAL
+type: tool
+tier: P3
+categories:
+- geoint
+- datos-abiertos
+scenarios:
+- image-geolocation
+- source-corroboration
+url: https://overpass-turbo.eu/
+purpose: Consultar objetos de OpenStreetMap con una pregunta geográfica, sin tratar el resultado como mapa oficial.
+inputs:
+- zona
+- tipo de objeto
+outputs:
+- geometrías y etiquetas de OpenStreetMap
+- consulta utilizada
+usage: Guarda la consulta y la fecha. Contrasta los objetos con una fuente primaria o una ortofoto fechada.
+interpretation: El resultado es lo que la comunidad ha etiquetado. Puede estar incompleto o recién editado.
+limitations: Overpass no crea datos nuevos. Lee OpenStreetMap. No es una fuente oficial ni una imagen.
+created_at: '2026-10-08'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- global-osm
+- es-cnig-pnoa
+references:
+- title: Overpass Turbo — página responsable
+  url: https://overpass-turbo.eu/
+- title: Overpass API — documentación comunitaria
+  url: https://wiki.openstreetmap.org/wiki/Overpass_API
+platforms: []
+maintenance_urls:
+- https://overpass-turbo.eu/
+input_types:
+- lugar
+output_types:
+- mapa
+- observacion
+example:
+  input: Se pregunta por puentes etiquetados en un río ficticio, sin nombres de personas.
+  steps:
+  - Guarda el texto de la consulta y la fecha.
+  - Compara un objeto con una ortofoto, no con una dirección particular.
+  expected: La nota lista objetos y dice cuáles no se contrastaron.
+  interpretation: Una etiqueta no prueba que el objeto siga igual.
+steps:
+- Dibuja una zona pequeña y elige un tipo de objeto.
+- Exporta o copia la consulta, no solo la imagen.
+- Contrasta con otra fuente antes de afirmar que el objeto existe.

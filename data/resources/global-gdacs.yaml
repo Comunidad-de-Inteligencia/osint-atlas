@@ -37,12 +37,16 @@ outputs:
 - estimaciones
 usage: Usar como panorama inicial y seguir a autoridades nacionales y fuentes del evento.
 interpretation: Las estimaciones tempranas tienen incertidumbre y pueden cambiar.
-limitations: No sustituye alertas locales ni instrucciones de evacuación.
+limitations: No sustituye alertas locales ni instrucciones de evacuación. El aviso es un panorama inicial.
+  No es una orden ni la imagen del satélite.
 created_at: '2026-09-12'
 reviewer: null
 review_status: pending
 metadata_evidence: []
-alternatives: []
+alternatives:
+- eu-erascc-emergency-mapping
+- eu-effis
+- global-nasa-firms
 references:
 - title: Global Disaster Alert and Coordination System — página responsable
   url: https://www.gdacs.org/

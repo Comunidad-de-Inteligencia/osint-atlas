@@ -313,13 +313,22 @@
       "parent": null
     },
     {
+      "id": "EUROPE",
+      "languages": [
+        "multilingual"
+      ],
+      "name": "Europa",
+      "notes": "Agrupa la Unión Europea y el Reino Unido. El Reino Unido no forma parte de la Unión Europea.",
+      "parent": "GLOBAL"
+    },
+    {
       "id": "EU",
       "languages": [
         "multilingual"
       ],
       "name": "Unión Europea",
       "notes": "Distinguir normativa y servicios comunes de las implementaciones nacionales.",
-      "parent": "GLOBAL"
+      "parent": "EUROPE"
     },
     {
       "id": "ES",
@@ -330,7 +339,7 @@
         "gl"
       ],
       "name": "España",
-      "notes": "Distinguir Estado, comunidades autónomas, provincias y municipios. Catastro estatal excluye País Vasco y Navarra.",
+      "notes": "Distinguir Estado, comunidades autónomas, provincias y municipios. Catastro estatal excluye País Vasco y Navarra. Madrid, Bilbao y Navarra tienen nodo propio solo porque hay una ficha de ese territorio.",
       "parent": "EU"
     },
     {
@@ -344,6 +353,16 @@
       "parent": "ES"
     },
     {
+      "id": "ES-BI",
+      "languages": [
+        "es",
+        "eu"
+      ],
+      "name": "Bilbao",
+      "notes": "Municipio. El nodo existe porque hay una ficha de cámaras municipales, no como provincia vacía.",
+      "parent": "ES-PV"
+    },
+    {
       "id": "ES-NC",
       "languages": [
         "es",
@@ -351,6 +370,15 @@
       ],
       "name": "Comunidad Foral de Navarra",
       "notes": "Cuenta con Hacienda y Registro de la Riqueza Territorial propios.",
+      "parent": "ES"
+    },
+    {
+      "id": "ES-MAD",
+      "languages": [
+        "es"
+      ],
+      "name": "Madrid",
+      "notes": "Municipio de Madrid. El nodo existe porque hay una ficha de cámaras del Ayuntamiento, no como comunidad vacía.",
       "parent": "ES"
     },
     {
@@ -391,6 +419,17 @@
         "en"
       ],
       "name": "Reino Unido",
+      "notes": "No es un Estado miembro de la Unión Europea. Su padre es Europa, no la Unión Europea.",
+      "parent": "EUROPE"
+    },
+    {
+      "id": "AMERICA",
+      "languages": [
+        "es",
+        "pt"
+      ],
+      "name": "América",
+      "notes": "Agrupa Argentina, Brasil, Colombia y México, que ya tienen fichas. No crea un procedimiento común.",
       "parent": "GLOBAL"
     },
     {
@@ -399,7 +438,7 @@
         "pt"
       ],
       "name": "Brasil",
-      "parent": "GLOBAL"
+      "parent": "AMERICA"
     },
     {
       "id": "MX",
@@ -407,7 +446,7 @@
         "es"
       ],
       "name": "México",
-      "parent": "GLOBAL"
+      "parent": "AMERICA"
     },
     {
       "id": "CO",
@@ -415,7 +454,7 @@
         "es"
       ],
       "name": "Colombia",
-      "parent": "GLOBAL"
+      "parent": "AMERICA"
     },
     {
       "id": "AR",
@@ -423,7 +462,7 @@
         "es"
       ],
       "name": "Argentina",
-      "parent": "GLOBAL"
+      "parent": "AMERICA"
     }
   ],
   "maintainers": {
@@ -1780,7 +1819,7 @@
       "languages": [
         "es"
       ],
-      "limitations": "Requiere clave y algunas URLs de descarga son temporales.",
+      "limitations": "Requiere clave y algunas URLs de descarga son temporales. Una predicción o un modelo no es una observación medida en ese punto.",
       "maintainer": null,
       "maintenance_urls": [
         "https://opendata.aemet.es/"
@@ -2298,6 +2337,96 @@
       "type": "portal",
       "url": "https://www.pap.hacienda.gob.es/bdnstrans/GE/es/",
       "usage": "Relacionar convocatoria y concesión, comprobando organismo, fecha e instrumento regulador."
+    },
+    {
+      "access": "unknown",
+      "alternatives": [
+        "es-dgt-camaras"
+      ],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "transporte",
+        "datos-abiertos"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "normal",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "La nota dice que el título habla de tiempo real y que el intervalo sigue pendiente.",
+        "input": "Se abre la ficha de una cámara ficticia de un puente de Bilbao, sin vehículos descritos.",
+        "interpretation": "La cámara orienta sobre el tráfico de ese punto. No cierra un hecho.",
+        "steps": [
+          "Anota la fecha de la ficha y que el intervalo no se leyó.",
+          "No identifiques personas ni matrículas."
+        ]
+      },
+      "id": "es-bilbao-camaras",
+      "input_types": [
+        "lugar"
+      ],
+      "inputs": [
+        "vía de Bilbao",
+        "fecha de consulta"
+      ],
+      "interpretation": "Una cámara municipal muestra un punto de la calle. No identifica a una persona ni prueba un hecho.",
+      "jurisdictions": [
+        "ES-BI"
+      ],
+      "languages": [
+        "und"
+      ],
+      "limitations": "El título dice «en tiempo real» y esa frase no se contrastó con el fichero. El Ayuntamiento puede apagar una cámara. La imagen no es una prueba.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://datos.gob.es/es/catalogo/l01480209-camaras-de-trafico-de-bilbao-en-tiempo-real"
+      ],
+      "metadata_evidence": [],
+      "name": "Cámaras de tráfico de Bilbao",
+      "output_types": [
+        "mapa",
+        "observacion"
+      ],
+      "outputs": [
+        "ficha del conjunto",
+        "enlace a las cámaras que publique el Ayuntamiento"
+      ],
+      "owner": "Ayuntamiento de Bilbao",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "El catálogo nacional titula el conjunto como tiempo real. No se leyó el intervalo de cada imagen.",
+        "Acceso, coste e idioma del fichero no se comprobaron."
+      ],
+      "platforms": [],
+      "purpose": "Localizar el conjunto municipal de cámaras de tráfico de Bilbao publicado en el catálogo de datos abiertos.",
+      "references": [
+        {
+          "title": "Cámaras de tráfico de Bilbao en tiempo real — datos.gob.es",
+          "url": "https://datos.gob.es/es/catalogo/l01480209-camaras-de-trafico-de-bilbao-en-tiempo-real"
+        }
+      ],
+      "review_days": 90,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "image-geolocation",
+        "disaster-crisis"
+      ],
+      "steps": [
+        "Abre la ficha del catálogo y sigue el enlace del Ayuntamiento.",
+        "Anota qué hora muestra la imagen.",
+        "No uses la captura para identificar a una persona."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.",
+      "tier": "P1",
+      "type": "dataset",
+      "url": "https://datos.gob.es/es/catalogo/l01480209-camaras-de-trafico-de-bilbao-en-tiempo-real",
+      "usage": "Entra por la ficha del catálogo y anota la fecha de actualización que veas. No des por hecho el intervalo."
     },
     {
       "access": "unknown",
@@ -3110,7 +3239,99 @@
     },
     {
       "access": "unknown",
-      "alternatives": [],
+      "alternatives": [
+        "es-dgt-datos",
+        "es-madrid-camaras"
+      ],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "transporte"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "normal",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "La nota dice la hora y que la imagen no prueba un incidente.",
+        "input": "Se busca la cámara de un enlace ficticio y se anota solo la hora que muestra el visor.",
+        "interpretation": "Sirve para ver el estado publicado de la calzada, no para investigar a alguien.",
+        "steps": [
+          "Anota carretera y hora de la captura.",
+          "No identifiques vehículos ni personas."
+        ]
+      },
+      "id": "es-dgt-camaras",
+      "input_types": [
+        "lugar"
+      ],
+      "inputs": [
+        "carretera",
+        "fecha de consulta"
+      ],
+      "interpretation": "La imagen muestra la calzada en ese momento de captura. No identifica a una persona ni prueba un hecho.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "und"
+      ],
+      "limitations": "Esta ficha no es la estadística de DGT en cifras. Una cámara no es un censo de vehículos ni una prueba. La cobertura autonómica que a veces se afirma quedó sin contrastar. La cadencia no se leyó en el servicio.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://nap.dgt.es/"
+      ],
+      "metadata_evidence": [],
+      "name": "Cámaras del Punto de Acceso Nacional de la DGT",
+      "output_types": [
+        "mapa",
+        "observacion"
+      ],
+      "outputs": [
+        "localización de cámaras publicadas",
+        "imagen o dato de tráfico si el servicio lo muestra"
+      ],
+      "owner": "Dirección General de Tráfico",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "Acceso, coste e idioma no se leyeron en el punto de acceso.",
+        "No se contrastó si el visor estatal excluye Cataluña y el País Vasco."
+      ],
+      "platforms": [],
+      "purpose": "Consultar el punto de acceso nacional de tráfico para localizar cámaras y datos de la red que publica la DGT.",
+      "references": [
+        {
+          "title": "Punto de Acceso Nacional de Tráfico — página responsable",
+          "url": "https://nap.dgt.es/"
+        }
+      ],
+      "review_days": 90,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "image-geolocation",
+        "disaster-crisis"
+      ],
+      "steps": [
+        "Abre el punto de acceso y localiza la carretera.",
+        "Anota la hora de la imagen, no la hora en que tú miras.",
+        "No uses la captura para identificar a una persona."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.",
+      "tier": "P1",
+      "type": "map",
+      "url": "https://nap.dgt.es/",
+      "usage": "Anota la carretera, la hora de la imagen y que es una cámara de tráfico."
+    },
+    {
+      "access": "unknown",
+      "alternatives": [
+        "es-dgt-camaras"
+      ],
       "backup_maintainer": null,
       "categories": [
         "transporte",
@@ -3146,7 +3367,7 @@
       "languages": [
         "und"
       ],
-      "limitations": "Los datos en tiempo real y las estadísticas consolidadas tienen objetivos distintos.",
+      "limitations": "Los datos en tiempo real y las estadísticas consolidadas tienen objetivos distintos. Esta ficha es estadística. Las cámaras de tráfico están en otra ficha y no se mezclan aquí.",
       "maintainer": null,
       "maintenance_urls": [
         "https://www.dgt.es/menusecundario/dgt-en-cifras/"
@@ -3285,6 +3506,101 @@
       "type": "guidance",
       "url": "https://www.guardiacivil.es/es/servicios/delitos_telematicos/",
       "usage": "Distinguir información general, colaboración y denuncia; ante urgencia usar {{contact:eu-112}}."
+    },
+    {
+      "access": "unknown",
+      "alternatives": [
+        "es-cnig-pnoa",
+        "es-ign-geodesia"
+      ],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "datos-abiertos"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "normal",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "La nota dice qué servicio se encontró y quién lo publica.",
+        "input": "Se busca un servicio de ortofoto de un municipio ficticio y se anota solo la dirección del servicio.",
+        "interpretation": "Encontrar la ficha no demuestra que la imagen sea de hoy.",
+        "steps": [
+          "Copia la dirección y el nombre del publicador.",
+          "No descargues una capa entera para este ejercicio."
+        ]
+      },
+      "id": "es-idee",
+      "input_types": [
+        "lugar"
+      ],
+      "inputs": [
+        "tema",
+        "organismo",
+        "zona"
+      ],
+      "interpretation": "IDEE es un directorio. La capa sigue siendo del organismo que la publica.",
+      "jurisdictions": [
+        "ES"
+      ],
+      "languages": [
+        "und"
+      ],
+      "limitations": "Un servicio listado puede estar caído o tener otra licencia. Esta ficha no cuenta cuántos servicios hay. No sustituye al centro de descargas ni a una ortofoto concreta.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://www.idee.es/"
+      ],
+      "metadata_evidence": [],
+      "name": "IDEE",
+      "output_types": [
+        "mapa",
+        "referencia"
+      ],
+      "outputs": [
+        "fichas de servicios",
+        "direcciones de mapas"
+      ],
+      "owner": "Infraestructura de Datos Espaciales de España",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "Acceso, coste e idioma del directorio no se comprobaron en detalle.",
+        "El número de servicios WMS o WMTS no se contó en esta ficha."
+      ],
+      "platforms": [],
+      "purpose": "Encontrar servicios de mapas de organismos españoles, como WMS o WMTS, y abrirlos en un SIG.",
+      "references": [
+        {
+          "title": "IDEE — página responsable",
+          "url": "https://www.idee.es/"
+        },
+        {
+          "title": "IDEE — directorio por tipo de servicio",
+          "url": "https://www.idee.es/segun-tipo-de-servicio"
+        }
+      ],
+      "review_days": 180,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "image-geolocation",
+        "disaster-crisis"
+      ],
+      "steps": [
+        "Busca por tema o por organismo en el directorio.",
+        "Abre la ficha del servicio y copia su dirección.",
+        "Comprueba en el organismo la fecha y la licencia antes de concluir."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.",
+      "tier": "P1",
+      "type": "portal",
+      "url": "https://www.idee.es/",
+      "usage": "Anota el organismo que publica la capa, la dirección y la fecha en que la consultas."
     },
     {
       "access": "unknown",
@@ -3829,6 +4145,106 @@
       "usage": "Confirmar la entidad exacta antes de cruzarla con contratos, subvenciones o presupuestos."
     },
     {
+      "access": "open",
+      "alternatives": [
+        "es-dgt-camaras"
+      ],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "transporte",
+        "datos-abiertos"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "normal",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "La nota separa la captura de cualquier conclusión sobre un hecho.",
+        "input": "Se localiza una cámara ficticia de una glorieta vacía de nombres y se anota la periodicidad publicada.",
+        "interpretation": "Sirve para el estado del tráfico en ese punto, no para identificar a alguien.",
+        "steps": [
+          "Anota el identificador de la cámara y que la ficha habla de cinco minutos.",
+          "No describas matrículas ni personas."
+        ]
+      },
+      "id": "es-madrid-camaras",
+      "input_types": [
+        "lugar"
+      ],
+      "inputs": [
+        "vía",
+        "fecha de consulta"
+      ],
+      "interpretation": "La imagen sirve para ver el tráfico en ese punto. No identifica a una persona ni prueba un hecho.",
+      "jurisdictions": [
+        "ES-MAD"
+      ],
+      "languages": [
+        "es"
+      ],
+      "limitations": "El propio conjunto dice que las cámaras están para conocer el tráfico y los eventos que afectan a la movilidad. Una captura cada cinco minutos, según esa página, no es un vídeo continuo. No cubre otras ciudades.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://datos.madrid.es/dataset/202088-0-trafico-camaras"
+      ],
+      "metadata_evidence": [
+        {
+          "fields": [
+            "languages",
+            "access"
+          ],
+          "method": "assistant-source-check",
+          "note": "La ficha está en español y se abrió sin inicio de sesión. Dice que incluye una captura cada cinco minutos. No se revisó la licencia ni el coste.",
+          "observed_at": "2026-10-08",
+          "url": "https://datos.madrid.es/dataset/202088-0-trafico-camaras"
+        }
+      ],
+      "name": "Cámaras de tráfico del Ayuntamiento de Madrid",
+      "output_types": [
+        "mapa",
+        "observacion"
+      ],
+      "outputs": [
+        "posición de cámaras",
+        "captura de imagen"
+      ],
+      "owner": "Ayuntamiento de Madrid",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "El coste y la licencia completa no se leyeron."
+      ],
+      "platforms": [],
+      "purpose": "Consultar la posición y las capturas de las cámaras fijas de tráfico que publica el Ayuntamiento de Madrid.",
+      "references": [
+        {
+          "title": "Tráfico. Cámaras — Ayuntamiento de Madrid",
+          "url": "https://datos.madrid.es/dataset/202088-0-trafico-camaras"
+        }
+      ],
+      "review_days": 90,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "image-geolocation",
+        "disaster-crisis"
+      ],
+      "steps": [
+        "Abre el conjunto y elige una cámara por su posición.",
+        "Anota la hora de la captura y la periodicidad que declara el Ayuntamiento.",
+        "No uses la imagen para identificar a una persona."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.",
+      "tier": "P1",
+      "type": "dataset",
+      "url": "https://datos.madrid.es/dataset/202088-0-trafico-camaras",
+      "usage": "Anota la cámara y la hora. La ficha municipal consultada habla de una captura cada cinco minutos."
+    },
+    {
       "access": "unknown",
       "alternatives": [],
       "backup_maintainer": null,
@@ -3915,6 +4331,94 @@
       "type": "dataset",
       "url": "https://www.miteco.gob.es/es/cartografia-y-sig/ide/descargas.html",
       "usage": "Conservar versión, sistema de referencia y fecha del conjunto."
+    },
+    {
+      "access": "unknown",
+      "alternatives": [
+        "es-dgt-camaras"
+      ],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "transporte"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "normal",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "La nota distingue página caída de carretera cortada.",
+        "input": "Se busca el estado publicado de un puerto de montaña ficticio, sin vehículos ni personas.",
+        "interpretation": "El silencio de la web no es una incidencia de tráfico.",
+        "steps": [
+          "Anota la hora de la página si llega a abrir.",
+          "Si no abre, dilo y no inventes el estado de la carretera."
+        ]
+      },
+      "id": "es-navarra-trafico",
+      "input_types": [
+        "lugar"
+      ],
+      "inputs": [
+        "carretera de Navarra",
+        "fecha de consulta"
+      ],
+      "interpretation": "Una incidencia publicada es lo que dice el organismo en esa hora. No prueba por sí sola un hecho.",
+      "jurisdictions": [
+        "ES-NC"
+      ],
+      "languages": [
+        "und"
+      ],
+      "limitations": "Esta ficha no se pudo abrir en la comprobación. Una cámara, si aparece, no identifica a una persona. No sustituye al 112 ni a una orden de tráfico.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://www.navarra.es/es/trafico"
+      ],
+      "metadata_evidence": [],
+      "name": "Tráfico de Navarra",
+      "output_types": [
+        "aviso",
+        "mapa"
+      ],
+      "outputs": [
+        "incidencias publicadas",
+        "cámaras si el visor las muestra"
+      ],
+      "owner": "Gobierno de Navarra",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "El 8 de octubre de 2026 la página no completó la conexión desde este entorno. No se comprobó si el visor incluye cámaras."
+      ],
+      "platforms": [],
+      "purpose": "Consultar la página de tráfico de Navarra para incidencias y, si el visor las ofrece, cámaras de carretera.",
+      "references": [
+        {
+          "title": "Tráfico — Gobierno de Navarra",
+          "url": "https://www.navarra.es/es/trafico"
+        }
+      ],
+      "review_days": 90,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "image-geolocation",
+        "disaster-crisis"
+      ],
+      "steps": [
+        "Abre la página de tráfico y busca la carretera.",
+        "Anota incidencias con su hora.",
+        "Si hay cámara, anota la hora de la imagen y no identifiques a nadie."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.",
+      "tier": "P1",
+      "type": "portal",
+      "url": "https://www.navarra.es/es/trafico",
+      "usage": "Anota la hora de la página. No des por hecho una cámara hasta verla en el visor."
     },
     {
       "access": "unknown",
@@ -4796,7 +5300,102 @@
     },
     {
       "access": "unknown",
-      "alternatives": [],
+      "alternatives": [
+        "es-puertos"
+      ],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "medio-ambiente"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "normal",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "Queda escrito qué producto se vio y qué no cubre.",
+        "input": "Se mira una zona de mar ficticia, sin nombre de buque, para ver si hay un producto de temperatura fechado.",
+        "interpretation": "El mapa marino no localiza un hecho en la costa por sí solo.",
+        "steps": [
+          "Anota variable, fecha y zona.",
+          "No cruces el dato con un viaje real ni con personas."
+        ]
+      },
+      "id": "eu-copernicus-marine",
+      "input_types": [
+        "lugar"
+      ],
+      "inputs": [
+        "zona marina",
+        "fecha",
+        "variable"
+      ],
+      "interpretation": "Un campo marino es un producto del servicio. No es la foto de un barco ni un parte de puerto.",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "languages": [
+        "und"
+      ],
+      "limitations": "EU marca el servicio europeo. GLOBAL se conserva porque el océano se consulta desde otros lugares; si se quitara, dejaría de aparecer fuera de la Unión. La latencia y la licencia de cada producto siguen sin contrastar. No sustituye el aviso de un puerto.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://marine.copernicus.eu/"
+      ],
+      "metadata_evidence": [],
+      "name": "Copernicus Marine",
+      "output_types": [
+        "aviso",
+        "mapa",
+        "serie"
+      ],
+      "outputs": [
+        "mapas o series marinas",
+        "metadatos del producto"
+      ],
+      "owner": "Copernicus Marine Service",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "Acceso, coste e idioma no se comprobaron.",
+        "No se abrió una capa WMTS concreta en esta entrega."
+      ],
+      "platforms": [],
+      "purpose": "Consultar productos marinos de Copernicus, como corrientes, temperatura o nivel del mar.",
+      "references": [
+        {
+          "title": "Copernicus Marine — página responsable",
+          "url": "https://marine.copernicus.eu/"
+        }
+      ],
+      "review_days": 180,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "disaster-crisis",
+        "image-geolocation"
+      ],
+      "steps": [
+        "Elige la variable y la fecha en el catálogo del servicio.",
+        "Conserva el nombre del producto.",
+        "Si falta la hora, no supongas que el mapa es actual."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.",
+      "tier": "P1",
+      "type": "map",
+      "url": "https://marine.copernicus.eu/",
+      "usage": "Anota la variable, la profundidad si existe, y la fecha del producto."
+    },
+    {
+      "access": "unknown",
+      "alternatives": [
+        "global-nasa-worldview",
+        "es-cnig-pnoa"
+      ],
       "backup_maintainer": null,
       "categories": [
         "geoint",
@@ -4832,10 +5431,11 @@
       "languages": [
         "und"
       ],
-      "limitations": "Volumen alto y licencias distintas para productos de terceros.",
+      "limitations": "El navegador y el Data Space no son la misma pantalla. Cifras que circulan, y que esta ficha no contrastó en el servicio, sitúan Sentinel-1 y Sentinel-2 en torno a un día, y Sentinel-3 y Sentinel-5P en torno a tres horas. Son orientativas. La posición de un satélite o un globo no es la imagen en directo. EU marca el programa europeo. GLOBAL se conserva porque las escenas pueden consultarse para lugares de fuera de la Unión; si se quitara, dejarían de aparecer en esos territorios. Las licencias de productos de terceros pueden ser distintas.",
       "maintainer": null,
       "maintenance_urls": [
-        "https://dataspace.copernicus.eu/"
+        "https://dataspace.copernicus.eu/",
+        "https://browser.dataspace.copernicus.eu/"
       ],
       "metadata_evidence": [],
       "name": "Copernicus Data Space Ecosystem",
@@ -4849,14 +5449,19 @@
       ],
       "owner": "Unión Europea",
       "pending_changes": [
-        "Verificar metadatos y recorrido con una persona revisora."
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "Las latencias orientativas de Sentinel-1, Sentinel-2, Sentinel-3 y Sentinel-5P no se contrastaron en el servicio."
       ],
       "platforms": [],
-      "purpose": "Acceder a observación terrestre Sentinel y productos Copernicus.",
+      "purpose": "Consultar escenas Sentinel. El navegador sirve para mirar una escena. El Data Space es el acceso a los productos.",
       "references": [
         {
           "title": "Copernicus Data Space Ecosystem — página responsable",
           "url": "https://dataspace.copernicus.eu/"
+        },
+        {
+          "title": "Copernicus Browser",
+          "url": "https://browser.dataspace.copernicus.eu/"
         }
       ],
       "review_days": 180,
@@ -4867,7 +5472,8 @@
         "disaster-crisis"
       ],
       "steps": [
-        "Registrar misión, producto, fecha, cobertura nubosa y transformación aplicada.",
+        "Registrar misión, producto, fecha, resolución, latencia y cobertura nubosa.",
+        "No uses la posición del satélite ni un globo como si fueran la imagen.",
         "Comprueba en Copernicus Data Space Ecosystem la fecha, cobertura y definición de imágenes satelitales.",
         "Si no hay coincidencias, registra los filtros utilizados y consulta los límites antes de extraer conclusiones."
       ],
@@ -5146,6 +5752,99 @@
     },
     {
       "access": "unknown",
+      "alternatives": [
+        "global-nasa-firms",
+        "eu-erascc-emergency-mapping",
+        "global-gdacs"
+      ],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "emergencias",
+        "medio-ambiente"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "alta",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "Se distingue un punto publicado de la ausencia de punto. La ausencia no prueba que no haya fuego.",
+        "input": "Un ejercicio ficticio busca si un monte sin habitantes figura en el mapa de incendios de un día concreto.",
+        "interpretation": "EFFIS orienta. La autoridad local confirma la situación.",
+        "steps": [
+          "Anota la fecha del producto y el nombre de la capa.",
+          "No emitas un aviso ni contactes con servicios reales."
+        ]
+      },
+      "id": "eu-effis",
+      "input_types": [
+        "lugar"
+      ],
+      "inputs": [
+        "zona",
+        "fecha",
+        "tipo de aviso"
+      ],
+      "interpretation": "Un punto de incendio es un aviso del sistema, no la prueba de un hecho ni la imagen en directo.",
+      "jurisdictions": [
+        "EU"
+      ],
+      "languages": [
+        "und"
+      ],
+      "limitations": "No todos los fuegos aparecen. La latencia no se contrastó en el servicio. El aviso no sustituye a protección civil ni a los bomberos.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://forest-fire.emergency.copernicus.eu/"
+      ],
+      "metadata_evidence": [],
+      "name": "EFFIS",
+      "output_types": [
+        "aviso",
+        "mapa"
+      ],
+      "outputs": [
+        "perímetros o puntos de incendio publicados",
+        "fecha del producto"
+      ],
+      "owner": "Copernicus y Centro Común de Investigación",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "Acceso, coste e idioma no se comprobaron en el visor.",
+        "La URL anterior del JRC redirige a este servicio; no se leyó el contenido del mapa."
+      ],
+      "platforms": [],
+      "purpose": "Consultar el sistema europeo de información sobre incendios forestales como panorama de fuegos.",
+      "references": [
+        {
+          "title": "EFFIS — página responsable",
+          "url": "https://forest-fire.emergency.copernicus.eu/"
+        }
+      ],
+      "review_days": 30,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "disaster-crisis",
+        "image-geolocation"
+      ],
+      "steps": [
+        "Fija la zona y el día antes de leer el mapa.",
+        "Anota el nombre del producto y su fecha.",
+        "Si no hay marca, dilo como ausencia en esa capa, no como ausencia del fuego."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.",
+      "tier": "P1",
+      "type": "map",
+      "url": "https://forest-fire.emergency.copernicus.eu/",
+      "usage": "Cita la fecha del producto y la zona. No lo uses como orden de evacuación."
+    },
+    {
+      "access": "unknown",
       "alternatives": [],
       "backup_maintainer": null,
       "categories": [
@@ -5245,7 +5944,11 @@
     },
     {
       "access": "unknown",
-      "alternatives": [],
+      "alternatives": [
+        "global-gdacs",
+        "eu-effis",
+        "global-nasa-firms"
+      ],
       "backup_maintainer": null,
       "categories": [
         "emergencias",
@@ -5281,7 +5984,7 @@
       "languages": [
         "und"
       ],
-      "limitations": "No todas las emergencias generan activación pública.",
+      "limitations": "No todas las emergencias generan activación pública. El mapa corresponde a una activación y a una fecha; no es una imagen continua del lugar. EU marca el servicio europeo. GLOBAL se conserva porque el mapa puede consultarse desde otros territorios; si se quitara, dejaría de aparecer fuera de la Unión.",
       "maintainer": null,
       "maintenance_urls": [
         "https://emergency.copernicus.eu/"
@@ -5414,6 +6117,97 @@
       "type": "register",
       "url": "https://euipo.europa.eu/eSearch/",
       "usage": "Buscar variantes y comprobar estado y fechas procesales."
+    },
+    {
+      "access": "unknown",
+      "alternatives": [
+        "es-aemet"
+      ],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "medio-ambiente"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "normal",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "Queda anotada la hora y que la mancha no localiza un cruce.",
+        "input": "Se compara una mancha de nubes ficticia sobre una costa sin nombres de personas.",
+        "interpretation": "La imagen meteorológica no sustituye una ortofoto ni un aviso local.",
+        "steps": [
+          "Anota satélite, producto y hora de la escena.",
+          "No envíes solicitudes ni datos personales en esta práctica."
+        ]
+      },
+      "id": "eu-eumetview",
+      "input_types": [
+        "lugar"
+      ],
+      "inputs": [
+        "zona",
+        "hora",
+        "producto"
+      ],
+      "interpretation": "Sirve para el tiempo y para fenómenos grandes. No identifica una calle ni una persona.",
+      "jurisdictions": [
+        "EUROPE",
+        "GLOBAL"
+      ],
+      "languages": [
+        "und"
+      ],
+      "limitations": "EUROPE marca al publicador europeo. GLOBAL se conserva porque la imagen puede consultarse desde otros lugares; si se quitara, dejaría de aparecer fuera de Europa. La cadencia que se cita en guías no se contrastó aquí. Una vista meteorológica no es una ortofoto.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://view.eumetsat.int/"
+      ],
+      "metadata_evidence": [],
+      "name": "EUMETView",
+      "output_types": [
+        "aviso",
+        "mapa"
+      ],
+      "outputs": [
+        "imágenes meteorológicas",
+        "hora de la escena"
+      ],
+      "owner": "EUMETSAT",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "Acceso, coste e idioma no se comprobaron en el servicio.",
+        "La periodicidad de las imágenes meteorológicas no se contrastó en la página."
+      ],
+      "platforms": [],
+      "purpose": "Ver imágenes meteorológicas de EUMETSAT para seguir nubes, tormentas o humo a escala amplia.",
+      "references": [
+        {
+          "title": "EUMETView — página responsable",
+          "url": "https://view.eumetsat.int/"
+        }
+      ],
+      "review_days": 180,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "image-geolocation",
+        "disaster-crisis"
+      ],
+      "steps": [
+        "Elige zona y producto y anota la hora que muestra el visor.",
+        "Compara con un aviso meteorológico oficial si la pregunta es de emergencia.",
+        "Si la escena no cubre la hora buscada, dilo y no completes el hueco."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.",
+      "tier": "P1",
+      "type": "map",
+      "url": "https://view.eumetsat.int/",
+      "usage": "Anota el satélite, el producto y la hora. No la uses como mapa de calles."
     },
     {
       "access": "unknown",
@@ -6331,7 +7125,7 @@
       "languages": [
         "und"
       ],
-      "limitations": "La competencia y los tipos de reporte admitidos están delimitados.",
+      "limitations": "La competencia y los tipos de reporte admitidos están delimitados. GB indica el domicilio del organismo. GLOBAL se conserva porque la vía puede usarse desde otros territorios; si se quitara, dejaría de aparecer fuera del Reino Unido.",
       "maintainer": null,
       "maintenance_urls": [
         "https://report.iwf.org.uk/"
@@ -6382,7 +7176,187 @@
     },
     {
       "access": "unknown",
-      "alternatives": [],
+      "alternatives": [
+        "eu-copernicus"
+      ],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "normal",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "La nota separa la posición estimada de cualquier escena.",
+        "input": "Se localiza un satélite ficticio de observación y se anota solo su época orbital.",
+        "interpretation": "CelesTrak dice por dónde puede ir el satélite. No entrega su fotografía.",
+        "steps": [
+          "Copia el nombre del conjunto y la época.",
+          "No afirmes que la imagen de fondo es de ese satélite."
+        ]
+      },
+      "id": "global-celestrak",
+      "input_types": [
+        "lugar",
+        "pregunta"
+      ],
+      "inputs": [
+        "nombre del satélite",
+        "fecha"
+      ],
+      "interpretation": "Un marcador orbital es una estimación de posición. No es la escena que captura el satélite.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "und"
+      ],
+      "limitations": "La propagación tiene error. La época puede estar desfasada. No sirve para decir que se ve el suelo en directo.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://celestrak.org/"
+      ],
+      "metadata_evidence": [],
+      "name": "CelesTrak",
+      "output_types": [
+        "observacion",
+        "referencia"
+      ],
+      "outputs": [
+        "elementos orbitales",
+        "época del elemento"
+      ],
+      "owner": "CelesTrak",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "Acceso, coste e idioma no se comprobaron más allá de que la portada respondió."
+      ],
+      "platforms": [],
+      "purpose": "Consultar elementos orbitales públicos para estimar dónde está un satélite, no qué imagen toma.",
+      "references": [
+        {
+          "title": "CelesTrak — página responsable",
+          "url": "https://celestrak.org/"
+        }
+      ],
+      "review_days": 180,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "image-geolocation"
+      ],
+      "steps": [
+        "Busca el satélite por su nombre público.",
+        "Anota la época del elemento.",
+        "Si comparas con una imagen, usa la ficha de esa imagen y su fecha."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.",
+      "tier": "P3",
+      "type": "dataset",
+      "url": "https://celestrak.org/",
+      "usage": "Anota el nombre del conjunto y la época. No dibujes esa posición como si fuera una foto."
+    },
+    {
+      "access": "unknown",
+      "alternatives": [
+        "eu-copernicus"
+      ],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "normal",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "La nota dice que la vista es un análisis local, no una emisión en directo.",
+        "input": "Se anota que un producto Sentinel ficticio, sin personas, se abriría en SNAP para leer su fecha.",
+        "interpretation": "SNAP ayuda a leer un producto. No demuestra un hecho sin otra fuente.",
+        "steps": [
+          "Escribe misión, producto y fecha antes de interpretar colores.",
+          "No subas el archivo ni una clave a este repositorio."
+        ]
+      },
+      "id": "global-esa-snap",
+      "input_types": [
+        "lugar",
+        "documento"
+      ],
+      "inputs": [
+        "producto Sentinel ya obtenido",
+        "pregunta sobre una escena"
+      ],
+      "interpretation": "SNAP procesa un archivo. El resultado depende del producto y de los pasos de quien lo usa. No es una prueba por sí solo.",
+      "jurisdictions": [
+        "EUROPE",
+        "GLOBAL"
+      ],
+      "languages": [
+        "und"
+      ],
+      "limitations": "EUROPE marca al publicador europeo. GLOBAL se conserva porque el programa puede usarse desde otros lugares. No es tiempo real. No identifica personas. No forma parte de OSINT Atlas.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://step.esa.int/main/download/snap-download/"
+      ],
+      "metadata_evidence": [],
+      "name": "ESA SNAP",
+      "output_types": [
+        "observacion",
+        "mapa"
+      ],
+      "outputs": [
+        "lectura local de un producto",
+        "notas de quien analiza"
+      ],
+      "owner": "Agencia Espacial Europea",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "Acceso, coste e idioma de la página de descarga no se leyeron en detalle.",
+        "No se comprobó qué versión está publicada hoy."
+      ],
+      "platforms": [],
+      "purpose": "Descargar el programa de escritorio SNAP para abrir y revisar productos Sentinel en el equipo de quien consulta.",
+      "references": [
+        {
+          "title": "ESA SNAP — página de descarga",
+          "url": "https://step.esa.int/main/download/snap-download/"
+        }
+      ],
+      "review_days": 180,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "image-geolocation"
+      ],
+      "steps": [
+        "Descarga el programa desde la página de la ESA, fuera de este repositorio.",
+        "Abre un producto del que ya tengas misión, fecha y licencia.",
+        "Anota qué hiciste con la imagen y qué no puedes concluir."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. El programa no se instala con este catálogo.",
+      "tier": "P1",
+      "type": "tool",
+      "url": "https://step.esa.int/main/download/snap-download/",
+      "usage": "Instálalo aparte. Anota misión, producto y fecha. Este repositorio no lo incluye."
+    },
+    {
+      "access": "unknown",
+      "alternatives": [
+        "eu-erascc-emergency-mapping",
+        "eu-effis",
+        "global-nasa-firms"
+      ],
       "backup_maintainer": null,
       "categories": [
         "emergencias",
@@ -6417,7 +7391,7 @@
       "languages": [
         "und"
       ],
-      "limitations": "No sustituye alertas locales ni instrucciones de evacuación.",
+      "limitations": "No sustituye alertas locales ni instrucciones de evacuación. El aviso es un panorama inicial. No es una orden ni la imagen del satélite.",
       "maintainer": null,
       "maintenance_urls": [
         "https://www.gdacs.org/"
@@ -6549,6 +7523,95 @@
       "type": "api",
       "url": "https://www.gleif.org/en/lei-data/gleif-api",
       "usage": "Buscar por identificador cuando exista y revisar estado y fecha de actualización."
+    },
+    {
+      "access": "unknown",
+      "alternatives": [
+        "eu-copernicus",
+        "global-osm",
+        "global-celestrak"
+      ],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "normal",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "La nota dice que el marcador no es una imagen en directo.",
+        "input": "Se mira un globo ficticio y se anota qué capa viene de un servicio con ficha y cuál no.",
+        "interpretation": "El visor enseña a cruzar fuentes. No las sustituye.",
+        "steps": [
+          "Apunta la fuente de cada capa antes de creer la vista.",
+          "Abre esa fuente en su página, no solo en el globo."
+        ]
+      },
+      "id": "global-gods-eye-view",
+      "input_types": [
+        "lugar"
+      ],
+      "inputs": [
+        "capa pública",
+        "zona"
+      ],
+      "interpretation": "El globo superpone señales de otros sitios. Un marcador de satélite no es la imagen de ese satélite.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "und"
+      ],
+      "limitations": "No sirve para una operación crítica ni para una emergencia. Puede mezclar datos retrasados, modelos y posiciones estimadas. No identifica personas. No forma parte de OSINT Atlas.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://github.com/bilawalsidhu/gods-eye-view"
+      ],
+      "metadata_evidence": [],
+      "name": "God's Eye View",
+      "output_types": [
+        "mapa",
+        "referencia"
+      ],
+      "outputs": [
+        "vista combinada de fuentes ajenas",
+        "pista hacia la fuente original"
+      ],
+      "owner": "Proyecto público gods-eye-view",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "Acceso, coste e idioma no se comprobaron más allá de la página del repositorio."
+      ],
+      "platforms": [],
+      "purpose": "Consultar un visor experimental que reúne fuentes públicas en un globo. No es una herramienta de este repositorio.",
+      "references": [
+        {
+          "title": "God's Eye View — repositorio público",
+          "url": "https://github.com/bilawalsidhu/gods-eye-view"
+        }
+      ],
+      "review_days": 180,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "image-geolocation",
+        "disaster-crisis"
+      ],
+      "steps": [
+        "Abre el repositorio y lee qué fuentes dice usar.",
+        "Contrasta cada señal en la ficha o la página de origen.",
+        "No uses el globo como prueba ni como imagen en directo."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. El repositorio de terceros no es software de este catálogo.",
+      "tier": "P4",
+      "type": "tool",
+      "url": "https://github.com/bilawalsidhu/gods-eye-view",
+      "usage": "Úsalo para encontrar una fuente y ábrela en su página. No cierres un análisis en el globo."
     },
     {
       "access": "unknown",
@@ -6974,7 +8037,278 @@
     {
       "access": "unknown",
       "alternatives": [
-        "es-cnig-pnoa"
+        "eu-effis",
+        "global-gdacs",
+        "eu-erascc-emergency-mapping"
+      ],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "emergencias",
+        "medio-ambiente"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "alta",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "Se anota si hay detección y se deja claro que no es una orden.",
+        "input": "Un ejercicio ficticio revisa si una colina sin edificaciones tiene una detección en un día dado.",
+        "interpretation": "FIRMS orienta. La confirmación corresponde a la autoridad del lugar.",
+        "steps": [
+          "Anota sensor y fecha de la pasada.",
+          "No avises a un servicio real con este ejercicio."
+        ]
+      },
+      "id": "global-nasa-firms",
+      "input_types": [
+        "lugar"
+      ],
+      "inputs": [
+        "zona",
+        "fecha",
+        "sensor"
+      ],
+      "interpretation": "Una detección es una anomalía térmica del sensor. No prueba por sí sola un incendio ni su causa.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "und"
+      ],
+      "limitations": "Pueden faltar fuegos pequeños o bajo nube, según el sensor. La cifra de retraso no se contrastó aquí. No sustituye a los bomberos ni a protección civil.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://firms.modaps.eosdis.nasa.gov/"
+      ],
+      "metadata_evidence": [],
+      "name": "NASA FIRMS",
+      "output_types": [
+        "aviso",
+        "mapa"
+      ],
+      "outputs": [
+        "detecciones de fuego",
+        "fecha de la pasada"
+      ],
+      "owner": "NASA",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "Acceso, coste e idioma no se comprobaron en el servicio.",
+        "La latencia de las detecciones no se contrastó en la página."
+      ],
+      "platforms": [],
+      "purpose": "Consultar detecciones de fuego activo publicadas por NASA FIRMS como primer vistazo.",
+      "references": [
+        {
+          "title": "NASA FIRMS — página responsable",
+          "url": "https://firms.modaps.eosdis.nasa.gov/"
+        }
+      ],
+      "review_days": 30,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "disaster-crisis",
+        "image-geolocation"
+      ],
+      "steps": [
+        "Acota el mapa al día y a la zona.",
+        "Lee el sensor y la hora que acompañan al punto.",
+        "Si no hay punto, escríbelo como ausencia en esa pasada."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.",
+      "tier": "P1",
+      "type": "map",
+      "url": "https://firms.modaps.eosdis.nasa.gov/",
+      "usage": "Anota sensor, fecha y confianza si el visor la muestra. Contrasta con una fuente local."
+    },
+    {
+      "access": "unknown",
+      "alternatives": [
+        "eu-copernicus",
+        "global-usgs-landsat"
+      ],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "medio-ambiente"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "normal",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "Quedan escritos la capa y el día. No se afirma una dirección.",
+        "input": "Se abre un día ficticio sobre una costa sin personas para ver si hay una capa de color verdadero.",
+        "interpretation": "Worldview ayuda a mirar. No cierra una localización por sí solo.",
+        "steps": [
+          "Anota el nombre de la capa y la fecha del control.",
+          "No guardes una captura como si fuera una prueba."
+        ]
+      },
+      "id": "global-nasa-worldview",
+      "input_types": [
+        "lugar"
+      ],
+      "inputs": [
+        "zona",
+        "fecha",
+        "capa"
+      ],
+      "interpretation": "La vista muestra el producto elegido en esa fecha. No es la imagen de un satélite que pasa ahora.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "und"
+      ],
+      "limitations": "Cada capa tiene su propia resolución y retraso, no contrastados aquí. El globo del visor no es una fotografía en directo.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://worldview.earthdata.nasa.gov/"
+      ],
+      "metadata_evidence": [],
+      "name": "NASA Worldview",
+      "output_types": [
+        "mapa"
+      ],
+      "outputs": [
+        "vista de una capa fechada",
+        "nombre de la capa"
+      ],
+      "owner": "NASA",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "Acceso, coste e idioma no se comprobaron.",
+        "La latencia de cada capa no se contrastó en el visor."
+      ],
+      "platforms": [],
+      "purpose": "Explorar capas de observación de la Tierra de NASA, con fecha, para comparar una escena amplia.",
+      "references": [
+        {
+          "title": "NASA Worldview — página responsable",
+          "url": "https://worldview.earthdata.nasa.gov/"
+        }
+      ],
+      "review_days": 180,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "image-geolocation",
+        "disaster-crisis"
+      ],
+      "steps": [
+        "Elige la capa y el día en el visor.",
+        "Anota resolución si la ficha de la capa la muestra.",
+        "Si la capa es un modelo, no la llames observación."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.",
+      "tier": "P1",
+      "type": "map",
+      "url": "https://worldview.earthdata.nasa.gov/",
+      "usage": "Anota la capa y el día. No la trates como un callejero ni como tiempo real."
+    },
+    {
+      "access": "unknown",
+      "alternatives": [],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "transporte"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "normal",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "Se anota si hubo estados y se deja constancia de que pueden faltar vuelos.",
+        "input": "Se busca si un corredor aéreo ficticio tiene estados publicados en una hora, sin matrícula de persona.",
+        "interpretation": "OpenSky no demuestra quién viaja ni que un silencio sea un vuelo ausente.",
+        "steps": [
+          "Anota la hora de los estados y la zona.",
+          "No uses el dato para seguir a alguien."
+        ]
+      },
+      "id": "global-opensky",
+      "input_types": [
+        "lugar"
+      ],
+      "inputs": [
+        "zona",
+        "intervalo",
+        "identificador de vuelo publicado"
+      ],
+      "interpretation": "Un trazo es lo que un receptor publicó. Puede faltar un vuelo o llegar tarde.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "und"
+      ],
+      "limitations": "No es un servicio de seguridad aérea. La página no respondió en la comprobación de esta ficha. No identifica personas a bordo.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://opensky-network.org/"
+      ],
+      "metadata_evidence": [],
+      "name": "OpenSky Network",
+      "output_types": [
+        "observacion",
+        "mapa"
+      ],
+      "outputs": [
+        "trayectorias o estados publicados",
+        "hora de la recepción"
+      ],
+      "owner": "OpenSky Network",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "El 8 de octubre de 2026 la página no completó la conexión desde este entorno. Acceso, coste e idioma siguen sin comprobar."
+      ],
+      "platforms": [],
+      "purpose": "Consultar trayectorias públicas de aviación recibidas por la red OpenSky, cuando el servicio responde.",
+      "references": [
+        {
+          "title": "OpenSky Network — página responsable",
+          "url": "https://opensky-network.org/"
+        }
+      ],
+      "review_days": 180,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "image-geolocation",
+        "source-corroboration"
+      ],
+      "steps": [
+        "Acota hora y zona antes de leer.",
+        "Conserva la hora de recepción que muestre el servicio.",
+        "Si la página no abre, no concluyas que no hubo tráfico."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.",
+      "tier": "P3",
+      "type": "portal",
+      "url": "https://opensky-network.org/",
+      "usage": "Anota la hora y que la cobertura depende de receptores. No la uses para navegar."
+    },
+    {
+      "access": "unknown",
+      "alternatives": [
+        "es-cnig-pnoa",
+        "global-overpass"
       ],
       "backup_maintainer": null,
       "categories": [
@@ -7009,7 +8343,7 @@
       "languages": [
         "und"
       ],
-      "limitations": "Cobertura y precisión no son uniformes.",
+      "limitations": "Cobertura y precisión no son uniformes. Overpass consulta los mismos datos con otra interfaz. No es un mapa distinto ni una fuente oficial.",
       "maintainer": null,
       "maintenance_urls": [
         "https://www.openstreetmap.org/"
@@ -7058,6 +8392,99 @@
       "type": "map",
       "url": "https://www.openstreetmap.org/",
       "usage": "Corroborar elementos con fuentes primarias o imágenes recientes."
+    },
+    {
+      "access": "unknown",
+      "alternatives": [
+        "global-osm",
+        "es-cnig-pnoa"
+      ],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "datos-abiertos"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "normal",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "La nota lista objetos y dice cuáles no se contrastaron.",
+        "input": "Se pregunta por puentes etiquetados en un río ficticio, sin nombres de personas.",
+        "interpretation": "Una etiqueta no prueba que el objeto siga igual.",
+        "steps": [
+          "Guarda el texto de la consulta y la fecha.",
+          "Compara un objeto con una ortofoto, no con una dirección particular."
+        ]
+      },
+      "id": "global-overpass",
+      "input_types": [
+        "lugar"
+      ],
+      "inputs": [
+        "zona",
+        "tipo de objeto"
+      ],
+      "interpretation": "El resultado es lo que la comunidad ha etiquetado. Puede estar incompleto o recién editado.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "und"
+      ],
+      "limitations": "Overpass no crea datos nuevos. Lee OpenStreetMap. No es una fuente oficial ni una imagen.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://overpass-turbo.eu/"
+      ],
+      "metadata_evidence": [],
+      "name": "Overpass Turbo",
+      "output_types": [
+        "mapa",
+        "observacion"
+      ],
+      "outputs": [
+        "geometrías y etiquetas de OpenStreetMap",
+        "consulta utilizada"
+      ],
+      "owner": "Comunidad OpenStreetMap",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "Acceso, coste e idioma no se comprobaron más allá de que la página respondió."
+      ],
+      "platforms": [],
+      "purpose": "Consultar objetos de OpenStreetMap con una pregunta geográfica, sin tratar el resultado como mapa oficial.",
+      "references": [
+        {
+          "title": "Overpass Turbo — página responsable",
+          "url": "https://overpass-turbo.eu/"
+        },
+        {
+          "title": "Overpass API — documentación comunitaria",
+          "url": "https://wiki.openstreetmap.org/wiki/Overpass_API"
+        }
+      ],
+      "review_days": 180,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "image-geolocation",
+        "source-corroboration"
+      ],
+      "steps": [
+        "Dibuja una zona pequeña y elige un tipo de objeto.",
+        "Exporta o copia la consulta, no solo la imagen.",
+        "Contrasta con otra fuente antes de afirmar que el objeto existe."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.",
+      "tier": "P3",
+      "type": "tool",
+      "url": "https://overpass-turbo.eu/",
+      "usage": "Guarda la consulta y la fecha. Contrasta los objetos con una fuente primaria o una ortofoto fechada."
     },
     {
       "access": "unknown",
@@ -7517,6 +8944,100 @@
       "type": "dataset",
       "url": "https://data.un.org/",
       "usage": "Seguir la serie hasta el organismo que la produce y conservar notas metodológicas."
+    },
+    {
+      "access": "unknown",
+      "alternatives": [
+        "eu-copernicus",
+        "global-nasa-worldview"
+      ],
+      "backup_maintainer": null,
+      "categories": [
+        "geoint",
+        "datos-abiertos"
+      ],
+      "cost": "Desconocido; consultar el servicio concreto.",
+      "created_at": "2026-10-08",
+      "criticality": "normal",
+      "editorial_reviewed": null,
+      "example": {
+        "expected": "La nota distingue la escena de una ortofoto más reciente.",
+        "input": "Se busca una escena ficticia de un valle sin edificaciones identificables, en un mes concreto.",
+        "interpretation": "Landsat muestra cambios amplios. No detalla una fachada.",
+        "steps": [
+          "Anota identificador de escena, sensor y fecha.",
+          "No la superpongas a un domicilio."
+        ]
+      },
+      "id": "global-usgs-landsat",
+      "input_types": [
+        "lugar"
+      ],
+      "inputs": [
+        "zona",
+        "fecha",
+        "sensor"
+      ],
+      "interpretation": "Una escena Landsat tiene fecha y resolución. No es una imagen en directo ni una ortofoto nacional.",
+      "jurisdictions": [
+        "GLOBAL"
+      ],
+      "languages": [
+        "und"
+      ],
+      "limitations": "El organismo está en Estados Unidos y el catálogo no tiene nodo de ese país. GLOBAL se mantiene porque las escenas cubren otros territorios. La licencia y el retraso de cada producto siguen pendientes.",
+      "maintainer": null,
+      "maintenance_urls": [
+        "https://www.usgs.gov/landsat-missions",
+        "https://landsatlook.usgs.gov/"
+      ],
+      "metadata_evidence": [],
+      "name": "USGS Landsat",
+      "output_types": [
+        "mapa"
+      ],
+      "outputs": [
+        "escenas Landsat",
+        "metadatos de la escena"
+      ],
+      "owner": "Servicio Geológico de Estados Unidos",
+      "pending_changes": [
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "Acceso, coste e idioma no se comprobaron en la misión ni en el visor."
+      ],
+      "platforms": [],
+      "purpose": "Orientarse en la misión Landsat y llegar a sus escenas ópticas históricas y recientes.",
+      "references": [
+        {
+          "title": "USGS Landsat Missions — página responsable",
+          "url": "https://www.usgs.gov/landsat-missions"
+        },
+        {
+          "title": "LandsatLook",
+          "url": "https://landsatlook.usgs.gov/"
+        }
+      ],
+      "review_days": 180,
+      "review_status": "pending",
+      "reviewer": null,
+      "scenarios": [
+        "image-geolocation",
+        "disaster-crisis"
+      ],
+      "steps": [
+        "Parte de la página de la misión y abre el visor solo para elegir una escena.",
+        "Conserva identificador, fecha y sensor.",
+        "No llames actual a una escena de otro año."
+      ],
+      "technical_check": {
+        "checked_at": null,
+        "status": "unknown"
+      },
+      "terms": "Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.",
+      "tier": "P1",
+      "type": "map",
+      "url": "https://www.usgs.gov/landsat-missions",
+      "usage": "Anota sensor, fecha y nivel de producto. El visor LandsatLook es una puerta distinta de la página de la misión."
     },
     {
       "access": "unknown",
@@ -8434,7 +9955,8 @@
       ],
       "owner": "National Center for Missing & Exploited Children",
       "pending_changes": [
-        "Verificar metadatos y recorrido con una persona revisora."
+        "Verificar metadatos y recorrido con una persona revisora.",
+        "El organismo está en Estados Unidos y este catálogo no tiene un nodo de ese país. Se mantiene GLOBAL para que la vía siga apareciendo en otros territorios. No se ha cambiado el canal ni el destinatario."
       ],
       "platforms": [],
       "purpose": "Comunicar sospechas de explotación sexual infantil a NCMEC cuando corresponda.",
@@ -8695,5 +10217,5 @@
     ],
     "version": 1
   },
-  "version": "e23dc83633770515"
+  "version": "cb8f12dd34cd99fb"
 }

@@ -1,0 +1,71 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 90
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+- Acceso, coste e idioma no se leyeron en el punto de acceso.
+- No se contrastó si el visor estatal excluye Cataluña y el País Vasco.
+id: es-dgt-camaras
+name: Cámaras del Punto de Acceso Nacional de la DGT
+owner: Dirección General de Tráfico
+jurisdictions:
+- ES
+type: map
+tier: P1
+categories:
+- geoint
+- transporte
+scenarios:
+- image-geolocation
+- disaster-crisis
+url: https://nap.dgt.es/
+purpose: Consultar el punto de acceso nacional de tráfico para localizar cámaras y datos de la red que publica la DGT.
+inputs:
+- carretera
+- fecha de consulta
+outputs:
+- localización de cámaras publicadas
+- imagen o dato de tráfico si el servicio lo muestra
+usage: Anota la carretera, la hora de la imagen y que es una cámara de tráfico.
+interpretation: La imagen muestra la calzada en ese momento de captura. No identifica a una persona ni prueba un hecho.
+limitations: Esta ficha no es la estadística de DGT en cifras. Una cámara no es un censo de vehículos ni una
+  prueba. La cobertura autonómica que a veces se afirma quedó sin contrastar. La cadencia no se leyó en el servicio.
+created_at: '2026-10-08'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- es-dgt-datos
+- es-madrid-camaras
+references:
+- title: Punto de Acceso Nacional de Tráfico — página responsable
+  url: https://nap.dgt.es/
+platforms: []
+maintenance_urls:
+- https://nap.dgt.es/
+input_types:
+- lugar
+output_types:
+- mapa
+- observacion
+example:
+  input: Se busca la cámara de un enlace ficticio y se anota solo la hora que muestra el visor.
+  steps:
+  - Anota carretera y hora de la captura.
+  - No identifiques vehículos ni personas.
+  expected: La nota dice la hora y que la imagen no prueba un incidente.
+  interpretation: Sirve para ver el estado publicado de la calzada, no para investigar a alguien.
+steps:
+- Abre el punto de acceso y localiza la carretera.
+- Anota la hora de la imagen, no la hora en que tú miras.
+- No uses la captura para identificar a una persona.

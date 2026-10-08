@@ -1,0 +1,68 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 180
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+- Acceso, coste e idioma no se comprobaron más allá de que la portada respondió.
+id: global-celestrak
+name: CelesTrak
+owner: CelesTrak
+jurisdictions:
+- GLOBAL
+type: dataset
+tier: P3
+categories:
+- geoint
+scenarios:
+- image-geolocation
+url: https://celestrak.org/
+purpose: Consultar elementos orbitales públicos para estimar dónde está un satélite, no qué imagen toma.
+inputs:
+- nombre del satélite
+- fecha
+outputs:
+- elementos orbitales
+- época del elemento
+usage: Anota el nombre del conjunto y la época. No dibujes esa posición como si fuera una foto.
+interpretation: Un marcador orbital es una estimación de posición. No es la escena que captura el satélite.
+limitations: La propagación tiene error. La época puede estar desfasada. No sirve para decir que se ve el
+  suelo en directo.
+created_at: '2026-10-08'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- eu-copernicus
+references:
+- title: CelesTrak — página responsable
+  url: https://celestrak.org/
+platforms: []
+maintenance_urls:
+- https://celestrak.org/
+input_types:
+- lugar
+- pregunta
+output_types:
+- observacion
+- referencia
+example:
+  input: Se localiza un satélite ficticio de observación y se anota solo su época orbital.
+  steps:
+  - Copia el nombre del conjunto y la época.
+  - No afirmes que la imagen de fondo es de ese satélite.
+  expected: La nota separa la posición estimada de cualquier escena.
+  interpretation: CelesTrak dice por dónde puede ir el satélite. No entrega su fotografía.
+steps:
+- Busca el satélite por su nombre público.
+- Anota la época del elemento.
+- Si comparas con una imagen, usa la ficha de esa imagen y su fecha.

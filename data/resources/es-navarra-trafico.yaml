@@ -1,0 +1,70 @@
+access: unknown
+cost: Desconocido; consultar el servicio concreto.
+terms: Condiciones de reutilización pendientes de revisión. Acceso a la web no equivale a permiso de redistribución.
+review_days: 90
+criticality: normal
+languages:
+- und
+editorial_reviewed: null
+maintainer: null
+backup_maintainer: null
+technical_check:
+  status: unknown
+  checked_at: null
+pending_changes:
+- Verificar metadatos y recorrido con una persona revisora.
+- El 8 de octubre de 2026 la página no completó la conexión desde este entorno. No se comprobó si el visor
+  incluye cámaras.
+id: es-navarra-trafico
+name: Tráfico de Navarra
+owner: Gobierno de Navarra
+jurisdictions:
+- ES-NC
+type: portal
+tier: P1
+categories:
+- geoint
+- transporte
+scenarios:
+- image-geolocation
+- disaster-crisis
+url: https://www.navarra.es/es/trafico
+purpose: Consultar la página de tráfico de Navarra para incidencias y, si el visor las ofrece, cámaras de carretera.
+inputs:
+- carretera de Navarra
+- fecha de consulta
+outputs:
+- incidencias publicadas
+- cámaras si el visor las muestra
+usage: Anota la hora de la página. No des por hecho una cámara hasta verla en el visor.
+interpretation: Una incidencia publicada es lo que dice el organismo en esa hora. No prueba por sí sola un hecho.
+limitations: Esta ficha no se pudo abrir en la comprobación. Una cámara, si aparece, no identifica a una persona.
+  No sustituye al 112 ni a una orden de tráfico.
+created_at: '2026-10-08'
+reviewer: null
+review_status: pending
+metadata_evidence: []
+alternatives:
+- es-dgt-camaras
+references:
+- title: Tráfico — Gobierno de Navarra
+  url: https://www.navarra.es/es/trafico
+platforms: []
+maintenance_urls:
+- https://www.navarra.es/es/trafico
+input_types:
+- lugar
+output_types:
+- aviso
+- mapa
+example:
+  input: Se busca el estado publicado de un puerto de montaña ficticio, sin vehículos ni personas.
+  steps:
+  - Anota la hora de la página si llega a abrir.
+  - Si no abre, dilo y no inventes el estado de la carretera.
+  expected: La nota distingue página caída de carretera cortada.
+  interpretation: El silencio de la web no es una incidencia de tráfico.
+steps:
+- Abre la página de tráfico y busca la carretera.
+- Anota incidencias con su hora.
+- Si hay cámara, anota la hora de la imagen y no identifiques a nadie.

@@ -38,12 +38,18 @@ outputs:
 - productos de activación
 usage: Citar código de activación, producto, fecha y versión.
 interpretation: Los mapas se producen para un objetivo y ventana temporal concretos.
-limitations: No todas las emergencias generan activación pública.
+limitations: No todas las emergencias generan activación pública. El mapa corresponde a una activación y a
+  una fecha; no es una imagen continua del lugar. EU marca el servicio europeo. GLOBAL se conserva
+  porque el mapa puede consultarse desde otros territorios; si se quitara, dejaría de aparecer fuera de
+  la Unión.
 created_at: '2026-09-12'
 reviewer: null
 review_status: pending
 metadata_evidence: []
-alternatives: []
+alternatives:
+- global-gdacs
+- eu-effis
+- global-nasa-firms
 references:
 - title: Copernicus Emergency Management Service — página responsable
   url: https://emergency.copernicus.eu/
