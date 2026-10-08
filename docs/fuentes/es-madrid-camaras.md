@@ -65,4 +65,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 dí
 - [Tráfico. Cámaras — Ayuntamiento de Madrid](https://datos.madrid.es/dataset/202088-0-trafico-camaras)
 - Observación de languages, access, 2026-10-08: [página comprobada](https://datos.madrid.es/dataset/202088-0-trafico-camaras). La ficha está en español y se abrió sin inicio de sesión. Dice que incluye una captura cada cinco minutos. No se revisó la licencia ni el coste. No equivale a aprobación humana.
 
-Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).
+Versión: 3881764316ce9a58. [Volver al catálogo](../CATALOGO.md).

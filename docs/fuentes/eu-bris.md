@@ -62,4 +62,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 
 - [BRIS - Buscar una empresa — página responsable](https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu/general-information-find-company_en)
 
-Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).
+Versión: 3881764316ce9a58. [Volver al catálogo](../CATALOGO.md).

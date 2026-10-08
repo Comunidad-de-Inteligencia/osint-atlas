@@ -66,4 +66,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 - [Overpass Turbo — página responsable](https://overpass-turbo.eu/)
 - [Overpass API — documentación comunitaria](https://wiki.openstreetmap.org/wiki/Overpass_API)
 
-Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).
+Versión: 3881764316ce9a58. [Volver al catálogo](../CATALOGO.md).

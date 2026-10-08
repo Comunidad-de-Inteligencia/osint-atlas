@@ -65,4 +65,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 - [Sede Electrónica del Catastro — página responsable](https://www.sedecatastro.gob.es/)
 - [Cobertura del Catastro](https://www.catastro.hacienda.gob.es/es-ES/usos_utilidades.html)
 
-Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).
+Versión: 3881764316ce9a58. [Volver al catálogo](../CATALOGO.md).

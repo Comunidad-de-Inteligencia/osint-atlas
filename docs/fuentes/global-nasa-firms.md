@@ -66,4 +66,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 
 - [NASA FIRMS — página responsable](https://firms.modaps.eosdis.nasa.gov/)
 
-Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).
+Versión: 3881764316ce9a58. [Volver al catálogo](../CATALOGO.md).

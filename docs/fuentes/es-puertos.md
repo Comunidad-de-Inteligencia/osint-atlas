@@ -62,4 +62,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 
 - [Puertos del Estado — página responsable](https://www.puertos.es/)
 
-Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).
+Versión: 3881764316ce9a58. [Volver al catálogo](../CATALOGO.md).

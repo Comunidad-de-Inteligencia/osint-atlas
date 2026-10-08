@@ -66,4 +66,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 
 - [Guardia Civil - Delitos telemáticos — página responsable](https://www.guardiacivil.es/es/servicios/delitos_telematicos/)
 
-Versión: cb8f12dd34cd99fb. [Volver al catálogo](../CATALOGO.md).
+Versión: 3881764316ce9a58. [Volver al catálogo](../CATALOGO.md).
