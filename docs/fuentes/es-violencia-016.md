@@ -67,4 +67,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 
 - [Atención a todas las formas de violencia contra las mujeres — página responsable](https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/)
 
-Versión: f284f49148a09ea0. [Volver al catálogo](../CATALOGO.md).
+Versión: 04eb3de40b46f80d. [Volver al catálogo](../CATALOGO.md).

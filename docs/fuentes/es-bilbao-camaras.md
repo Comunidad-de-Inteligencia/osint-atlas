@@ -64,4 +64,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 90 dí
 
 - [Cámaras de tráfico de Bilbao en tiempo real — datos.gob.es](https://datos.gob.es/es/catalogo/l01480209-camaras-de-trafico-de-bilbao-en-tiempo-real)
 
-Versión: f284f49148a09ea0. [Volver al catálogo](../CATALOGO.md).
+Versión: 04eb3de40b46f80d. [Volver al catálogo](../CATALOGO.md).
