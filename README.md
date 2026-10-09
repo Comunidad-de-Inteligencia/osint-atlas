@@ -4,21 +4,41 @@
 
 # OSINT Atlas
 
-- [Castellano](#castellano)
-- [English](#english)
+🇪🇸 [Español](23#español)  🇬🇧/🇺🇸 [English](23#english)
 
-## Castellano
+## 🇪🇸 Español
 
-OSINT Atlas es un catálogo de consulta. OSINT quiere decir Open Source Intelligence, inteligencia de fuentes abiertas. Ayuda a elegir una fuente, leer su resultado y ver qué falta comprobar. No es una aplicación, ni un visor, ni un mapa en directo. No recibe denuncias y no envía alertas. Patrocinar no compra una ficha ni una revisión.
+OSINT Atlas es un catálogo de consulta.
 
-> Ante un peligro inmediato, acude al servicio oficial de emergencias de tu territorio. Consulta el [procedimiento de emergencia](docs/es/procedimientos/emergencia-inmediata.md) y las [vías oficiales](docs/es/contactos.md).
+OSINT quiere decir Open Source Intelligence, inteligencia de fuentes abiertas.
 
-Quien consulta con un asistente usa el Model Context Protocol (MCP) en solo lectura. Sigue siendo una forma de leer el catálogo, no de actuar por él. El detalle está en [usar el catálogo con un asistente](docs/es/ia.md).
+Este catálogo ayuda a elegir una fuente, leer su resultado y ver qué falta comprobar.
+
+> [!WARNING] 
+> Ante un peligro inmediato, acude al servicio oficial de emergencias de tu territorio.
+>
+> Consulta el [procedimiento de emergencia](docs/es/procedimientos/emergencia-inmediata.md) y las [vías oficiales](docs/es/contactos.md).
+
+> [!IMPORTANT]
+> OSINT Atlas no recibe denuncias y no envía alertas.
+
+> [!NOTE]
+> OSINT Atlas no es una aplicación, ni un visor, ni un mapa en directo.
+
+> [!IMPORTANT]
+> Patrocinar no compra una ficha ni una revisión.
+
+
+Quien consulta con un asistente de Inteligencia Artificial usa el Model Context Protocol (MCP) en solo lectura.
+
+Sigue siendo una forma de leer el catálogo, no de actuar por él. 
+
+El detalle está en [usar el catálogo con un asistente](docs/es/ia.md).
 
 ## Índice
 
-- [Qué necesito hacer](#qué-necesito-hacer)
-- [En qué territorio](#en-qué-territorio)
+- [Primeros pasos](23#primeros-pasos)
+- [En qué territorio](23#en-qué-territorio)
 - [Qué información tengo](#qué-información-tengo)
 - [Qué está revisado](#qué-está-revisado)
 - [Guías de referencia](#guías-de-referencia)
@@ -26,7 +46,7 @@ Quien consulta con un asistente usa el Model Context Protocol (MCP) en solo lect
 - [Panel de trabajo humano](#panel-de-trabajo-humano)
 - [Licencia](#licencia)
 
-## Qué necesito hacer
+## 🔰 Primeros pasos
 
 - **Empezar:** [un recorrido en cinco minutos](docs/es/empezar.md).
 - **Investigar y contrastar:** [empresas](docs/es/procedimientos/investigar-empresa.md), [contratos y ayudas](docs/es/procedimientos/contratos-subvenciones.md), [publicaciones oficiales](docs/es/procedimientos/publicaciones-oficiales.md), [dominios](docs/es/procedimientos/huella-dominio.md), [imágenes](docs/es/procedimientos/verificar-imagen.md), [conclusiones](docs/es/procedimientos/contrastar-conclusiones.md), [afirmaciones jurídicas](docs/es/procedimientos/afirmacion-juridica.md) o [estadísticas](docs/es/procedimientos/afirmacion-estadistica.md).
@@ -34,9 +54,9 @@ Quien consulta con un asistente usa el Model Context Protocol (MCP) en solo lect
 - **Emergencias:** [actuación inmediata](docs/es/procedimientos/emergencia-inmediata.md) o [desastres y crisis](docs/es/procedimientos/desastre-crisis.md).
 - **Protección y reporte:** [grooming y sextorsión](docs/es/procedimientos/grooming-sextorsion.md), [violencia sexual digital](docs/es/procedimientos/violencia-sexual-digital.md), [posible abuso sexual infantil](docs/es/procedimientos/reportar-csam.md) o [Telegram y otras plataformas](docs/es/procedimientos/reportar-plataformas.md).
 
-## En qué territorio
+## 🌐 En qué territorio
 
-La marca va junto al nombre.
+Árbol de territorios:
 
 - 🌐 [Global](docs/es/indices/jurisdiccion-global.md)
   - 🌍 [Europa](docs/es/indices/jurisdiccion-europe.md)
@@ -57,11 +77,24 @@ La marca va junto al nombre.
     - 🇨🇴 [Colombia](docs/es/indices/jurisdiccion-co.md)
     - 🇦🇷 [Argentina](docs/es/indices/jurisdiccion-ar.md)
 
-El Reino Unido no forma parte de la Unión Europea. Una cámara de Madrid se encuentra desde España y en su propia página. La [cobertura](docs/es/cobertura.md) usa el mismo árbol. Un recurso global puede ayudar sin cubrir el procedimiento local.
+> El Reino Unido no forma parte de la Unión Europea. Consultar [Estados miembros de la Unión Europea](https://european-union.europa.eu/principles-countries-history/eu-countries_es)
+
+Una cámara de Madrid se encuentra desde España y en su propia página.
+
+La [cobertura](docs/es/cobertura.md) usa el mismo árbol. Un recurso global puede ayudar sin cubrir el procedimiento local.
 
 ## Qué información tengo
 
-Parte de una [organización](docs/es/indices/entrada-organizacion.md), un [expediente](docs/es/indices/entrada-expediente.md), un [documento](docs/es/indices/entrada-documento.md), un [dominio](docs/es/indices/entrada-dominio.md), un [lugar](docs/es/indices/entrada-lugar.md), un [indicador](docs/es/indices/entrada-indicador.md), una [situación](docs/es/indices/entrada-situacion.md), una [plataforma](docs/es/indices/entrada-plataforma.md) o una [pregunta por contrastar](docs/es/indices/entrada-pregunta.md).
+Partiendo de:
+- una [organización](docs/es/indices/entrada-organizacion.md)
+- un [expediente](docs/es/indices/entrada-expediente.md)
+- un [documento](docs/es/indices/entrada-documento.md)
+- un [dominio](docs/es/indices/entrada-dominio.md)
+- un [lugar](docs/es/indices/entrada-lugar.md)
+- un [indicador](docs/es/indices/entrada-indicador.md)
+- una [situación](docs/es/indices/entrada-situacion.md)
+- una [plataforma](docs/es/indices/entrada-plataforma.md)
+- una [pregunta por contrastar](docs/es/indices/entrada-pregunta.md).
 
 [Explorar el catálogo](docs/es/catalogo.md).
 
@@ -107,7 +140,7 @@ Uso bajo la licencia MIT, Massachusetts Institute of Technology. Lee [uso respon
 [issues]: https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues
 [license]: https://github.com/Comunidad-de-Inteligencia/osint-atlas/blob/main/LICENSE
 
-## English
+## 🇬🇧/🇺🇸 English
 
 OSINT Atlas is a reference catalog. OSINT means Open Source Intelligence. It helps you choose an open source, read what a result can mean, and see what is still unchecked. It is not an application, a viewer, or a live map, and it does not receive reports.
 
