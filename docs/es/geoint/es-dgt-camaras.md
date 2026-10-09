@@ -67,4 +67,4 @@ Revisión prevista: cada 90 días.
 
 - [Punto de Acceso Nacional de Tráfico — página responsable](https://nap.dgt.es/)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

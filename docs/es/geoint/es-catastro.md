@@ -67,4 +67,4 @@ Revisión prevista: cada 180 días.
 - [Sede Electrónica del Catastro — página responsable](https://www.sedecatastro.gob.es/)
 - [Cobertura del Catastro](https://www.catastro.hacienda.gob.es/es-ES/usos_utilidades.html)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

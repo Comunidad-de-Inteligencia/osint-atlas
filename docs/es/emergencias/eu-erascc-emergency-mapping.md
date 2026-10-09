@@ -68,4 +68,4 @@ Revisión prevista: cada 30 días.
 
 - [Copernicus Emergency Management Service — página responsable](https://emergency.copernicus.eu/)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

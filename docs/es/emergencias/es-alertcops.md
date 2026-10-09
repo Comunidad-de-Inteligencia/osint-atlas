@@ -68,4 +68,4 @@ Revisión prevista: cada 30 días.
 
 - [AlertCops — página responsable](https://alertcops.ses.mir.es/publico/alertcops/)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

@@ -2,7 +2,7 @@
 
 La documentación se publica en Markdown dentro de GitHub. Se organiza por tarea, por territorio y por la información de partida, con títulos que dicen de qué van y con recorridos que se pueden seguir.
 
-El mismo texto, en inglés, está en [accessibility](https://comunidad-de-inteligencia.github.io/osint-atlas/en/accesibilidad/).
+El mismo texto, en inglés, está en [accessibility](https://comunidad-de-inteligencia.github.io/osint-atlas/en/accessibility/).
 
 ## Qué comprueba el validador
 

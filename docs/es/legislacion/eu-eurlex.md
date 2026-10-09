@@ -62,4 +62,4 @@ Revisión prevista: cada 180 días.
 
 - [EUR-Lex — página responsable](https://eur-lex.europa.eu/)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

@@ -67,4 +67,4 @@ Revisión prevista: cada 90 días.
 
 - [Boletín Oficial del Registro Mercantil — página responsable](https://www.boe.es/borme/)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

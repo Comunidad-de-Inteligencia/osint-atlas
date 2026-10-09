@@ -68,4 +68,4 @@ Revisión prevista: cada 30 días.
 
 - [Policía Nacional - Denuncias — página responsable](https://www.policia.es/_es/denuncias.php)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

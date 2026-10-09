@@ -69,4 +69,4 @@ Revisión prevista: cada 180 días.
 - [Copernicus Data Space Ecosystem — página responsable](https://dataspace.copernicus.eu/)
 - [Copernicus Browser](https://browser.dataspace.copernicus.eu/)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

@@ -2,7 +2,7 @@
 
 El mantenimiento comprueba documentación ya aceptada, guarda resultados y prepara propuestas. Puede seguir aunque falten revisores. Lo sensible permanece pendiente.
 
-El mismo texto, en inglés, está en [maintenance](https://comunidad-de-inteligencia.github.io/osint-atlas/en/mantenimiento/).
+El mismo texto, en inglés, está en [maintenance](https://comunidad-de-inteligencia.github.io/osint-atlas/en/maintenance/).
 
 ## Qué hace cada proceso
 

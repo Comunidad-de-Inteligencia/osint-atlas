@@ -67,4 +67,4 @@ Revisión prevista: cada 30 días.
 - [Servicio europeo de emergencias — página responsable](https://digital-strategy.ec.europa.eu/es/policies/112)
 - Observación de languages, 2026-09-13: [página comprobada](https://digital-strategy.ec.europa.eu/es/policies/112). Idiomas observados en la página consultada; no certifica todos sus servicios. No equivale a aprobación humana.
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

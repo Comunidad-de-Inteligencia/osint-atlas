@@ -66,4 +66,4 @@ Revisión prevista: cada 90 días.
 
 - [Cámaras de tráfico de Bilbao en tiempo real — datos.gob.es](https://datos.gob.es/es/catalogo/l01480209-camaras-de-trafico-de-bilbao-en-tiempo-real)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

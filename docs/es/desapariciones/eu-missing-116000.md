@@ -69,4 +69,4 @@ Revisión prevista: cada 30 días.
 
 - [Línea europea para menores desaparecidos — página responsable](https://europa.eu/youreurope/citizens/travel/security-and-emergencies/emergency/faq/index_es.htm)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

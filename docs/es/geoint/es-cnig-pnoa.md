@@ -66,4 +66,4 @@ Revisión prevista: cada 180 días.
 
 - [Centro de Descargas CNIG y PNOA — página responsable](https://centrodedescargas.cnig.es/)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

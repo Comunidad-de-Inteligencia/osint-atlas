@@ -62,4 +62,4 @@ Revisión prevista: cada 180 días.
 
 - [Datos Abiertos Colombia — página responsable](https://www.datos.gov.co/)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

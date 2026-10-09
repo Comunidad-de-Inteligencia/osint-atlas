@@ -12,15 +12,15 @@ Sponsorship does not buy a catalog entry or a review.
 
 This English door is the index, the glossary, and the pages linked below. Catalog entries and procedures stay in Spanish until someone can review that language.
 
-- [Glossary](glosario.md)
-- [How to contribute](contribuir.md)
-- [Five-minute tour](empezar.md)
+- [Glossary](glossary.md)
+- [How to contribute](contributing.md)
+- [Five-minute tour](start.md)
 - [Responsible use](legal.md)
-- [Security](seguridad.md)
-- [Attribution](atribucion.md)
-- [Accessibility](accesibilidad.md)
-- [Maintenance](mantenimiento.md)
-- [Using an assistant](ia.md)
+- [Security](security.md)
+- [Attribution](attribution.md)
+- [Accessibility](accessibility.md)
+- [Maintenance](maintenance.md)
+- [Using an assistant](ai.md)
 - [Instructions for assistants](agents.md)
 - [Procedures](https://comunidad-de-inteligencia.github.io/osint-atlas/procedimientos/), in Spanish
 - [Coverage](https://comunidad-de-inteligencia.github.io/osint-atlas/cobertura/), in Spanish

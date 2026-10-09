@@ -1,6 +1,6 @@
 # Glosario
 
-Las mismas palabras, en inglés, están en el [glosario en inglés](https://comunidad-de-inteligencia.github.io/osint-atlas/en/glosario/). Traducir un término no revisa una ficha.
+Las mismas palabras, en inglés, están en el [glosario en inglés](https://comunidad-de-inteligencia.github.io/osint-atlas/en/glossary/). Traducir un término no revisa una ficha.
 
 ## Alfabeto de deletreo
 

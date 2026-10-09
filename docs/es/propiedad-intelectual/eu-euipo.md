@@ -64,4 +64,4 @@ Revisión prevista: cada 180 días.
 
 - [EUIPO eSearch plus — página responsable](https://euipo.europa.eu/eSearch/)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

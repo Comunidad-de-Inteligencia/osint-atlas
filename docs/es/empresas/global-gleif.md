@@ -64,4 +64,4 @@ Revisión prevista: cada 180 días.
 
 - [GLEIF LEI Search — página responsable](https://www.gleif.org/en/lei-data/gleif-api)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

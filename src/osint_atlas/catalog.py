@@ -255,7 +255,7 @@ def documents(catalog: dict, outputs: dict[Path, str]) -> list[dict]:
     aliases = {
         "README.md": "readme",
         "docs/es/contribuir.md": "contribuir",
-        "docs/en/contribuir.md": "en/contribuir",
+        "docs/en/contributing.md": "en/contributing",
         "docs/es/legal.md": "legal",
         "docs/en/legal.md": "en/legal",
         "docs/es/empezar.md": "empezar",

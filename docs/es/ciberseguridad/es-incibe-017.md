@@ -69,4 +69,4 @@ Revisión prevista: cada 30 días.
 
 - [Ayuda en Ciberseguridad de INCIBE — página responsable](https://www.incibe.es/linea-de-ayuda-en-ciberseguridad)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

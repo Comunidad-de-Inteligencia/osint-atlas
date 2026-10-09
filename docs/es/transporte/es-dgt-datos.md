@@ -66,4 +66,4 @@ Revisión prevista: cada 180 días.
 
 - [DGT Datos Abiertos — página responsable](https://www.dgt.es/menusecundario/dgt-en-cifras/)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

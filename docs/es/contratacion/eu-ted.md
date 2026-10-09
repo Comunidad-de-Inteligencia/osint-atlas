@@ -64,4 +64,4 @@ Revisión prevista: cada 180 días.
 
 - [Tenders Electronic Daily — página responsable](https://ted.europa.eu/)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

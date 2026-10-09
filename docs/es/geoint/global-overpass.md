@@ -68,4 +68,4 @@ Revisión prevista: cada 180 días.
 - [Overpass Turbo — página responsable](https://overpass-turbo.eu/)
 - [Overpass API — documentación comunitaria](https://wiki.openstreetmap.org/wiki/Overpass_API)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

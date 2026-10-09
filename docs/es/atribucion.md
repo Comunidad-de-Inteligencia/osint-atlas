@@ -6,4 +6,4 @@ OSINT Atlas está inspirado en [OSINT Brazuca](https://github.com/osintbrazuca/o
 
 El catálogo de OSINT Atlas se ha vuelto a modelar como fichas que mantienen personas. No copia por su cuenta el contenido de los sitios enlazados y no reclama derechos sobre él. Cada recurso conserva su propia procedencia y sus condiciones de uso.
 
-El mismo texto, en inglés, está en [attribution](https://comunidad-de-inteligencia.github.io/osint-atlas/en/atribucion/).
+El mismo texto, en inglés, está en [attribution](https://comunidad-de-inteligencia.github.io/osint-atlas/en/attribution/).

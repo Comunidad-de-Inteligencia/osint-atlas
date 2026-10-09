@@ -2,7 +2,7 @@
 
 Puedes mejorar una explicación, corregir una ficha o cubrir un hueco. Otra persona tiene que poder comprobar el cambio. Patrocinar no compra una ficha ni una revisión. No pegues casos ni datos de personas.
 
-El mismo recorrido, en inglés, está en [How to contribute](https://comunidad-de-inteligencia.github.io/osint-atlas/en/contribuir/).
+El mismo recorrido, en inglés, está en [How to contribute](https://comunidad-de-inteligencia.github.io/osint-atlas/en/contributing/).
 
 ## Preparar un cambio
 

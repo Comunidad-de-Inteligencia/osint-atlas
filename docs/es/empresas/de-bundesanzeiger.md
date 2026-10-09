@@ -67,4 +67,4 @@ Revisión prevista: cada 180 días.
 - [Bundesanzeiger — página responsable](https://www.bundesanzeiger.de/)
 - Observación de languages, 2026-09-13: [página comprobada](https://www.bundesanzeiger.de/). Idiomas observados en la página consultada; no certifica todos sus servicios. No equivale a aprobación humana.
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

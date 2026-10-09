@@ -48,7 +48,7 @@ Adding reviewers and policy changes also need review. The first addition needs a
 
 ## Accessibility and privacy
 
-Use language that can be read aloud, ordered headings, and links that say where they go. Avoid large tables and explain any diagram in text. The checks are in [accessibility](accesibilidad.md).
+Use language that can be read aloud, ordered headings, and links that say where they go. Avoid large tables and explain any diagram in text. The checks are in [accessibility](accessibility.md).
 
 The first time you use an acronym, write the full name and then the short form.
 

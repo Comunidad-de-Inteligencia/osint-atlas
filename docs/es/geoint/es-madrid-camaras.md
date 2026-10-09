@@ -67,4 +67,4 @@ Revisión prevista: cada 90 días.
 - [Tráfico. Cámaras — Ayuntamiento de Madrid](https://datos.madrid.es/dataset/202088-0-trafico-camaras)
 - Observación de languages, access, 2026-10-08: [página comprobada](https://datos.madrid.es/dataset/202088-0-trafico-camaras). La ficha está en español y se abrió sin inicio de sesión. Dice que incluye una captura cada cinco minutos. No se revisó la licencia ni el coste. No equivale a aprobación humana.
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

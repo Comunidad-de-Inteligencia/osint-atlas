@@ -65,4 +65,4 @@ Revisión prevista: cada 180 días.
 
 - [IGN Información Geográfica — página responsable](https://www.ign.es/)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

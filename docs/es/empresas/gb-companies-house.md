@@ -65,4 +65,4 @@ Revisión prevista: cada 180 días.
 - [Companies House — página responsable](https://find-and-update.company-information.service.gov.uk/)
 - Observación de languages, 2026-09-13: [página comprobada](https://www.gov.uk/government/organisations/companies-house). Idiomas observados en la página consultada; no certifica todos sus servicios. No equivale a aprobación humana.
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

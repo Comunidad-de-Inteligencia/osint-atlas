@@ -64,4 +64,4 @@ Revisión prevista: cada 180 días.
 
 - [Dados Abertos CNPJ — página responsable](https://dados.gov.br/dados/conjuntos-dados/cadastro-nacional-da-pessoa-juridica---cnpj)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

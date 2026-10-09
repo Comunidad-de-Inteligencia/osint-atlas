@@ -62,4 +62,4 @@ Los resultados separan la versión del catálogo, el estado del índice, la anti
 
 Las mediciones técnicas locales se leen en `.cache/maintenance-state/state.json`. La copia dedicada intenta recuperar ese archivo de la rama `maintenance-state`. Sin una copia del estado se indica desconocido, nunca una ejecución que no ocurrió.
 
-El mismo texto, en inglés, está en [using an assistant](https://comunidad-de-inteligencia.github.io/osint-atlas/en/ia/).
+El mismo texto, en inglés, está en [using an assistant](https://comunidad-de-inteligencia.github.io/osint-atlas/en/ai/).

@@ -64,4 +64,4 @@ Revisión prevista: cada 180 días.
 
 - [Buscador de Jurisprudencia CENDOJ — página responsable](https://www.poderjudicial.es/search/)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

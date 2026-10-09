@@ -66,4 +66,4 @@ Revisión prevista: cada 30 días.
 
 - [INHOPE - Encontrar una línea de reporte — página responsable](https://www.inhope.org/EN#hotlineReferral)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

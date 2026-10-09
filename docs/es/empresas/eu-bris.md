@@ -62,4 +62,4 @@ Revisión prevista: cada 180 días.
 
 - [BRIS - Buscar una empresa — página responsable](https://e-justice.europa.eu/topics/registers-business-insolvency-land/business-registers-search-company-eu/general-information-find-company_en)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

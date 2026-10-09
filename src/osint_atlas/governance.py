@@ -75,6 +75,6 @@ def classify_changes(paths,catalog):
                     s=scenarios[sid]
                     specialties.add(s["specialty"])
                     sensitive=sensitive or s.get("sensitive",sid in {"missing-adult","missing-child","immediate-emergency","disaster-crisis","grooming-sextortion","sexual-digital-violence","csam-report","platform-report","legal-claim"})
-        elif path in {"LEGAL.md","SECURITY.md","docs/es/legal.md","docs/es/seguridad.md","docs/en/legal.md","docs/en/seguridad.md"}:
+        elif path in {"LEGAL.md","SECURITY.md","docs/es/legal.md","docs/es/seguridad.md","docs/en/legal.md","docs/en/security.md"}:
             sensitive=True; specialties.add("legal")
     return sensitive,sorted(specialties or {"editorial"})

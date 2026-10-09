@@ -31,4 +31,4 @@ Assistance, passing on an indication, a platform report, a takedown request, and
 
 ## When coverage is missing
 
-Read the gaps for that territory. A general source can be context. Do not carry contacts, rules, or requirements from one country to another. [Propose an improvement](contribuir.md) and name the responsible page and what still needs checking.
+Read the gaps for that territory. A general source can be context. Do not carry contacts, rules, or requirements from one country to another. [Propose an improvement](contributing.md) and name the responsible page and what still needs checking.

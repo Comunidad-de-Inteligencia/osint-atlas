@@ -69,4 +69,4 @@ Revisión prevista: cada 30 días.
 
 - [Atención a todas las formas de violencia contra las mujeres — página responsable](https://violenciagenero.igualdad.gob.es/informacionUtil/recursos/telefono016/)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).

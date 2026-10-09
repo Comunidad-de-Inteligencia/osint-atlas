@@ -66,4 +66,4 @@ Revisión prevista: cada 90 días.
 
 - [Tráfico — Gobierno de Navarra](https://www.navarra.es/es/trafico)
 
-Versión: f895774229211dd9. [Volver al catálogo](../catalogo.md).
+Versión: 66a8a66e274aa443. [Volver al catálogo](../catalogo.md).
