@@ -4,108 +4,62 @@
 
 # OSINT Atlas
 
-## English
-
-OSINT Atlas is a reference catalog. It helps you choose an open source, read what a result can mean, and see what is still unchecked. It is not an application and it does not receive reports.
-
-In immediate danger, contact the official emergency service where you are. Start with the [emergency procedure](docs/procedimientos/emergencia-inmediata.md). The English door of the published guide is the [English index](docs/en/index.md). Glossary: [English](docs/en/glosario.md). Contributing: [English](docs/en/contribuir.md).
-
-Sponsorship does not buy a catalog entry or a review.
+- [Castellano](#castellano)
+- [English](#english)
 
 ## Castellano
 
-Catálogo de consulta. Ayuda a elegir una fuente, leer su resultado y ver qué falta comprobar. No es una aplicación, ni un visor, ni un mapa en directo. Patrocinar no compra una ficha ni una revisión.
+OSINT Atlas es un catálogo para consultar. OSINT quiere decir Open Source Intelligence, inteligencia de fuentes abiertas: investigar con lo que una persona puede obtener de forma legítima, sin entrar en sistemas ajenos ni pedir un favor a quien no debe darlo.
 
-> Ante un peligro inmediato, acude al servicio oficial de emergencias de tu territorio. Consulta el [procedimiento de emergencia](docs/procedimientos/emergencia-inmediata.md) y las [vías oficiales](docs/CONTACTOS.md). Atlas no recibe denuncias ni envía alertas.
+Sirve para elegir una fuente, entender qué puede decir un resultado y ver qué sigue sin comprobar. No es un programa, no es un visor y no es un mapa en directo. No recibe denuncias y no envía alertas.
 
-La consulta con un asistente usa el MCP de solo lectura. Sigue siendo una forma de leer el catálogo.
+Patrocinar no compra una ficha ni una revisión.
 
-## Índice
+> Si hay un peligro inmediato, acude al servicio oficial de emergencias de tu territorio. El [procedimiento de emergencia](docs/es/procedimientos/emergencia-inmediata.md) y las [vías oficiales](docs/es/contactos.md) están antes que cualquier ficha técnica.
 
-- [Qué necesito hacer](#qué-necesito-hacer)
-- [En qué territorio](#en-qué-territorio)
-- [Qué información tengo](#qué-información-tengo)
-- [Qué está revisado](#qué-está-revisado)
-- [Guías de referencia](#guías-de-referencia)
-- [Cómo proponer una fuente](#cómo-proponer-una-fuente)
-- [Panel de trabajo humano](#panel-de-trabajo-humano)
-- [Licencia](#licencia)
+### Cómo usarlo
 
-## Qué necesito hacer
+- [Un recorrido de cinco minutos](docs/es/empezar.md)
+- [Glosario](docs/es/glosario.md)
+- [Guías](docs/es/referencias/radiotelefonia.md): radiotelefonía, [GEOINT abierto](docs/es/referencias/geoint-abierto.md) y [Copernicus en QGIS](docs/es/referencias/qgis-copernicus.md). GEOINT es Geospatial Intelligence, inteligencia geoespacial. QGIS es el programa de escritorio Quantum GIS, hoy llamado QGIS.
+- [Procedimientos](docs/es/procedimientos/README.md)
+- [Cobertura por territorio](docs/es/cobertura.md)
+- [Catálogo](docs/es/catalogo.md)
 
-- **Empezar:** [un recorrido en cinco minutos](docs/EMPEZAR.md).
-- **Investigar y contrastar:** [empresas](docs/procedimientos/investigar-empresa.md), [contratos y ayudas](docs/procedimientos/contratos-subvenciones.md), [publicaciones oficiales](docs/procedimientos/publicaciones-oficiales.md), [dominios](docs/procedimientos/huella-dominio.md), [imágenes](docs/procedimientos/verificar-imagen.md), [conclusiones](docs/procedimientos/contrastar-conclusiones.md), [afirmaciones jurídicas](docs/procedimientos/afirmacion-juridica.md) o [estadísticas](docs/procedimientos/afirmacion-estadistica.md).
-- **Desapariciones:** [adultos](docs/procedimientos/desaparicion-adulto.md) o [menores](docs/procedimientos/desaparicion-menor.md).
-- **Emergencias:** [actuación inmediata](docs/procedimientos/emergencia-inmediata.md) o [desastres y crisis](docs/procedimientos/desastre-crisis.md).
-- **Protección y reporte:** [grooming y sextorsión](docs/procedimientos/grooming-sextorsion.md), [violencia sexual digital](docs/procedimientos/violencia-sexual-digital.md), [posible abuso sexual infantil](docs/procedimientos/reportar-csam.md) o [Telegram y otras plataformas](docs/procedimientos/reportar-plataformas.md).
+Hay unas cien fichas y dieciséis procedimientos. Una ficha nueva no está revisada por el hecho de existir. Lo sensible sigue pendiente mientras no haya otra persona competente.
 
-## En qué territorio
+La última comprobación de una página se lee en su ficha: disponible, sin respuesta, autenticación o sin comprobación. El [informe de mantenimiento](https://github.com/Comunidad-de-Inteligencia/osint-atlas/blob/maintenance-state/README.md) reúne esas comprobaciones. Que una página responda no significa que el texto siga siendo el correcto.
 
-- [Global](docs/indices/jurisdiccion-global.md)
-  - [Europa](docs/indices/jurisdiccion-europe.md)
-    - [Unión Europea](docs/indices/jurisdiccion-eu.md)
-      - [España](docs/indices/jurisdiccion-es.md)
-        - [País Vasco](docs/indices/jurisdiccion-es-pv.md)
-          - [Bilbao](docs/indices/jurisdiccion-es-bi.md)
-        - [Comunidad Foral de Navarra](docs/indices/jurisdiccion-es-nc.md)
-        - [Madrid](docs/indices/jurisdiccion-es-mad.md)
-      - [Portugal](docs/indices/jurisdiccion-pt.md)
-      - [Francia](docs/indices/jurisdiccion-fr.md)
-      - [Alemania](docs/indices/jurisdiccion-de.md)
-      - [Italia](docs/indices/jurisdiccion-it.md)
-    - [Reino Unido](docs/indices/jurisdiccion-gb.md)
-  - [América](docs/indices/jurisdiccion-america.md)
-    - [Brasil](docs/indices/jurisdiccion-br.md)
-    - [México](docs/indices/jurisdiccion-mx.md)
-    - [Colombia](docs/indices/jurisdiccion-co.md)
-    - [Argentina](docs/indices/jurisdiccion-ar.md)
+Para proponer una fuente, abre una incidencia en [castellano](https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues/new?template=proponer-fuente.yml) o en [inglés](https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues/new?template=propose-source.yml). El recorrido está en [cómo contribuir](docs/es/contribuir.md). No pegues casos ni datos de personas.
 
-El Reino Unido no forma parte de la Unión Europea. Una cámara de Madrid se encuentra desde España y en su propia página. La [cobertura](docs/COBERTURA.md) usa el mismo árbol. Un recurso global puede ayudar sin cubrir el procedimiento local.
+El Project Comunidad de Inteligencia es el tablero de las personas. No lista la salud de cada ficha.
 
-## Qué información tengo
+La guía publicada está en [comunidad-de-inteligencia.github.io/osint-atlas](https://comunidad-de-inteligencia.github.io/osint-atlas/). El uso es MIT, Massachusetts Institute of Technology, la licencia del archivo [LICENSE](LICENSE). Los límites están en [uso responsable](docs/es/legal.md). La procedencia del proyecto está en [atribución](docs/es/atribucion.md). Un fallo del código se avisa como dice [seguridad](docs/es/seguridad.md).
 
-Parte de una [organización](docs/indices/entrada-organizacion.md), un [expediente](docs/indices/entrada-expediente.md), un [documento](docs/indices/entrada-documento.md), un [dominio](docs/indices/entrada-dominio.md), un [lugar](docs/indices/entrada-lugar.md), un [indicador](docs/indices/entrada-indicador.md), una [situación](docs/indices/entrada-situacion.md), una [plataforma](docs/indices/entrada-plataforma.md) o una [pregunta por contrastar](docs/indices/entrada-pregunta.md).
+Quien consulta con un asistente usa el MCP, Model Context Protocol, el protocolo de contexto para modelos. Aquí es de solo lectura. Sigue siendo una forma de leer el catálogo, no de actuar por él. El detalle está en [usar el catálogo con un asistente](docs/es/ia.md).
 
-[Explorar el catálogo](docs/CATALOGO.md).
+## English
 
-## Qué está revisado
+OSINT Atlas is a catalog you consult. OSINT means Open Source Intelligence: looking things up with information a person can obtain lawfully, without breaking into anyone else's system.
 
-Hay **100 fichas** y **16 procedimientos**. Las fichas nuevas de esta entrega están pendientes. Una fecha de creación no es una revisión humana.
+It helps you choose a source, understand what a result can say, and see what is still unchecked. It is not an application, not a viewer, and not a live map. It does not receive reports and it does not send alerts.
 
-Los cambios sensibles necesitan otra persona competente. Mientras no esté registrada, las propuestas siguen pendientes.
+Sponsorship does not buy a catalog entry or a review.
 
-La última comprobación de una página se lee en su ficha y en el [informe de mantenimiento](https://github.com/Comunidad-de-Inteligencia/osint-atlas/blob/maintenance-state/README.md): disponible, sin respuesta, autenticación o sin comprobación. Si no hubo ejecución, es sin comprobación. Un escudo de Actions solo dice si el proceso corrió. Las agendas siguen comentadas.
+> If you are in immediate danger, contact the official emergency service where you are. The [emergency procedure](docs/es/procedimientos/emergencia-inmediata.md) and the [official routes](docs/es/contactos.md) come before any technical entry. Those pages are in Spanish.
 
-## Guías de referencia
+### How to use it
 
-- [Radiotelefonía](docs/referencias/radiotelefonia.md)
-- [GEOINT abierto](docs/referencias/geoint-abierto.md)
-- [Copernicus en QGIS](docs/referencias/qgis-copernicus.md)
+The English door is the index, the glossary, and how to contribute. Catalog entries and procedures stay in Spanish until someone can review that language.
 
-## Cómo proponer una fuente
+- [English index](docs/en/index.md)
+- [Glossary](docs/en/glosario.md)
+- [How to contribute](docs/en/contribuir.md)
+- [Five-minute tour](docs/es/empezar.md), in Spanish
+- [Catalog](docs/es/catalogo.md), in Spanish
 
-Abre una incidencia con la plantilla en [castellano](https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues/new?template=proponer-fuente.yml) o en [inglés](https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues/new?template=propose-source.yml). Para una corrección, usa [castellano](https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues/new?template=corregir-contenido.yml) o [inglés](https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues/new?template=correct-content.yml). No pegues casos ni datos personales. El detalle está en [CONTRIBUTING.md](CONTRIBUTING.md). La guía publicada está en [comunidad-de-inteligencia.github.io/osint-atlas](https://comunidad-de-inteligencia.github.io/osint-atlas/).
+A new entry is not reviewed just because it exists. Sensitive changes stay pending until another competent person is registered.
 
-## Panel de trabajo humano
+The published guide is at [comunidad-de-inteligencia.github.io/osint-atlas](https://comunidad-de-inteligencia.github.io/osint-atlas/). Use is under the MIT license, the Massachusetts Institute of Technology license in [LICENSE](LICENSE). Limits are in [responsible use](docs/en/legal.md). Where the project comes from is in [attribution](docs/en/atribucion.md). A fault in the code is reported as [security](docs/en/seguridad.md) describes.
 
-El Project Comunidad de Inteligencia es el tablero de las personas: fuentes propuestas, correcciones, guías y revisión. No lista la salud de cada ficha. Las columnas de trabajo son Por hacer, En curso, En revisión y Hecho. Las tarjetas son las incidencias de las plantillas del apartado anterior.
-
-## Con qué está hecho
-
-| Pieza | Papel en este catálogo |
-| --- | --- |
-| Python 3.12 | Generador, pruebas y MCP |
-| uv | Entorno y dependencias bloqueadas |
-| GitHub Actions | Validación de cada propuesta y comprobación manual de enlaces |
-| QGIS | Programa externo para ver una capa. No vive en este repositorio |
-
-## Licencia
-
-Uso bajo la licencia MIT. Lee [LEGAL.md](LEGAL.md) y el archivo [LICENSE](LICENSE).
-
-[Incidencias][issues]. [Licencia MIT][license]. [Guía](https://comunidad-de-inteligencia.github.io/osint-atlas/).
-
-[Glosario](docs/GLOSARIO.md). [Mantenimiento](docs/MANTENIMIENTO.md). [Accesibilidad](docs/ACCESIBILIDAD.md).
-
-[issues]: https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues
-[license]: https://github.com/Comunidad-de-Inteligencia/osint-atlas/blob/main/LICENSE
+An assistant reads the catalog through MCP, the Model Context Protocol. Here that connector is read-only. It is still a way to read the catalog, not a way to act for it. See [using the catalog with an assistant](docs/en/ia.md).

@@ -37,7 +37,7 @@ class CatalogTests(unittest.TestCase):
         csam = [item for item in self.catalog["resources"] if "csam-report" in item["scenarios"]]
         self.assertTrue(csam)
         self.assertTrue(any(set(item.get("reporting_routes", [])) & contacts for item in csam))
-        procedure = Path("docs/procedimientos/reportar-csam.md").read_text(encoding="utf-8").casefold()
+        procedure = Path("docs/es/procedimientos/reportar-csam.md").read_text(encoding="utf-8").casefold()
         for phrase in ("no descargues", "guardes", "no constituye una denuncia"):
             self.assertIn(phrase, procedure)
         self.assertIn("ni compartas", procedure)
@@ -64,7 +64,7 @@ class CatalogTests(unittest.TestCase):
         self.assertTrue(applies_to(by_id["gb-companies-house"], "GB", jurisdictions))
         self.assertTrue(applies_to(by_id["eu-eurlex"], "ES", jurisdictions))
         self.assertFalse(applies_to(by_id["eu-eurlex"], "GB", jurisdictions))
-        spain = build_outputs(self.catalog, self.version)[Path(__file__).resolve().parents[1] / "docs/indices/jurisdiccion-es.md"]
+        spain = build_outputs(self.catalog, self.version)[Path(__file__).resolve().parents[1] / "docs/es/indices/jurisdiccion-es.md"]
         self.assertIn("## Fuentes de un territorio más concreto", spain)
         self.assertIn("Cámaras de tráfico del Ayuntamiento de Madrid", spain)
 

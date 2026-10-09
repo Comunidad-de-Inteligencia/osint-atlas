@@ -64,7 +64,7 @@ class CatalogueV2Tests(unittest.TestCase):
         original=Path.read_bytes
         def changed(p):
             value=original(p)
-            return value+b"\nContenido nuevo\n" if p==cat.ROOT/"docs/IA.md" else value
+            return value+b"\nContenido nuevo\n" if p==cat.ROOT/"docs/es/ia.md" else value
         before=cat.catalog_version()
         with patch.object(Path,"read_bytes",changed):
             self.assertNotEqual(before,cat.catalog_version())
@@ -109,7 +109,7 @@ class SearchV2Tests(unittest.TestCase):
         self.assertTrue(result["coverage"]["gaps"])
 
     def test_all_user_document_kinds_are_indexed(self):
-        for doc in ["mantenimiento","cobertura","fuentes/de-handelsregister","indices/jurisdiccion-ar","ia"]:
+        for doc in ["mantenimiento","cobertura","es/empresas/de-handelsregister","es/indices/jurisdiccion-ar","ia"]:
             self.assertTrue(service.get_doc(doc)["found"])
 
 

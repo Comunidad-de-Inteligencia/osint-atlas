@@ -1,9 +1,9 @@
 # Copie este archivo como CODEOWNERS solo después de asignar usuarios reales.
 # CODEOWNERS en repositorios privados requiere un plan de GitHub compatible.
 /data/resources/ @USUARIO_DATOS @SUPLENTE_DATOS
-/docs/procedimientos/afirmacion-juridica.md @USUARIO_LEGAL @SUPLENTE_LEGAL
-/docs/procedimientos/desaparicion-*.md @USUARIO_PROTECCION @SUPLENTE_PROTECCION
-/docs/procedimientos/grooming-sextorsion.md @USUARIO_PROTECCION @SUPLENTE_PROTECCION
-/docs/procedimientos/violencia-sexual-digital.md @USUARIO_PROTECCION @SUPLENTE_PROTECCION
-/docs/procedimientos/reportar-csam.md @USUARIO_PROTECCION @SUPLENTE_PROTECCION
-/docs/procedimientos/reportar-plataformas.md @USUARIO_CIBER @SUPLENTE_CIBER
+/docs/es/procedimientos/afirmacion-juridica.md @USUARIO_LEGAL @SUPLENTE_LEGAL
+/docs/es/procedimientos/desaparicion-*.md @USUARIO_PROTECCION @SUPLENTE_PROTECCION
+/docs/es/procedimientos/grooming-sextorsion.md @USUARIO_PROTECCION @SUPLENTE_PROTECCION
+/docs/es/procedimientos/violencia-sexual-digital.md @USUARIO_PROTECCION @SUPLENTE_PROTECCION
+/docs/es/procedimientos/reportar-csam.md @USUARIO_PROTECCION @SUPLENTE_PROTECCION
+/docs/es/procedimientos/reportar-plataformas.md @USUARIO_CIBER @SUPLENTE_CIBER

@@ -1,6 +1,8 @@
+# Globos reservados, sin página hasta que haya una ficha: África 🌍, Asia 🌏, Australia 🌏.
 version: 1
 jurisdictions:
 - id: GLOBAL
+  mark: "🌐"
   name: Global
   parent: null
   languages:
@@ -8,18 +10,21 @@ jurisdictions:
   - es
   notes: Recursos sin una jurisdicción única; verificar siempre la disponibilidad local.
 - id: EUROPE
+  mark: "🌍"
   name: Europa
   parent: GLOBAL
   languages:
   - multilingual
   notes: Agrupa la Unión Europea y el Reino Unido. El Reino Unido no forma parte de la Unión Europea.
 - id: EU
+  mark: "🇪🇺"
   name: Unión Europea
   parent: EUROPE
   languages:
   - multilingual
   notes: Distinguir normativa y servicios comunes de las implementaciones nacionales.
 - id: ES
+  mark: "🇪🇸"
   name: España
   parent: EU
   languages:
@@ -30,6 +35,7 @@ jurisdictions:
   notes: Distinguir Estado, comunidades autónomas, provincias y municipios. Catastro estatal excluye País
     Vasco y Navarra. Madrid, Bilbao y Navarra tienen nodo propio solo porque hay una ficha de ese territorio.
 - id: ES-PV
+  mark: "🇪🇸"
   name: País Vasco
   parent: ES
   languages:
@@ -37,6 +43,7 @@ jurisdictions:
   - eu
   notes: Cuenta con administraciones forales y sistemas catastrales propios.
 - id: ES-BI
+  mark: "🇪🇸"
   name: Bilbao
   parent: ES-PV
   languages:
@@ -44,6 +51,7 @@ jurisdictions:
   - eu
   notes: Municipio. El nodo existe porque hay una ficha de cámaras municipales, no como provincia vacía.
 - id: ES-NC
+  mark: "🇪🇸"
   name: Comunidad Foral de Navarra
   parent: ES
   languages:
@@ -51,6 +59,7 @@ jurisdictions:
   - eu
   notes: Cuenta con Hacienda y Registro de la Riqueza Territorial propios.
 - id: ES-MAD
+  mark: "🇪🇸"
   name: Madrid
   parent: ES
   languages:
@@ -58,32 +67,38 @@ jurisdictions:
   notes: Municipio de Madrid. El nodo existe porque hay una ficha de cámaras del Ayuntamiento, no como
     comunidad vacía.
 - id: PT
+  mark: "🇵🇹"
   name: Portugal
   parent: EU
   languages:
   - pt
 - id: FR
+  mark: "🇫🇷"
   name: Francia
   parent: EU
   languages:
   - fr
 - id: DE
+  mark: "🇩🇪"
   name: Alemania
   parent: EU
   languages:
   - de
 - id: IT
+  mark: "🇮🇹"
   name: Italia
   parent: EU
   languages:
   - it
 - id: GB
+  mark: "🇬🇧"
   name: Reino Unido
   parent: EUROPE
   languages:
   - en
   notes: No es un Estado miembro de la Unión Europea. Su padre es Europa, no la Unión Europea.
 - id: AMERICA
+  mark: "🌎"
   name: América
   parent: GLOBAL
   languages:
@@ -91,21 +106,25 @@ jurisdictions:
   - pt
   notes: Agrupa Argentina, Brasil, Colombia y México, que ya tienen fichas. No crea un procedimiento común.
 - id: BR
+  mark: "🇧🇷"
   name: Brasil
   parent: AMERICA
   languages:
   - pt
 - id: MX
+  mark: "🇲🇽"
   name: México
   parent: AMERICA
   languages:
   - es
 - id: CO
+  mark: "🇨🇴"
   name: Colombia
   parent: AMERICA
   languages:
   - es
 - id: AR
+  mark: "🇦🇷"
   name: Argentina
   parent: AMERICA
   languages:

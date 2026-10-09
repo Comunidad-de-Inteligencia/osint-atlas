@@ -1,10 +1,10 @@
 # Glossary
 
-English wording for the same terms as the [Spanish glossary](https://comunidad-de-inteligencia.github.io/osint-atlas/GLOSARIO/). A translation is not an editorial review of a catalog entry.
+The same terms in Spanish are in the [Spanish glossary](https://comunidad-de-inteligencia.github.io/osint-atlas/glosario/). A translation is not an editorial review of a catalog entry.
 
 ## Spelling alphabet
 
-Agreed words used to say one letter over radio, such as Alfa or Juliett. It is not a linguistic phonetic alphabet. Spelling and pronunciation in the reference guide still need to be checked against the ICAO text.
+Agreed words used to say one letter over radio, such as Alfa or Juliett. It is not a linguistic phonetic alphabet. Spelling and pronunciation in the reference guide still need to be checked against the text of the International Civil Aviation Organization (ICAO).
 
 ## Current alert
 
@@ -22,21 +22,21 @@ The organization or register responsible for publishing the record or document y
 
 A reasoned conclusion that goes beyond what a source shows directly. It must be labeled as such.
 
-## MCP
+## Model Context Protocol (MCP)
 
-A protocol that lets an assistant consult structured tools and resources. The OSINT Atlas MCP is read-only.
+A protocol that lets an assistant consult structured tools and resources. The OSINT Atlas connector is read-only. OSINT means Open Source Intelligence.
 
 ## Provenance
 
-The chain that connects a statement to its producer, document, date, and transformations.
+The chain that connects a statement to its producer, document, moment, and transformations.
 
 ## Platform report
 
-A request for review under a service's own rules. It is not necessarily a formal complaint to an authority.
+A request for review under a service's own rules. It is not, by itself, a formal complaint to an authority.
 
-## RAG
+## Retrieval-Augmented Generation (RAG)
 
-Retrieval of relevant documents to answer a question without folding their text into a model's parameters.
+Fetching relevant documents to answer a question without folding their text into a model's parameters.
 
 ## Editorial review
 
@@ -44,7 +44,7 @@ A human check of a catalog entry's meaning, coverage, limits, and references.
 
 ## Zulu time
 
-A clock time treated as UTC when the letter Z is used. It does not include civil daylight-saving time. The letter table in the reference guide has not been checked against the ACP 121 text.
+A clock time treated as Coordinated Universal Time (UTC) when the letter Z is used. It does not include civil daylight-saving time. The letter table in the reference guide has not been checked against the Allied Communications Publication (ACP) 121 text.
 
 ## Technical check
 
