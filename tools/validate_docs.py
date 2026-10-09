@@ -59,6 +59,9 @@ def main():
     files=[*ROOT.glob("*.md"),*(ROOT/"docs").rglob("*.md")]
     files=[p for p in files if p.name!="AGENTS.md"]
     errors=[f"{p.relative_to(ROOT)}: {error}" for p in files for error in validate_document(p)]
+    sys.path.insert(0, str(ROOT / "tools"))
+    from check_translations import pending
+    errors.extend(pending(ROOT))
     for error in errors:print("ERROR: "+error,file=sys.stderr)
     if not errors: print(f"OK: estructura y enlaces de {len(files)} documentos; no es una certificación de accesibilidad")
     return bool(errors)

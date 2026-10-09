@@ -25,7 +25,7 @@ La información crítica tiene hora, territorio, fuente y estado; las versiones 
 
 Consulta el [índice de desastres y crisis](../indices/escenario-disaster-crisis.md).
 
-Para un aviso, mira también las fichas de [GDACS](../fuentes/global-gdacs.md), [Copernicus EMS](../fuentes/eu-erascc-emergency-mapping.md), [EFFIS](../fuentes/eu-effis.md) y [FIRMS](../fuentes/global-nasa-firms.md). Siguen primero las instrucciones locales. Estas fichas no cambian esa prioridad.
+Para un aviso, mira también las fichas de [GDACS](../emergencias/global-gdacs.md), [Copernicus EMS](../emergencias/eu-erascc-emergency-mapping.md), [EFFIS](../geoint/eu-effis.md) y [FIRMS](../geoint/global-nasa-firms.md). Siguen primero las instrucciones locales. Estas fichas no cambian esa prioridad.
 
 ## Recorrido de práctica y resultado esperado
 

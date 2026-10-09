@@ -252,7 +252,24 @@ def check_outputs(outputs: dict[Path, str]) -> list[str]:
 
 
 def documents(catalog: dict, outputs: dict[Path, str]) -> list[dict]:
-    aliases = {"README.md": "readme", "CONTRIBUTING.md": "contribuir", "LEGAL.md": "legal"}
+    aliases = {
+        "README.md": "readme",
+        "docs/es/contribuir.md": "contribuir",
+        "docs/en/contributing.md": "en/contributing",
+        "docs/es/legal.md": "legal",
+        "docs/en/legal.md": "en/legal",
+        "docs/es/empezar.md": "empezar",
+        "docs/es/glosario.md": "glosario",
+        "docs/es/ia.md": "ia",
+        "docs/es/mantenimiento.md": "mantenimiento",
+        "docs/es/accesibilidad.md": "accesibilidad",
+        "docs/es/seguridad.md": "seguridad",
+        "docs/es/atribucion.md": "atribucion",
+        "docs/es/index.md": "indice",
+        "docs/es/cobertura.md": "cobertura",
+        "docs/es/catalogo.md": "catalogo",
+        "docs/es/contactos.md": "contactos",
+    }
     aliases.update({p["path"]: p["id"] for p in catalog["playbooks"]})
     paths = set(ROOT.glob("*.md")) | set((ROOT / "docs").rglob("*.md")) | {p for p in outputs if p.suffix == ".md"}
     result = []

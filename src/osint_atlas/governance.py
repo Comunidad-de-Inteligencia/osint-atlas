@@ -62,12 +62,12 @@ def classify_changes(paths,catalog):
     sensitive=False; specialties=set()
     resources={r["id"]:r for r in catalog["resources"]}
     for path in paths:
-        if path.startswith(("data/contacts","data/playbooks","content/procedimientos/","docs/procedimientos/","data/resolutions")):
+        if path.startswith(("data/contacts","data/playbooks","content/procedimientos/","docs/procedimientos/","docs/es/procedimientos/","data/resolutions")):
             sensitive=True
             specialties|={"safeguarding","geoint","cyber","legal"}
         elif path.startswith(("data/maintainers","data/scenarios",".github/","tools/review_gate","src/osint_atlas/governance")):
             sensitive=True; specialties.add("editorial")
-        elif path.startswith(("data/resources/","docs/fuentes/")):
+        elif path.startswith("data/resources/") or (path.startswith("docs/es/") and path.rsplit("/",1)[-1].rsplit(".",1)[0] in resources) or path.startswith("docs/fuentes/"):
             rid=path.rsplit("/",1)[-1].rsplit(".",1)[0]
             affected=[resources[rid]] if rid in resources else list(resources.values())
             for resource in affected:
@@ -75,6 +75,6 @@ def classify_changes(paths,catalog):
                     s=scenarios[sid]
                     specialties.add(s["specialty"])
                     sensitive=sensitive or s.get("sensitive",sid in {"missing-adult","missing-child","immediate-emergency","disaster-crisis","grooming-sextortion","sexual-digital-violence","csam-report","platform-report","legal-claim"})
-        elif path in {"LEGAL.md","SECURITY.md"}:
+        elif path in {"LEGAL.md","SECURITY.md","docs/es/legal.md","docs/es/seguridad.md","docs/en/legal.md","docs/en/security.md"}:
             sensitive=True; specialties.add("legal")
     return sensitive,sorted(specialties or {"editorial"})

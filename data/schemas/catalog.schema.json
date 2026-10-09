@@ -605,6 +605,10 @@
           "notes": {
             "type": "string",
             "minLength": 1
+          },
+          "mark": {
+            "type": "string",
+            "minLength": 1
           }
         },
         "required": [
@@ -694,7 +698,7 @@
           },
           "path": {
             "type": "string",
-            "pattern": "^docs/procedimientos/[a-z0-9-]+\\.md$"
+            "pattern": "^docs/es/procedimientos/[a-z0-9-]+\\.md$"
           },
           "source_path": {
             "type": "string",

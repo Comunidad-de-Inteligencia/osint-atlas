@@ -2,7 +2,7 @@ version: 1
 playbooks:
 - id: business
   title: Investigar una empresa
-  path: docs/procedimientos/investigar-empresa.md
+  path: docs/es/procedimientos/investigar-empresa.md
   scenario: business
   review_days: 180
   last_reviewed: null
@@ -27,7 +27,7 @@ playbooks:
     pendiente.
 - id: procurement
   title: Rastrear contratos y subvenciones
-  path: docs/procedimientos/contratos-subvenciones.md
+  path: docs/es/procedimientos/contratos-subvenciones.md
   scenario: procurement
   review_days: 180
   last_reviewed: null
@@ -48,7 +48,7 @@ playbooks:
     pendiente.
 - id: official-publications
   title: Localizar publicaciones oficiales
-  path: docs/procedimientos/publicaciones-oficiales.md
+  path: docs/es/procedimientos/publicaciones-oficiales.md
   scenario: official-publications
   review_days: 180
   last_reviewed: null
@@ -67,7 +67,7 @@ playbooks:
     pendiente.
 - id: domain-footprint
   title: Examinar la huella pública de un dominio
-  path: docs/procedimientos/huella-dominio.md
+  path: docs/es/procedimientos/huella-dominio.md
   scenario: domain-footprint
   review_days: 180
   last_reviewed: null
@@ -92,7 +92,7 @@ playbooks:
     pendiente.
 - id: image-geolocation
   title: Verificar una imagen y su posible ubicación
-  path: docs/procedimientos/verificar-imagen.md
+  path: docs/es/procedimientos/verificar-imagen.md
   scenario: image-geolocation
   review_days: 180
   last_reviewed: null
@@ -115,7 +115,7 @@ playbooks:
     pendiente.
 - id: source-corroboration
   title: Contrastar y documentar conclusiones
-  path: docs/procedimientos/contrastar-conclusiones.md
+  path: docs/es/procedimientos/contrastar-conclusiones.md
   scenario: source-corroboration
   review_days: 180
   last_reviewed: null
@@ -140,7 +140,7 @@ playbooks:
     pendiente.
 - id: legal-claim
   title: Verificar una afirmación jurídica
-  path: docs/procedimientos/afirmacion-juridica.md
+  path: docs/es/procedimientos/afirmacion-juridica.md
   scenario: legal-claim
   review_days: 90
   last_reviewed: null
@@ -160,7 +160,7 @@ playbooks:
     pendiente.
 - id: statistical-claim
   title: Verificar una afirmación estadística
-  path: docs/procedimientos/afirmacion-estadistica.md
+  path: docs/es/procedimientos/afirmacion-estadistica.md
   scenario: statistical-claim
   review_days: 180
   last_reviewed: null
@@ -185,7 +185,7 @@ playbooks:
     pendiente.
 - id: missing-adult
   title: Actuar ante la desaparición de un adulto
-  path: docs/procedimientos/desaparicion-adulto.md
+  path: docs/es/procedimientos/desaparicion-adulto.md
   scenario: missing-adult
   review_days: 30
   last_reviewed: null
@@ -208,7 +208,7 @@ playbooks:
     pendiente.
 - id: missing-child
   title: Actuar ante la desaparición de un menor
-  path: docs/procedimientos/desaparicion-menor.md
+  path: docs/es/procedimientos/desaparicion-menor.md
   scenario: missing-child
   review_days: 30
   last_reviewed: null
@@ -232,7 +232,7 @@ playbooks:
     pendiente.
 - id: immediate-emergency
   title: Actuar ante una emergencia inmediata
-  path: docs/procedimientos/emergencia-inmediata.md
+  path: docs/es/procedimientos/emergencia-inmediata.md
   scenario: immediate-emergency
   review_days: 30
   last_reviewed: null
@@ -253,7 +253,7 @@ playbooks:
     pendiente.
 - id: disaster-crisis
   title: Verificar información durante un desastre
-  path: docs/procedimientos/desastre-crisis.md
+  path: docs/es/procedimientos/desastre-crisis.md
   scenario: disaster-crisis
   review_days: 30
   last_reviewed: null
@@ -279,7 +279,7 @@ playbooks:
     pendiente.
 - id: grooming-sextortion
   title: Responder a indicios de grooming o sextorsión
-  path: docs/procedimientos/grooming-sextorsion.md
+  path: docs/es/procedimientos/grooming-sextorsion.md
   scenario: grooming-sextortion
   review_days: 30
   last_reviewed: null
@@ -306,7 +306,7 @@ playbooks:
     pendiente.
 - id: sexual-digital-violence
   title: Responder a violencia sexual digital
-  path: docs/procedimientos/violencia-sexual-digital.md
+  path: docs/es/procedimientos/violencia-sexual-digital.md
   scenario: sexual-digital-violence
   review_days: 30
   last_reviewed: null
@@ -332,7 +332,7 @@ playbooks:
     pendiente.
 - id: csam-report
   title: Reportar posible material de abuso sexual infantil
-  path: docs/procedimientos/reportar-csam.md
+  path: docs/es/procedimientos/reportar-csam.md
   scenario: csam-report
   review_days: 30
   last_reviewed: null
@@ -352,7 +352,7 @@ playbooks:
     pendiente.
 - id: platform-report
   title: Reportar indicios en Telegram y otras plataformas
-  path: docs/procedimientos/reportar-plataformas.md
+  path: docs/es/procedimientos/reportar-plataformas.md
   scenario: platform-report
   review_days: 30
   last_reviewed: null

@@ -19,7 +19,7 @@ plugins:
   - awesome-nav
   - i18n:
       docs_structure: folder
-      fallback_to_default: true
+      fallback_to_default: false
       reconfigure_material: true
       languages:
         - locale: es

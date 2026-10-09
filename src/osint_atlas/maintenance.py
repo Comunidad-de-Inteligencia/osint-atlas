@@ -289,8 +289,11 @@ def resource_check_summary(resource, state):
     if not matched:
         return "Última comprobación: **sin comprobación**."
     latest = max(matched, key=lambda item: item.get("checked_at") or "")
-    when = latest.get("checked_at") or "sin fecha"
-    return f"Última comprobación: **{public_check_word(latest.get('status'))}** ({when})."
+    when = latest.get("checked_at")
+    word = public_check_word(latest.get("status"))
+    if not when:
+        return f"Última comprobación: **{word}**."
+    return f"Última comprobación: **{word}** ({when})."
 
 
 def dashboard(state):

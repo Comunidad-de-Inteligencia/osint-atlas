@@ -308,6 +308,7 @@
         "en",
         "es"
       ],
+      "mark": "🌐",
       "name": "Global",
       "notes": "Recursos sin una jurisdicción única; verificar siempre la disponibilidad local.",
       "parent": null
@@ -317,6 +318,7 @@
       "languages": [
         "multilingual"
       ],
+      "mark": "🌍",
       "name": "Europa",
       "notes": "Agrupa la Unión Europea y el Reino Unido. El Reino Unido no forma parte de la Unión Europea.",
       "parent": "GLOBAL"
@@ -326,6 +328,7 @@
       "languages": [
         "multilingual"
       ],
+      "mark": "🇪🇺",
       "name": "Unión Europea",
       "notes": "Distinguir normativa y servicios comunes de las implementaciones nacionales.",
       "parent": "EUROPE"
@@ -338,6 +341,7 @@
         "eu",
         "gl"
       ],
+      "mark": "🇪🇸",
       "name": "España",
       "notes": "Distinguir Estado, comunidades autónomas, provincias y municipios. Catastro estatal excluye País Vasco y Navarra. Madrid, Bilbao y Navarra tienen nodo propio solo porque hay una ficha de ese territorio.",
       "parent": "EU"
@@ -348,6 +352,7 @@
         "es",
         "eu"
       ],
+      "mark": "🇪🇸",
       "name": "País Vasco",
       "notes": "Cuenta con administraciones forales y sistemas catastrales propios.",
       "parent": "ES"
@@ -358,6 +363,7 @@
         "es",
         "eu"
       ],
+      "mark": "🇪🇸",
       "name": "Bilbao",
       "notes": "Municipio. El nodo existe porque hay una ficha de cámaras municipales, no como provincia vacía.",
       "parent": "ES-PV"
@@ -368,6 +374,7 @@
         "es",
         "eu"
       ],
+      "mark": "🇪🇸",
       "name": "Comunidad Foral de Navarra",
       "notes": "Cuenta con Hacienda y Registro de la Riqueza Territorial propios.",
       "parent": "ES"
@@ -377,6 +384,7 @@
       "languages": [
         "es"
       ],
+      "mark": "🇪🇸",
       "name": "Madrid",
       "notes": "Municipio de Madrid. El nodo existe porque hay una ficha de cámaras del Ayuntamiento, no como comunidad vacía.",
       "parent": "ES"
@@ -386,6 +394,7 @@
       "languages": [
         "pt"
       ],
+      "mark": "🇵🇹",
       "name": "Portugal",
       "parent": "EU"
     },
@@ -394,6 +403,7 @@
       "languages": [
         "fr"
       ],
+      "mark": "🇫🇷",
       "name": "Francia",
       "parent": "EU"
     },
@@ -402,6 +412,7 @@
       "languages": [
         "de"
       ],
+      "mark": "🇩🇪",
       "name": "Alemania",
       "parent": "EU"
     },
@@ -410,6 +421,7 @@
       "languages": [
         "it"
       ],
+      "mark": "🇮🇹",
       "name": "Italia",
       "parent": "EU"
     },
@@ -418,6 +430,7 @@
       "languages": [
         "en"
       ],
+      "mark": "🇬🇧",
       "name": "Reino Unido",
       "notes": "No es un Estado miembro de la Unión Europea. Su padre es Europa, no la Unión Europea.",
       "parent": "EUROPE"
@@ -428,6 +441,7 @@
         "es",
         "pt"
       ],
+      "mark": "🌎",
       "name": "América",
       "notes": "Agrupa Argentina, Brasil, Colombia y México, que ya tienen fichas. No crea un procedimiento común.",
       "parent": "GLOBAL"
@@ -437,6 +451,7 @@
       "languages": [
         "pt"
       ],
+      "mark": "🇧🇷",
       "name": "Brasil",
       "parent": "AMERICA"
     },
@@ -445,6 +460,7 @@
       "languages": [
         "es"
       ],
+      "mark": "🇲🇽",
       "name": "México",
       "parent": "AMERICA"
     },
@@ -453,6 +469,7 @@
       "languages": [
         "es"
       ],
+      "mark": "🇨🇴",
       "name": "Colombia",
       "parent": "AMERICA"
     },
@@ -461,6 +478,7 @@
       "languages": [
         "es"
       ],
+      "mark": "🇦🇷",
       "name": "Argentina",
       "parent": "AMERICA"
     }
@@ -536,7 +554,7 @@
       "id": "business",
       "jurisdictions": [],
       "last_reviewed": null,
-      "path": "docs/procedimientos/investigar-empresa.md",
+      "path": "docs/es/procedimientos/investigar-empresa.md",
       "references": [
         {
           "title": "Boletín Oficial del Registro Mercantil",
@@ -573,7 +591,7 @@
       "id": "procurement",
       "jurisdictions": [],
       "last_reviewed": null,
-      "path": "docs/procedimientos/contratos-subvenciones.md",
+      "path": "docs/es/procedimientos/contratos-subvenciones.md",
       "references": [
         {
           "title": "Plataforma de Contratación del Sector Público",
@@ -602,7 +620,7 @@
       "id": "official-publications",
       "jurisdictions": [],
       "last_reviewed": null,
-      "path": "docs/procedimientos/publicaciones-oficiales.md",
+      "path": "docs/es/procedimientos/publicaciones-oficiales.md",
       "references": [
         {
           "title": "Boletín Oficial del Estado",
@@ -627,7 +645,7 @@
       "id": "domain-footprint",
       "jurisdictions": [],
       "last_reviewed": null,
-      "path": "docs/procedimientos/huella-dominio.md",
+      "path": "docs/es/procedimientos/huella-dominio.md",
       "references": [
         {
           "title": "INCIBE",
@@ -664,7 +682,7 @@
       "id": "image-geolocation",
       "jurisdictions": [],
       "last_reviewed": null,
-      "path": "docs/procedimientos/verificar-imagen.md",
+      "path": "docs/es/procedimientos/verificar-imagen.md",
       "references": [
         {
           "title": "Sede Electrónica del Catastro",
@@ -697,7 +715,7 @@
       "id": "source-corroboration",
       "jurisdictions": [],
       "last_reviewed": null,
-      "path": "docs/procedimientos/contrastar-conclusiones.md",
+      "path": "docs/es/procedimientos/contrastar-conclusiones.md",
       "references": [
         {
           "title": "datos.gob.es",
@@ -736,7 +754,7 @@
         "ES"
       ],
       "last_reviewed": null,
-      "path": "docs/procedimientos/afirmacion-juridica.md",
+      "path": "docs/es/procedimientos/afirmacion-juridica.md",
       "references": [
         {
           "title": "Boletín Oficial del Estado",
@@ -761,7 +779,7 @@
       "id": "statistical-claim",
       "jurisdictions": [],
       "last_reviewed": null,
-      "path": "docs/procedimientos/afirmacion-estadistica.md",
+      "path": "docs/es/procedimientos/afirmacion-estadistica.md",
       "references": [
         {
           "title": "datos.gob.es",
@@ -802,7 +820,7 @@
         "ES"
       ],
       "last_reviewed": null,
-      "path": "docs/procedimientos/desaparicion-adulto.md",
+      "path": "docs/es/procedimientos/desaparicion-adulto.md",
       "references": [
         {
           "title": "Centro Nacional de Desaparecidos",
@@ -836,7 +854,7 @@
         "ES"
       ],
       "last_reviewed": null,
-      "path": "docs/procedimientos/desaparicion-menor.md",
+      "path": "docs/es/procedimientos/desaparicion-menor.md",
       "references": [
         {
           "title": "Centro Nacional de Desaparecidos",
@@ -869,7 +887,7 @@
         "ES"
       ],
       "last_reviewed": null,
-      "path": "docs/procedimientos/emergencia-inmediata.md",
+      "path": "docs/es/procedimientos/emergencia-inmediata.md",
       "references": [
         {
           "title": "AlertCops",
@@ -896,7 +914,7 @@
         "ES"
       ],
       "last_reviewed": null,
-      "path": "docs/procedimientos/desastre-crisis.md",
+      "path": "docs/es/procedimientos/desastre-crisis.md",
       "references": [
         {
           "title": "Centro de Descargas CNIG y PNOA",
@@ -937,7 +955,7 @@
         "ES"
       ],
       "last_reviewed": null,
-      "path": "docs/procedimientos/grooming-sextorsion.md",
+      "path": "docs/es/procedimientos/grooming-sextorsion.md",
       "references": [
         {
           "title": "INCIBE",
@@ -976,7 +994,7 @@
         "ES"
       ],
       "last_reviewed": null,
-      "path": "docs/procedimientos/violencia-sexual-digital.md",
+      "path": "docs/es/procedimientos/violencia-sexual-digital.md",
       "references": [
         {
           "title": "017 - Ayuda en Ciberseguridad",
@@ -1015,7 +1033,7 @@
         "ES"
       ],
       "last_reviewed": null,
-      "path": "docs/procedimientos/reportar-csam.md",
+      "path": "docs/es/procedimientos/reportar-csam.md",
       "references": [
         {
           "title": "Reporte de material de abuso sexual infantil de INCIBE",
@@ -1042,7 +1060,7 @@
         "ES"
       ],
       "last_reviewed": null,
-      "path": "docs/procedimientos/reportar-plataformas.md",
+      "path": "docs/es/procedimientos/reportar-plataformas.md",
       "references": [
         {
           "title": "INCIBE",
@@ -10217,5 +10235,5 @@
     ],
     "version": 1
   },
-  "version": "04eb3de40b46f80d"
+  "version": "66a8a66e274aa443"
 }

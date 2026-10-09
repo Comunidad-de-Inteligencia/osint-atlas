@@ -20,6 +20,31 @@ from osint_atlas.catalog import (  # noqa: E402
 )
 
 
+def forget_stale(outputs: dict[Path, str]) -> None:
+    keep = set(outputs)
+    for path in (
+        ROOT / "docs/CATALOGO.md",
+        ROOT / "docs/COBERTURA.md",
+        ROOT / "docs/CONTACTOS.md",
+    ):
+        if path.exists() and path not in keep:
+            path.unlink()
+    for folder in (ROOT / "docs/fuentes", ROOT / "docs/indices", ROOT / "docs/procedimientos", ROOT / "docs/es"):
+        if not folder.exists():
+            continue
+        for path in folder.rglob("*.md"):
+            if path in keep:
+                continue
+            text = path.read_text(encoding="utf-8")
+            if text.startswith("<!-- GENERADO"):
+                path.unlink()
+        for path in sorted(folder.rglob("*"), reverse=True):
+            if path.is_dir() and not any(path.iterdir()):
+                path.rmdir()
+        if folder != ROOT / "docs/es" and folder.exists() and not any(folder.iterdir()):
+            folder.rmdir()
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Valida y genera el catálogo OSINT Atlas")
     parser.add_argument("--check", action="store_true", help="No escribe; comprueba que los generados estén al día")
@@ -36,6 +61,7 @@ def main() -> int:
             build_sqlite(catalog, version, Path(directory) / "catalog.sqlite")
     elif not errors:
         write_outputs(outputs)
+        forget_stale(outputs)
         build_sqlite(catalog, version, ROOT / ".cache" / "catalog.sqlite")
 
     if args.report:

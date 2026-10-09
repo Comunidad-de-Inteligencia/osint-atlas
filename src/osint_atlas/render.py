@@ -1,11 +1,12 @@
 from __future__ import annotations
 import json
+import os
 import re
 from pathlib import Path
 from .catalog import ROOT, DATA, applies_to, coverage
 
 GENERATED = "<!-- GENERADO: editar data/ o content/ y reconstruir con tools/build_catalog.py -->"
-STATE_URL = "https://github.com/P3M-ACTF/osint-atlas/blob/maintenance-state/README.md"
+STATE_URL = "https://github.com/Comunidad-de-Inteligencia/osint-atlas/blob/maintenance-state/README.md"
 KINDS = {"emergency":"Emergencia", "assistance":"Asistencia", "hotline":"Ayuda especializada",
          "guidance":"Orientación", "reporting":"Comunicación de indicios", "takedown":"Solicitud de retirada",
          "platform-report":"Reporte a la plataforma", "formal-complaint":"Denuncia formal"}
@@ -13,8 +14,18 @@ LANGUAGES = {"und":"desconocido", "es":"español", "de":"alemán", "en":"inglés
 ACCESS = {"unknown":"desconocido", "api-key":"clave de API", "open":"consulta abierta", "registration":"registro", "restricted":"restringido"}
 
 
-def resource_link(r, prefix="../fuentes"):
-    return f"[{r['name']}]({prefix}/{r['id']}.md)"
+def ficha_path(r):
+    return Path("docs/es") / r["categories"][0] / f"{r['id']}.md"
+
+
+def resource_link(r, from_dir):
+    rel = Path(os.path.relpath(ROOT / ficha_path(r), from_dir)).as_posix()
+    return f"[{r['name']}]({rel})"
+
+
+def place_label(j):
+    mark = (j.get("mark") or "").strip()
+    return f"{mark} {j['name']}".strip() if mark else j["name"]
 
 
 def contact_text(c):
@@ -34,7 +45,9 @@ def resolve_contacts(value, catalog):
 
 def review_text(item, field):
     label = {'pending':'pendiente','verified':'verificado'}[item['review_status']]
-    return f"Estado editorial: **{label}**. Revisión humana: **{item[field] or 'pendiente'}**; persona revisora: **{item['reviewer'] or 'por asignar'}**."
+    when = item.get(field)
+    checked = f"**{when}**" if when else "**pendiente**"
+    return f"Estado editorial: **{label}**. Comprobado: {checked}."
 
 
 def render_playbook(p, catalog):
@@ -73,7 +86,7 @@ def territory_tree_lines(jurisdictions, href):
 
     def walk(jid, depth):
         node = nodes[jid]
-        lines.append(f"{'  ' * depth}- [{node['name']}]({href(node)})")
+        lines.append(f"{'  ' * depth}- [{place_label(node)}]({href(node)})")
         for child in children[jid]:
             walk(child, depth + 1)
 
@@ -97,7 +110,7 @@ def descendant_ids(jid, children):
 def resource_markdown(r, catalog, version, state=None):
     from .maintenance import resource_check_summary
     r = resolve_contacts(r, catalog)
-    names={j["id"]:j["name"] for j in catalog["jurisdictions"]}
+    names={j["id"]:place_label(j) for j in catalog["jurisdictions"]}
     contacts={c["id"]:c for c in catalog["contacts"]}
     resource_by_id={x["id"]:x for x in catalog["resources"]}
     lines=[GENERATED, f"# {r['name']}", "", "## Para qué sirve", "", r["purpose"], "",
@@ -113,8 +126,11 @@ def resource_markdown(r, catalog, version, state=None):
     if r.get("coverage_exclusions"):
         lines += ["Exclusiones: "+", ".join(names[x] for x in r["coverage_exclusions"])+".",""]
     lines += ["Resultados que puede ofrecer: "+", ".join(r["outputs"])+".",""]
+    if len(r["categories"]) > 1:
+        lines += ["También se agrupa en: "+", ".join(r["categories"][1:])+". El archivo no se copia.",""]
+    here = ROOT / ficha_path(r)
     if r["alternatives"]:
-        lines += ["Fuentes complementarias; comprobar sus diferencias de cobertura:",""]+[f"- {resource_link(resource_by_id[x],'.')}" for x in r["alternatives"]]+[""]
+        lines += ["Fuentes complementarias; comprobar sus diferencias de cobertura:",""]+[f"- {resource_link(resource_by_id[x], here.parent)}" for x in r["alternatives"]]+[""]
     else:
         lines += ["Alternativa específica pendiente de documentar. Consulta el índice del escenario y confirma la competencia territorial.",""]
     if r.get("reporting_routes"):
@@ -125,14 +141,14 @@ def resource_markdown(r, catalog, version, state=None):
         lines += [""]
     lines += ["## Condiciones conocidas","",r["terms"],"", "## Procedencia y revisión","",
               f"Publicador: {r['owner']}. Procedencia declarada: {r['tier']} ({catalog['taxonomy']['authority_tiers'][r['tier']]}). No es una puntuación de veracidad.","",
-              f"Ficha creada: {r['created_at']}. "+review_text(r,"editorial_reviewed"),"",
-              f"Responsable: {r['maintainer'] or 'por asignar'}. Suplente: {r['backup_maintainer'] or 'por asignar'}. Revisión prevista: cada {r['review_days']} días.","",
+              review_text(r,"editorial_reviewed"),"",
+              f"Revisión prevista: cada {r['review_days']} días.","",
               f"[Consultar la disponibilidad técnica y última ejecución]({STATE_URL}). Responder en la web no implica revisión editorial.",
               resource_check_summary(r, state),"",
               "## Referencias",""]+[f"- [{v['title']}]({v['url']})" for v in r["references"]]
     for e in r["metadata_evidence"]:
         lines.append(f"- Observación de {', '.join(e['fields'])}, {e['observed_at']}: [página comprobada]({e['url']}). {e['note']} No equivale a aprobación humana.")
-    lines += ["",f"Versión: {version}. [Volver al catálogo](../CATALOGO.md).",""]
+    lines += ["",f"Versión: {version}. [Volver al catálogo](../catalogo.md).",""]
     return "\n".join(lines)
 
 
@@ -144,10 +160,12 @@ def build_outputs(catalog, version):
     scenarios=catalog["scenarios"]; jurisdictions=catalog["jurisdictions"]
     nodes, children, _roots = jurisdiction_index(jurisdictions)
     playbooks={s["id"]:[p for p in catalog["playbooks"] if p["scenario"]==s["id"]] for s in scenarios}
+    es = ROOT / "docs" / "es"
+    indices = es / "indices"
     for r in resources:
-        outputs[ROOT/"docs/fuentes"/f"{r['id']}.md"]=resource_markdown(r,catalog,version,state)
+        outputs[ROOT / ficha_path(r)] = resource_markdown(r, catalog, version, state)
     for p in catalog["playbooks"]:
-        outputs[ROOT/p["path"]]=render_playbook(p,catalog)
+        outputs[es / "procedimientos" / Path(p["path"]).name] = render_playbook(p, catalog)
     rows=[coverage(catalog,s,j["id"]) for s in scenarios for j in jurisdictions]
     index=[GENERATED,"# Catálogo de fuentes","",f"Hay {len(resources)} fichas. Los metadatos pendientes se muestran expresamente; no se presuponen gratuitos ni en español.","","## Qué necesito hacer",""]
     index += [f"- [{s['name']}](indices/escenario-{s['id']}.md)" for s in scenarios]
@@ -156,8 +174,8 @@ def build_outputs(catalog, version):
     for input_type in catalog["taxonomy"]["input_types"]:
         index.append(f"- [{input_type.replace('-',' ').capitalize()}](indices/entrada-{input_type}.md)")
         matching=[r for r in resources if input_type in r["input_types"]]
-        outputs[ROOT/"docs/indices"/f"entrada-{input_type}.md"]="\n".join([GENERATED,f"# Partir de: {input_type.replace('-',' ')}","","Selecciona una fuente y comprueba territorio, límites y resultados esperados.",""]+[f"- {resource_link(r)} — {r['purpose']}" for r in matching]+[""])
-    outputs[ROOT/"docs/CATALOGO.md"]="\n".join(index+[""])
+        outputs[indices / f"entrada-{input_type}.md"]="\n".join([GENERATED,f"# Partir de: {input_type.replace('-',' ')}","","Selecciona una fuente y comprueba territorio, límites y resultados esperados.",""]+[f"- {resource_link(r, indices)} — {r['purpose']}" for r in matching]+[""])
+    outputs[es / "catalogo.md"]="\n".join(index+[""])
     for s in scenarios:
         matching=[r for r in resources if s["id"] in r["scenarios"]]
         lines=[GENERATED,f"# {s['name']}","",s["description"],"","## Procedimientos",""]
@@ -165,42 +183,43 @@ def build_outputs(catalog, version):
         for j in jurisdictions:
             direct=[r for r in matching if j["id"] in r["jurisdictions"]]
             if direct:
-                lines += ["",f"## {j['name']}",""]+[f"- {resource_link(r)} — {r['purpose']}" for r in direct]
-        lines += ["","[Comprobar cobertura y carencias](../COBERTURA.md)",""]
-        outputs[ROOT/"docs/indices"/f"escenario-{s['id']}.md"]="\n".join(lines)
+                lines += ["",f"## {place_label(j)}",""]+[f"- {resource_link(r, indices)} — {r['purpose']}" for r in direct]
+        lines += ["","[Comprobar cobertura y carencias](../cobertura.md)",""]
+        outputs[indices / f"escenario-{s['id']}.md"]="\n".join(lines)
     for j in jurisdictions:
-        lines=[GENERATED,f"# {j['name']}","",j.get("notes","La adaptación territorial sigue pendiente."),"","## Cobertura por escenario",""]
+        lines=[GENERATED,f"# {place_label(j)}","",j.get("notes","La adaptación territorial sigue pendiente."),"","## Cobertura por escenario",""]
         for s in scenarios:
             row=next(x for x in rows if x["scenario"]==s["id"] and x["jurisdiction"]==j["id"])
-            lines += [f"### {s['name']}","",f"Estado a {row['as_of']}: **{row['status']}**. Fuentes locales: {row['local_resources']}; apoyo general: {row['general_resources']}.",
-                      f"Responsable: {row['maintainer'] or 'por asignar'}; suplente: {row['backup'] or 'por asignar'}; revisión: {row['last_reviewed'] or 'pendiente'}.",""]
+            checked = row["last_reviewed"] or "pendiente"
+            lines += [f"### {s['name']}","",f"Estado: **{row['status']}**. Fuentes locales: {row['local_resources']}; apoyo general: {row['general_resources']}.",
+                      f"Comprobado: {checked}.","",]
             lines += [f"- {g}" for g in row["gaps"]]
             lines += ["",f"[Ver fuentes de este escenario](escenario-{s['id']}.md)",""]
         direct=[r for r in resources if j["id"] in r["jurisdictions"]]
-        lines += ["## Fuentes del territorio",""]+[f"- {resource_link(r)}" for r in direct]+[""]
+        lines += ["## Fuentes del territorio",""]+[f"- {resource_link(r, indices)}" for r in direct]+[""]
         finer=[]
         for did in descendant_ids(j["id"], children):
             matching=[r for r in resources if did in r["jurisdictions"]]
             if matching:
-                finer += [f"### {nodes[did]['name']}",""]+[f"- {resource_link(r)}" for r in matching]+[""]
+                finer += [f"### {place_label(nodes[did])}",""]+[f"- {resource_link(r, indices)}" for r in matching]+[""]
         if finer:
             lines += ["## Fuentes de un territorio más concreto","","Una ficha municipal o autonómica también se lista aquí, además de en su propia página.","",*finer]
         support=[r for r in resources if j["id"] not in r["jurisdictions"] and applies_to(r,j["id"],jurisdictions)]
-        lines += ["## Apoyo de otras coberturas",""]+[f"- {resource_link(r)}" for r in support]+[""]
-        outputs[ROOT/"docs/indices"/f"jurisdiccion-{j['id'].lower()}.md"]="\n".join(lines)
+        lines += ["## Apoyo de otras coberturas",""]+[f"- {resource_link(r, indices)}" for r in support]+[""]
+        outputs[indices / f"jurisdiccion-{j['id'].lower()}.md"]="\n".join(lines)
     matrix=[GENERATED,"# Matriz de cobertura","","La cantidad de enlaces no acredita que un territorio esté preparado.","",
             "- **Pendiente:** falta una base local revisada.",
             "- **Inicial:** existen fuentes locales revisadas; faltan procedimiento, responsable o vías competentes.",
             "- **Desarrollado:** todos esos requisitos están documentados y revisados.",
-            "","El apoyo global no cuenta como adaptación territorial. La fecha editorial no es una comprobación de disponibilidad; consulta también revisiones vencidas en mantenimiento.","","## Consultar por territorio",""]
+            "","El apoyo global no cuenta como adaptación territorial. Una revisión editorial no es la comprobación de que la página responda.","","## Consultar por territorio",""]
     matrix += territory_tree_lines(jurisdictions, lambda j: f"indices/jurisdiccion-{j['id'].lower()}.md")
-    outputs[ROOT/"docs/COBERTURA.md"]="\n".join(matrix+[""])
-    outputs[ROOT/"docs/procedimientos/README.md"]="\n".join([GENERATED,"# Procedimientos","","Cada guía incluye recorrido de práctica, límites, fuentes y estado de revisión.",""]+[f"- [{p['title']}]({Path(p['path']).name}) — {p['review_status']}" for p in catalog["playbooks"]]+[""])
+    outputs[es / "cobertura.md"]="\n".join(matrix+[""])
+    outputs[es / "procedimientos" / "README.md"]="\n".join([GENERATED,"# Procedimientos","","Cada guía incluye recorrido de práctica, límites, fuentes y estado de revisión.",""]+[f"- [{p['title']}]({Path(p['path']).name}) — {p['review_status']}" for p in catalog["playbooks"]]+[""])
     lines=[GENERATED,"# Contactos y rutas de asistencia","","Comprueba la página responsable. Ayuda, comunicación de indicios, retirada y denuncia son vías diferentes.",""]
     for c in catalog["contacts"]:
         lines += [f"## {c['name']}","",f"**{KINDS[c['kind']]}**. Territorios: {', '.join(c['territories'])}.", "",
                   contact_text(c)+". "+c["note"],"",f"Requisitos: {c['requirements']}",f"Accesibilidad: {c['accessibility']}","",review_text(c,"last_reviewed"),""]
-    outputs[ROOT/"docs/CONTACTOS.md"]="\n".join(lines)
+    outputs[es / "contactos.md"]="\n".join(lines)
     for name,value in {"catalog":{"version":version,**catalog},"coverage":{"version":version,"coverage":rows},
                        "search-index":{"version":version,"resources":[{"id":r["id"],"name":r["name"],"text":" ".join([r["purpose"],r["usage"],*r["inputs"],*r["outputs"]]),"url":r["url"]} for r in resources]}}.items():
         outputs[DATA/"export"/f"{name}.json"]=json.dumps(value,ensure_ascii=False,sort_keys=True,indent=2)+"\n"
