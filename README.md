@@ -17,8 +17,7 @@ Este catálogo ayuda a elegir una fuente, leer su resultado y ver qué falta com
 > La guía publicada está en [comunidad-de-inteligencia.github.io/osint-atlas](https://comunidad-de-inteligencia.github.io/osint-atlas/).
 
 > [!WARNING] 
-> Ante un peligro inmediato, acude al servicio oficial de emergencias de tu territorio.
->
+> Ante un peligro inmediato, acude al servicio oficial de emergencias de tu territorio.  
 > Consulta el [procedimiento de emergencia](docs/es/procedimientos/emergencia-inmediata.md) y las [vías oficiales](docs/es/contactos.md).
 
 > [!IMPORTANT]
@@ -31,11 +30,10 @@ Este catálogo ayuda a elegir una fuente, leer su resultado y ver qué falta com
 > Patrocinar contribuye a apoyar el proyecto, pero no da derecho al patrocinador a adquirir un archivo ni a recibir una revisión.
 
 
-Quien consulta con un asistente de Inteligencia Artificial usa el Model Context Protocol (MCP) en solo lectura.
+Quien consulta con un asistente de Inteligencia Artificial usa el Model Context Protocol (MCP) en modo de solo lectura.  
+Sigue siendo una forma de leer el catálogo, no de actuar en su nombre. 
 
-Sigue siendo una forma de leer el catálogo, no de actuar por él. 
-
-El detalle está en [usar el catálogo con un asistente](docs/es/ia.md).
+Los detalles están en [usar el catálogo con un asistente](docs/es/ia.md).
 
 ## 📇 Índice
 
@@ -45,7 +43,8 @@ El detalle está en [usar el catálogo con un asistente](docs/es/ia.md).
 - [Guías de referencia](23#guías-de-referencia)
 - [Qué está revisado](23#qué-está-revisado)
 - [Cómo proponer una fuente](23#cómo-proponer-una-fuente)
-- [Licencia](#licencia)
+- [Reporte de seguridad](23#reporte-de-seguridad)
+- [Licencia](23#licencia)
 
 ## 🔰 Primeros pasos
 
@@ -136,29 +135,38 @@ Indicadores de estado de una fuente:
 Para proponer una nueva fuente, abre una incidencia con la plantilla en [castellano](https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues/new?template=proponer-fuente.yml) o en [inglés](https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues/new?template=propose-source.yml). 
 
 Para solicitar una corrección, usa [castellano](https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues/new?template=corregir-contenido.yml) o [inglés](https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues/new?template=correct-content.yml). 
-> No pegues casos ni datos personales. El detalle está en [cómo contribuir](docs/es/contribuir.md).
+> No pegues casos ni datos personales. Los detalles se indican en [cómo contribuir](docs/es/contribuir.md).
 
-## Con qué está hecho
+## 🏗️ Con qué está hecho
 
-| Pieza | Papel en este catálogo |
-| --- | --- |
-| Catálogo | Markdown |
-| GitHub Actions | Validación inicial de cada propuesta y comprobación automática de enlaces |
-| Guía | [GitHub Pages](https://pages.github.com/) y [Mkdocs + Material](https://squidfunk.github.io/mkdocs-material/)
-| Python 3.12 | Generador, pruebas y MCP |
-| uv | Entorno y dependencias bloqueadas |
-| [QGIS](https://qgis.org/) | Programa externo para ver una capa. Independiente de este repositorio |
+| Pieza | Papel en este catálogo | Tecnología |
+| --- | --- | --- |
+| Catálogo | Documentos | Markdown |
+| GitHub Actions | Validación inicial de cada propuesta y comprobación automática de enlaces | --- |
+| Guía | Facilita la lectura y presentación | [GitHub Pages](https://pages.github.com/) y [Mkdocs + Material](https://squidfunk.github.io/mkdocs-material/) |
+| Python 3.12 | Generador, pruebas y MCP | --- |
+| uv | Entorno y dependencias bloqueadas | --- |
+| [QGIS](https://qgis.org/) | Programa externo para ver una capa. Independiente de este repositorio | --- |
 
-## Licencia
 
-Uso bajo la licencia MIT, Massachusetts Institute of Technology. Lee [uso responsable](docs/es/legal.md) y el archivo [LICENSE](LICENSE). La procedencia está en [atribución](docs/es/atribucion.md). Un fallo del código se avisa como dice [seguridad](docs/es/seguridad.md).
+## 🔏 Reporte de seguridad
+Un fallo del código o de seguridad se puede avisar como se indica en [seguridad](docs/es/seguridad.md).
 
-[Incidencias][issues]. [Licencia MIT][license]. [Guía](https://comunidad-de-inteligencia.github.io/osint-atlas/).
+## ⚖️ Licencia
 
-[Glosario](docs/es/glosario.md). [Mantenimiento](docs/es/mantenimiento.md). [Accesibilidad](docs/es/accesibilidad.md).
+Uso bajo la licencia MIT, Massachusetts Institute of Technology.  
+Puedes consultar el documento de [uso responsable](docs/es/legal.md) y el archivo [LICENSE](LICENSE).  
+La procedencia se indica en [atribución](docs/es/atribucion.md). 
+
+> [Incidencias][issues]. [Licencia MIT][license]. [Guía](https://comunidad-de-inteligencia.github.io/osint-atlas/).
+
+> [Glosario](docs/es/glosario.md). [Mantenimiento](docs/es/mantenimiento.md). [Accesibilidad](docs/es/accesibilidad.md).
 
 [issues]: https://github.com/Comunidad-de-Inteligencia/osint-atlas/issues
 [license]: https://github.com/Comunidad-de-Inteligencia/osint-atlas/blob/main/LICENSE
+
+
+---
 
 ## 🇬🇧/🇺🇸 English
 
