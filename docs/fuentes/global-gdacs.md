@@ -66,4 +66,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 
 - [Global Disaster Alert and Coordination System — página responsable](https://www.gdacs.org/)
 
-Versión: f284f49148a09ea0. [Volver al catálogo](../CATALOGO.md).
+Versión: 04eb3de40b46f80d. [Volver al catálogo](../CATALOGO.md).

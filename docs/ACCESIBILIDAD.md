@@ -20,6 +20,6 @@ El comportamiento de la interfaz general de GitHub depende de GitHub. Los hallaz
 
 ## Registro de verificación
 
-Los resultados de esta entrega se registran en [verificación de v0.2](VERIFICACION-v0.2.md). Una prueba no ejecutada aparece como pendiente.
+Anota la fecha, el dispositivo y qué no se pudo probar. Una prueba no ejecutada aparece como pendiente.
 
 Referencia de diseño: [criterio de adaptación del contenido de W3C](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html).

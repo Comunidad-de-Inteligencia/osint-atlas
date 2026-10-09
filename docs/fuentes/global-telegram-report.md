@@ -68,4 +68,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 30 dí
 - [Telegram - Reportar contenido ilegal — página responsable](https://telegram.org/faq#q-there-39s-illegal-content-on-telegram-how-do-i-take-it-down)
 - Observación de languages, 2026-09-13: [página comprobada](https://telegram.org/faq). Idiomas observados en la página consultada; no certifica todos sus servicios. No equivale a aprobación humana.
 
-Versión: f284f49148a09ea0. [Volver al catálogo](../CATALOGO.md).
+Versión: 04eb3de40b46f80d. [Volver al catálogo](../CATALOGO.md).

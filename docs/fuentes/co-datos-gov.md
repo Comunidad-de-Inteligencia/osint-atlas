@@ -62,4 +62,4 @@ Responsable: por asignar. Suplente: por asignar. Revisión prevista: cada 180 d�
 
 - [Datos Abiertos Colombia — página responsable](https://www.datos.gov.co/)
 
-Versión: f284f49148a09ea0. [Volver al catálogo](../CATALOGO.md).
+Versión: 04eb3de40b46f80d. [Volver al catálogo](../CATALOGO.md).
