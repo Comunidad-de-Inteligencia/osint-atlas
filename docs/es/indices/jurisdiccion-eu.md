@@ -2,6 +2,9 @@
 # 🇪🇺 Unión Europea
 
 Distinguir normativa y servicios comunes de las implementaciones nacionales.
+> [Estados miembros de la Unión Europea](https://european-union.europa.eu/principles-countries-history/eu-countries_es)
+> 
+> [RSS Estados miembros de la Unión Europea](https://european-union.europa.eu/node/288/rss_es)
 
 ## Cobertura por escenario
 
